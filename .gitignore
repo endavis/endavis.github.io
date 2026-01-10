@@ -13,3 +13,5 @@ vendor
 .idea
 .venv
 tmp/
+.venv/
+.envrc
