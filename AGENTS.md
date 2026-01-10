@@ -86,3 +86,9 @@ The site is configured for deployment to GitHub Pages.
 
 - **Automatic:** Pushing to the `main` branch triggers a GitHub Action to build and deploy to the `gh-pages` branch.
 - **Manual:** `bundle exec jekyll build` generates the static site in `_site/`.
+
+## Interaction Guidelines
+
+- **GitHub CLI (`gh`):** Prioritize using the `gh` CLI tool for GitHub interactions (issues, PRs, workflows, logs) over manual web scraping or assumptions.
+- **Commit Protocol:** Do NOT commit changes unless explicitly instructed by the user or if the task implies a complete unit of work. When in doubt, stage changes or ask.
+- **User Confirmation:** When a decision point arises or a question forms in your reasoning process, STOP immediately. Do NOT assume the answer. Explain the situation and ask the user for direction.
