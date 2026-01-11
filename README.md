@@ -422,6 +422,16 @@ Photo formatting is made simple using [Bootstrap's grid system](https://getboots
 
 ---
 
+#### GitHub trophies
+
+**al-folio** can display GitHub profile trophies on the `/repositories/` page.
+External mode loads trophies from a configured service, while branch/local modes
+can generate and store SVGs in your repository.
+
+**📖 For detailed setup and self-hosting instructions, see [docs/TROPHIES.md](docs/TROPHIES.md)**
+
+---
+
 #### Theming
 
 A variety of beautiful theme colors have been selected for you to choose from. The default is purple, but you can quickly change it by editing the `--global-theme-color` variable in the `_sass/_themes.scss` file. Other color variables are listed there as well. The stock theme color options available can be found at [\_sass/\_variables.scss](_sass/_variables.scss). You can also add your own colors to this file assigning each a name for ease of use across the template.
