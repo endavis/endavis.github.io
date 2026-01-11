@@ -53,6 +53,8 @@ That's it! This is the default configuration.
 
 Uses GitHub Actions to generate stats SVG files and store them on a separate `stats` branch using [lowlighter/metrics](https://github.com/lowlighter/metrics).
 
+You can also generate additional cards using [github-readme-stats](https://github.com/anuraghazra/github-readme-stats) and render both side-by-side.
+
 **Pros:**
 
 - ✅ Full control over stats generation
@@ -213,6 +215,18 @@ push:
     - main
 ```
 
+### Optional: Generate github-readme-stats Cards
+
+If you want to generate github-readme-stats cards alongside metrics:
+
+```yaml
+# _config.yml
+repo_stats_generators: both # metrics, readme, or both
+```
+
+The workflow will spin up a local github-readme-stats server and render SVGs
+using your existing `METRICS_TOKEN` secret.
+
 ### Optional: Generate Self-Hosted Trophies
 
 If you enable trophies and use branch/local stats, the workflow can generate
@@ -267,13 +281,21 @@ mkdir -p assets/img/stats
 # Copy your SVG files
 cp user_stats_*.svg assets/img/stats/
 cp repo_*_*.svg assets/img/stats/
+cp user_stats_readme_*_*.svg assets/img/stats/
+cp repo_readme_*_*.svg assets/img/stats/
 cp trophies_*_c*.svg assets/img/stats/
 
 # If you generated stats manually, ensure repo files are named:
 # repo_<owner>_<repo>.svg (example: repo_octocat_hello-world.svg)
 #
+# Readme repo files should be named:
+# repo_readme_<owner>_<repo>_light.svg (example: repo_readme_octocat_hello-world_light.svg)
+# repo_readme_<owner>_<repo>_dark.svg (example: repo_readme_octocat_hello-world_dark.svg)
+#
 # User files should be named:
 # user_stats_<username>.svg (example: user_stats_octocat.svg)
+# user_stats_readme_<username>_light.svg (example: user_stats_readme_octocat_light.svg)
+# user_stats_readme_<username>_dark.svg (example: user_stats_readme_octocat_dark.svg)
 
 # Trophy files should be named:
 # trophies_<username>_light_c6.svg (example: trophies_octocat_light_c6.svg)
@@ -301,6 +323,9 @@ repo_stats_type: local
 # Stats display mode
 repo_stats_type: external # Options: external, branch, local
 
+# Stats generators for branch/local mode
+repo_stats_generators: metrics # Options: metrics, readme, both
+
 # Stats branch URL (only for branch mode)
 stats_branch_url: "" # Example: https://raw.githubusercontent.com/user/repo/stats
 
@@ -318,6 +343,15 @@ repo_trophies:
   enabled: false
   theme_light: flat
   theme_dark: gitdimmed
+```
+
+### Stats Generators (Branch/Local)
+
+By default, branch/local mode uses lowlighter/metrics. To switch generators or
+render both cards side-by-side, set:
+
+```yaml
+repo_stats_generators: metrics # metrics, readme, or both
 ```
 
 ### Workflow Configuration

@@ -69,6 +69,13 @@ jobs:
       trophy_theme_light: ${{ steps.parse.outputs.trophy_theme_light }}
       trophy_theme_dark: ${{ steps.parse.outputs.trophy_theme_dark }}
       repo_stats_type: ${{ steps.parse.outputs.repo_stats_type }}
+      repo_stats_generators: ${{ steps.parse.outputs.repo_stats_generators }}
+      use_metrics: ${{ steps.parse.outputs.use_metrics }}
+      use_readme: ${{ steps.parse.outputs.use_readme }}
+      repo_theme_light: ${{ steps.parse.outputs.repo_theme_light }}
+      repo_theme_dark: ${{ steps.parse.outputs.repo_theme_dark }}
+      repo_description_lines_max: ${{ steps.parse.outputs.repo_description_lines_max }}
+      readme_locale: ${{ steps.parse.outputs.readme_locale }}
     steps:
       - uses: actions/checkout@v3
       - name: Install PyYAML
@@ -84,20 +91,43 @@ jobs:
               data = yaml.safe_load(f)
               repos = data.get('github_repos', [])
               users = data.get('github_users', [])
+              repo_description_lines_max = data.get('repo_description_lines_max', 2)
               if not users:
                   users = [os.environ.get('REPO_OWNER', '')]
               matrix = []
               for r in repos:
                   if '/' in r:
-                      u, n = r.split('/')
-                      matrix.append({'user': u, 'repo': n})
+                      u, n = r.split('/', 1)
+                      show_owner = 'true' if u not in users else 'false'
+                      matrix.append({
+                          'user': u,
+                          'repo': n,
+                          'show_owner': show_owner,
+                          'max_lines': repo_description_lines_max,
+                      })
           with open('_config.yml', 'r') as f:
               config = yaml.safe_load(f) or {}
-              repo_stats_type = str(config.get('repo_stats_type', 'external'))
+              repo_stats_type = str(config.get('repo_stats_type', 'external')).lower()
+              repo_stats_generators = str(config.get('repo_stats_generators', 'metrics'))
+              repo_theme_light = str(config.get('repo_theme_light', 'default'))
+              repo_theme_dark = str(config.get('repo_theme_dark', 'dark'))
+              lang = str(config.get('lang', 'en'))
               repo_trophies = config.get('repo_trophies', {}) or {}
               trophies_enabled = bool(repo_trophies.get('enabled', False))
               trophy_theme_light = str(repo_trophies.get('theme_light', 'flat'))
               trophy_theme_dark = str(repo_trophies.get('theme_dark', 'gitdimmed'))
+              repo_stats_generators_lower = repo_stats_generators.lower()
+              use_metrics = repo_stats_generators_lower in ('metrics', 'both') or 'metrics' in repo_stats_generators_lower
+              use_readme = repo_stats_generators_lower in ('readme', 'both') or 'readme' in repo_stats_generators_lower
+              readme_locale = lang.split('-')[0]
+              if lang.startswith('pt'):
+                  readme_locale = lang
+              elif lang.startswith('zh'):
+                  lang_last = lang.split('-')[-1]
+                  if lang_last in ('cn', 'sg', 'my', 'hans'):
+                      readme_locale = 'cn'
+                  elif lang_last in ('tw', 'hk', 'mo', 'hant'):
+                      readme_locale = 'zh-tw'
               print(f'Matrix: {json.dumps(matrix)}')
               with open(os.environ['GITHUB_OUTPUT'], 'a') as fh:
                   print(f'repos={json.dumps(matrix)}', file=fh)
@@ -106,9 +136,17 @@ jobs:
                   print(f'trophy_theme_light={trophy_theme_light}', file=fh)
                   print(f'trophy_theme_dark={trophy_theme_dark}', file=fh)
                   print(f'repo_stats_type={repo_stats_type}', file=fh)
+                  print(f'repo_stats_generators={repo_stats_generators}', file=fh)
+                  print(f'use_metrics={str(use_metrics).lower()}', file=fh)
+                  print(f'use_readme={str(use_readme).lower()}', file=fh)
+                  print(f'repo_theme_light={repo_theme_light}', file=fh)
+                  print(f'repo_theme_dark={repo_theme_dark}', file=fh)
+                  print(f'repo_description_lines_max={repo_description_lines_max}', file=fh)
+                  print(f'readme_locale={readme_locale}', file=fh)
           "
 
   generate-user-stats:
+    if: ${{ needs.prepare.outputs.use_metrics == 'true' && needs.prepare.outputs.repo_stats_type != 'external' }}
     runs-on: ubuntu-latest
     needs: prepare
     strategy:
@@ -140,6 +178,7 @@ jobs:
   generate-repo-stats:
     name: Generate Stats for ${{ matrix.user }}/${{ matrix.repo }}
     needs: prepare
+    if: ${{ needs.prepare.outputs.use_metrics == 'true' && needs.prepare.outputs.repo_stats_type != 'external' }}
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -167,6 +206,139 @@ jobs:
           path: |
             repo_${{ matrix.user }}_${{ matrix.repo }}.svg
             /metrics_renders/repo_${{ matrix.user }}_${{ matrix.repo }}.svg
+
+  generate-readme-user-stats:
+    name: Generate Readme Stats for ${{ matrix.user }}
+    needs: prepare
+    if: ${{ needs.prepare.outputs.use_readme == 'true' && needs.prepare.outputs.repo_stats_type != 'external' }}
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        user: ${{ fromJson(needs.prepare.outputs.users) }}
+    env:
+      PORT: 9000
+      PAT_1: ${{ secrets.METRICS_TOKEN }}
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          repository: anuraghazra/github-readme-stats
+          path: readme-stats
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+          cache-dependency-path: readme-stats/package-lock.json
+      - name: Install Readme Stats
+        run: npm ci
+        working-directory: readme-stats
+      - name: Start Readme Stats Server
+        run: |
+          node express.js &
+          echo $! > /tmp/readme_stats_pid
+          ready=0
+          for i in {1..30}; do
+            if curl -sSf "http://localhost:${PORT}/api?username=${{ matrix.user }}" > /dev/null; then
+              ready=1
+              break
+            fi
+            sleep 1
+          done
+          if [ "$ready" -ne 1 ]; then
+            echo "Readme stats server failed to start" >&2
+            exit 1
+          fi
+        working-directory: readme-stats
+      - name: Generate Readme User Stats
+        env:
+          USERNAME: ${{ matrix.user }}
+          THEME_LIGHT: ${{ needs.prepare.outputs.repo_theme_light }}
+          THEME_DARK: ${{ needs.prepare.outputs.repo_theme_dark }}
+          LOCALE: ${{ needs.prepare.outputs.readme_locale }}
+        run: |
+          set -euo pipefail
+          curl -sSf "http://localhost:${PORT}/api?username=${USERNAME}&theme=${THEME_LIGHT}&show_icons=true&locale=${LOCALE}" \
+            -o "user_stats_readme_${USERNAME}_light.svg"
+          curl -sSf "http://localhost:${PORT}/api?username=${USERNAME}&theme=${THEME_DARK}&show_icons=true&locale=${LOCALE}" \
+            -o "user_stats_readme_${USERNAME}_dark.svg"
+      - name: Stop Readme Stats Server
+        if: always()
+        run: |
+          if [ -f /tmp/readme_stats_pid ]; then
+            kill "$(cat /tmp/readme_stats_pid)" || true
+          fi
+      - name: Upload Readme User Stats
+        uses: actions/upload-artifact@v4
+        with:
+          name: stats-readme-user-${{ matrix.user }}
+          path: user_stats_readme_${{ matrix.user }}_*.svg
+
+  generate-readme-repo-stats:
+    name: Generate Readme Repo Stats for ${{ matrix.user }}/${{ matrix.repo }}
+    needs: prepare
+    if: ${{ needs.prepare.outputs.use_readme == 'true' && needs.prepare.outputs.repo_stats_type != 'external' }}
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        include: ${{ fromJson(needs.prepare.outputs.repos) }}
+    env:
+      PORT: 9000
+      PAT_1: ${{ secrets.METRICS_TOKEN }}
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          repository: anuraghazra/github-readme-stats
+          path: readme-stats
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+          cache-dependency-path: readme-stats/package-lock.json
+      - name: Install Readme Stats
+        run: npm ci
+        working-directory: readme-stats
+      - name: Start Readme Stats Server
+        run: |
+          node express.js &
+          echo $! > /tmp/readme_stats_pid
+          ready=0
+          for i in {1..30}; do
+            if curl -sSf "http://localhost:${PORT}/api?username=${{ matrix.user }}" > /dev/null; then
+              ready=1
+              break
+            fi
+            sleep 1
+          done
+          if [ "$ready" -ne 1 ]; then
+            echo "Readme stats server failed to start" >&2
+            exit 1
+          fi
+        working-directory: readme-stats
+      - name: Generate Readme Repo Stats
+        env:
+          USERNAME: ${{ matrix.user }}
+          REPO: ${{ matrix.repo }}
+          SHOW_OWNER: ${{ matrix.show_owner }}
+          MAX_LINES: ${{ matrix.max_lines }}
+          THEME_LIGHT: ${{ needs.prepare.outputs.repo_theme_light }}
+          THEME_DARK: ${{ needs.prepare.outputs.repo_theme_dark }}
+          LOCALE: ${{ needs.prepare.outputs.readme_locale }}
+        run: |
+          set -euo pipefail
+          curl -sSf "http://localhost:${PORT}/api/pin/?username=${USERNAME}&repo=${REPO}&theme=${THEME_LIGHT}&show_owner=${SHOW_OWNER}&description_lines_count=${MAX_LINES}&locale=${LOCALE}" \
+            -o "repo_readme_${USERNAME}_${REPO}_light.svg"
+          curl -sSf "http://localhost:${PORT}/api/pin/?username=${USERNAME}&repo=${REPO}&theme=${THEME_DARK}&show_owner=${SHOW_OWNER}&description_lines_count=${MAX_LINES}&locale=${LOCALE}" \
+            -o "repo_readme_${USERNAME}_${REPO}_dark.svg"
+      - name: Stop Readme Stats Server
+        if: always()
+        run: |
+          if [ -f /tmp/readme_stats_pid ]; then
+            kill "$(cat /tmp/readme_stats_pid)" || true
+          fi
+      - name: Upload Readme Repo Stats
+        uses: actions/upload-artifact@v4
+        with:
+          name: stats-readme-repo-${{ matrix.user }}-${{ matrix.repo }}
+          path: repo_readme_${{ matrix.user }}_${{ matrix.repo }}_*.svg
 
   generate-trophies:
     name: Generate Trophies for ${{ matrix.user }}
@@ -232,8 +404,8 @@ jobs:
           path: trophies_${{ matrix.user }}_*.svg
 
   commit-stats:
-    needs: [generate-user-stats, generate-repo-stats, generate-trophies]
-    if: ${{ needs.generate-user-stats.result == 'success' && (needs.generate-repo-stats.result == 'success' || needs.generate-repo-stats.result == 'skipped') && (needs.generate-trophies.result == 'success' || needs.generate-trophies.result == 'skipped') }}
+    needs: [prepare, generate-user-stats, generate-repo-stats, generate-readme-user-stats, generate-readme-repo-stats, generate-trophies]
+    if: ${{ needs.prepare.outputs.repo_stats_type != 'external' && (needs.generate-user-stats.result == 'success' || needs.generate-user-stats.result == 'skipped') && (needs.generate-repo-stats.result == 'success' || needs.generate-repo-stats.result == 'skipped') && (needs.generate-readme-user-stats.result == 'success' || needs.generate-readme-user-stats.result == 'skipped') && (needs.generate-readme-repo-stats.result == 'success' || needs.generate-readme-repo-stats.result == 'skipped') && (needs.generate-trophies.result == 'success' || needs.generate-trophies.result == 'skipped') }}
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -255,6 +427,22 @@ jobs:
         if: ${{ needs.generate-repo-stats.result == 'success' }}
         with:
           pattern: stats-repo-*
+          path: assets/img/stats/
+          merge-multiple: true
+
+      - name: Download Readme User Stats
+        uses: actions/download-artifact@v4
+        if: ${{ needs.generate-readme-user-stats.result == 'success' }}
+        with:
+          pattern: stats-readme-user-*
+          path: assets/img/stats/
+          merge-multiple: true
+
+      - name: Download Readme Repo Stats
+        uses: actions/download-artifact@v4
+        if: ${{ needs.generate-readme-repo-stats.result == 'success' }}
+        with:
+          pattern: stats-readme-repo-*
           path: assets/img/stats/
           merge-multiple: true
 

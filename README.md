@@ -410,6 +410,8 @@ Photo formatting is made simple using [Bootstrap's grid system](https://getboots
 - **Branch mode**: Uses GitHub Actions to generate stats and store them on a separate branch - full control and customization
 - **Local mode**: Stats files committed to the main branch - complete control
 
+Branch/local modes can generate stats with lowlighter/metrics, github-readme-stats, or both side-by-side.
+
 [![Repositories Preview](readme_preview/repositories.png)](https://alshedivat.github.io/al-folio/repositories/)
 
 **📖 For detailed setup instructions, configuration options, and troubleshooting, see [docs/STATS.md](docs/STATS.md)**

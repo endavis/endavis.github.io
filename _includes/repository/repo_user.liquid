@@ -20,19 +20,7 @@
 
 <div class="repo p-2 text-center">
   <a href="https://github.com/{{ include.username }}">
-    {% if site.repo_stats_type == 'local' %}
-      <img
-        class="w-100"
-        alt="{{ include.username }}"
-        src="{{ '/assets/img/stats/user_stats_' | append: include.username | append: '.svg' | relative_url }}"
-      >
-    {% elsif site.repo_stats_type == 'branch' %}
-      <img
-        class="w-100"
-        alt="{{ include.username }}"
-        src="{{ site.stats_branch_url }}/assets/img/stats/user_stats_{{ include.username }}.svg"
-      >
-    {% else %}
+    {% if site.repo_stats_type == 'external' %}
       <img
         class="only-light w-100"
         alt="{{ include.username }}"
@@ -43,6 +31,93 @@
         alt="{{ include.username }}"
         src="{{ site.external_services.github_readme_stats_url }}/api/?username={{ include.username }}&theme={{ site.repo_theme_dark }}&locale={{ lang }}&show_icons=true"
       >
+    {% else %}
+      {% assign generators = site.repo_stats_generators | default: 'metrics' %}
+      {% assign use_metrics = generators contains 'metrics' or generators == 'both' %}
+      {% assign use_readme = generators contains 'readme' or generators == 'both' %}
+
+      {% if use_metrics and use_readme %}
+        <div class="row">
+          <div class="col-12 col-md-6">
+            {% if site.repo_stats_type == 'local' %}
+              <img
+                class="w-100"
+                alt="{{ include.username }}"
+                src="{{ '/assets/img/stats/user_stats_' | append: include.username | append: '.svg' | relative_url }}"
+              >
+            {% else %}
+              <img
+                class="w-100"
+                alt="{{ include.username }}"
+                src="{{ site.stats_branch_url }}/assets/img/stats/user_stats_{{ include.username }}.svg"
+              >
+            {% endif %}
+          </div>
+          <div class="col-12 col-md-6">
+            {% if site.repo_stats_type == 'local' %}
+              <img
+                class="only-light w-100"
+                alt="{{ include.username }}"
+                src="{{ '/assets/img/stats/user_stats_readme_' | append: include.username | append: '_light.svg' | relative_url }}"
+              >
+              <img
+                class="only-dark w-100"
+                alt="{{ include.username }}"
+                src="{{ '/assets/img/stats/user_stats_readme_' | append: include.username | append: '_dark.svg' | relative_url }}"
+              >
+            {% else %}
+              <img
+                class="only-light w-100"
+                alt="{{ include.username }}"
+                src="{{ site.stats_branch_url }}/assets/img/stats/user_stats_readme_{{ include.username }}_light.svg"
+              >
+              <img
+                class="only-dark w-100"
+                alt="{{ include.username }}"
+                src="{{ site.stats_branch_url }}/assets/img/stats/user_stats_readme_{{ include.username }}_dark.svg"
+              >
+            {% endif %}
+          </div>
+        </div>
+      {% elsif use_readme %}
+        {% if site.repo_stats_type == 'local' %}
+          <img
+            class="only-light w-100"
+            alt="{{ include.username }}"
+            src="{{ '/assets/img/stats/user_stats_readme_' | append: include.username | append: '_light.svg' | relative_url }}"
+          >
+          <img
+            class="only-dark w-100"
+            alt="{{ include.username }}"
+            src="{{ '/assets/img/stats/user_stats_readme_' | append: include.username | append: '_dark.svg' | relative_url }}"
+          >
+        {% else %}
+          <img
+            class="only-light w-100"
+            alt="{{ include.username }}"
+            src="{{ site.stats_branch_url }}/assets/img/stats/user_stats_readme_{{ include.username }}_light.svg"
+          >
+          <img
+            class="only-dark w-100"
+            alt="{{ include.username }}"
+            src="{{ site.stats_branch_url }}/assets/img/stats/user_stats_readme_{{ include.username }}_dark.svg"
+          >
+        {% endif %}
+      {% else %}
+        {% if site.repo_stats_type == 'local' %}
+          <img
+            class="w-100"
+            alt="{{ include.username }}"
+            src="{{ '/assets/img/stats/user_stats_' | append: include.username | append: '.svg' | relative_url }}"
+          >
+        {% else %}
+          <img
+            class="w-100"
+            alt="{{ include.username }}"
+            src="{{ site.stats_branch_url }}/assets/img/stats/user_stats_{{ include.username }}.svg"
+          >
+        {% endif %}
+      {% endif %}
     {% endif %}
   </a>
 </div>
