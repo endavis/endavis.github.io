@@ -1,10 +1,8 @@
-# Project Context: al-folio (v0.15.0)
+# Project Context: al-folio
 
 ## Overview
 
 `al-folio` is a simple, clean, and responsive Jekyll theme designed specifically for academics. It serves as a template for creating personal websites, portfolios, or lab pages. It features a built-in CV, publication lists generated from BibTeX, news sections, and support for math and code.
-
-**Current Version:** `v0.15.0` (Updated: January 10, 2026)
 
 ## Architecture & Technologies
 
@@ -15,12 +13,11 @@
 
 ## Key Files & Directories
 
-- **`_config.yml`**: The central configuration file. This is where site metadata (title, author, email), enabled features (news, projects, books, repositories), and theme settings are defined. **Start here for customizations.**
+- **`_config.yml`**: The central configuration file. This is where site metadata (title, author, email), enabled features (news, projects, repositories), and theme settings are defined. **Start here for customizations.**
 - **`_bibliography/papers.bib`**: The BibTeX file containing publications. The site automatically generates the "Publications" page from this file.
 - **`_pages/`**: Markdown files representing the main pages of the site (e.g., `about.md`, `cv.md`, `publications.md`, `projects.md`).
 - **`_posts/`**: Blog posts. The file name format is `YYYY-MM-DD-title.md`.
 - **`_projects/`**: Markdown files for individual projects, displayed on the Projects page.
-- **`_books/`**: Markdown files for book reviews/collections (New in v0.15.0).
 - **`_news/`**: Markdown files for news items/announcements.
 - **`_data/`**: YAML/JSON data files for structured content like `cv.yml` (fallback CV), `venues.yml`, `coauthors.yml`, etc.
 - **`assets/`**: Static assets including images (`img/`), CSS (`css/`), PDFs (`pdf/`), and the JSON resume (`json/resume.json`).
