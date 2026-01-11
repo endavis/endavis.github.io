@@ -225,6 +225,15 @@ jobs:
           config_timezone: ${{ vars.STATS_TIMEZONE || 'UTC' }}
           user: ${{ matrix.user }}
           output_action: none # Do not commit, just generate
+      - name: Normalize User Stats Output
+        run: |
+          set -euo pipefail
+          if [ ! -f "user_stats_${{ matrix.user }}.svg" ] && [ -f "/metrics_renders/user_stats.svg" ]; then
+            cp /metrics_renders/user_stats.svg "user_stats_${{ matrix.user }}.svg"
+          fi
+          if [ ! -f "/metrics_renders/user_stats_${{ matrix.user }}.svg" ] && [ -f "/metrics_renders/user_stats.svg" ]; then
+            cp /metrics_renders/user_stats.svg "/metrics_renders/user_stats_${{ matrix.user }}.svg"
+          fi
       - name: List files
         run: ls -R
       - name: Upload User Stats
@@ -257,6 +266,15 @@ jobs:
           plugin_languages: ${{ needs.prepare.outputs.metrics_repo_plugin_languages }}
           debug: ${{ needs.prepare.outputs.metrics_repo_debug }}
           output_action: none
+      - name: Normalize Repo Stats Output
+        run: |
+          set -euo pipefail
+          if [ ! -f "repo_${{ matrix.user }}_${{ matrix.repo }}.svg" ] && [ -f "/metrics_renders/repo.svg" ]; then
+            cp /metrics_renders/repo.svg "repo_${{ matrix.user }}_${{ matrix.repo }}.svg"
+          fi
+          if [ ! -f "/metrics_renders/repo_${{ matrix.user }}_${{ matrix.repo }}.svg" ] && [ -f "/metrics_renders/repo.svg" ]; then
+            cp /metrics_renders/repo.svg "/metrics_renders/repo_${{ matrix.user }}_${{ matrix.repo }}.svg"
+          fi
       - name: List files
         run: ls -la /metrics_renders/
       - name: Upload Repo Stats
