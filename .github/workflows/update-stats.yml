@@ -123,7 +123,7 @@ jobs:
       - name: Generate Repo Stats (${{ matrix.repo }})
         uses: lowlighter/metrics@latest
         with:
-          filename: repo_${{ matrix.repo }}.svg
+          filename: repo_${{ matrix.user }}_${{ matrix.repo }}.svg
           token: ${{ secrets.METRICS_TOKEN }}
           template: repository
           user: ${{ matrix.user }}
@@ -139,8 +139,8 @@ jobs:
         with:
           name: stats-repo-${{ matrix.repo }}
           path: |
-            repo_${{ matrix.repo }}.svg
-            /metrics_renders/repo_${{ matrix.repo }}.svg
+            repo_${{ matrix.user }}_${{ matrix.repo }}.svg
+            /metrics_renders/repo_${{ matrix.user }}_${{ matrix.repo }}.svg
 
   commit-stats:
     needs: [generate-user-stats, generate-repo-stats]
@@ -167,7 +167,7 @@ jobs:
           merge-multiple: true
 
       - name: Cleanup Stale Files
-        run: rm -f assets/img/stats/repo_bastproxy-py3.svg
+        run: rm -f assets/img/stats/repo_bastproxy-py3.svg assets/img/stats/repo_endavis_bastproxy-py3.svg
 
       - name: Debug File Structure
         run: ls -R assets/img/stats/

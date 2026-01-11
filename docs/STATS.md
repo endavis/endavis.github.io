@@ -240,7 +240,10 @@ mkdir -p assets/img/stats
 
 # Copy your SVG files
 cp user_stats.svg assets/img/stats/
-cp repo_*.svg assets/img/stats/
+cp repo_*_*.svg assets/img/stats/
+
+# If you generated stats manually, ensure repo files are named:
+# repo_<owner>_<repo>.svg (example: repo_octocat_hello-world.svg)
 
 # Commit
 git add assets/img/stats/*.svg
