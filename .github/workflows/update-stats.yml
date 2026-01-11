@@ -512,7 +512,7 @@ jobs:
 
   commit-stats:
     needs: [prepare, generate-user-stats, generate-repo-stats, generate-readme-user-stats, generate-readme-repo-stats, generate-trophies]
-    if: ${{ needs.prepare.outputs.repo_stats_type != 'external' && (needs['generate-user-stats'].result == 'success' || needs['generate-user-stats'].result == 'skipped') && (needs['generate-repo-stats'].result == 'success' || needs['generate-repo-stats'].result == 'skipped') && (needs['generate-readme-user-stats'].result == 'success' || needs['generate-readme-user-stats'].result == 'skipped') && (needs['generate-readme-repo-stats'].result == 'success' || needs['generate-readme-repo-stats'].result == 'skipped') && (needs['generate-trophies'].result == 'success' || needs['generate-trophies'].result == 'skipped') }}
+    if: ${{ needs.prepare.outputs.repo_stats_type != 'external' && !failure() && !cancelled() }}
     runs-on: ubuntu-latest
     permissions:
       contents: write
