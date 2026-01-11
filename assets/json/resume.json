@@ -22,7 +22,13 @@
       "startDate": "2016-11-18",
       "endDate": "",
       "summary": "Manage Storage and Linux systems, including installation, configuration, operations, and troubleshooting. Production services are in the AWS, Azure, and IBM clouds, as well as physical datacenters. The main components are NetApp and EMC devices as well as Oracle and RHEL servers.",
-      "highlights": ["Storage administration", "VMware administration", "Windows Server administration", "Linux administration", "Network administration"]
+      "highlights": [
+        "Storage administration",
+        "VMware administration",
+        "Windows Server administration",
+        "Linux administration",
+        "Network administration"
+      ]
     },
     {
       "name": "The George Washington University",
@@ -30,7 +36,13 @@
       "startDate": "2004-01",
       "endDate": "2015-02",
       "summary": "I was promoted from Help Desk to Sr. Information Systems Coordinator. I managed the storage infrastructure including NetApp and EMC devices. I also managed the VMware infrastructure and Windows and Linux servers.",
-      "highlights": ["Storage administration", "VMware administration", "Windows Server administration", "Linux administration", "Network administration"]
+      "highlights": [
+        "Storage administration",
+        "VMware administration",
+        "Windows Server administration",
+        "Linux administration",
+        "Network administration"
+      ]
     }
   ],
   "education": [
@@ -65,65 +77,38 @@
       "name": "Storage",
       "level": "Expert",
       "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "NetApp",
-        "EMC"
-      ]
+      "keywords": ["NetApp", "EMC"]
     },
     {
       "name": "Virtualization",
       "level": "Senior",
       "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "AWS",
-        "Azure",
-        "VMware",
-        "Proxmox"
-      ]
+      "keywords": ["AWS", "Azure", "VMware", "Proxmox"]
     },
     {
       "name": "Programming",
       "level": "Senior",
       "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Python",
-        "Bash",
-        "PowerShell",
-        "Javascript",
-        "HTML",
-        "CSS",
-        "Perl",
-        "Lua"
-      ]
+      "keywords": ["Python", "Bash", "PowerShell", "Javascript", "HTML", "CSS", "Perl", "Lua"]
     },
     {
       "name": "Networking",
       "level": "Senior",
       "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "DNS",
-        "Routing",
-        "Firewalls"
-      ]
+      "keywords": ["DNS", "Routing", "Firewalls"]
     },
     {
       "name": "Operating Systems",
       "level": "Senior",
       "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Linux",
-        "Windows"
-      ]
+      "keywords": ["Linux", "Windows"]
     },
     {
       "name": "Build Automation",
       "level": "Senior",
       "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Ansible"
-      ]
+      "keywords": ["Ansible"]
     }
-
   ],
   "languages": [
     {
