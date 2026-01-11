@@ -51,6 +51,15 @@ on:
   schedule:
     - cron: "0 0 * * *" # Run daily at midnight
   workflow_dispatch: # Allow manual trigger
+    inputs:
+      test_matrix:
+        description: "Use a dedicated test matrix (default or combo)"
+        type: choice
+        required: false
+        default: default
+        options:
+          - default
+          - combo
   # Uncomment below to update stats on every push to main
   # push:
   #   branches:
@@ -98,6 +107,7 @@ jobs:
         id: parse
         env:
           REPO_OWNER: ${{ github.repository_owner }}
+          TEST_MATRIX: ${{ github.event.inputs.test_matrix || 'default' }}
         run: |
           python3 -c "
           import yaml, json, os
@@ -113,6 +123,13 @@ jobs:
               repo_description_lines_max = data.get('repo_description_lines_max', 2)
               if not users:
                   users = [os.environ.get('REPO_OWNER', '')]
+              if os.environ.get('TEST_MATRIX') == 'combo':
+                  repos = [
+                      'kuthulux/gnome-connection-manager',
+                      'freeseacher/gnome-connection-manager',
+                      'endavis/gnome-connection-manager',
+                  ]
+                  users = sorted({r.split('/', 1)[0] for r in repos})
               matrix = []
               for r in repos:
                   if '/' in r:
