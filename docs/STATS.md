@@ -213,6 +213,32 @@ push:
     - main
 ```
 
+### Optional: Generate Self-Hosted Trophies
+
+If you enable trophies and use branch/local stats, the workflow can generate
+SVG files using `ryo-ma/github-profile-trophy` and commit them to the stats branch.
+
+1. Enable trophies in `_config.yml`:
+
+   ```yaml
+   repo_trophies:
+     enabled: true
+     theme_light: flat
+     theme_dark: gitdimmed
+   ```
+
+2. Ensure `repo_stats_type` is set to `branch` or `local`.
+3. Run the "Update GitHub Stats" workflow.
+
+The workflow generates files named:
+
+- `trophies_<username>_light_c6.svg`
+- `trophies_<username>_light_c4.svg`
+- `trophies_<username>_light_c3.svg`
+- `trophies_<username>_dark_c6.svg`
+- `trophies_<username>_dark_c4.svg`
+- `trophies_<username>_dark_c3.svg`
+
 ## Local Mode Setup
 
 ### Step 1: Generate Stats Locally
@@ -241,12 +267,17 @@ mkdir -p assets/img/stats
 # Copy your SVG files
 cp user_stats_*.svg assets/img/stats/
 cp repo_*_*.svg assets/img/stats/
+cp trophies_*_c*.svg assets/img/stats/
 
 # If you generated stats manually, ensure repo files are named:
 # repo_<owner>_<repo>.svg (example: repo_octocat_hello-world.svg)
 #
 # User files should be named:
 # user_stats_<username>.svg (example: user_stats_octocat.svg)
+
+# Trophy files should be named:
+# trophies_<username>_light_c6.svg (example: trophies_octocat_light_c6.svg)
+# trophies_<username>_dark_c6.svg (example: trophies_octocat_dark_c6.svg)
 
 # Commit
 git add assets/img/stats/*.svg
@@ -281,6 +312,12 @@ external_services:
 # Theme colors for stats
 repo_theme_light: default
 repo_theme_dark: dark
+
+# Trophy configuration
+repo_trophies:
+  enabled: false
+  theme_light: flat
+  theme_dark: gitdimmed
 ```
 
 ### Workflow Configuration

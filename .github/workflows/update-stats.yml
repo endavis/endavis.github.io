@@ -65,6 +65,10 @@ jobs:
     outputs:
       repos: ${{ steps.parse.outputs.repos }}
       users: ${{ steps.parse.outputs.users }}
+      trophies_enabled: ${{ steps.parse.outputs.trophies_enabled }}
+      trophy_theme_light: ${{ steps.parse.outputs.trophy_theme_light }}
+      trophy_theme_dark: ${{ steps.parse.outputs.trophy_theme_dark }}
+      repo_stats_type: ${{ steps.parse.outputs.repo_stats_type }}
     steps:
       - uses: actions/checkout@v3
       - name: Install PyYAML
@@ -87,10 +91,21 @@ jobs:
                   if '/' in r:
                       u, n = r.split('/')
                       matrix.append({'user': u, 'repo': n})
+          with open('_config.yml', 'r') as f:
+              config = yaml.safe_load(f) or {}
+              repo_stats_type = str(config.get('repo_stats_type', 'external'))
+              repo_trophies = config.get('repo_trophies', {}) or {}
+              trophies_enabled = bool(repo_trophies.get('enabled', False))
+              trophy_theme_light = str(repo_trophies.get('theme_light', 'flat'))
+              trophy_theme_dark = str(repo_trophies.get('theme_dark', 'gitdimmed'))
               print(f'Matrix: {json.dumps(matrix)}')
               with open(os.environ['GITHUB_OUTPUT'], 'a') as fh:
                   print(f'repos={json.dumps(matrix)}', file=fh)
                   print(f'users={json.dumps(users)}', file=fh)
+                  print(f'trophies_enabled={str(trophies_enabled).lower()}', file=fh)
+                  print(f'trophy_theme_light={trophy_theme_light}', file=fh)
+                  print(f'trophy_theme_dark={trophy_theme_dark}', file=fh)
+                  print(f'repo_stats_type={repo_stats_type}', file=fh)
           "
 
   generate-user-stats:
@@ -153,9 +168,72 @@ jobs:
             repo_${{ matrix.user }}_${{ matrix.repo }}.svg
             /metrics_renders/repo_${{ matrix.user }}_${{ matrix.repo }}.svg
 
+  generate-trophies:
+    name: Generate Trophies for ${{ matrix.user }}
+    needs: prepare
+    if: ${{ needs.prepare.outputs.trophies_enabled == 'true' && needs.prepare.outputs.repo_stats_type != 'external' }}
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        user: ${{ fromJson(needs.prepare.outputs.users) }}
+    env:
+      PORT: 8080
+      GITHUB_TOKEN1: ${{ secrets.METRICS_TOKEN }}
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Deno
+        uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.x
+      - name: Start Trophy Server
+        run: |
+          deno run -A https://raw.githubusercontent.com/ryo-ma/github-profile-trophy/master/main.ts &
+          echo $! > /tmp/trophy_pid
+          ready=0
+          for i in {1..30}; do
+            if curl -sSf "http://localhost:8080/?username=${{ matrix.user }}" > /dev/null; then
+              ready=1
+              break
+            fi
+            sleep 1
+          done
+          if [ "$ready" -ne 1 ]; then
+            echo "Trophy server failed to start" >&2
+            exit 1
+          fi
+      - name: Generate Trophy SVGs
+        env:
+          USERNAME: ${{ matrix.user }}
+          TROPHY_THEME_LIGHT: ${{ needs.prepare.outputs.trophy_theme_light }}
+          TROPHY_THEME_DARK: ${{ needs.prepare.outputs.trophy_theme_dark }}
+        run: |
+          set -euo pipefail
+          for theme in light dark; do
+            if [ "$theme" = "light" ]; then
+              trophy_theme="$TROPHY_THEME_LIGHT"
+            else
+              trophy_theme="$TROPHY_THEME_DARK"
+            fi
+            for column in 6 4 3; do
+              curl -sSf "http://localhost:8080/?username=${USERNAME}&theme=${trophy_theme}&column=${column}&margin-w=15&margin-h=15&no-bg=true&rank=-C" \
+                -o "trophies_${USERNAME}_${theme}_c${column}.svg"
+            done
+          done
+      - name: Stop Trophy Server
+        if: always()
+        run: |
+          if [ -f /tmp/trophy_pid ]; then
+            kill "$(cat /tmp/trophy_pid)" || true
+          fi
+      - name: Upload Trophies
+        uses: actions/upload-artifact@v4
+        with:
+          name: stats-trophies-${{ matrix.user }}
+          path: trophies_${{ matrix.user }}_*.svg
+
   commit-stats:
-    needs: [generate-user-stats, generate-repo-stats]
-    if: ${{ needs.generate-user-stats.result == 'success' && (needs.generate-repo-stats.result == 'success' || needs.generate-repo-stats.result == 'skipped') }}
+    needs: [generate-user-stats, generate-repo-stats, generate-trophies]
+    if: ${{ needs.generate-user-stats.result == 'success' && (needs.generate-repo-stats.result == 'success' || needs.generate-repo-stats.result == 'skipped') && (needs.generate-trophies.result == 'success' || needs.generate-trophies.result == 'skipped') }}
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -177,6 +255,14 @@ jobs:
         if: ${{ needs.generate-repo-stats.result == 'success' }}
         with:
           pattern: stats-repo-*
+          path: assets/img/stats/
+          merge-multiple: true
+
+      - name: Download Trophies
+        uses: actions/download-artifact@v4
+        if: ${{ needs.generate-trophies.result == 'success' }}
+        with:
+          pattern: stats-trophies-*
           path: assets/img/stats/
           merge-multiple: true
 
