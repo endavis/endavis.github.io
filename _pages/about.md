@@ -12,6 +12,7 @@ social: false # includes social icons at the bottom of the page
 Hi! My name is Eric and I've been around the sun about half a century at this point.
 
 My interests are (in no particular order):
+
 - Video Games, mainly RPGs
 - Board and Card games, especially with friends!
 - Playing around with my home lab
@@ -19,4 +20,3 @@ My interests are (in no particular order):
 - Food
 
 My current 9 to 5 is an Information Systems Administrator with a focus on storage.
-
