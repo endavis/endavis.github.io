@@ -107,7 +107,9 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: stats-user
-          path: "*.svg"
+          path: |
+            user_stats.svg
+            /metrics_renders/user_stats.svg
 
   generate-repo-stats:
     name: Generate Stats for ${{ matrix.user }}/${{ matrix.repo }}
@@ -136,7 +138,9 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: stats-repo-${{ matrix.repo }}
-          path: /metrics_renders/repo_${{ matrix.repo }}.svg
+          path: |
+            repo_${{ matrix.repo }}.svg
+            /metrics_renders/repo_${{ matrix.repo }}.svg
 
   commit-stats:
     needs: [generate-user-stats, generate-repo-stats]
