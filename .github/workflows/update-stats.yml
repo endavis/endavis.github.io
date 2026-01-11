@@ -68,6 +68,11 @@ jobs:
       trophies_enabled: ${{ steps.parse.outputs.trophies_enabled }}
       trophy_theme_light: ${{ steps.parse.outputs.trophy_theme_light }}
       trophy_theme_dark: ${{ steps.parse.outputs.trophy_theme_dark }}
+      trophy_columns: ${{ steps.parse.outputs.trophy_columns }}
+      trophy_margin_w: ${{ steps.parse.outputs.trophy_margin_w }}
+      trophy_margin_h: ${{ steps.parse.outputs.trophy_margin_h }}
+      trophy_no_bg: ${{ steps.parse.outputs.trophy_no_bg }}
+      trophy_rank: ${{ steps.parse.outputs.trophy_rank }}
       repo_stats_type: ${{ steps.parse.outputs.repo_stats_type }}
       repo_stats_generators: ${{ steps.parse.outputs.repo_stats_generators }}
       use_metrics: ${{ steps.parse.outputs.use_metrics }}
@@ -76,6 +81,15 @@ jobs:
       repo_theme_dark: ${{ steps.parse.outputs.repo_theme_dark }}
       repo_description_lines_max: ${{ steps.parse.outputs.repo_description_lines_max }}
       readme_locale: ${{ steps.parse.outputs.readme_locale }}
+      readme_user_show_icons: ${{ steps.parse.outputs.readme_user_show_icons }}
+      readme_repo_extra_params: ${{ steps.parse.outputs.readme_repo_extra_params }}
+      metrics_user_base: ${{ steps.parse.outputs.metrics_user_base }}
+      metrics_user_repos_affiliations: ${{ steps.parse.outputs.metrics_user_repos_affiliations }}
+      metrics_user_repos_forks: ${{ steps.parse.outputs.metrics_user_repos_forks }}
+      metrics_repo_template: ${{ steps.parse.outputs.metrics_repo_template }}
+      metrics_repo_plugin_lines: ${{ steps.parse.outputs.metrics_repo_plugin_lines }}
+      metrics_repo_plugin_languages: ${{ steps.parse.outputs.metrics_repo_plugin_languages }}
+      metrics_repo_debug: ${{ steps.parse.outputs.metrics_repo_debug }}
     steps:
       - uses: actions/checkout@v3
       - name: Install PyYAML
@@ -87,6 +101,11 @@ jobs:
         run: |
           python3 -c "
           import yaml, json, os
+          def load_yaml(path):
+              if not os.path.exists(path):
+                  return {}
+              with open(path, 'r') as f:
+                  return yaml.safe_load(f) or {}
           with open('_data/repositories.yml', 'r') as f:
               data = yaml.safe_load(f)
               repos = data.get('github_repos', [])
@@ -128,21 +147,62 @@ jobs:
                       readme_locale = 'cn'
                   elif lang_last in ('tw', 'hk', 'mo', 'hant'):
                       readme_locale = 'zh-tw'
-              print(f'Matrix: {json.dumps(matrix)}')
-              with open(os.environ['GITHUB_OUTPUT'], 'a') as fh:
-                  print(f'repos={json.dumps(matrix)}', file=fh)
-                  print(f'users={json.dumps(users)}', file=fh)
-                  print(f'trophies_enabled={str(trophies_enabled).lower()}', file=fh)
-                  print(f'trophy_theme_light={trophy_theme_light}', file=fh)
-                  print(f'trophy_theme_dark={trophy_theme_dark}', file=fh)
-                  print(f'repo_stats_type={repo_stats_type}', file=fh)
-                  print(f'repo_stats_generators={repo_stats_generators}', file=fh)
-                  print(f'use_metrics={str(use_metrics).lower()}', file=fh)
-                  print(f'use_readme={str(use_readme).lower()}', file=fh)
-                  print(f'repo_theme_light={repo_theme_light}', file=fh)
-                  print(f'repo_theme_dark={repo_theme_dark}', file=fh)
-                  print(f'repo_description_lines_max={repo_description_lines_max}', file=fh)
-                  print(f'readme_locale={readme_locale}', file=fh)
+          metrics_config = load_yaml('.config/stats-metrics.yml')
+          readme_config = load_yaml('.config/stats-readme.yml')
+          trophies_config = load_yaml('.config/trophies.yml')
+
+          metrics_user = metrics_config.get('user', {}) or {}
+          metrics_repo = metrics_config.get('repo', {}) or {}
+          metrics_user_base = str(metrics_user.get('base', 'header, activity, community, repositories, metadata'))
+          metrics_user_repos_affiliations = str(metrics_user.get('repositories_affiliations', 'owner, collaborator, organization_member'))
+          metrics_user_repos_forks = str(metrics_user.get('repositories_forks', 'yes'))
+          metrics_repo_template = str(metrics_repo.get('template', 'repository'))
+          metrics_repo_plugin_lines = str(metrics_repo.get('plugin_lines', 'yes'))
+          metrics_repo_plugin_languages = str(metrics_repo.get('plugin_languages', 'yes'))
+          metrics_repo_debug = str(metrics_repo.get('debug', 'yes'))
+
+          readme_user = readme_config.get('user', {}) or {}
+          readme_repo = readme_config.get('repo', {}) or {}
+          readme_user_show_icons = bool(readme_user.get('show_icons', True))
+          readme_repo_extra_params = str(readme_repo.get('extra_params', '')).strip()
+
+          trophy_columns = trophies_config.get('columns', [6, 4, 3])
+          if not isinstance(trophy_columns, list):
+              trophy_columns = [6, 4, 3]
+          trophy_margin_w = int(trophies_config.get('margin_w', 15))
+          trophy_margin_h = int(trophies_config.get('margin_h', 15))
+          trophy_no_bg = bool(trophies_config.get('no_bg', True))
+          trophy_rank = str(trophies_config.get('rank', '-C'))
+
+          print(f'Matrix: {json.dumps(matrix)}')
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as fh:
+              print(f'repos={json.dumps(matrix)}', file=fh)
+              print(f'users={json.dumps(users)}', file=fh)
+              print(f'trophies_enabled={str(trophies_enabled).lower()}', file=fh)
+              print(f'trophy_theme_light={trophy_theme_light}', file=fh)
+              print(f'trophy_theme_dark={trophy_theme_dark}', file=fh)
+              print(f'trophy_columns={json.dumps(trophy_columns)}', file=fh)
+              print(f'trophy_margin_w={trophy_margin_w}', file=fh)
+              print(f'trophy_margin_h={trophy_margin_h}', file=fh)
+              print(f'trophy_no_bg={str(trophy_no_bg).lower()}', file=fh)
+              print(f'trophy_rank={trophy_rank}', file=fh)
+              print(f'repo_stats_type={repo_stats_type}', file=fh)
+              print(f'repo_stats_generators={repo_stats_generators}', file=fh)
+              print(f'use_metrics={str(use_metrics).lower()}', file=fh)
+              print(f'use_readme={str(use_readme).lower()}', file=fh)
+              print(f'repo_theme_light={repo_theme_light}', file=fh)
+              print(f'repo_theme_dark={repo_theme_dark}', file=fh)
+              print(f'repo_description_lines_max={repo_description_lines_max}', file=fh)
+              print(f'readme_locale={readme_locale}', file=fh)
+              print(f'readme_user_show_icons={str(readme_user_show_icons).lower()}', file=fh)
+              print(f'readme_repo_extra_params={readme_repo_extra_params}', file=fh)
+              print(f'metrics_user_base={metrics_user_base}', file=fh)
+              print(f'metrics_user_repos_affiliations={metrics_user_repos_affiliations}', file=fh)
+              print(f'metrics_user_repos_forks={metrics_user_repos_forks}', file=fh)
+              print(f'metrics_repo_template={metrics_repo_template}', file=fh)
+              print(f'metrics_repo_plugin_lines={metrics_repo_plugin_lines}', file=fh)
+              print(f'metrics_repo_plugin_languages={metrics_repo_plugin_languages}', file=fh)
+              print(f'metrics_repo_debug={metrics_repo_debug}', file=fh)
           "
 
   generate-user-stats:
@@ -159,9 +219,9 @@ jobs:
         with:
           filename: user_stats_${{ matrix.user }}.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          base: header, activity, community, repositories, metadata
-          repositories_affiliations: owner, collaborator, organization_member
-          repositories_forks: yes
+          base: ${{ needs.prepare.outputs.metrics_user_base }}
+          repositories_affiliations: ${{ needs.prepare.outputs.metrics_user_repos_affiliations }}
+          repositories_forks: ${{ needs.prepare.outputs.metrics_user_repos_forks }}
           config_timezone: ${{ vars.STATS_TIMEZONE || 'UTC' }}
           user: ${{ matrix.user }}
           output_action: none # Do not commit, just generate
@@ -190,12 +250,12 @@ jobs:
         with:
           filename: repo_${{ matrix.user }}_${{ matrix.repo }}.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          template: repository
+          template: ${{ needs.prepare.outputs.metrics_repo_template }}
           user: ${{ matrix.user }}
           repo: ${{ matrix.repo }}
-          plugin_lines: yes
-          plugin_languages: yes
-          debug: yes
+          plugin_lines: ${{ needs.prepare.outputs.metrics_repo_plugin_lines }}
+          plugin_languages: ${{ needs.prepare.outputs.metrics_repo_plugin_languages }}
+          debug: ${{ needs.prepare.outputs.metrics_repo_debug }}
           output_action: none
       - name: List files
         run: ls -la /metrics_renders/
@@ -254,11 +314,12 @@ jobs:
           THEME_LIGHT: ${{ needs.prepare.outputs.repo_theme_light }}
           THEME_DARK: ${{ needs.prepare.outputs.repo_theme_dark }}
           LOCALE: ${{ needs.prepare.outputs.readme_locale }}
+          SHOW_ICONS: ${{ needs.prepare.outputs.readme_user_show_icons }}
         run: |
           set -euo pipefail
-          curl -sSf "http://localhost:${PORT}/api?username=${USERNAME}&theme=${THEME_LIGHT}&show_icons=true&locale=${LOCALE}" \
+          curl -sSf "http://localhost:${PORT}/api?username=${USERNAME}&theme=${THEME_LIGHT}&show_icons=${SHOW_ICONS}&locale=${LOCALE}" \
             -o "user_stats_readme_${USERNAME}_light.svg"
-          curl -sSf "http://localhost:${PORT}/api?username=${USERNAME}&theme=${THEME_DARK}&show_icons=true&locale=${LOCALE}" \
+          curl -sSf "http://localhost:${PORT}/api?username=${USERNAME}&theme=${THEME_DARK}&show_icons=${SHOW_ICONS}&locale=${LOCALE}" \
             -o "user_stats_readme_${USERNAME}_dark.svg"
       - name: Stop Readme Stats Server
         if: always()
@@ -322,11 +383,12 @@ jobs:
           THEME_LIGHT: ${{ needs.prepare.outputs.repo_theme_light }}
           THEME_DARK: ${{ needs.prepare.outputs.repo_theme_dark }}
           LOCALE: ${{ needs.prepare.outputs.readme_locale }}
+          EXTRA_PARAMS: ${{ needs.prepare.outputs.readme_repo_extra_params }}
         run: |
           set -euo pipefail
-          curl -sSf "http://localhost:${PORT}/api/pin/?username=${USERNAME}&repo=${REPO}&theme=${THEME_LIGHT}&show_owner=${SHOW_OWNER}&description_lines_count=${MAX_LINES}&locale=${LOCALE}" \
+          curl -sSf "http://localhost:${PORT}/api/pin/?username=${USERNAME}&repo=${REPO}&theme=${THEME_LIGHT}&show_owner=${SHOW_OWNER}&description_lines_count=${MAX_LINES}&locale=${LOCALE}${EXTRA_PARAMS}" \
             -o "repo_readme_${USERNAME}_${REPO}_light.svg"
-          curl -sSf "http://localhost:${PORT}/api/pin/?username=${USERNAME}&repo=${REPO}&theme=${THEME_DARK}&show_owner=${SHOW_OWNER}&description_lines_count=${MAX_LINES}&locale=${LOCALE}" \
+          curl -sSf "http://localhost:${PORT}/api/pin/?username=${USERNAME}&repo=${REPO}&theme=${THEME_DARK}&show_owner=${SHOW_OWNER}&description_lines_count=${MAX_LINES}&locale=${LOCALE}${EXTRA_PARAMS}" \
             -o "repo_readme_${USERNAME}_${REPO}_dark.svg"
       - name: Stop Readme Stats Server
         if: always()
@@ -378,16 +440,26 @@ jobs:
           USERNAME: ${{ matrix.user }}
           TROPHY_THEME_LIGHT: ${{ needs.prepare.outputs.trophy_theme_light }}
           TROPHY_THEME_DARK: ${{ needs.prepare.outputs.trophy_theme_dark }}
+          TROPHY_COLUMNS: ${{ needs.prepare.outputs.trophy_columns }}
+          TROPHY_MARGIN_W: ${{ needs.prepare.outputs.trophy_margin_w }}
+          TROPHY_MARGIN_H: ${{ needs.prepare.outputs.trophy_margin_h }}
+          TROPHY_NO_BG: ${{ needs.prepare.outputs.trophy_no_bg }}
+          TROPHY_RANK: ${{ needs.prepare.outputs.trophy_rank }}
         run: |
           set -euo pipefail
+          columns=$(python3 - <<'PY'
+          import json, os
+          print(' '.join(str(c) for c in json.loads(os.environ.get('TROPHY_COLUMNS', '[6,4,3]'))))
+          PY
+          )
           for theme in light dark; do
             if [ "$theme" = "light" ]; then
               trophy_theme="$TROPHY_THEME_LIGHT"
             else
               trophy_theme="$TROPHY_THEME_DARK"
             fi
-            for column in 6 4 3; do
-              curl -sSf "http://localhost:8080/?username=${USERNAME}&theme=${trophy_theme}&column=${column}&margin-w=15&margin-h=15&no-bg=true&rank=-C" \
+            for column in $columns; do
+              curl -sSf "http://localhost:8080/?username=${USERNAME}&theme=${trophy_theme}&column=${column}&margin-w=${TROPHY_MARGIN_W}&margin-h=${TROPHY_MARGIN_H}&no-bg=${TROPHY_NO_BG}&rank=${TROPHY_RANK}" \
                 -o "trophies_${USERNAME}_${theme}_c${column}.svg"
             done
           done

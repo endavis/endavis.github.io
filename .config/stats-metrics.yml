@@ -1,0 +1,10 @@
+user:
+  base: header, activity, community, repositories, metadata
+  repositories_affiliations: owner, collaborator, organization_member
+  repositories_forks: yes
+
+repo:
+  template: repository
+  plugin_lines: yes
+  plugin_languages: yes
+  debug: yes

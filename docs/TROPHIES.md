@@ -33,6 +33,22 @@ the stats branch (branch mode) or expects them on the main branch (local mode).
 
 - `METRICS_TOKEN` secret is required (same token used by stats generation).
 - Workflow: `.github/workflows/update-stats.yml`
+- Config: `.config/trophies.yml`
+
+### Workflow Config File
+
+You can tune trophy rendering via `.config/trophies.yml`:
+
+```yaml
+columns:
+  - 6
+  - 4
+  - 3
+margin_w: 15
+margin_h: 15
+no_bg: true
+rank: "-C"
+```
 
 ### Generated Files
 

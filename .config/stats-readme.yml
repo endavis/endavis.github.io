@@ -1,0 +1,6 @@
+user:
+  show_icons: true
+
+repo:
+  # Extra query params appended to the repo stats call, e.g. "&hide_border=true"
+  extra_params: ""

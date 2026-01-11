@@ -227,6 +227,14 @@ repo_stats_generators: both # metrics, readme, or both
 The workflow will spin up a local github-readme-stats server and render SVGs
 using your existing `METRICS_TOKEN` secret.
 
+### Workflow Config Files
+
+Workflow-specific settings live in `.config/` so you can tune services without
+editing the workflow file.
+
+- `.config/stats-metrics.yml`: lowlighter/metrics options
+- `.config/stats-readme.yml`: github-readme-stats query options
+
 ### Optional: Generate Self-Hosted Trophies
 
 If you enable trophies and use branch/local stats, the workflow can generate
