@@ -512,7 +512,7 @@ jobs:
 
   commit-stats:
     needs: [prepare, generate-user-stats, generate-repo-stats, generate-readme-user-stats, generate-readme-repo-stats, generate-trophies]
-    if: ${{ needs.prepare.outputs.repo_stats_type != 'external' && !failure() && !cancelled() }}
+    if: ${{ needs.prepare.outputs.repo_stats_type == 'branch' && !failure() && !cancelled() }}
     runs-on: ubuntu-latest
     permissions:
       contents: write
