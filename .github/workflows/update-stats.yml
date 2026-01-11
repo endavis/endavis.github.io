@@ -1,3 +1,50 @@
+# ============================================================================
+# GitHub Stats Update Workflow
+# ============================================================================
+#
+# This workflow automatically generates GitHub repository statistics and user
+# profile cards using lowlighter/metrics and commits them to a separate 'stats'
+# branch. These stats are then displayed on your site's /repositories/ page.
+#
+# REQUIRED SETUP:
+# ---------------
+# 1. Create a Personal Access Token (classic):
+#    - Go to: https://github.com/settings/tokens
+#    - Scopes: public_repo, read:user
+#    - Add as repository secret named: METRICS_TOKEN
+#
+# 2. Create the 'stats' branch:
+#    git checkout --orphan stats
+#    git rm -rf .
+#    mkdir -p assets/img/stats
+#    touch assets/img/stats/.gitkeep
+#    git add assets/img/stats/.gitkeep
+#    git commit -m "Initialize stats branch"
+#    git push origin stats
+#    git checkout main
+#
+# 3. Update _config.yml:
+#    repo_stats_type: branch
+#    stats_branch_url: "https://raw.githubusercontent.com/<user>/<repo>/stats"
+#
+# OPTIONAL CONFIGURATION:
+# -----------------------
+# - STATS_TIMEZONE variable: Set custom timezone (defaults to UTC)
+#   Go to: Settings → Secrets and variables → Actions → Variables
+#   Add variable: STATS_TIMEZONE (e.g., "America/New_York")
+#
+# - Enable push trigger: Uncomment the 'push' section below to update
+#   stats on every push to main (may increase Actions usage)
+#
+# SCHEDULE:
+# ---------
+# - Runs daily at midnight UTC (cron: "0 0 * * *")
+# - Can be triggered manually via workflow_dispatch
+#
+# For detailed documentation, see: docs/STATS.md
+# For customization options, see: https://github.com/lowlighter/metrics
+# ============================================================================
+
 name: Update GitHub Stats
 
 on:

@@ -404,38 +404,21 @@ Photo formatting is made simple using [Bootstrap's grid system](https://getboots
 
 #### GitHub's repositories and user stats
 
-**al-folio** uses [github-readme-stats](https://github.com/anuraghazra/github-readme-stats) and [github-profile-trophy](https://github.com/ryo-ma/github-profile-trophy) to display GitHub repositories and user stats on the `/repositories/` page.
+**al-folio** can display GitHub repository statistics and user profiles on the `/repositories/` page using three different methods:
+
+- **External mode** (default): Uses [github-readme-stats](https://github.com/anuraghazra/github-readme-stats) Vercel API - works out of the box, no setup needed
+- **Branch mode**: Uses GitHub Actions to generate stats and store them on a separate branch - full control and customization
+- **Local mode**: Stats files committed to the main branch - complete control
 
 [![Repositories Preview](readme_preview/repositories.png)](https://alshedivat.github.io/al-folio/repositories/)
 
-Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories to the `/repositories/` page.
+**📖 For detailed setup instructions, configuration options, and troubleshooting, see [docs/STATS.md](docs/STATS.md)**
 
-You may also use the following codes for displaying this in any other pages.
+**Quick Start:**
 
-```html
-<!-- code for GitHub users -->
-{% if site.data.repositories.github_users %}
-<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-  {% for user in site.data.repositories.github_users %} {% include repository/repo_user.liquid username=user %} {% endfor %}
-</div>
-{% endif %}
-
-<!-- code for GitHub trophies -->
-{% if site.repo_trophies.enabled %} {% for user in site.data.repositories.github_users %} {% if site.data.repositories.github_users.size > 1 %}
-<h4>{{ user }}</h4>
-{% endif %}
-<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-  {% include repository/repo_trophies.liquid username=user %}
-</div>
-{% endfor %} {% endif %}
-
-<!-- code for GitHub repositories -->
-{% if site.data.repositories.github_repos %}
-<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-  {% for repo in site.data.repositories.github_repos %} {% include repository/repo.liquid repository=repo %} {% endfor %}
-</div>
-{% endif %}
-```
+1. Edit `_data/repositories.yml` to add your GitHub username and repositories
+2. That's it! The default external mode works immediately
+3. Optional: Follow the [branch mode setup guide](docs/STATS.md#branch-mode-setup) for self-hosted stats
 
 ---
 
