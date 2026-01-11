@@ -239,11 +239,14 @@ docker run --rm -it -v $(pwd):/metrics ghcr.io/lowlighter/metrics:latest \
 mkdir -p assets/img/stats
 
 # Copy your SVG files
-cp user_stats.svg assets/img/stats/
+cp user_stats_*.svg assets/img/stats/
 cp repo_*_*.svg assets/img/stats/
 
 # If you generated stats manually, ensure repo files are named:
 # repo_<owner>_<repo>.svg (example: repo_octocat_hello-world.svg)
+#
+# User files should be named:
+# user_stats_<username>.svg (example: user_stats_octocat.svg)
 
 # Commit
 git add assets/img/stats/*.svg

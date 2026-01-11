@@ -24,13 +24,13 @@
       <img
         class="w-100"
         alt="{{ include.username }}"
-        src="{{ '/assets/img/stats/user_stats.svg' | relative_url }}"
+        src="{{ '/assets/img/stats/user_stats_' | append: include.username | append: '.svg' | relative_url }}"
       >
     {% elsif site.repo_stats_type == 'branch' %}
       <img
         class="w-100"
         alt="{{ include.username }}"
-        src="{{ site.stats_branch_url }}/assets/img/stats/user_stats.svg"
+        src="{{ site.stats_branch_url }}/assets/img/stats/user_stats_{{ include.username }}.svg"
       >
     {% else %}
       <img

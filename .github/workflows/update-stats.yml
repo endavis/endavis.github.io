@@ -64,18 +64,24 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       repos: ${{ steps.parse.outputs.repos }}
+      users: ${{ steps.parse.outputs.users }}
     steps:
       - uses: actions/checkout@v3
       - name: Install PyYAML
         run: pip install pyyaml
       - name: Parse repositories.yml
         id: parse
+        env:
+          REPO_OWNER: ${{ github.repository_owner }}
         run: |
           python3 -c "
           import yaml, json, os
           with open('_data/repositories.yml', 'r') as f:
               data = yaml.safe_load(f)
               repos = data.get('github_repos', [])
+              users = data.get('github_users', [])
+              if not users:
+                  users = [os.environ.get('REPO_OWNER', '')]
               matrix = []
               for r in repos:
                   if '/' in r:
@@ -84,32 +90,37 @@ jobs:
               print(f'Matrix: {json.dumps(matrix)}')
               with open(os.environ['GITHUB_OUTPUT'], 'a') as fh:
                   print(f'repos={json.dumps(matrix)}', file=fh)
+                  print(f'users={json.dumps(users)}', file=fh)
           "
 
   generate-user-stats:
     runs-on: ubuntu-latest
+    needs: prepare
+    strategy:
+      matrix:
+        user: ${{ fromJson(needs.prepare.outputs.users) }}
     steps:
       - uses: actions/checkout@v3
-      - name: Generate User Stats
+      - name: Generate User Stats (${{ matrix.user }})
         uses: lowlighter/metrics@latest
         with:
-          filename: user_stats.svg
+          filename: user_stats_${{ matrix.user }}.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: header, activity, community, repositories, metadata
           repositories_affiliations: owner, collaborator, organization_member
           repositories_forks: yes
           config_timezone: ${{ vars.STATS_TIMEZONE || 'UTC' }}
-          user: ${{ github.repository_owner }}
+          user: ${{ matrix.user }}
           output_action: none # Do not commit, just generate
       - name: List files
         run: ls -R
       - name: Upload User Stats
         uses: actions/upload-artifact@v4
         with:
-          name: stats-user
+          name: stats-user-${{ matrix.user }}
           path: |
-            user_stats.svg
-            /metrics_renders/user_stats.svg
+            user_stats_${{ matrix.user }}.svg
+            /metrics_renders/user_stats_${{ matrix.user }}.svg
 
   generate-repo-stats:
     name: Generate Stats for ${{ matrix.user }}/${{ matrix.repo }}
@@ -156,8 +167,9 @@ jobs:
       - name: Download User Stats
         uses: actions/download-artifact@v4
         with:
-          name: stats-user
+          pattern: stats-user-*
           path: assets/img/stats/
+          merge-multiple: true
 
       - name: Download Repo Stats
         uses: actions/download-artifact@v4
