@@ -1,0 +1,130 @@
+name: Update GitHub Stats
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # Run daily at midnight
+  workflow_dispatch: # Allow manual trigger
+  # Uncomment below to update stats on every push to main
+  # push:
+  #   branches:
+  #     - main
+
+permissions:
+  contents: write
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      repos: ${{ steps.parse.outputs.repos }}
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install PyYAML
+        run: pip install pyyaml
+      - name: Parse repositories.yml
+        id: parse
+        run: |
+          python3 -c "
+          import yaml, json, os
+          with open('_data/repositories.yml', 'r') as f:
+              data = yaml.safe_load(f)
+              repos = data.get('github_repos', [])
+              matrix = []
+              for r in repos:
+                  if '/' in r:
+                      u, n = r.split('/')
+                      matrix.append({'user': u, 'repo': n})
+              print(f'Matrix: {json.dumps(matrix)}')
+              with open(os.environ['GITHUB_OUTPUT'], 'a') as fh:
+                  print(f'repos={json.dumps(matrix)}', file=fh)
+          "
+
+  generate-user-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Generate User Stats
+        uses: lowlighter/metrics@latest
+        with:
+          filename: user_stats.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: header, activity, community, repositories, metadata
+          repositories_affiliations: owner, collaborator, organization_member
+          repositories_forks: yes
+          config_timezone: ${{ vars.STATS_TIMEZONE || 'UTC' }}
+          user: ${{ github.repository_owner }}
+          output_action: none # Do not commit, just generate
+      - name: List files
+        run: ls -R
+      - name: Upload User Stats
+        uses: actions/upload-artifact@v4
+        with:
+          name: stats-user
+          path: "*.svg"
+
+  generate-repo-stats:
+    name: Generate Stats for ${{ matrix.user }}/${{ matrix.repo }}
+    needs: prepare
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        include: ${{ fromJson(needs.prepare.outputs.repos) }}
+    steps:
+      - uses: actions/checkout@v3
+      - name: Generate Repo Stats (${{ matrix.repo }})
+        uses: lowlighter/metrics@latest
+        with:
+          filename: repo_${{ matrix.repo }}.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          template: repository
+          user: ${{ matrix.user }}
+          repo: ${{ matrix.repo }}
+          plugin_lines: yes
+          plugin_languages: yes
+          debug: yes
+          output_action: none
+      - name: List files
+        run: ls -la /metrics_renders/
+      - name: Upload Repo Stats
+        uses: actions/upload-artifact@v4
+        with:
+          name: stats-repo-${{ matrix.repo }}
+          path: /metrics_renders/repo_${{ matrix.repo }}.svg
+
+  commit-stats:
+    needs: [generate-user-stats, generate-repo-stats]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout Stats Branch
+        uses: actions/checkout@v3
+        with:
+          ref: stats
+
+      - name: Download User Stats
+        uses: actions/download-artifact@v4
+        with:
+          name: stats-user
+          path: assets/img/stats/
+
+      - name: Download Repo Stats
+        uses: actions/download-artifact@v4
+        with:
+          pattern: stats-repo-*
+          path: assets/img/stats/
+          merge-multiple: true
+
+      - name: Cleanup Stale Files
+        run: rm -f assets/img/stats/repo_bastproxy-py3.svg
+
+      - name: Debug File Structure
+        run: ls -R assets/img/stats/
+
+      - name: Commit and Push
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A assets/img/stats/
+          git commit -m "chore: update stats [skip ci]" || echo "No changes to commit"
+          git push

@@ -32,6 +32,13 @@ back_to_top: true # set to false to disable the back to top button
 repo_theme_light: default # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
 repo_theme_dark: dark # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
 
+# Repository stats source:
+# - "external": Use external service (e.g. vercel app)
+# - "local": Use local file (generated in main branch)
+# - "branch": Use raw file from separate branch (generated in stats branch)
+repo_stats_type: external
+stats_branch_url: "" # For "branch" mode: https://raw.githubusercontent.com/<username>/<repo>/stats
+
 # External services for stats (used when repo_stats_type is "external")
 external_services:
   github_readme_stats_url: https://github-readme-stats.vercel.app
