@@ -512,7 +512,7 @@ jobs:
 
   commit-stats:
     needs: [prepare, generate-user-stats, generate-repo-stats, generate-readme-user-stats, generate-readme-repo-stats, generate-trophies]
-    if: ${{ needs.prepare.outputs.repo_stats_type != 'external' && (needs.generate-user-stats.result == 'success' || needs.generate-user-stats.result == 'skipped') && (needs.generate-repo-stats.result == 'success' || needs.generate-repo-stats.result == 'skipped') && (needs.generate-readme-user-stats.result == 'success' || needs.generate-readme-user-stats.result == 'skipped') && (needs.generate-readme-repo-stats.result == 'success' || needs.generate-readme-repo-stats.result == 'skipped') && (needs.generate-trophies.result == 'success' || needs.generate-trophies.result == 'skipped') }}
+    if: ${{ needs.prepare.outputs.repo_stats_type != 'external' && (needs['generate-user-stats'].result == 'success' || needs['generate-user-stats'].result == 'skipped') && (needs['generate-repo-stats'].result == 'success' || needs['generate-repo-stats'].result == 'skipped') && (needs['generate-readme-user-stats'].result == 'success' || needs['generate-readme-user-stats'].result == 'skipped') && (needs['generate-readme-repo-stats'].result == 'success' || needs['generate-readme-repo-stats'].result == 'skipped') && (needs['generate-trophies'].result == 'success' || needs['generate-trophies'].result == 'skipped') }}
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -531,7 +531,7 @@ jobs:
 
       - name: Download Repo Stats
         uses: actions/download-artifact@v4
-        if: ${{ needs.generate-repo-stats.result == 'success' }}
+        if: ${{ needs['generate-repo-stats'].result == 'success' }}
         with:
           pattern: stats-repo-*
           path: assets/img/stats/
@@ -539,7 +539,7 @@ jobs:
 
       - name: Download Readme User Stats
         uses: actions/download-artifact@v4
-        if: ${{ needs.generate-readme-user-stats.result == 'success' }}
+        if: ${{ needs['generate-readme-user-stats'].result == 'success' }}
         with:
           pattern: stats-readme-user-*
           path: assets/img/stats/
@@ -547,7 +547,7 @@ jobs:
 
       - name: Download Readme Repo Stats
         uses: actions/download-artifact@v4
-        if: ${{ needs.generate-readme-repo-stats.result == 'success' }}
+        if: ${{ needs['generate-readme-repo-stats'].result == 'success' }}
         with:
           pattern: stats-readme-repo-*
           path: assets/img/stats/
@@ -555,7 +555,7 @@ jobs:
 
       - name: Download Trophies
         uses: actions/download-artifact@v4
-        if: ${{ needs.generate-trophies.result == 'success' }}
+        if: ${{ needs['generate-trophies'].result == 'success' }}
         with:
           pattern: stats-trophies-*
           path: assets/img/stats/
