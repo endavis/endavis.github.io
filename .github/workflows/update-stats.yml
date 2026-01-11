@@ -280,7 +280,7 @@ jobs:
       - name: Upload Repo Stats
         uses: actions/upload-artifact@v4
         with:
-          name: stats-repo-${{ matrix.repo }}
+          name: stats-repo-${{ matrix.user }}-${{ matrix.repo }}
           path: |
             repo_${{ matrix.user }}_${{ matrix.repo }}.svg
             /metrics_renders/repo_${{ matrix.user }}_${{ matrix.repo }}.svg
