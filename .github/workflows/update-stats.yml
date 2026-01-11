@@ -524,6 +524,7 @@ jobs:
 
       - name: Download User Stats
         uses: actions/download-artifact@v4
+        if: ${{ needs.prepare.outputs.use_metrics == 'true' }}
         with:
           pattern: stats-user-*
           path: assets/img/stats/
@@ -531,7 +532,7 @@ jobs:
 
       - name: Download Repo Stats
         uses: actions/download-artifact@v4
-        if: ${{ needs['generate-repo-stats'].result == 'success' }}
+        if: ${{ needs.prepare.outputs.use_metrics == 'true' && needs['generate-repo-stats'].result == 'success' }}
         with:
           pattern: stats-repo-*
           path: assets/img/stats/
