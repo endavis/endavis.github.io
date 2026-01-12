@@ -29,7 +29,7 @@ user:
       enabled: yes
       limit: 5 # Number of recent events to display
       timestamps: yes # Show timestamps
-      visibility: all # all, public, or private
+      visibility: public # all, public, or private (use 'all' only if token has full 'repo' scope)
     # ISO calendar - contribution calendar
     isocalendar:
       enabled: yes
