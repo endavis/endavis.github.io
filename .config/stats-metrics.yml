@@ -10,23 +10,24 @@ user:
   # Plugins for user stats
   # Each plugin can be enabled/disabled and configured with specific settings
   plugins:
-    habits:
-      enabled: yes
-      charts: yes
-      from: 200
-      days: 14
-      facts: yes
-      trim: yes
+    # Disabled temporarily to debug hanging issue
+    # habits:
+    #   enabled: yes
+    #   charts: yes
+    #   from: 200
+    #   days: 14
+    #   facts: yes
+    #   trim: yes
     languages:
       enabled: yes
       details: bytes-size, percentage
-      sections: most-used
-      indepth: yes
+      # indepth can cause timeouts on large repos
+      # indepth: yes
       analysis_timeout: 15
-    achievements:
-      enabled: yes
-      display: compact
-      threshold: C
+    # achievements:
+    #   enabled: yes
+    #   display: compact
+    #   threshold: C
 
 repo:
   # Repository template and base settings
