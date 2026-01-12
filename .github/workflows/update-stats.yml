@@ -13,19 +13,12 @@
 #    - Scopes: public_repo, read:user
 #    - Add as repository secret named: METRICS_TOKEN
 #
-# 2. Create the 'stats' branch:
-#    git checkout --orphan stats
-#    git rm -rf .
-#    mkdir -p assets/img/stats
-#    touch assets/img/stats/.gitkeep
-#    git add assets/img/stats/.gitkeep
-#    git commit -m "Initialize stats branch"
-#    git push origin stats
-#    git checkout main
-#
-# 3. Update _config.yml:
+# 2. Update _config.yml:
 #    repo_stats_type: branch
 #    stats_branch_url: "https://raw.githubusercontent.com/<user>/<repo>/stats"
+#
+# 3. Run the workflow:
+#    The 'stats' branch will be created automatically on first run if it doesn't exist.
 #
 # OPTIONAL CONFIGURATION:
 # -----------------------
@@ -522,10 +515,30 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: Checkout Stats Branch
+      - name: Checkout Repository
         uses: actions/checkout@v3
         with:
-          ref: stats
+          fetch-depth: 0
+
+      - name: Create Stats Branch if Needed
+        run: |
+          set -euo pipefail
+          if git ls-remote --exit-code --heads origin stats >/dev/null 2>&1; then
+            echo "Stats branch exists, checking out..."
+            git checkout stats
+          else
+            echo "Stats branch doesn't exist, creating it..."
+            git checkout --orphan stats
+            git rm -rf . || true
+            mkdir -p assets/img/stats
+            touch assets/img/stats/.gitkeep
+            git add assets/img/stats/.gitkeep
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git commit -m "Initialize stats branch"
+            git push origin stats
+            echo "Stats branch created and pushed"
+          fi
 
       - name: Download User Stats
         uses: actions/download-artifact@v4

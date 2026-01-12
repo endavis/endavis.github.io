@@ -142,33 +142,7 @@ See [Local Mode Setup](#local-mode-setup) for instructions.
 4. Value: Paste the token from Step 1
 5. Click "Add secret"
 
-### Step 3: Create the Stats Branch
-
-Run these commands in your repository:
-
-```bash
-# Create an orphan branch (no commit history)
-git checkout --orphan stats
-
-# Remove all files from the working directory
-git rm -rf .
-
-# Create the stats directory
-mkdir -p assets/img/stats
-
-# Create a .gitkeep file so the directory can be committed
-touch assets/img/stats/.gitkeep
-
-# Commit and push
-git add assets/img/stats/.gitkeep
-git commit -m "Initialize stats branch"
-git push origin stats
-
-# Go back to main branch
-git checkout main
-```
-
-### Step 4: Update Configuration
+### Step 3: Update Configuration
 
 Edit `_config.yml`:
 
@@ -182,13 +156,16 @@ stats_branch_url: "https://raw.githubusercontent.com/<your-username>/<your-repo>
 
 Replace `<your-username>` and `<your-repo>` with your actual GitHub username and repository name.
 
-### Step 5: Run the Workflow
+### Step 4: Run the Workflow
 
 1. Go to your repository's Actions tab
 2. Click on "Update GitHub Stats" workflow
 3. Click "Run workflow" → "Run workflow"
 4. Wait for it to complete (~1-2 minutes)
-5. Check the `stats` branch - you should see new SVG files!
+5. The workflow will automatically create the `stats` branch if it doesn't exist
+6. Check the `stats` branch - you should see new SVG files!
+
+**Note:** The `stats` branch is created automatically on the first workflow run. You don't need to create it manually.
 
 ### Optional: Configure Timezone
 

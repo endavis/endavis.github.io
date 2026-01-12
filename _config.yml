@@ -36,8 +36,8 @@ repo_theme_dark: dark # https://github.com/anuraghazra/github-readme-stats/blob/
 # - "external": Use external service (e.g. vercel app)
 # - "local": Use local file (generated in main branch)
 # - "branch": Use raw file from separate branch (generated in stats branch)
-repo_stats_type: external
-stats_branch_url: "" # For "branch" mode: https://raw.githubusercontent.com/<username>/<repo>/stats
+repo_stats_type: branch
+stats_branch_url: "https://raw.githubusercontent.com/endavis/endavis.github.io/stats" # For "branch" mode: https://raw.githubusercontent.com/<username>/<repo>/stats
 
 # Repository stats generators (used for branch/local mode):
 # - "metrics": Use lowlighter/metrics (default)
