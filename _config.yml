@@ -43,7 +43,7 @@ stats_branch_url: "https://raw.githubusercontent.com/endavis/endavis.github.io/s
 # - "metrics": Use lowlighter/metrics (default)
 # - "readme": Use github-readme-stats
 # - "both": Generate both and render side-by-side
-repo_stats_generators: metrics
+repo_stats_generators: both
 
 # External services for stats (used when repo_stats_type is "external")
 external_services:
