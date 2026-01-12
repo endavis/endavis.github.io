@@ -9,25 +9,29 @@ user:
 
   # Plugins for user stats
   # Each plugin can be enabled/disabled and configured with specific settings
+  # See: https://github.com/lowlighter/metrics#-plugins for all available plugins
   plugins:
-    # Disabled temporarily to debug hanging issue
-    # habits:
-    #   enabled: yes
-    #   charts: yes
-    #   from: 200
-    #   days: 14
-    #   facts: yes
-    #   trim: yes
+    # Coding habits chart - shows your daily activity patterns
+    habits:
+      enabled: yes
+      charts: yes
+      from: 200 # Number of events to analyze
+      days: 14 # Number of days to display
+      facts: yes # Show fun facts
+      trim: yes # Trim unused hours
+    # Languages statistics
     languages:
       enabled: yes
       details: bytes-size, percentage
-      # indepth can cause timeouts on large repos
+      # NOTE: indepth causes deep repo analysis and can timeout (15+ minutes)
+      # Only enable if you have few repositories or increase workflow timeout
       # indepth: yes
       analysis_timeout: 15
-    # achievements:
-    #   enabled: yes
-    #   display: compact
-    #   threshold: C
+    # Achievement badges
+    achievements:
+      enabled: yes
+      display: compact # compact or detailed
+      threshold: C # Only show achievements rank C and above
 
 repo:
   # Repository template and base settings
