@@ -84,6 +84,7 @@ jobs:
       repo_description_lines_max: ${{ steps.parse.outputs.repo_description_lines_max }}
       readme_locale: ${{ steps.parse.outputs.readme_locale }}
       readme_user_show_icons: ${{ steps.parse.outputs.readme_user_show_icons }}
+      readme_user_extra_params: ${{ steps.parse.outputs.readme_user_extra_params }}
       readme_repo_extra_params: ${{ steps.parse.outputs.readme_repo_extra_params }}
       metrics_user_base: ${{ steps.parse.outputs.metrics_user_base }}
       metrics_user_repos_affiliations: ${{ steps.parse.outputs.metrics_user_repos_affiliations }}
@@ -174,6 +175,7 @@ jobs:
           readme_user = readme_config.get('user', {}) or {}
           readme_repo = readme_config.get('repo', {}) or {}
           readme_user_show_icons = bool(readme_user.get('show_icons', True))
+          readme_user_extra_params = str(readme_user.get('extra_params', '')).strip()
           readme_repo_extra_params = str(readme_repo.get('extra_params', '')).strip()
 
           trophy_columns = trophies_config.get('columns', [6, 4, 3])
@@ -205,6 +207,7 @@ jobs:
               print(f'repo_description_lines_max={repo_description_lines_max}', file=fh)
               print(f'readme_locale={readme_locale}', file=fh)
               print(f'readme_user_show_icons={str(readme_user_show_icons).lower()}', file=fh)
+              print(f'readme_user_extra_params={readme_user_extra_params}', file=fh)
               print(f'readme_repo_extra_params={readme_repo_extra_params}', file=fh)
               print(f'metrics_user_base={metrics_user_base}', file=fh)
               print(f'metrics_user_repos_affiliations={metrics_user_repos_affiliations}', file=fh)
@@ -353,11 +356,12 @@ jobs:
           THEME_DARK: ${{ needs.prepare.outputs.repo_theme_dark }}
           LOCALE: ${{ needs.prepare.outputs.readme_locale }}
           SHOW_ICONS: ${{ needs.prepare.outputs.readme_user_show_icons }}
+          EXTRA_PARAMS: ${{ needs.prepare.outputs.readme_user_extra_params }}
         run: |
           set -euo pipefail
-          curl -sSf "http://localhost:${PORT}/api?username=${USERNAME}&theme=${THEME_LIGHT}&show_icons=${SHOW_ICONS}&locale=${LOCALE}" \
+          curl -sSf "http://localhost:${PORT}/api?username=${USERNAME}&theme=${THEME_LIGHT}&show_icons=${SHOW_ICONS}&locale=${LOCALE}${EXTRA_PARAMS}" \
             -o "user_stats_readme_${USERNAME}_light.svg"
-          curl -sSf "http://localhost:${PORT}/api?username=${USERNAME}&theme=${THEME_DARK}&show_icons=${SHOW_ICONS}&locale=${LOCALE}" \
+          curl -sSf "http://localhost:${PORT}/api?username=${USERNAME}&theme=${THEME_DARK}&show_icons=${SHOW_ICONS}&locale=${LOCALE}${EXTRA_PARAMS}" \
             -o "user_stats_readme_${USERNAME}_dark.svg"
       - name: Stop Readme Stats Server
         if: always()
