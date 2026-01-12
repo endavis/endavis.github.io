@@ -257,6 +257,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: stats-user-${{ matrix.user }}
+          retention-days: 1
           path: |
             user_stats_${{ matrix.user }}.svg
             /metrics_renders/user_stats_${{ matrix.user }}.svg
@@ -298,6 +299,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: stats-repo-${{ matrix.user }}-${{ matrix.repo }}
+          retention-days: 1
           path: |
             repo_${{ matrix.user }}_${{ matrix.repo }}.svg
             /metrics_renders/repo_${{ matrix.user }}_${{ matrix.repo }}.svg
@@ -366,6 +368,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: stats-readme-user-${{ matrix.user }}
+          retention-days: 1
           path: user_stats_readme_${{ matrix.user }}_*.svg
 
   generate-readme-repo-stats:
@@ -435,6 +438,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: stats-readme-repo-${{ matrix.user }}-${{ matrix.repo }}
+          retention-days: 1
           path: repo_readme_${{ matrix.user }}_${{ matrix.repo }}_*.svg
 
   generate-trophies:
@@ -508,6 +512,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: stats-trophies-${{ matrix.user }}
+          retention-days: 1
           path: trophies_${{ matrix.user }}_*.svg
 
   commit-stats:
