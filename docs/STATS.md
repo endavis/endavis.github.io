@@ -249,6 +249,8 @@ Option A: Run the GitHub Action workflow manually and download artifacts
 3. Download the workflow artifacts
 4. Extract SVG files
 
+**⚠️ Important:** Workflow artifacts are automatically deleted after 1 day. Download them promptly after the workflow completes.
+
 Option B: Use lowlighter/metrics locally (requires Docker):
 
 ```bash
@@ -347,12 +349,19 @@ The workflow runs:
 - **Manually** via workflow dispatch
 - **On push** to main (if uncommented)
 
+**Artifact Retention:**
+
+- Workflow artifacts are automatically deleted after 1 day
+- This prevents storage accumulation while allowing time for debugging
+- Final SVG files remain permanently in the stats branch (branch mode) or after manual commit (local mode)
+
 Edit `.github/workflows/update-stats.yml` to customize:
 
 - Cron schedule: Change the `cron` value
 - Timezone: Set `STATS_TIMEZONE` variable
 - Push trigger: Uncomment the `push` section
 - Stats options: Modify metrics configuration
+- Artifact retention: Change `retention-days` in upload-artifact steps (default: 1)
 
 For more customization options, see [lowlighter/metrics documentation](https://github.com/lowlighter/metrics).
 
