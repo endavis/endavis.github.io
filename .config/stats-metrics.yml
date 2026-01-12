@@ -1,10 +1,44 @@
+# Configuration for lowlighter/metrics stats generation
+# See: https://github.com/lowlighter/metrics for all available options
+
 user:
+  # Base sections to include in user stats
   base: header, activity, community, repositories, metadata
   repositories_affiliations: owner, collaborator, organization_member
   repositories_forks: yes
 
+  # Plugins for user stats
+  # Each plugin can be enabled/disabled and configured with specific settings
+  plugins:
+    habits:
+      enabled: yes
+      charts: yes
+      from: 200
+      days: 14
+      facts: yes
+      trim: yes
+    languages:
+      enabled: yes
+      details: bytes-size, percentage
+      sections: most-used, recently-used
+      indepth: yes
+      analysis_timeout: 15
+    achievements:
+      enabled: yes
+      display: compact
+      threshold: C
+
 repo:
+  # Repository template and base settings
   template: repository
-  plugin_lines: yes
-  plugin_languages: yes
   debug: yes
+
+  # Plugins for repository stats
+  plugins:
+    lines:
+      enabled: yes
+    languages:
+      enabled: yes
+      analysis_timeout: 15
+      categories: markup, programming
+      details: bytes-size, percentage

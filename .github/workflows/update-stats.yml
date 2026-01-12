@@ -86,13 +86,8 @@ jobs:
       readme_user_show_icons: ${{ steps.parse.outputs.readme_user_show_icons }}
       readme_user_extra_params: ${{ steps.parse.outputs.readme_user_extra_params }}
       readme_repo_extra_params: ${{ steps.parse.outputs.readme_repo_extra_params }}
-      metrics_user_base: ${{ steps.parse.outputs.metrics_user_base }}
-      metrics_user_repos_affiliations: ${{ steps.parse.outputs.metrics_user_repos_affiliations }}
-      metrics_user_repos_forks: ${{ steps.parse.outputs.metrics_user_repos_forks }}
-      metrics_repo_template: ${{ steps.parse.outputs.metrics_repo_template }}
-      metrics_repo_plugin_lines: ${{ steps.parse.outputs.metrics_repo_plugin_lines }}
-      metrics_repo_plugin_languages: ${{ steps.parse.outputs.metrics_repo_plugin_languages }}
-      metrics_repo_debug: ${{ steps.parse.outputs.metrics_repo_debug }}
+      metrics_user_params: ${{ steps.parse.outputs.metrics_user_params }}
+      metrics_repo_params: ${{ steps.parse.outputs.metrics_repo_params }}
     steps:
       - uses: actions/checkout@v3
       - name: Install PyYAML
@@ -162,15 +157,28 @@ jobs:
           readme_config = load_yaml('.config/stats-readme.yml')
           trophies_config = load_yaml('.config/trophies.yml')
 
+          # Parse metrics configuration with generic plugin support
+          def parse_metrics_params(config_section):
+              params = {}
+              plugins_dict = config_section.pop('plugins', {})
+              # Add non-plugin settings first
+              for key, value in config_section.items():
+                  params[key] = str(value)
+              # Parse plugins
+              for plugin_name, plugin_settings in (plugins_dict or {}).items():
+                  if not isinstance(plugin_settings, dict):
+                      continue
+                  for setting_key, setting_value in plugin_settings.items():
+                      if setting_key == 'enabled' and setting_value:
+                          params[f'plugin_{plugin_name}'] = str(setting_value)
+                      elif setting_key != 'enabled':
+                          params[f'plugin_{plugin_name}_{setting_key}'] = str(setting_value)
+              return params
+
           metrics_user = metrics_config.get('user', {}) or {}
           metrics_repo = metrics_config.get('repo', {}) or {}
-          metrics_user_base = str(metrics_user.get('base', 'header, activity, community, repositories, metadata'))
-          metrics_user_repos_affiliations = str(metrics_user.get('repositories_affiliations', 'owner, collaborator, organization_member'))
-          metrics_user_repos_forks = str(metrics_user.get('repositories_forks', 'yes'))
-          metrics_repo_template = str(metrics_repo.get('template', 'repository'))
-          metrics_repo_plugin_lines = str(metrics_repo.get('plugin_lines', 'yes'))
-          metrics_repo_plugin_languages = str(metrics_repo.get('plugin_languages', 'yes'))
-          metrics_repo_debug = str(metrics_repo.get('debug', 'yes'))
+          metrics_user_params = parse_metrics_params(dict(metrics_user))
+          metrics_repo_params = parse_metrics_params(dict(metrics_repo))
 
           readme_user = readme_config.get('user', {}) or {}
           readme_repo = readme_config.get('repo', {}) or {}
@@ -209,13 +217,8 @@ jobs:
               print(f'readme_user_show_icons={str(readme_user_show_icons).lower()}', file=fh)
               print(f'readme_user_extra_params={readme_user_extra_params}', file=fh)
               print(f'readme_repo_extra_params={readme_repo_extra_params}', file=fh)
-              print(f'metrics_user_base={metrics_user_base}', file=fh)
-              print(f'metrics_user_repos_affiliations={metrics_user_repos_affiliations}', file=fh)
-              print(f'metrics_user_repos_forks={metrics_user_repos_forks}', file=fh)
-              print(f'metrics_repo_template={metrics_repo_template}', file=fh)
-              print(f'metrics_repo_plugin_lines={metrics_repo_plugin_lines}', file=fh)
-              print(f'metrics_repo_plugin_languages={metrics_repo_plugin_languages}', file=fh)
-              print(f'metrics_repo_debug={metrics_repo_debug}', file=fh)
+              print(f'metrics_user_params={json.dumps(metrics_user_params)}', file=fh)
+              print(f'metrics_repo_params={json.dumps(metrics_repo_params)}', file=fh)
           "
 
   generate-user-stats:
@@ -227,14 +230,40 @@ jobs:
         user: ${{ fromJson(needs.prepare.outputs.users) }}
     steps:
       - uses: actions/checkout@v3
+      - name: Parse Metrics Parameters
+        id: metrics_params
+        env:
+          PARAMS_JSON: ${{ needs.prepare.outputs.metrics_user_params }}
+        run: |
+          echo "$PARAMS_JSON" | python3 -c "
+          import json, sys, os
+          params = json.load(sys.stdin)
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as fh:
+              for key, value in params.items():
+                  print(f'{key}={value}', file=fh)
+          "
       - name: Generate User Stats (${{ matrix.user }})
         uses: lowlighter/metrics@latest
         with:
           filename: user_stats_${{ matrix.user }}.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          base: ${{ needs.prepare.outputs.metrics_user_base }}
-          repositories_affiliations: ${{ needs.prepare.outputs.metrics_user_repos_affiliations }}
-          repositories_forks: ${{ needs.prepare.outputs.metrics_user_repos_forks }}
+          base: ${{ steps.metrics_params.outputs.base }}
+          repositories_affiliations: ${{ steps.metrics_params.outputs.repositories_affiliations }}
+          repositories_forks: ${{ steps.metrics_params.outputs.repositories_forks }}
+          plugin_habits: ${{ steps.metrics_params.outputs.plugin_habits }}
+          plugin_habits_charts: ${{ steps.metrics_params.outputs.plugin_habits_charts }}
+          plugin_habits_from: ${{ steps.metrics_params.outputs.plugin_habits_from }}
+          plugin_habits_days: ${{ steps.metrics_params.outputs.plugin_habits_days }}
+          plugin_habits_facts: ${{ steps.metrics_params.outputs.plugin_habits_facts }}
+          plugin_habits_trim: ${{ steps.metrics_params.outputs.plugin_habits_trim }}
+          plugin_languages: ${{ steps.metrics_params.outputs.plugin_languages }}
+          plugin_languages_details: ${{ steps.metrics_params.outputs.plugin_languages_details }}
+          plugin_languages_sections: ${{ steps.metrics_params.outputs.plugin_languages_sections }}
+          plugin_languages_indepth: ${{ steps.metrics_params.outputs.plugin_languages_indepth }}
+          plugin_languages_analysis_timeout: ${{ steps.metrics_params.outputs.plugin_languages_analysis_timeout }}
+          plugin_achievements: ${{ steps.metrics_params.outputs.plugin_achievements }}
+          plugin_achievements_display: ${{ steps.metrics_params.outputs.plugin_achievements_display }}
+          plugin_achievements_threshold: ${{ steps.metrics_params.outputs.plugin_achievements_threshold }}
           config_timezone: ${{ vars.STATS_TIMEZONE || 'UTC' }}
           user: ${{ matrix.user }}
           output_action: none # Do not commit, just generate
@@ -272,17 +301,32 @@ jobs:
         include: ${{ fromJson(needs.prepare.outputs.repos) }}
     steps:
       - uses: actions/checkout@v3
+      - name: Parse Metrics Parameters
+        id: metrics_params
+        env:
+          PARAMS_JSON: ${{ needs.prepare.outputs.metrics_repo_params }}
+        run: |
+          echo "$PARAMS_JSON" | python3 -c "
+          import json, sys, os
+          params = json.load(sys.stdin)
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as fh:
+              for key, value in params.items():
+                  print(f'{key}={value}', file=fh)
+          "
       - name: Generate Repo Stats (${{ matrix.repo }})
         uses: lowlighter/metrics@latest
         with:
           filename: repo_${{ matrix.user }}_${{ matrix.repo }}.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          template: ${{ needs.prepare.outputs.metrics_repo_template }}
+          template: ${{ steps.metrics_params.outputs.template }}
           user: ${{ matrix.user }}
           repo: ${{ matrix.repo }}
-          plugin_lines: ${{ needs.prepare.outputs.metrics_repo_plugin_lines }}
-          plugin_languages: ${{ needs.prepare.outputs.metrics_repo_plugin_languages }}
-          debug: ${{ needs.prepare.outputs.metrics_repo_debug }}
+          plugin_lines: ${{ steps.metrics_params.outputs.plugin_lines }}
+          plugin_languages: ${{ steps.metrics_params.outputs.plugin_languages }}
+          plugin_languages_analysis_timeout: ${{ steps.metrics_params.outputs.plugin_languages_analysis_timeout }}
+          plugin_languages_categories: ${{ steps.metrics_params.outputs.plugin_languages_categories }}
+          plugin_languages_details: ${{ steps.metrics_params.outputs.plugin_languages_details }}
+          debug: ${{ steps.metrics_params.outputs.debug }}
           output_action: none
       - name: Normalize Repo Stats Output
         run: |
