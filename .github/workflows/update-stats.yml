@@ -53,10 +53,10 @@ on:
         options:
           - default
           - combo
-  # Uncomment below to update stats on every push to main
-  # push:
-  #   branches:
-  #     - main
+  # Update stats on every push to main
+  push:
+    branches:
+      - main
 
 permissions:
   contents: write
