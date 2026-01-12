@@ -32,6 +32,26 @@ user:
       enabled: yes
       display: compact # compact or detailed
       threshold: C # Only show achievements rank C and above
+    # Notable contributions - shows your most notable contributions
+    notable:
+      enabled: yes
+      from: organization # organization or repository
+      repositories: yes # Show repository names
+    # Follow-up issues and PRs
+    followup:
+      enabled: yes
+      sections: user # user or repositories
+    # Reaction stats on issues/PRs
+    reactions:
+      enabled: yes
+      limit: 200 # Max number of issues/PRs to analyze
+      display: absolute # absolute or percentage
+    # People - followers and following
+    people:
+      enabled: yes
+      limit: 24 # Number of people to display
+      size: 28 # Avatar size
+      types: followers, following # followers, following, or both
 
 repo:
   # Repository template and base settings
