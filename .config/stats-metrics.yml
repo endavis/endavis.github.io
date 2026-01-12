@@ -20,7 +20,7 @@ user:
     languages:
       enabled: yes
       details: bytes-size, percentage
-      sections: most-used, recently-used
+      sections: most-used
       indepth: yes
       analysis_timeout: 15
     achievements:
