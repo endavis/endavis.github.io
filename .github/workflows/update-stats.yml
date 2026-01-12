@@ -268,10 +268,6 @@ jobs:
           plugin_notable: ${{ steps.metrics_params.outputs.plugin_notable }}
           plugin_notable_from: ${{ steps.metrics_params.outputs.plugin_notable_from }}
           plugin_notable_repositories: ${{ steps.metrics_params.outputs.plugin_notable_repositories }}
-          plugin_activity: ${{ steps.metrics_params.outputs.plugin_activity }}
-          plugin_activity_limit: ${{ steps.metrics_params.outputs.plugin_activity_limit }}
-          plugin_activity_timestamps: ${{ steps.metrics_params.outputs.plugin_activity_timestamps }}
-          plugin_activity_visibility: ${{ steps.metrics_params.outputs.plugin_activity_visibility }}
           plugin_isocalendar: ${{ steps.metrics_params.outputs.plugin_isocalendar }}
           plugin_isocalendar_duration: ${{ steps.metrics_params.outputs.plugin_isocalendar_duration }}
           plugin_topics: ${{ steps.metrics_params.outputs.plugin_topics }}
