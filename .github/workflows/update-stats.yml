@@ -238,11 +238,13 @@ jobs:
       - name: Normalize User Stats Output
         run: |
           set -euo pipefail
-          if [ ! -f "user_stats_${{ matrix.user }}.svg" ] && [ -f "/metrics_renders/user_stats.svg" ]; then
-            cp /metrics_renders/user_stats.svg "user_stats_${{ matrix.user }}.svg"
-          fi
-          if [ ! -f "/metrics_renders/user_stats_${{ matrix.user }}.svg" ] && [ -f "/metrics_renders/user_stats.svg" ]; then
-            cp /metrics_renders/user_stats.svg "/metrics_renders/user_stats_${{ matrix.user }}.svg"
+          # Check both absolute and relative paths for metrics output
+          if [ -f "user_stats.svg" ]; then
+            cp "user_stats.svg" "user_stats_${{ matrix.user }}.svg"
+          elif [ -f "metrics_renders/user_stats.svg" ]; then
+            cp "metrics_renders/user_stats.svg" "user_stats_${{ matrix.user }}.svg"
+          elif [ -f "/metrics_renders/user_stats.svg" ]; then
+            cp "/metrics_renders/user_stats.svg" "user_stats_${{ matrix.user }}.svg"
           fi
       - name: List files
         run: ls -R
@@ -251,9 +253,7 @@ jobs:
         with:
           name: stats-user-${{ matrix.user }}
           retention-days: 1
-          path: |
-            user_stats_${{ matrix.user }}.svg
-            /metrics_renders/user_stats_${{ matrix.user }}.svg
+          path: user_stats_${{ matrix.user }}.svg
 
   generate-repo-stats:
     name: Generate Stats for ${{ matrix.user }}/${{ matrix.repo }}
@@ -280,11 +280,13 @@ jobs:
       - name: Normalize Repo Stats Output
         run: |
           set -euo pipefail
-          if [ ! -f "repo_${{ matrix.user }}_${{ matrix.repo }}.svg" ] && [ -f "/metrics_renders/repo.svg" ]; then
-            cp /metrics_renders/repo.svg "repo_${{ matrix.user }}_${{ matrix.repo }}.svg"
-          fi
-          if [ ! -f "/metrics_renders/repo_${{ matrix.user }}_${{ matrix.repo }}.svg" ] && [ -f "/metrics_renders/repo.svg" ]; then
-            cp /metrics_renders/repo.svg "/metrics_renders/repo_${{ matrix.user }}_${{ matrix.repo }}.svg"
+          # Check both absolute and relative paths for metrics output
+          if [ -f "repo.svg" ]; then
+            cp "repo.svg" "repo_${{ matrix.user }}_${{ matrix.repo }}.svg"
+          elif [ -f "metrics_renders/repo.svg" ]; then
+            cp "metrics_renders/repo.svg" "repo_${{ matrix.user }}_${{ matrix.repo }}.svg"
+          elif [ -f "/metrics_renders/repo.svg" ]; then
+            cp "/metrics_renders/repo.svg" "repo_${{ matrix.user }}_${{ matrix.repo }}.svg"
           fi
       - name: List files
         run: ls -la /metrics_renders/
@@ -293,9 +295,7 @@ jobs:
         with:
           name: stats-repo-${{ matrix.user }}-${{ matrix.repo }}
           retention-days: 1
-          path: |
-            repo_${{ matrix.user }}_${{ matrix.repo }}.svg
-            /metrics_renders/repo_${{ matrix.user }}_${{ matrix.repo }}.svg
+          path: repo_${{ matrix.user }}_${{ matrix.repo }}.svg
 
   generate-readme-user-stats:
     name: Generate Readme Stats for ${{ matrix.user }}
@@ -581,7 +581,11 @@ jobs:
           merge-multiple: true
 
       - name: Cleanup Stale Files
-        run: rm -f assets/img/stats/repo_bastproxy-py3.svg assets/img/stats/repo_endavis_bastproxy-py3.svg
+        run: |
+          rm -f assets/img/stats/repo_bastproxy-py3.svg assets/img/stats/repo_endavis_bastproxy-py3.svg
+          rm -rf assets/img/stats/metrics_renders/
+          rm -f assets/img/stats/repo_bastproxy.svg assets/img/stats/repo_infrafoundry.svg
+          rm -f assets/img/stats/user_stats.svg
 
       - name: Debug File Structure
         run: ls -R assets/img/stats/
