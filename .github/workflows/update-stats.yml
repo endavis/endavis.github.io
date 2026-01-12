@@ -238,13 +238,17 @@ jobs:
       - name: Normalize User Stats Output
         run: |
           set -euo pipefail
-          # Check both absolute and relative paths for metrics output
-          if [ -f "user_stats.svg" ]; then
-            cp "user_stats.svg" "user_stats_${{ matrix.user }}.svg"
-          elif [ -f "metrics_renders/user_stats.svg" ]; then
-            cp "metrics_renders/user_stats.svg" "user_stats_${{ matrix.user }}.svg"
-          elif [ -f "/metrics_renders/user_stats.svg" ]; then
-            cp "/metrics_renders/user_stats.svg" "user_stats_${{ matrix.user }}.svg"
+          # Metrics saves to /metrics_renders/ with the full filename
+          if [ -f "/metrics_renders/user_stats_${{ matrix.user }}.svg" ]; then
+            cp "/metrics_renders/user_stats_${{ matrix.user }}.svg" "user_stats_${{ matrix.user }}.svg"
+          elif [ -f "metrics_renders/user_stats_${{ matrix.user }}.svg" ]; then
+            cp "metrics_renders/user_stats_${{ matrix.user }}.svg" "user_stats_${{ matrix.user }}.svg"
+          elif [ -f "user_stats_${{ matrix.user }}.svg" ]; then
+            echo "File already exists in current directory"
+          else
+            echo "Error: Could not find metrics output file"
+            ls -R /metrics_renders/ || true
+            exit 1
           fi
       - name: List files
         run: ls -R
@@ -280,13 +284,17 @@ jobs:
       - name: Normalize Repo Stats Output
         run: |
           set -euo pipefail
-          # Check both absolute and relative paths for metrics output
-          if [ -f "repo.svg" ]; then
-            cp "repo.svg" "repo_${{ matrix.user }}_${{ matrix.repo }}.svg"
-          elif [ -f "metrics_renders/repo.svg" ]; then
-            cp "metrics_renders/repo.svg" "repo_${{ matrix.user }}_${{ matrix.repo }}.svg"
-          elif [ -f "/metrics_renders/repo.svg" ]; then
-            cp "/metrics_renders/repo.svg" "repo_${{ matrix.user }}_${{ matrix.repo }}.svg"
+          # Metrics saves to /metrics_renders/ with the full filename
+          if [ -f "/metrics_renders/repo_${{ matrix.user }}_${{ matrix.repo }}.svg" ]; then
+            cp "/metrics_renders/repo_${{ matrix.user }}_${{ matrix.repo }}.svg" "repo_${{ matrix.user }}_${{ matrix.repo }}.svg"
+          elif [ -f "metrics_renders/repo_${{ matrix.user }}_${{ matrix.repo }}.svg" ]; then
+            cp "metrics_renders/repo_${{ matrix.user }}_${{ matrix.repo }}.svg" "repo_${{ matrix.user }}_${{ matrix.repo }}.svg"
+          elif [ -f "repo_${{ matrix.user }}_${{ matrix.repo }}.svg" ]; then
+            echo "File already exists in current directory"
+          else
+            echo "Error: Could not find metrics output file"
+            ls -R /metrics_renders/ || true
+            exit 1
           fi
       - name: List files
         run: ls -la /metrics_renders/
