@@ -262,20 +262,35 @@ jobs:
           base: ${{ steps.metrics_params.outputs.base }}
           repositories_affiliations: ${{ steps.metrics_params.outputs.repositories_affiliations }}
           repositories_forks: ${{ steps.metrics_params.outputs.repositories_forks }}
-          plugin_habits: ${{ steps.metrics_params.outputs.plugin_habits }}
-          plugin_habits_charts: ${{ steps.metrics_params.outputs.plugin_habits_charts }}
-          plugin_habits_from: ${{ steps.metrics_params.outputs.plugin_habits_from }}
-          plugin_habits_days: ${{ steps.metrics_params.outputs.plugin_habits_days }}
-          plugin_habits_facts: ${{ steps.metrics_params.outputs.plugin_habits_facts }}
-          plugin_habits_trim: ${{ steps.metrics_params.outputs.plugin_habits_trim }}
           plugin_languages: ${{ steps.metrics_params.outputs.plugin_languages }}
           plugin_languages_details: ${{ steps.metrics_params.outputs.plugin_languages_details }}
-          plugin_languages_sections: ${{ steps.metrics_params.outputs.plugin_languages_sections }}
-          plugin_languages_indepth: ${{ steps.metrics_params.outputs.plugin_languages_indepth }}
           plugin_languages_analysis_timeout: ${{ steps.metrics_params.outputs.plugin_languages_analysis_timeout }}
-          plugin_achievements: ${{ steps.metrics_params.outputs.plugin_achievements }}
-          plugin_achievements_display: ${{ steps.metrics_params.outputs.plugin_achievements_display }}
-          plugin_achievements_threshold: ${{ steps.metrics_params.outputs.plugin_achievements_threshold }}
+          plugin_notable: ${{ steps.metrics_params.outputs.plugin_notable }}
+          plugin_notable_from: ${{ steps.metrics_params.outputs.plugin_notable_from }}
+          plugin_notable_repositories: ${{ steps.metrics_params.outputs.plugin_notable_repositories }}
+          plugin_activity: ${{ steps.metrics_params.outputs.plugin_activity }}
+          plugin_activity_limit: ${{ steps.metrics_params.outputs.plugin_activity_limit }}
+          plugin_activity_timestamps: ${{ steps.metrics_params.outputs.plugin_activity_timestamps }}
+          plugin_activity_visibility: ${{ steps.metrics_params.outputs.plugin_activity_visibility }}
+          plugin_isocalendar: ${{ steps.metrics_params.outputs.plugin_isocalendar }}
+          plugin_isocalendar_duration: ${{ steps.metrics_params.outputs.plugin_isocalendar_duration }}
+          plugin_topics: ${{ steps.metrics_params.outputs.plugin_topics }}
+          plugin_topics_mode: ${{ steps.metrics_params.outputs.plugin_topics_mode }}
+          plugin_topics_limit: ${{ steps.metrics_params.outputs.plugin_topics_limit }}
+          plugin_code: ${{ steps.metrics_params.outputs.plugin_code }}
+          plugin_code_lines: ${{ steps.metrics_params.outputs.plugin_code_lines }}
+          plugin_code_load: ${{ steps.metrics_params.outputs.plugin_code_load }}
+          plugin_code_visibility: ${{ steps.metrics_params.outputs.plugin_code_visibility }}
+          plugin_stars: ${{ steps.metrics_params.outputs.plugin_stars }}
+          plugin_stars_limit: ${{ steps.metrics_params.outputs.plugin_stars_limit }}
+          plugin_stargazers: ${{ steps.metrics_params.outputs.plugin_stargazers }}
+          plugin_stargazers_charts: ${{ steps.metrics_params.outputs.plugin_stargazers_charts }}
+          plugin_stargazers_charts_type: ${{ steps.metrics_params.outputs.plugin_stargazers_charts_type }}
+          plugin_followup: ${{ steps.metrics_params.outputs.plugin_followup }}
+          plugin_followup_sections: ${{ steps.metrics_params.outputs.plugin_followup_sections }}
+          plugin_reactions: ${{ steps.metrics_params.outputs.plugin_reactions }}
+          plugin_reactions_limit: ${{ steps.metrics_params.outputs.plugin_reactions_limit }}
+          plugin_reactions_display: ${{ steps.metrics_params.outputs.plugin_reactions_display }}
           config_timezone: ${{ vars.STATS_TIMEZONE || 'UTC' }}
           user: ${{ matrix.user }}
           output_action: none # Do not commit, just generate
