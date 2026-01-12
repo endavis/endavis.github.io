@@ -163,16 +163,28 @@ jobs:
               plugins_dict = config_section.pop('plugins', {})
               # Add non-plugin settings first
               for key, value in config_section.items():
-                  params[key] = str(value)
+                  # Convert booleans to yes/no strings for lowlighter/metrics
+                  if isinstance(value, bool):
+                      params[key] = 'yes' if value else 'no'
+                  else:
+                      params[key] = str(value)
               # Parse plugins
               for plugin_name, plugin_settings in (plugins_dict or {}).items():
                   if not isinstance(plugin_settings, dict):
                       continue
                   for setting_key, setting_value in plugin_settings.items():
                       if setting_key == 'enabled' and setting_value:
-                          params[f'plugin_{plugin_name}'] = str(setting_value)
+                          # Enable the plugin
+                          if isinstance(setting_value, bool):
+                              params[f'plugin_{plugin_name}'] = 'yes' if setting_value else 'no'
+                          else:
+                              params[f'plugin_{plugin_name}'] = str(setting_value)
                       elif setting_key != 'enabled':
-                          params[f'plugin_{plugin_name}_{setting_key}'] = str(setting_value)
+                          # Add plugin setting
+                          if isinstance(setting_value, bool):
+                              params[f'plugin_{plugin_name}_{setting_key}'] = 'yes' if setting_value else 'no'
+                          else:
+                              params[f'plugin_{plugin_name}_{setting_key}'] = str(setting_value)
               return params
 
           metrics_user = metrics_config.get('user', {}) or {}
