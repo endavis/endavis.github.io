@@ -11,14 +11,6 @@ user:
   # Each plugin can be enabled/disabled and configured with specific settings
   # See: https://github.com/lowlighter/metrics#-plugins for all available plugins
   plugins:
-    # Coding habits chart - shows your daily activity patterns
-    habits:
-      enabled: yes
-      charts: yes
-      from: 200 # Number of events to analyze
-      days: 14 # Number of days to display
-      facts: yes # Show fun facts
-      trim: yes # Trim unused hours
     # Languages statistics
     languages:
       enabled: yes
@@ -27,16 +19,41 @@ user:
       # Only enable if you have few repositories or increase workflow timeout
       # indepth: yes
       analysis_timeout: 15
-    # Achievement badges
-    achievements:
-      enabled: yes
-      display: compact # compact or detailed
-      threshold: C # Only show achievements rank C and above
     # Notable contributions - shows your most notable contributions
     notable:
       enabled: yes
       from: organization # organization or repository
       repositories: yes # Show repository names
+    # Activity overview
+    activity:
+      enabled: yes
+      limit: 5 # Number of recent events to display
+      timestamps: yes # Show timestamps
+      visibility: all # all, public, or private
+    # ISO calendar - contribution calendar
+    isocalendar:
+      enabled: yes
+      duration: half-year # full-year or half-year
+    # Topics - your most used topics
+    topics:
+      enabled: yes
+      mode: icons # starred, mastered, or icons
+      limit: 15 # Number of topics to display
+    # Code snippet of the day
+    code:
+      enabled: yes
+      lines: 12 # Max lines to display
+      load: 100 # Number of events to analyze
+      visibility: public # public or all
+    # Stars - recently starred repos
+    stars:
+      enabled: yes
+      limit: 4 # Number of recently starred repos to display
+    # Stargazers chart
+    stargazers:
+      enabled: yes
+      charts: yes # Show charts
+      charts_type: classic # classic or chartist
     # Follow-up issues and PRs
     followup:
       enabled: yes
@@ -46,12 +63,12 @@ user:
       enabled: yes
       limit: 200 # Max number of issues/PRs to analyze
       display: absolute # absolute or percentage
-    # People - followers and following
-    people:
-      enabled: yes
-      limit: 24 # Number of people to display
-      size: 28 # Avatar size
-      types: followers, following # followers, following, or both
+    # NOTE: habits and achievements plugins are disabled
+    # They require web instance configuration not available in GitHub Actions
+    # habits:
+    #   enabled: no
+    # achievements:
+    #   enabled: no
 
 repo:
   # Repository template and base settings
