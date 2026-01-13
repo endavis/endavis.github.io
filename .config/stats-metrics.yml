@@ -68,27 +68,27 @@ user:
     # They require web instance configuration not available in GitHub Actions
     # Coding habits chart - DISABLED (requires web instance)
     habits:
-       enabled: yes
-       charts: yes
-       from: 200 # Number of events to analyze
-       days: 14 # Number of days to display
-       facts: yes # Show fun facts
-       trim: yes # Trim unused hours
-       
+      enabled: yes
+      charts: yes
+      from: 200 # Number of events to analyze
+      days: 14 # Number of days to display
+      facts: yes # Show fun facts
+      trim: yes # Trim unused hours
+
     # Achievement badges - DISABLED (requires web instance)
     achievements:
-       enabled: yes
-       display: compact # compact or detailed
-       threshold: C # Only show achievements rank C and above
+      enabled: yes
+      display: compact # compact or detailed
+      threshold: C # Only show achievements rank C and above
 
     # Activity overview - DISABLED (causes unexplained errors)
     # Base section already shows activity: commits, PRs, issues
     activity:
-       enabled: yes
-       limit: 5 # Number of recent events to display
-       timestamps: yes # Show timestamps
-       visibility: public # all, public, or private
-       
+      enabled: yes
+      limit: 5 # Number of recent events to display
+      timestamps: yes # Show timestamps
+      visibility: public # all, public, or private
+
 repo:
   # Repository template and base settings
   template: repository
