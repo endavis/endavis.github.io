@@ -64,9 +64,11 @@ user:
       enabled: yes
       limit: 200 # Max number of issues/PRs to analyze
       display: absolute # absolute or percentage
-    # NOTE: habits and achievements plugins are disabled
-    # They require web instance configuration not available in GitHub Actions
-    # Coding habits chart - DISABLED (requires web instance)
+    # NOTE: The following plugins have errors when enabled:
+
+    # Coding habits chart - ENABLED but has plugin bug
+    # Error: TypeError: Cannot destructure property 'author' of 'undefined'
+    # The habits plugin has a code bug where it tries to access undefined data
     habits:
       enabled: yes
       charts: yes
@@ -75,14 +77,19 @@ user:
       facts: yes # Show fun facts
       trim: yes # Trim unused hours
 
-    # Achievement badges - DISABLED (requires web instance)
+    # Achievement badges - ENABLED but uses deprecated API
+    # Error: Projects (classic) is being deprecated
+    # The achievements plugin queries GitHub Projects (classic) API which was
+    # deprecated in May 2024 and is no longer available
     achievements:
       enabled: yes
       display: compact # compact or detailed
       threshold: C # Only show achievements rank C and above
 
-    # Activity overview - DISABLED (causes unexplained errors)
-    # Base section already shows activity: commits, PRs, issues
+    # Activity overview - ENABLED but has plugin bug
+    # Error: TypeError: Cannot read properties of undefined (reading 'filter')
+    # The activity plugin has a code bug where it tries to filter undefined data
+    # Note: Base section already shows activity: commits, PRs, issues
     activity:
       enabled: yes
       limit: 5 # Number of recent events to display
