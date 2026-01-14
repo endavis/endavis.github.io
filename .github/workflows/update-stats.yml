@@ -302,6 +302,17 @@ jobs:
           plugin_reactions: ${{ steps.metrics_params.outputs.plugin_reactions }}
           plugin_reactions_limit: ${{ steps.metrics_params.outputs.plugin_reactions_limit }}
           plugin_reactions_display: ${{ steps.metrics_params.outputs.plugin_reactions_display }}
+          plugin_calendar: ${{ steps.metrics_params.outputs.plugin_calendar }}
+          plugin_calendar_limit: ${{ steps.metrics_params.outputs.plugin_calendar_limit }}
+          plugin_discussions: ${{ steps.metrics_params.outputs.plugin_discussions }}
+          plugin_gists: ${{ steps.metrics_params.outputs.plugin_gists }}
+          plugin_people: ${{ steps.metrics_params.outputs.plugin_people }}
+          plugin_people_limit: ${{ steps.metrics_params.outputs.plugin_people_limit }}
+          plugin_people_size: ${{ steps.metrics_params.outputs.plugin_people_size }}
+          plugin_people_types: ${{ steps.metrics_params.outputs.plugin_people_types }}
+          plugin_projects: ${{ steps.metrics_params.outputs.plugin_projects }}
+          plugin_projects_limit: ${{ steps.metrics_params.outputs.plugin_projects_limit }}
+          plugin_projects_descriptions: ${{ steps.metrics_params.outputs.plugin_projects_descriptions }}
           config_timezone: ${{ vars.STATS_TIMEZONE || 'UTC' }}
           user: ${{ matrix.user }}
           output_action: none # Do not commit, just generate
