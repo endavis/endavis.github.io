@@ -255,7 +255,7 @@ jobs:
                   print(f'{key}={value}', file=fh)
           "
       - name: Generate User Stats (${{ matrix.user }})
-        uses: lowlighter/metrics@latest
+        uses: endavis/metrics@fix/habits-activity-typeerror-bugs
         with:
           filename: user_stats_${{ matrix.user }}.svg
           token: ${{ secrets.METRICS_TOKEN }}
