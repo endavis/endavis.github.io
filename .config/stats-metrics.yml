@@ -96,6 +96,45 @@ user:
       timestamps: yes # Show timestamps
       visibility: public # all, public, or private
 
+    # Explicitly disable unconfigured plugins to prevent template rendering errors
+    # These plugins are not configured and will cause errors if attempted
+    wakatime:
+      enabled: no
+    chess:
+      enabled: no
+    crypto:
+      enabled: no
+    splatoon:
+      enabled: no
+    screenshot:
+      enabled: no
+    nightscout:
+      enabled: no
+    "16personalities":
+      enabled: no
+    contributors:
+      enabled: no
+    licenses:
+      enabled: no
+    music:
+      enabled: no
+    pagespeed:
+      enabled: no
+    posts:
+      enabled: no
+    rss:
+      enabled: no
+    skyline:
+      enabled: no
+    stackoverflow:
+      enabled: no
+    stock:
+      enabled: no
+    support:
+      enabled: no
+    tweets:
+      enabled: no
+
 repo:
   # Repository template and base settings
   template: repository
