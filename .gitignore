@@ -12,6 +12,7 @@ node_modules/
 vendor
 .idea
 .venv
-tmp/
 .venv/
 .envrc
+tmp/
+.cache/

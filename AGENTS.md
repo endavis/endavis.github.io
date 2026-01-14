@@ -1,94 +1,261 @@
-# Project Context: al-folio
+# AGENTS.md
 
-## Overview
+Guidelines for AI agents working on this repository.
 
-`al-folio` is a simple, clean, and responsive Jekyll theme designed specifically for academics. It serves as a template for creating personal websites, portfolios, or lab pages. It features a built-in CV, publication lists generated from BibTeX, news sections, and support for math and code.
+## Project Context
 
-## Architecture & Technologies
+This is a personal academic website built with the **al-folio** Jekyll theme, forked from [alshedivat/al-folio](https://github.com/alshedivat/al-folio). It includes custom GitHub stats and trophy generation functionality.
 
-- **Framework:** [Jekyll](https://jekyllrb.com/) (Static Site Generator).
-- **Language:** Ruby (for Jekyll and plugins), Liquid (templating), SCSS (styling).
-- **Dependencies:** Managed via `Gemfile` (Ruby gems) and `package.json` (Node.js for development tools like Prettier).
-- **Theme:** Custom theme with support for Light/Dark modes, responsive design, and integration with third-party services (Google Analytics, Disqus/Giscus, etc.).
+## Key Remotes
 
-## Key Files & Directories
+- `origin` - Personal site repository (endavis/endavis.github.io)
+- `upstream` - Original al-folio theme (alshedivat/al-folio)
+- `al-folio-fork` - Fork for PRs to upstream (endavis/al-folio)
 
-- **`_config.yml`**: The central configuration file. This is where site metadata (title, author, email), enabled features (news, projects, repositories), and theme settings are defined. **Start here for customizations.**
-- **`_bibliography/papers.bib`**: The BibTeX file containing publications. The site automatically generates the "Publications" page from this file.
-- **`_pages/`**: Markdown files representing the main pages of the site (e.g., `about.md`, `cv.md`, `publications.md`, `projects.md`).
-- **`_posts/`**: Blog posts. The file name format is `YYYY-MM-DD-title.md`.
-- **`_projects/`**: Markdown files for individual projects, displayed on the Projects page.
-- **`_news/`**: Markdown files for news items/announcements.
-- **`_data/`**: YAML/JSON data files for structured content like `cv.yml` (fallback CV), `venues.yml`, `coauthors.yml`, etc.
-- **`assets/`**: Static assets including images (`img/`), CSS (`css/`), PDFs (`pdf/`), and the JSON resume (`json/resume.json`).
-- **`Gemfile`**: Lists the Ruby gems (plugins) required to build the site.
-- **`docker-compose.yml`**: Configuration for running the site locally using Docker.
+## Working with Branches
 
-## Build & Development
+- `main` - Production branch for personal site
+- `feature/*` - Feature branches for upstream PRs (push to `al-folio-fork`)
+- `pr/*` - Development branches for testing features
 
-### Recommended: Docker
+When creating PRs to upstream al-folio:
 
-The easiest way to run the site locally is using Docker to avoid environment issues.
+1. Create feature branch from `upstream/main`
+2. Push to `al-folio-fork` remote
+3. Create PR from `endavis/al-folio` to `alshedivat/al-folio`
+
+## GitHub Stats System
+
+### Architecture
+
+The stats system has three display modes configured in `_config.yml`:
+
+1. **external** (default) - Uses Vercel API services, no setup required
+2. **local** - Stores generated SVGs in `assets/img/stats/` on main branch
+3. **branch** - Stores SVGs in separate `stats` branch
+
+### Key Files
+
+- `.github/workflows/update-stats.yml` - Main workflow (710+ lines)
+- `.config/stats-metrics.yml` - Metrics plugin configuration
+- `.config/trophies.yml` - Trophy display settings
+- `_data/repositories.yml` - Users and repos to generate stats for
+- `_includes/repository/repo*.liquid` - Display templates
+
+### Bug-Fix Fork
+
+The workflow uses `endavis/metrics@fix/habits-activity-typeerror-bugs` instead of `lowlighter/metrics@latest` due to upstream bugs. See `docs/stats.md` for details.
+
+### Token Requirements
+
+The `METRICS_TOKEN` secret requires these scopes:
+
+- `read:user` - Basic user information
+- `repo` - Repository access
+- `read:org` - Organization membership data
+- `read:project` - GitHub Projects v2 (optional)
+
+### Testing Stats Workflow
+
+1. Set `repo_stats_type: branch` in `_config.yml`
+2. Configure `stats_branch_url` to point to raw GitHub content
+3. Add `METRICS_TOKEN` secret to repository
+4. Trigger workflow: `gh workflow run update-stats.yml`
+5. Monitor: Check Actions tab or use `gh run view <id>`
+
+**Warning**: Users with extensive GitHub history (like `torvalds`) can exhaust the GraphQL API rate limit (5000 requests/hour). Use moderate-activity users for testing.
+
+## Temporary Files
+
+Use the `tmp/` directory in the repo root for temporary files and clones. This directory is in `.gitignore` and persists across sessions (unlike `/tmp/`).
 
 ```bash
-# Build and serve the site
-docker compose up
+# Good
+git clone <repo> tmp/my-clone
 
-# Build with a slim image (beta)
-docker compose -f docker-compose-slim.yml up
-
-# Rebuild the image (e.g., after updating Gemfile)
-docker compose up --build
+# Avoid
+git clone <repo> /tmp/my-clone  # Gets cleaned up
 ```
 
-The site will be available at `http://localhost:8080`.
+## Code Formatting
 
-### Local (Ruby Environment)
-
-If you prefer running Jekyll directly:
-
-1.  **Install Dependencies:**
-    ```bash
-    bundle install
-    ```
-2.  **Serve the Site:**
-    ```bash
-    bundle exec jekyll serve
-    ```
-    The site will be available at `http://localhost:4000`.
-
-### Formatting
-
-The project uses Prettier for code formatting.
+Run prettier before committing:
 
 ```bash
-# Install dependencies
-npm install
-
-# Check formatting
-npx prettier . --check
-
-# Fix formatting
-npx prettier . --write
+npx prettier --write <files>
 ```
+
+Pre-commit hooks will check formatting automatically.
 
 ## Common Tasks
 
-- **Update Personal Info:** Edit `_config.yml` and `_pages/about.md`.
-- **Add Publication:** Add a new BibTeX entry to `_bibliography/papers.bib`.
-- **Update CV:** Edit `assets/json/resume.json` (standard JSON Resume) or `_data/cv.yml` (fallback).
-- **Add Blog Post:** Create a new file in `_posts/`.
-- **Change Theme Color:** Edit `_sass/_themes.scss` or `_sass/_variables.scss`.
+### Updating the al-folio Fork
 
-## Deployment
+```bash
+git fetch upstream
+git checkout main
+git merge upstream/main
+```
 
-The site is configured for deployment to GitHub Pages.
+### Creating a PR to Upstream
 
-- **Automatic:** Pushing to the `main` branch triggers a GitHub Action to build and deploy to the `gh-pages` branch.
-- **Manual:** `bundle exec jekyll build` generates the static site in `_site/`.
+```bash
+git fetch upstream
+git checkout -b feature/my-feature upstream/main
+# Make changes
+git push al-folio-fork feature/my-feature
+# Create PR via GitHub web UI
+```
 
-## Interaction Guidelines
+### Testing Jekyll Build
 
-- **GitHub CLI (`gh`):** Prioritize using the `gh` CLI tool for GitHub interactions (issues, PRs, workflows, logs) over manual web scraping or assumptions.
-- **Commit Protocol:** Do NOT commit changes unless explicitly instructed by the user or if the task implies a complete unit of work. When in doubt, stage changes or ask.
-- **User Confirmation:** When a decision point arises or a question forms in your reasoning process, STOP immediately. Do NOT assume the answer. Explain the situation and ask the user for direction.
+```bash
+bundle exec jekyll build
+bundle exec jekyll serve  # Local preview at http://localhost:4000
+```
+
+### Triggering GitHub Actions
+
+```bash
+# Stats workflow
+gh workflow run update-stats.yml --repo <owner>/<repo>
+
+# Deploy workflow
+gh workflow run deploy.yml --repo <owner>/<repo>
+
+# Check status
+gh run list --repo <owner>/<repo> --workflow=<name>.yml --limit 1
+```
+
+## Important Patterns
+
+### Liquid Templates
+
+- Use `site.repo_stats_type` to check display mode
+- Support all three modes (external/local/branch) in templates
+- Use `relative_url` filter for local assets
+
+### Workflow Artifacts
+
+Stats workflow uploads artifacts per job, then downloads and commits in final job. This enables parallel generation.
+
+### Rate Limiting
+
+GitHub API limits:
+
+- REST API: 5000 requests/hour
+- GraphQL API: 5000 requests/hour
+
+Check limits: `gh api rate_limit`
+
+## Debugging
+
+### Workflow Issues
+
+1. Check job logs: `gh run view <id> --log`
+2. Look for "Unexpected error" in generated SVGs
+3. Verify token scopes match requirements
+4. Check rate limit status
+
+### Jekyll Build Issues
+
+1. Run with verbose: `bundle exec jekyll build --verbose`
+2. Check `_site/` output
+3. Liquid errors show line numbers in templates
+
+## Build Dependencies
+
+- **Ruby 3.3.5+** with Bundler - Jekyll and plugins
+- **Python 3.13+** - Jupyter notebook support
+- **Node.js** - Prettier and PurgeCSS
+- **ImageMagick** - Responsive image generation (`sudo apt-get install imagemagick`)
+
+## Docker Development
+
+Alternative to local Ruby/Jekyll setup:
+
+```bash
+# Full development environment
+docker-compose up
+
+# Slim version (faster)
+docker-compose -f docker-compose-slim.yml up
+```
+
+## Content Management
+
+### Adding Blog Posts
+
+1. Create file in `_posts/` with format: `YYYY-MM-DD-title.md`
+2. Include front matter (layout, title, date, categories, tags)
+3. Use Markdown with optional Distill components for scientific posts
+
+### Adding Publications
+
+1. Edit `_bibliography/papers.bib` with BibTeX entry
+2. Optional: Add PDF to `assets/pdf/` (reference with `pdf` field)
+3. Optional: Add preview image (reference with `preview` field)
+4. Publications page auto-generates from BibTeX
+
+### Managing Social Links
+
+1. Edit `_data/socials.yml`
+2. Icons: Font Awesome, Academicons, or Tabler Icons
+3. Update `_includes/social.liquid` for custom rendering
+
+## Jekyll Plugins
+
+Custom plugins in `_plugins/`:
+
+- `external-posts.rb` - Fetches external blog posts from RSS
+- `google-scholar-citations.rb` - Citation counts from Google Scholar
+- `inspirehep-citations.rb` - Citation counts from InspireHEP
+- `cache-bust.rb` - Cache-busting for assets
+- `file-exists.rb` - Template helper for file existence checks
+
+## Image Processing
+
+ImageMagick generates responsive images automatically:
+
+- Creates WebP versions
+- Multiple sizes: 480px, 800px, 1400px
+- Configured in `_config.yml` under `imagemagick`
+
+Verify installation: `convert -version`
+
+## Jekyll Scholar
+
+Publications managed by jekyll-scholar plugin:
+
+- Source: `_bibliography/` directory
+- Default file: `papers.bib`
+- Supports multiple `.bib` files
+- Sorting: by year (descending)
+
+## Third-Party Libraries
+
+Configured in `_config.yml` under `third_party_libraries`:
+
+- Can use CDN or bundle locally (`download: true`)
+- Includes integrity hashes for security
+- MathJax, Mermaid, Chart.js, etc.
+
+## All Workflows
+
+| Workflow                | Purpose                          | Trigger            |
+| ----------------------- | -------------------------------- | ------------------ |
+| `deploy.yml`            | Build and deploy to GitHub Pages | Push to main       |
+| `update-stats.yml`      | Generate GitHub statistics       | Daily cron, manual |
+| `prettier.yml`          | Check code formatting            | Push/PR            |
+| `broken-links.yml`      | Check for broken links           | Schedule           |
+| `update-citations.yml`  | Update publication citations     | Schedule           |
+| `lighthouse-badger.yml` | Performance testing (optional)   | Manual             |
+
+## Don't Forget
+
+- Run prettier before commits
+- Test workflow changes in fork first
+- Update both `docs/stats.md` and `docs/STATS.md` for documentation changes
+- The `stats` branch is auto-generated - don't edit directly
+- Use `JEKYLL_ENV=production` for production builds
+- Check `_site/` folder to verify generated output
