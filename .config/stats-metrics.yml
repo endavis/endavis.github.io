@@ -81,8 +81,9 @@ user:
       size: 28 # Size of avatars
       types: followers, following # Types: followers, following, sponsoring, sponsors, contributors, stargazers, watchers, thanks
     # Projects - GitHub Projects v2 progress
+    # Disabled: Requires read:project token scope
     projects:
-      enabled: yes
+      enabled: no
       limit: 4 # Number of projects to display
       descriptions: yes # Show project descriptions
     # NOTE: The following plugins have errors when enabled:
