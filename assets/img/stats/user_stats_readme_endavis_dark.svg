@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Eric Davis' GitHub Stats, Rank: A-</title>
-        <desc id="descId">Total Stars Earned: 45, Total Commits  : 5060, Total PRs: 165, Total Issues: 145, Contributed to (last year): 5</desc>
+        <desc id="descId">Total Stars Earned: 45, Total Commits  : 5068, Total PRs: 173, Total Issues: 160, Contributed to (last year): 5</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 66.73038530223324;
+        stroke-dashoffset: 65.92586084408885;
       }
     }
   
@@ -192,7 +192,7 @@
         x="219.01"
         y="12.5"
         data-testid="prs"
-      >165</text>
+      >173</text>
     </g>
   </g><g transform="translate(0, 75)">
     <g class="stagger" style="animation-delay: 900ms" transform="translate(25, 0)">
@@ -207,7 +207,7 @@
         x="219.01"
         y="12.5"
         data-testid="issues"
-      >145</text>
+      >160</text>
     </g>
   </g><g transform="translate(0, 100)">
     <g class="stagger" style="animation-delay: 1050ms" transform="translate(25, 0)">
