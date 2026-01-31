@@ -100,7 +100,7 @@
     
 
     <text class="description" x="25" y="-5">
-      <tspan dy="1.2em" x="25">A mud proxy using asyncio for Python 3.11 or newer.</tspan>
+      <tspan dy="1.2em" x="25">A MUD proxy with plugin support for Python 3.12+</tspan>
     </text>
 
     <g transform="translate(30, 65)">
