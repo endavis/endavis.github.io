@@ -100,7 +100,7 @@
     
 
     <text class="description" x="25" y="-5">
-      <tspan dy="1.2em" x="25">a python interface for the MVC opnsense API</tspan>
+      <tspan dy="1.2em" x="25">OpenAPI-based Python client for OPNsense with bundled specs</tspan>
     </text>
 
     <g transform="translate(30, 65)">
