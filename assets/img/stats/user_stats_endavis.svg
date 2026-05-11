@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="3020" class="">
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="2987" class="">
     <defs>
         <style/>
     </defs>
-    <style>@keyframes animation-gauge{0%{stroke-dasharray:0 329}}@keyframes animation-rainbow{0%,to{color:#7f00ff;fill:#7f00ff}14%{color:#a933ff;fill:#a933ff}29%{color:#007fff;fill:#007fff}43%{color:#00ff7f;fill:#00ff7f}57%{color:#ff0;fill:#ff0}71%{color:#ff7f00;fill:#ff7f00}86%{color:red;fill:red}}svg{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:14px;color:#777}h1,h2,h3{margin:8px 0 2px;padding:0;color:#0366d6}h1{font-size:20px;font-weight:700}h2,h3{font-weight:400}h1 svg,h2 svg,h3 svg{fill:currentColor}h2{font-size:16px}h3{font-size:14px}.h-details{margin:0 4px;padding-top:4px;font-size:.8rem}section&gt;.field{margin-left:5px;margin-right:5px}.field{display:flex;align-items:center;margin-bottom:2px;white-space:nowrap}.field.wrap,.row{flex-wrap:wrap}.field svg{margin:0 8px;fill:#959da5;flex-shrink:0}.row{display:flex}.row section{flex:1 1 0}.column{display:flex;flex-direction:column;align-items:center}.no-wrap{white-space:nowrap}.fill-width{width:100%}.margin-bottom{margin-bottom:16px}.no-margin-top{margin-top:0}.avatar{border-radius:50%;margin:0 6px}.calendar.field{margin:4px 0 4px 7px}.calendar .day{outline:1px solid rgba(27,31,35,.04);outline-offset:-1px}svg.bar{margin:4px 0}.field.language{margin:0 8px;flex-grow:0}.field.language.details{display:flex;justify-content:space-between}.field.language.details small,.field.license.details small{display:flex;justify-content:space-between;color:#666;text-align:right}.field.language.details small&gt;*,.field.language.details&gt;*{flex:1 1 0}.field.language.details small&gt;:not(:last-child){margin-right:6px}.followup.legend{font-size:12px;flex-wrap:wrap}.followup.legend .field{width:46%;justify-content:flex-start;margin-left:8px}.followup.legend svg{margin:0 3px;width:14px;height:14px}.followup.legend svg:first-child{margin-left:0}.followup.legend svg:last-child{margin-right:0}.followup-title{white-space:initial}.label{background-color:#58a6ff30;color:#0366d6;padding:0 10px;font-weight:500;line-height:22px;margin:2px 5px;white-space:nowrap;border-radius:32px;font-size:12px}.label .label-right,.label.label-flex{display:flex;align-items:center}.label .label-right{font-size:.7rem;margin-left:6px;margin-right:-10px;background-color:#58a6ff10;padding:0 7px;border-top-right-radius:32px;border-bottom-right-radius:32px}.habits .facts{margin:0;list-style-type:none;padding-left:37px}footer{margin-top:8px;font-size:10px;font-style:italic;color:#666;text-align:right;display:flex;flex-direction:column;justify-content:flex-end;padding:0 4px}.categories,.category{display:flex;align-items:center}.categories{justify-content:space-around;margin-top:4px}.category{flex-direction:column;flex:1 1 0}.gauge{stroke-linecap:round;fill:none}.gauge.info{color:#58a6ff}.gauge-arc,.gauge-base{stroke:currentColor;stroke-width:10}.gauge-base{stroke-opacity:.2}.gauge-arc{fill:none;stroke-dashoffset:0;animation-delay:250ms;animation:animation-gauge 1s ease forwards}.gauge text{fill:currentColor;font-size:40px;font-family:monospace;text-anchor:middle;font-weight:600}.gauge .title{font-size:18px;color:#777}.topics{display:flex;flex-wrap:wrap}.topics img{border-radius:5px;margin:4px}.chart{padding:0 8px}.chart-bars{display:flex;justify-content:space-between;align-items:flex-end;width:100%;margin:8px 0 4px;flex-grow:1;min-height:70px}.chart-bars .entry,.repository{display:flex;flex-direction:column}.chart-bars .entry{flex-grow:1;align-items:center;font-size:10px;color:#666}.chart-bars .entry .value{font-size:6px}.chart-bars .bar{width:7px;background-color:var(--color-calendar-graph-day-bg);border:1px solid var(--color-calendar-graph-day-border);border-radius:5px}.chart-bars .entry .bottom{margin-bottom:-1rem;line-height:1rem}.repository{width:100%;margin:6px 0}.repository .name{display:flex;align-items:center;justify-content:space-between;width:440px}.repository .name span:first-child{color:#58a6ff}.repository .name span:last-child{color:#666;font-size:10px}.repository .description{display:block;width:440px;white-space:normal}.repository .description,.repository .infos{color:#666;margin-left:38px;font-size:13px}.repository .infos&gt;div{display:flex;align-items:center;margin-right:16px}.repository .infos svg{margin:0 4px 0 0}.activity{margin-bottom:12px}.activity .field{width:100%;overflow:hidden;text-overflow:ellipsis;max-width:450px;white-space:nowrap;margin-bottom:0}.activity .field .content{flex-grow:1;text-overflow:ellipsis;overflow:hidden}.activity .issue,.activity .repo{display:inline;color:#58a6ff}.activity .code,code,span.code{background-color:#7777771f;border-radius:6px;color:#777;padding:1px 5px;font-size:80%;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace}.activity .code,span.code{margin:0 4px -3px}.activity .details,.activity .timestamp{padding-left:38px;display:flex;flex-direction:column;font-size:13px;color:#666}.activity .timestamp{font-size:10px;margin-top:4px}.activity .commit{display:flex;align-items:center}.activity .details&gt;.comment{margin-top:6px;border-left:3px solid #777777b2;padding-left:6px}svg.calendar{margin-left:13px;margin-top:4px}svg.calendar text{font-size:18px;fill:currentColor}.people{padding:0 10px}.people .avatar{margin:0 2px}.activity .details&gt;.comment,.project .description{overflow:hidden;text-overflow:ellipsis;display:block;width:420px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}.project .description{margin-left:37px;max-height:38px;font-size:12px;white-space:normal}.field.license.details{display:flex;justify-content:space-between}.achievement{display:flex;margin:4px 0}.achievement .icon{margin:0 4px;width:44px;height:44px}.achievement .text{font-size:12px;color:#666}.achievement .title{font-size:14px;color:#58a6ff}.achievement .gauge.info{color:#58a6ff}.achievement .value{background-color:#58a6ff26}.achievement.x .title{color:#666}.achievement.x .gauge.info{color:#b0b0b0}.achievement.x .value{background-color:#b0b0b026}.achievement.b .title{color:#9d8fff}.achievement.b .gauge.info{color:#9e91ff}.achievement.b .value{background-color:#9e91ff26}.achievement.a .title{color:#d79533}.achievement.a .gauge.info{color:#e7bd69}.achievement.a .value{background-color:#e7bd6926}.achievement.s .gauge.info,.achievement.s .title{color:#eb355e}.achievement.s .value{background-color:#eb355e26}.achievement.secret .title{color:#ff76cd}.achievement.secret .gauge.info{color:#ff79d1}.achievement.secret .value{background-color:#ff79d126}.achievement .gh,.achievement .value{border:1px solid currentColor;border-radius:16px;font-size:10px;padding:0 5px;white-space:nowrap}.achievement .gauge-arc,.achievement .gauge-base{stroke-width:6}.achievement .value-wrapper{margin-bottom:-50px;margin-top:36px;display:none}.achievement .value{margin-left:46px}.achievements.compact{display:flex;flex-wrap:wrap}.achievements.compact .achievement{flex-direction:column-reverse;align-items:center;width:80px}#metrics-end,.achievements.compact .info{width:100%}.achievements.compact .achievement .title{margin-bottom:2px;text-transform:capitalize;text-align:center}.achievements.compact .achievement .title .prefix{min-height:13px;font-size:10px;display:block;margin-bottom:-.25rem}.achievements.compact .achievement .value-wrapper{display:flex}.achievements.compact .achievement .gh,.achievements.compact .achievement .text{display:none}code{display:inline-block}:root{--color-calendar-graph-day-bg:#ebedf0;--color-calendar-graph-day-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-bg:#9be9a8;--color-calendar-graph-day-L2-bg:#40c463;--color-calendar-graph-day-L3-bg:#30a14e;--color-calendar-graph-day-L4-bg:#216e39;--color-calendar-halloween-graph-day-L1-bg:#ffee4a;--color-calendar-halloween-graph-day-L2-bg:#ffc501;--color-calendar-halloween-graph-day-L3-bg:#fe9600;--color-calendar-halloween-graph-day-L4-bg:#03001c;--color-calendar-winter-graph-day-L1-bg:#0a3069;--color-calendar-winter-graph-day-L2-bg:#0969da;--color-calendar-winter-graph-day-L3-bg:#54aeff;--color-calendar-winter-graph-day-L4-bg:#b6e3ff;--color-calendar-graph-day-L4-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L3-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L2-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-border:rgba(27,31,35,0.06)}</style>
+    <style>@keyframes animation-gauge{0%{stroke-dasharray:0 329}}@keyframes animation-rainbow{0%,to{color:#7f00ff;fill:#7f00ff}14%{color:#a933ff;fill:#a933ff}29%{color:#007fff;fill:#007fff}43%{color:#00ff7f;fill:#00ff7f}57%{color:#ff0;fill:#ff0}71%{color:#ff7f00;fill:#ff7f00}86%{color:red;fill:red}}svg{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:14px;color:#777}h1,h2,h3{margin:8px 0 2px;padding:0;color:#0366d6}h1{font-size:20px;font-weight:700}h2,h3{font-weight:400}h1 svg,h2 svg,h3 svg{fill:currentColor}h2{font-size:16px}h3{font-size:14px}.h-details{margin:0 4px;padding-top:4px;font-size:.8rem}section&gt;.field{margin-left:5px;margin-right:5px}.field{display:flex;align-items:center;margin-bottom:2px;white-space:nowrap}.field.wrap,.row{flex-wrap:wrap}.field svg{margin:0 8px;fill:#959da5;flex-shrink:0}.field.error{color:#cb2431}.field.error svg{fill:#cb2431}.row{display:flex}.row section{flex:1 1 0}.column{display:flex;flex-direction:column;align-items:center}.no-wrap{white-space:nowrap}.fill-width{width:100%}.margin-bottom{margin-bottom:16px}.no-margin-top{margin-top:0}.avatar{border-radius:50%;margin:0 6px}.calendar.field{margin:4px 0 4px 7px}.calendar .day{outline:1px solid rgba(27,31,35,.04);outline-offset:-1px}svg.bar{margin:4px 0}.field.language{margin:0 8px;flex-grow:0}.field.language.details{display:flex;justify-content:space-between}.field.language.details small,.field.license.details small{display:flex;justify-content:space-between;color:#666;text-align:right}.field.language.details small&gt;*,.field.language.details&gt;*{flex:1 1 0}.field.language.details small&gt;:not(:last-child){margin-right:6px}.followup.legend{font-size:12px;flex-wrap:wrap}.followup.legend .field{width:46%;justify-content:flex-start;margin-left:8px}.followup.legend svg{margin:0 3px;width:14px;height:14px}.followup.legend svg:first-child{margin-left:0}.followup.legend svg:last-child{margin-right:0}.followup-title{white-space:initial}.label{background-color:#58a6ff30;color:#0366d6;padding:0 10px;font-weight:500;line-height:22px;margin:2px 5px;white-space:nowrap;border-radius:32px;font-size:12px}.label .label-right,.label.label-flex{display:flex;align-items:center}.label .label-right{font-size:.7rem;margin-left:6px;margin-right:-10px;background-color:#58a6ff10;padding:0 7px;border-top-right-radius:32px;border-bottom-right-radius:32px}.habits .facts{margin:0;list-style-type:none;padding-left:37px}footer{margin-top:8px;font-size:10px;font-style:italic;color:#666;text-align:right;display:flex;flex-direction:column;justify-content:flex-end;padding:0 4px}.categories,.category{display:flex;align-items:center}.categories{justify-content:space-around;margin-top:4px}.category{flex-direction:column;flex:1 1 0}.gauge{stroke-linecap:round;fill:none}.gauge.high{color:#18b663}.gauge.low{color:#e53935}.gauge.info{color:#58a6ff}.gauge-arc,.gauge-base{stroke:currentColor;stroke-width:10}.gauge-base{stroke-opacity:.2}.gauge-arc{fill:none;stroke-dashoffset:0;animation-delay:250ms;animation:animation-gauge 1s ease forwards}.gauge text{fill:currentColor;font-size:40px;font-family:monospace;text-anchor:middle;font-weight:600}.gauge .title{font-size:18px;color:#777}.topics{display:flex;flex-wrap:wrap}.topics img{border-radius:5px;margin:4px}.chart{padding:0 8px}.chart-bars{display:flex;justify-content:space-between;align-items:flex-end;width:100%;margin:8px 0 4px;flex-grow:1;min-height:70px}.chart-bars .entry,.repository{display:flex;flex-direction:column}.chart-bars .entry{flex-grow:1;align-items:center;font-size:10px;color:#666}.chart-bars .entry .value{font-size:6px}.chart-bars .entry .empty{width:100%;text-align:center}.chart-bars .bar{width:7px;background-color:var(--color-calendar-graph-day-bg);border:1px solid var(--color-calendar-graph-day-border);border-radius:5px}.chart-bars .entry .bottom{margin-bottom:-1rem;line-height:1rem}.repository{width:100%;margin:6px 0}.repository .name{display:flex;align-items:center;justify-content:space-between;width:440px}.repository .name span:first-child{color:#58a6ff}.repository .name span:last-child{color:#666;font-size:10px}.repository .description{display:block;width:440px;white-space:normal}.repository .description,.repository .infos{color:#666;margin-left:38px;font-size:13px}.repository .infos&gt;div{display:flex;align-items:center;margin-right:16px}.repository .infos svg{margin:0 4px 0 0}.activity{margin-bottom:12px}.activity .field{width:100%;overflow:hidden;text-overflow:ellipsis;max-width:450px;white-space:nowrap;margin-bottom:0}.activity .field .content{flex-grow:1;text-overflow:ellipsis;overflow:hidden}.activity .issue,.activity .repo{display:inline;color:#58a6ff}.activity .code,code,span.code{background-color:#7777771f;border-radius:6px;color:#777;padding:1px 5px;font-size:80%;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace}.activity .code,span.code{margin:0 4px -3px}.activity .user{font-weight:600}.activity .details,.activity .timestamp{padding-left:38px;display:flex;flex-direction:column;font-size:13px;color:#666}.activity .timestamp{font-size:10px;margin-top:4px}.activity .commit{display:flex;align-items:center}.activity .details&gt;.comment{overflow:hidden;text-overflow:ellipsis;display:block;width:420px;margin-top:6px;border-left:3px solid #777777b2;padding-left:6px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}svg.calendar{margin-left:13px;margin-top:4px}svg.calendar text{font-size:18px;fill:currentColor}.added{color:#3fb950}.people{padding:0 10px}.people .avatar{margin:0 2px}.project .description{overflow:hidden;text-overflow:ellipsis;display:block;width:420px;margin-left:37px;max-height:38px;font-size:12px;white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}.field.license.details{display:flex;justify-content:space-between}.achievement{display:flex;margin:4px 0}.achievement .icon{margin:0 4px;width:44px;height:44px}.achievement .text{font-size:12px;color:#666}.achievement .title{font-size:14px;color:#58a6ff}.achievement .gauge.info{color:#58a6ff}.achievement .value{background-color:#58a6ff26}.achievement.x .title{color:#666}.achievement.x .gauge.info{color:#b0b0b0}.achievement.x .value{background-color:#b0b0b026}.achievement.b .title{color:#9d8fff}.achievement.b .gauge.info{color:#9e91ff}.achievement.b .value{background-color:#9e91ff26}.achievement.a .title{color:#d79533}.achievement.a .gauge.info{color:#e7bd69}.achievement.a .value{background-color:#e7bd6926}.achievement.s .gauge.info,.achievement.s .title{color:#eb355e}.achievement.s .value{background-color:#eb355e26}.achievement.secret .title{color:#ff76cd}.achievement.secret .gauge.info{color:#ff79d1}.achievement.secret .value{background-color:#ff79d126}.achievement .gh,.achievement .value{border:1px solid currentColor;border-radius:16px;font-size:10px;padding:0 5px;white-space:nowrap}.achievement .gauge-arc,.achievement .gauge-base{stroke-width:6}.achievement .value-wrapper{margin-bottom:-50px;margin-top:36px;display:none}.achievement .value{margin-left:46px}.achievements.compact{display:flex;flex-wrap:wrap}.achievements.compact .achievement{flex-direction:column-reverse;align-items:center;width:80px}#metrics-end,.achievements.compact .info{width:100%}.achievements.compact .achievement .title{margin-bottom:2px;text-transform:capitalize;text-align:center}.achievements.compact .achievement .title .prefix{min-height:13px;font-size:10px;display:block;margin-bottom:-.25rem}.achievements.compact .achievement .value-wrapper{display:flex}.achievements.compact .achievement .gh,.achievements.compact .achievement .text{display:none}.snippet .body{padding-left:12px}code{display:inline-block}code[class^=language-]{white-space:pre-wrap;width:97%;margin-top:4px}.token.comment{color:#690}.token.punctuation{color:#8a93a8}.token.keyword,.token.namespace{color:#b44418}.token.boolean,.token.string{color:#2777aa}.token.builtin,.token.operator{color:#106cbc}.token.trimmed{font-style:italic;color:#77777760}.space{margin-left:7px}:root{--color-calendar-graph-day-bg:#ebedf0;--color-calendar-graph-day-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-bg:#9be9a8;--color-calendar-graph-day-L2-bg:#40c463;--color-calendar-graph-day-L3-bg:#30a14e;--color-calendar-graph-day-L4-bg:#216e39;--color-calendar-halloween-graph-day-L1-bg:#ffee4a;--color-calendar-halloween-graph-day-L2-bg:#ffc501;--color-calendar-halloween-graph-day-L3-bg:#fe9600;--color-calendar-halloween-graph-day-L4-bg:#03001c;--color-calendar-winter-graph-day-L1-bg:#0a3069;--color-calendar-winter-graph-day-L2-bg:#0969da;--color-calendar-winter-graph-day-L3-bg:#54aeff;--color-calendar-winter-graph-day-L4-bg:#b6e3ff;--color-calendar-graph-day-L4-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L3-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L2-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-border:rgba(27,31,35,0.06)}</style>
     <style/>
     <foreignObject x="0" y="0" width="100%" height="100%">
         <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" class="items-wrapper">
@@ -31,18 +31,18 @@
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 11" width="210" height="16">
                                 <g>
                                     <rect class="day" x="0" y="0" width="11" height="11" fill="#40c463" rx="2" ry="2"/>
-                                    <rect class="day" x="15" y="0" width="11" height="11" fill="#40c463" rx="2" ry="2"/>
-                                    <rect class="day" x="30" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
+                                    <rect class="day" x="15" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
+                                    <rect class="day" x="30" y="0" width="11" height="11" fill="#40c463" rx="2" ry="2"/>
                                     <rect class="day" x="45" y="0" width="11" height="11" fill="#40c463" rx="2" ry="2"/>
                                     <rect class="day" x="60" y="0" width="11" height="11" fill="#40c463" rx="2" ry="2"/>
-                                    <rect class="day" x="75" y="0" width="11" height="11" fill="#40c463" rx="2" ry="2"/>
-                                    <rect class="day" x="90" y="0" width="11" height="11" fill="#216e39" rx="2" ry="2"/>
-                                    <rect class="day" x="105" y="0" width="11" height="11" fill="#30a14e" rx="2" ry="2"/>
-                                    <rect class="day" x="120" y="0" width="11" height="11" fill="#216e39" rx="2" ry="2"/>
-                                    <rect class="day" x="135" y="0" width="11" height="11" fill="#30a14e" rx="2" ry="2"/>
-                                    <rect class="day" x="150" y="0" width="11" height="11" fill="#216e39" rx="2" ry="2"/>
+                                    <rect class="day" x="75" y="0" width="11" height="11" fill="#216e39" rx="2" ry="2"/>
+                                    <rect class="day" x="90" y="0" width="11" height="11" fill="#30a14e" rx="2" ry="2"/>
+                                    <rect class="day" x="105" y="0" width="11" height="11" fill="#216e39" rx="2" ry="2"/>
+                                    <rect class="day" x="120" y="0" width="11" height="11" fill="#30a14e" rx="2" ry="2"/>
+                                    <rect class="day" x="135" y="0" width="11" height="11" fill="#216e39" rx="2" ry="2"/>
+                                    <rect class="day" x="150" y="0" width="11" height="11" fill="#30a14e" rx="2" ry="2"/>
                                     <rect class="day" x="165" y="0" width="11" height="11" fill="#30a14e" rx="2" ry="2"/>
-                                    <rect class="day" x="180" y="0" width="11" height="11" fill="#30a14e" rx="2" ry="2"/>
+                                    <rect class="day" x="180" y="0" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
                                     <rect class="day" x="195" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
                                 </g>
                             </svg>
@@ -69,7 +69,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"/>
                             </svg>
-                            6151 Commits
+                            6152 Commits
                         </div>
                         <div class="field">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -81,20 +81,20 @@
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path fill-rule="evenodd" d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z"/>
                             </svg>
-                            942 Pull requests opened
+                            943 Pull requests opened
                         </div>
                         <div class="field">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path d="M8 9.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/>
                                 <path fill-rule="evenodd" d="M8 0a8 8 0 100 16A8 8 0 008 0zM1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0z"/>
                             </svg>
-                            916 Issues opened
+                            920 Issues opened
                         </div>
                         <div class="field">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path fill-rule="evenodd" d="M2.75 2.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 01.75.75v2.19l2.72-2.72a.75.75 0 01.53-.22h4.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25H2.75zM1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0113.25 12H9.06l-2.573 2.573A1.457 1.457 0 014 13.543V12H2.75A1.75 1.75 0 011 10.25v-7.5z"/>
                             </svg>
-                            1598 issue comments
+                            1601 issue comments
                         </div>
                     </section>
                     <section>
@@ -171,7 +171,7 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                         <path xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" d="M2.5 3.5c0-.133.058-.318.282-.55.227-.237.592-.484 1.1-.708C4.899 1.795 6.354 1.5 8 1.5c1.647 0 3.102.295 4.117.742.51.224.874.47 1.101.707.224.233.282.418.282.551 0 .133-.058.318-.282.55-.227.237-.592.484-1.1.708C11.101 5.205 9.646 5.5 8 5.5c-1.647 0-3.102-.295-4.117-.742-.51-.224-.874-.47-1.101-.707-.224-.233-.282-.418-.282-.551zM1 3.5c0-.626.292-1.165.7-1.59.406-.422.956-.767 1.579-1.041C4.525.32 6.195 0 8 0c1.805 0 3.475.32 4.722.869.622.274 1.172.62 1.578 1.04.408.426.7.965.7 1.591v9c0 .626-.292 1.165-.7 1.59-.406.422-.956.767-1.579 1.041C11.476 15.68 9.806 16 8 16c-1.805 0-3.475-.32-4.721-.869-.623-.274-1.173-.62-1.579-1.04-.408-.426-.7-.965-.7-1.591v-9zM2.5 8V5.724c.241.15.503.286.779.407C4.525 6.68 6.195 7 8 7c1.805 0 3.475-.32 4.722-.869.275-.121.537-.257.778-.407V8c0 .133-.058.318-.282.55-.227.237-.592.484-1.1.708C11.101 9.705 9.646 10 8 10c-1.647 0-3.102-.295-4.117-.742-.51-.224-.874-.47-1.101-.707C2.558 8.318 2.5 8.133 2.5 8zm0 2.225V12.5c0 .133.058.318.282.55.227.237.592.484 1.1.708 1.016.447 2.471.742 4.118.742 1.647 0 3.102-.295 4.117-.742.51-.224.874-.47 1.101-.707.224-.233.282-.418.282-.551v-2.275c-.241.15-.503.285-.778.406-1.247.549-2.917.869-4.722.869-1.805 0-3.475-.32-4.721-.869a6.236 6.236 0 01-.779-.406z"/>
                                     </svg>
-                                    679 MB used
+                                    680 MB used
                                 </div>
                             </section>
                             <section>
@@ -222,14 +222,14 @@
                                 <rect x="0" y="0" width="220" height="8" fill="white" rx="5"/>
                             </mask>
                             <rect mask="url(#issues-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                            <rect mask="url(#issues-bar)" x="0" y="0" width="9.914163090128756" height="8" fill="#238636"/>
-                            <rect mask="url(#issues-bar)" x="9.914163090128756" y="0" width="0" height="8" fill="#56d364"/>
-                            <rect mask="url(#issues-bar)" x="9.914163090128756" y="0" width="0" height="8" fill="#8B949E"/>
-                            <rect mask="url(#issues-bar)" x="9.914163090128756" y="0" width="0" height="8" fill="#c9d1d9"/>
-                            <rect mask="url(#issues-bar)" x="9.914163090128756" y="0" width="210.08583690987123" height="8" fill="#8957e5"/>
-                            <rect mask="url(#issues-bar)" x="220" y="0" width="0" height="8" fill="#d2a8ff"/>
-                            <rect mask="url(#issues-bar)" x="220" y="0" width="0" height="8" fill="#8B949E"/>
-                            <rect mask="url(#issues-bar)" x="220" y="0" width="0" height="8" fill="#c9d1d9"/>
+                            <rect mask="url(#issues-bar)" x="0" y="0" width="10.576923076923077" height="8" fill="#238636"/>
+                            <rect mask="url(#issues-bar)" x="10.576923076923077" y="0" width="0" height="8" fill="#56d364"/>
+                            <rect mask="url(#issues-bar)" x="10.576923076923077" y="0" width="0" height="8" fill="#8B949E"/>
+                            <rect mask="url(#issues-bar)" x="10.576923076923077" y="0" width="0" height="8" fill="#c9d1d9"/>
+                            <rect mask="url(#issues-bar)" x="10.576923076923077" y="0" width="209.4230769230769" height="8" fill="#8957e5"/>
+                            <rect mask="url(#issues-bar)" x="219.99999999999997" y="0" width="0" height="8" fill="#d2a8ff"/>
+                            <rect mask="url(#issues-bar)" x="219.99999999999997" y="0" width="0" height="8" fill="#8B949E"/>
+                            <rect mask="url(#issues-bar)" x="219.99999999999997" y="0" width="0" height="8" fill="#c9d1d9"/>
                         </svg>
                         <div class="followup legend field fill-width">
                             <div class="field">
@@ -237,14 +237,14 @@
                                     <path fill="#238636" d="M8 9.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/>
                                     <path fill="#238636" fill-rule="evenodd" d="M8 0a8 8 0 100 16A8 8 0 008 0zM1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0z"/>
                                 </svg>
-                                <span class="no-wrap">42 <small>open</small></span>
+                                <span class="no-wrap">45 <small>open</small></span>
                             </div>
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                     <path fill="#8957e5" d="M11.28 6.78a.75.75 0 00-1.06-1.06L7.25 8.69 5.78 7.22a.75.75 0 00-1.06 1.06l2 2a.75.75 0 001.06 0l3.5-3.5z"/>
                                     <path fill="#8957e5" fill-rule="evenodd" d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-1.5 0a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z"/>
                                 </svg>
-                                <span class="no-wrap">890 <small>closed</small></span>
+                                <span class="no-wrap">891 <small>closed</small></span>
                             </div>
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -267,13 +267,13 @@
                                 <rect x="0" y="0" width="220" height="8" fill="white" rx="5"/>
                             </mask>
                             <rect mask="url(#pr-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                            <rect mask="url(#issues-bar)" x="0" y="0" width="1.1752136752136753" height="8" fill="#238636"/>
-                            <rect mask="url(#issues-bar)" x="1.1752136752136753" y="0" width="0" height="8" fill="#56d364"/>
-                            <rect mask="url(#issues-bar)" x="1.1752136752136753" y="0" width="0" height="8" fill="#8B949E"/>
-                            <rect mask="url(#issues-bar)" x="1.1752136752136753" y="0" width="0" height="8" fill="#c9d1d9"/>
-                            <rect mask="url(#issues-bar)" x="1.1752136752136753" y="0" width="4.935897435897436" height="8" fill="#da3633"/>
-                            <rect mask="url(#issues-bar)" x="6.111111111111112" y="0" width="0" height="8" fill="#ff7b72"/>
-                            <rect mask="url(#issues-bar)" x="6.111111111111112" y="0" width="213.88888888888889" height="8" fill="#8957e5"/>
+                            <rect mask="url(#issues-bar)" x="0" y="0" width="1.1739594450373534" height="8" fill="#238636"/>
+                            <rect mask="url(#issues-bar)" x="1.1739594450373534" y="0" width="0" height="8" fill="#56d364"/>
+                            <rect mask="url(#issues-bar)" x="1.1739594450373534" y="0" width="0" height="8" fill="#8B949E"/>
+                            <rect mask="url(#issues-bar)" x="1.1739594450373534" y="0" width="0" height="8" fill="#c9d1d9"/>
+                            <rect mask="url(#issues-bar)" x="1.1739594450373534" y="0" width="4.930629669156883" height="8" fill="#da3633"/>
+                            <rect mask="url(#issues-bar)" x="6.104589114194237" y="0" width="0" height="8" fill="#ff7b72"/>
+                            <rect mask="url(#issues-bar)" x="6.104589114194237" y="0" width="213.89541088580577" height="8" fill="#8957e5"/>
                             <rect mask="url(#issues-bar)" x="220" y="0" width="0" height="8" fill="#d2a8ff"/>
                         </svg>
                         <div class="followup legend field fill-width">
@@ -287,7 +287,7 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                     <path fill="#8957e5" fill-rule="evenodd" d="M5 3.254V3.25v.005a.75.75 0 110-.005v.004zm.45 1.9a2.25 2.25 0 10-1.95.218v5.256a2.25 2.25 0 101.5 0V7.123A5.735 5.735 0 009.25 9h1.378a2.251 2.251 0 100-1.5H9.25a4.25 4.25 0 01-3.8-2.346zM12.75 9a.75.75 0 100-1.5.75.75 0 000 1.5zm-8.5 4.5a.75.75 0 100-1.5.75.75 0 000 1.5z"/>
                                 </svg>
-                                <span class="no-wrap">910 <small>merged</small></span>
+                                <span class="no-wrap">911 <small>merged</small></span>
                             </div>
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -447,23 +447,13 @@
                     <h3>Commit activity per hour of day</h3>
                     <div class="chart-bars">
                         <div class="entry">
-                            <span class="value">2</span>
-                            <div class="bar" style="height: 5.263157894736842px; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
-                            10
-                        </div>
-                        <div class="entry">
-                            <span class="value"></span>
-                            <div class="bar" style="height: 0px; background-color: var(--color-calendar-graph-day-L0-bg)"></div>
-                            11
-                        </div>
-                        <div class="entry">
                             <span class="value">1</span>
                             <div class="bar" style="height: 2.631578947368421px; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
                             12
                         </div>
                         <div class="entry">
-                            <span class="value"></span>
-                            <div class="bar" style="height: 0px; background-color: var(--color-calendar-graph-day-L0-bg)"></div>
+                            <span class="value">2</span>
+                            <div class="bar" style="height: 5.263157894736842px; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
                             13
                         </div>
                         <div class="entry">
@@ -488,8 +478,8 @@
                         <h3>Commit activity per day of week</h3>
                         <div class="chart-bars">
                             <div class="entry">
-                                <span class="value"></span>
-                                <div class="bar" style="height: 0px; background-color: var(--color-calendar-graph-day-L0-bg)"></div>
+                                <span class="value">2</span>
+                                <div class="bar" style="height: 4.761904761904762px; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
                                 Sun
                             </div>
                             <div class="entry">
@@ -513,8 +503,8 @@
                                 Thu
                             </div>
                             <div class="entry">
-                                <span class="value">6</span>
-                                <div class="bar" style="height: 14.285714285714285px; background-color: var(--color-calendar-graph-day-L2-bg)"></div>
+                                <span class="value">4</span>
+                                <div class="bar" style="height: 9.523809523809524px; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
                                 Fri
                             </div>
                             <div class="entry">
@@ -561,7 +551,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path fill-rule="evenodd" d="M7.998 14.5c2.832 0 5-1.98 5-4.5 0-1.463-.68-2.19-1.879-3.383l-.036-.037c-1.013-1.008-2.3-2.29-2.834-4.434-.322.256-.63.579-.864.953-.432.696-.621 1.58-.046 2.73.473.947.67 2.284-.278 3.232-.61.61-1.545.84-2.403.633a2.788 2.788 0 01-1.436-.874A3.21 3.21 0 003 10c0 2.53 2.164 4.5 4.998 4.5zM9.533.753C9.496.34 9.16.009 8.77.146 7.035.75 4.34 3.187 5.997 6.5c.344.689.285 1.218.003 1.5-.419.419-1.54.487-2.04-.832-.173-.454-.659-.762-1.035-.454C2.036 7.44 1.5 8.702 1.5 10c0 3.512 2.998 6 6.498 6s6.5-2.5 6.5-6c0-2.137-1.128-3.26-2.312-4.438-1.19-1.184-2.436-2.425-2.653-4.81z"/>
                             </svg>
-                            Current streak 10 days
+                            Current streak 11 days
                         </div>
                         <div class="field">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -585,7 +575,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path d="M10.896 2H8.75V.75a.75.75 0 00-1.5 0V2H5.104a.25.25 0 00-.177.427l2.896 2.896a.25.25 0 00.354 0l2.896-2.896A.25.25 0 0010.896 2zM8.75 15.25a.75.75 0 01-1.5 0V14H5.104a.25.25 0 01-.177-.427l2.896-2.896a.25.25 0 01.354 0l2.896 2.896a.25.25 0 01-.177.427H8.75v1.25zm-6.5-6.5a.75.75 0 000-1.5h-.5a.75.75 0 000 1.5h.5zM6 8a.75.75 0 01-.75.75h-.5a.75.75 0 010-1.5h.5A.75.75 0 016 8zm2.25.75a.75.75 0 000-1.5h-.5a.75.75 0 000 1.5h.5zM12 8a.75.75 0 01-.75.75h-.5a.75.75 0 010-1.5h.5A.75.75 0 0112 8zm2.25.75a.75.75 0 000-1.5h-.5a.75.75 0 000 1.5h.5z"/>
                             </svg>
-                            Average per day at ~19.27
+                            Average per day at ~19.20
                         </div>
                     </section>
                 </div>
@@ -1567,6 +1557,13 @@
                                 <path fill="#30a14e" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.3714285714285714 1.7,3.3714285714285714 z"/>
                             </g>
                         </g>
+                        <g transform="translate(44.199999999999996, 26)">
+                            <g transform="translate(0, 5.657142857142857)">
+                                <path fill="#9be9a8" d="M1.7,2 0,1 1.7,0 3.4,1 z"/>
+                                <path fill="#9be9a8" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2.342857142857143 0,1.342857142857143 z"/>
+                                <path fill="#9be9a8" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1.342857142857143 1.7,2.342857142857143 z"/>
+                            </g>
+                        </g>
                     </g>
                 </svg>
             </section>
@@ -1749,6 +1746,9 @@
                                     <rect class="day" x="0" y="79" width="11" height="11" fill="#40c463" rx="2" ry="2"/>
                                     <rect class="day" x="0" y="94" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
                                 </g>
+                                <g transform="translate(285, 0)">
+                                    <rect class="day" x="0" y="4" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
+                                </g>
                             </g>
                         </svg>
                     </section>
@@ -1771,7 +1771,7 @@
                                     </svg>
                                     <div class="name">
                                         <span>CoderLuii/HolyClaude</span>
-                                        <span>starred 10 days ago</span>
+                                        <span>starred 11 days ago</span>
                                     </div>
                                 </div>
                                 <div class="field description">AI coding workstation: Claude Code + web UI + 7 AI CLIs + headless browser + 50+ tools</div>
@@ -1792,13 +1792,13 @@
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                             <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"/>
                                         </svg>
-                                        2.23k
+                                        2.24k
                                     </div>
                                     <div>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                             <path fill-rule="evenodd" d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"/>
                                         </svg>
-                                        231
+                                        232
                                     </div>
                                     <div>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -1811,7 +1811,7 @@
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                             <path fill-rule="evenodd" d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z"/>
                                         </svg>
-                                        3
+                                        4
                                     </div>
                                 </div>
                             </section>
@@ -1824,7 +1824,7 @@
                                     </svg>
                                     <div class="name">
                                         <span>ranahaani/preview</span>
-                                        <span>starred 24 days ago</span>
+                                        <span>starred 25 days ago</span>
                                     </div>
                                 </div>
                                 <div class="field description">Preview and export Claude Code responses as PDF, DOCX, or HTML.</div>
@@ -1845,7 +1845,7 @@
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                             <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"/>
                                         </svg>
-                                        6
+                                        7
                                     </div>
                                     <div>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -1877,7 +1877,7 @@
                                     </svg>
                                     <div class="name">
                                         <span>Arindam200/awesome-ai-apps</span>
-                                        <span>starred 29 days ago</span>
+                                        <span>starred Apr 10 2026</span>
                                     </div>
                                 </div>
                                 <div class="field description">A collection of projects showcasing RAG, agents, workflows, and other AI use cases</div>
@@ -1904,20 +1904,20 @@
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                             <path fill-rule="evenodd" d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"/>
                                         </svg>
-                                        1.53k
+                                        1.54k
                                     </div>
                                     <div>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                             <path d="M8 9.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/>
                                             <path fill-rule="evenodd" d="M8 0a8 8 0 100 16A8 8 0 008 0zM1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0z"/>
                                         </svg>
-                                        54
+                                        55
                                     </div>
                                     <div>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                             <path fill-rule="evenodd" d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z"/>
                                         </svg>
-                                        141
+                                        142
                                     </div>
                                 </div>
                             </section>
@@ -1930,7 +1930,7 @@
                                     </svg>
                                     <div class="name">
                                         <span>alirezarezvani/claude-skills</span>
-                                        <span>starred 29 days ago</span>
+                                        <span>starred Apr 10 2026</span>
                                     </div>
                                 </div>
                                 <div class="field description">232+ Claude Code skills &amp; agent plugins for Claude Code, Codex, Gemini CLI, Cursor, and 8 more coding agents — engineering, marketing, product, compliance, C-level advisory.</div>
@@ -1951,13 +1951,13 @@
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                             <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"/>
                                         </svg>
-                                        14.2k
+                                        14.3k
                                     </div>
                                     <div>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                             <path fill-rule="evenodd" d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"/>
                                         </svg>
-                                        1.92k
+                                        1.93k
                                     </div>
                                     <div>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -1970,7 +1970,7 @@
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                             <path fill-rule="evenodd" d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z"/>
                                         </svg>
-                                        462
+                                        467
                                     </div>
                                 </div>
                             </section>
@@ -1992,13 +1992,8 @@
                             <div class="entry">
                                 <span class="value">48</span>
                                 <div class="bar" style="height: 2.5px; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
-                                27
-                                <div class="bottom">Apr.</div>
-                            </div>
-                            <div class="entry">
-                                <span class="value"></span>
-                                <div class="bar" style="height: 2.5px; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
                                 28
+                                <div class="bottom">Apr.</div>
                             </div>
                             <div class="entry">
                                 <span class="value"></span>
@@ -2060,6 +2055,11 @@
                                 <span class="value"></span>
                                 <div class="bar" style="height: 2.5px; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
                                 10
+                            </div>
+                            <div class="entry">
+                                <span class="value"></span>
+                                <div class="bar" style="height: 2.5px; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
+                                11
                             </div>
                         </div>
                     </section>
@@ -2069,13 +2069,8 @@
                             <div class="entry">
                                 <span class="value"></span>
                                 <div class="bar" style="height: 0px; background-color: var(--color-calendar-graph-day-L0-bg)"></div>
-                                27
-                                <div class="bottom">Apr.</div>
-                            </div>
-                            <div class="entry">
-                                <span class="value"></span>
-                                <div class="bar" style="height: 0px; background-color: var(--color-calendar-graph-day-L0-bg)"></div>
                                 28
+                                <div class="bottom">Apr.</div>
                             </div>
                             <div class="entry">
                                 <span class="value"></span>
@@ -2137,6 +2132,11 @@
                                 <span class="value"></span>
                                 <div class="bar" style="height: 0px; background-color: var(--color-calendar-graph-day-L0-bg)"></div>
                                 10
+                            </div>
+                            <div class="entry">
+                                <span class="value"></span>
+                                <div class="bar" style="height: 0px; background-color: var(--color-calendar-graph-day-L0-bg)"></div>
+                                11
                             </div>
                         </div>
                     </section>
@@ -2154,7 +2154,7 @@
                         <img class="avatar" src="data:image/png;base64,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" width="28" height="28" alt="" />
                         <img class="avatar" src="data:image/jpg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAcABwDASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAABQYABAECCP/EACsQAAEDAwMCBAcBAAAAAAAAAAECAxEABCEFEjFBUTNxgZEGFSIyUmGhsf/EABgBAAIDAAAAAAAAAAAAAAAAAAIDAAQF/8QAHBEAAQUBAQEAAAAAAAAAAAAAAQACAwQREiEx/9oADAMBAAIRAxEAPwDmJalFwgEzNGPkN+G5C29wEkFcQZyO2Op4HEziqGluJa1JC1Y2kkHsYMf2KNanq5YaS3bEBwxEZ2gcevbtzyaVK5+gNWnVqwvgdLKfnmIJe2t1ZwbhDiULJCVGYVHUHqP3VTcr8j70VvtOeFsq5dUtTv3r3GTzH+4oTTIzo9VOzXdA7lwzfVsvxD0zTLo7WlpUlZug46kkBT0IiBMgGfc+iSaWV+IfOsVHRGQYDiKCcwO6IBTT8R3rCbIMsrQpbyQfo6Jwc+cJgHMCTk0rVKlDGzgYht2XWn9uX//Z" width="28" height="28" alt="" />
                         <img class="avatar" src="data:image/jpg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAcABwDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAABwgEBQYC/8QAKRAAAQMEAAMIAwAAAAAAAAAAAQIDBAAFESEGEjEHExQjQVGBkSIzYf/EABcBAQEBAQAAAAAAAAAAAAAAAAQDAAX/xAAeEQACAgICAwAAAAAAAAAAAAABAwACBDEREgUhQf/aAAwDAQACEQMRAD8AVhtBW4Ep6miLwr2dP3eH36lK30AGzQ9aJQ4lWDo00/Cku1QWoElvvURJcUEb/WcfnQM5111AXszo+PTRlib/ACLhxXYH7DODLmVNLBKF4xnBwfo6qi2KOPbw2wLdGMKNHUwuSoNvYKnemTg+gz1FBDBq+KwsUDfcPlrCmmtNTRQLI4POkEKxvlFMJbr3a792WSy/b3Hb3a2wXUMJHnNdO+IJGxoEjecE9dCpYCVtJSABg1zDnSISXXIzhQVocZWPRSDlJB+KdZC2V4Ih6Mus81Mxl2k3J63N+LlOPR+cgBZ0D/PaqUFWPT6qbeSfGLTk8uQcfFQeY+9QI6+hMbdtz//Z" width="28" height="28" alt="" />
-                        <img class="avatar" src="data:image/jpg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAcABwDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAABgQFBwH/xAAvEAABAwMCBAMHBQAAAAAAAAABAgMRAAQFITEGEhOBIkFRFDI0YWJx4YKDocHx/8QAFgEBAQEAAAAAAAAAAAAAAAAABQME/8QAIhEAAQQBAwUBAAAAAAAAAAAAAQACAxEEEiExMkFxodHw/9oADAMBAAIRAxEAPwDFLGzVdSrUNJ94ire1smnVFtnH9aBAnn13Pl+Kj4pxLdqttaFkuEEH5Cf8709wOLsn8dzl9YlxBhpxJnedPL7HftRuVOW7nhKY+O10RNbj3x9QLKYsMuwhtbRiSkjb+fzVOtspVCt6b8TWlpjcq65brddbUStwOOIXusAGRtoTpvQ6+QE3bga5uSdKtDIXMFohztZvyptsApkJQZKJ29NP7rROCbqzu8U5ZXYaa6Vwl5Ljji0FYiVxA2hHr2NZ5Z/EtBPhHKdqRYxpKsgi3M9Lovaftis2TwQnKuK/3Zd4qcU5lb10p6JDiuZsKJBjwiD6bH9X3oplEpZyFwhLgUAs60g4lfW5diYHMhEx3o5lEp9qVCE7q8vqNWg6AgL1PNr/2Q==" width="28" height="28" alt="" />
+                        <img class="avatar" src="data:image/jpg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAcABwDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAABgQFBwH/xAAvEAABAwMCBAMHBQAAAAAAAAABAgMRAAQFITEGEhNBIlFhFDI0YnGB4YKDocHx/8QAFgEBAQEAAAAAAAAAAAAAAAAABQME/8QAIhEAAQQBAwUBAAAAAAAAAAAAAQACAxEEEiExMkFxodHw/9oADAMBAAIRAxEAPwDFLGzVdSrUNJ94ire1smnVFtnH9aBAnn13Pb8VHxTiW7Vba0LJcIIPoJ/z709wOLsn8dzl9YlxBhpxJnedO30O/wBqNypy3c8JTHx2uiJrce+PqBZTFhl2ENraMSUkbfz+ap1tlKoVvTfia0tMblXXLdbrraiVuBxxC91gAyNtCdN6HXyAm7cDXNyTpVoZC5gtEOdrN+VNtgFMhKDJRO3lp/daJwTdWd3inLK7DTXSuEvpcccWgqESuIG0I8++xrPLP4loJ8I5TtSLGNJVkEW5npdF7T9sVmyeCE5VxX+7LvFTinMreulPRIcVzNhRIMeEQfLY/q+tFMolLOQuEJcCgFnWkPEb613gmBzIRMes0byiU+1KhCd1dvmNWg6AgL1PNr//2Q==" width="28" height="28" alt="" />
                         <img class="avatar" src="data:image/png;base64,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" width="28" height="28" alt="" />
                         <img class="avatar" src="data:image/png;base64,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" width="28" height="28" alt="" />
                         <img class="avatar" src="data:image/jpg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAcABwDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAABgMFBwj/xAAqEAABAwMDAwMEAwAAAAAAAAABAgMEAAURBhIhE0FhFDEyFSJRgSNiof/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDlcJKiABkn2AppFssaIjoLhJny0AGRl3aG8j4DHfzRKB1/VN+kCi+DlG0ZOfFPNCS0ejdSZTrTpKgdpPOe5oDWq7M1bXIsqDvNunNl2OXPkMHCknyDxR6kWpLkZCpENtfUhtvl1r+qzwvHg4/wUdoG9ln3G0aacdtrzbbT/wBrymlDeOe/ce48Ur09om03j6U4/OkNzJ7bsh9ttxCQ2MgDt5Oc/ismTKfbZUwh1YaV7pzS6za2vltDEWLIaEdSm9zZZQQrcnBzx3oEGlbJe7QOm23AjNvsH1Lj7rR/jP55JxjHtWa3NKU3CQGgAjecBHx/VSpuUtqQ70n1tlzhSk8E/uq5RKjknJoP/9k=" width="28" height="28" alt="" />
@@ -2185,7 +2185,7 @@
                     <section class="people">
                         <img class="avatar" src="data:image/jpg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAcABwDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAABgMFBwj/xAAqEAABAwMDAwMEAwAAAAAAAAABAgMEAAURBhIhE0FhFDEyFSJRgSNiof/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDlcJKiABkn2AppFssaIjoLhJny0AGRl3aG8j4DHfzRKB1/VN+kCi+DlG0ZOfFPNCS0ejdSZTrTpKgdpPOe5oDWq7M1bXIsqDvNunNl2OXPkMHCknyDxR6kWpLkZCpENtfUhtvl1r+qzwvHg4/wUdoG9ln3G0aacdtrzbbT/wBrymlDeOe/ce48Ur09om03j6U4/OkNzJ7bsh9ttxCQ2MgDt5Oc/ismTKfbZUwh1YaV7pzS6za2vltDEWLIaEdSm9zZZQQrcnBzx3oEGlbJe7QOm23AjNvsH1Lj7rR/jP55JxjHtWa3NKU3CQGgAjecBHx/VSpuUtqQ70n1tlzhSk8E/uq5RKjknJoP/9k=" width="28" height="28" alt="" />
                         <img class="avatar" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAIAAAD9b0jDAAAACXBIWXMAAAsTAAALEwEAmpwYAAACMUlEQVR4nO3S3UtTARzGcf8Kdw7S3BEzyi4cIlZkLqLUdIoT3CbOMhWFMkzNhlPUfFumVtZ6kay8KFmGZWiFaYalmaRRokVIEPkSZaOGKbEdvtFtoHSku4Tn+gPP8/v5SKL4z+Ozhkprm4p/jrB5faCtqPBQdvot5+n+3pax586RwbaO9qtbtNogtXqVL2UxJsG9z7MOXGeZPsPbJsYdPz909Hc1v3/dE7Nr52rQrH1GvM18r+WTnak6XtUzckoePsfQRQYufZl8qN20UTGam2PB24S7grlKJqrkkWoGT/DoJA/q6WrgSXNjjU0xWnRkP7KdhWLmSmbOJ/ZmB71zxHgH7HRWc6ea7tqX969oBEEZWmbLgFKW8pkp8LQacuOCNYJQV5pBdxU9Nm7b3MM31CqVMrTmeCbk48lhOodW/bEErSSKhYdTGC6lL4/2PJ5dDvBTWL+mIg2y8ViYS6MlyhoTIomiozGLyYP0ZeLM5GlDgJ/C+pVlJkhFNrCUtNCmsxvDj+bp3fNFvDHx2MRNk6uvWO3rqwwttxnAAFHIUXzbi8uE24xbz1QsQ7Hcje+9lqb4UCXWOIiG7RDBjwhcOyCSpUg+6hjTMWo+kBym+KWsBXtAB6G/I4dCGGzDG45rq2c28UJ5tP8yp5dWQNNTI7/OZywummXZDMlgHH2RMjFucV6PT9gd4r9McWllVBJFf0FQq1QaUdigWRccqAnwEzWCsNyOf4tKq43PGir9v5v+ApVF84DfobYsAAAAAElFTkSuQmCC" width="28" height="28" alt="" />
-                        <img class="avatar" src="data:image/jpg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAcABwDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAABAUGBwD/xAAtEAABBAAFAgUCBwAAAAAAAAABAgMEEQAFEiExBhMUIkFRcYGhFRYjM2GR0f/EABgBAAIDAAAAAAAAAAAAAAAAAAQGAQIF/8QAHREAAgICAwEAAAAAAAAAAAAAAQMAAgQxERMhUf/aAAwDAQACEQMRAD8AX/kZLAcIntIacaIIeG387XR2utxuecUvT8LL4TzTWVqbaaLhIUl2wDzZ07Hji64AAusH9R9QRIbPaQnS2pwt/qqS0gEVYN0fX6/N4i3tTk4JkJiuTSkrS05I3O398cn/AGsKN2syPT5G/HTRVJzHTb+edTTMzPiIsSXS0vD9wXspCRWx1A3xd/TFlHybJcsjMx1ra1aAo9yyrf325xOZQ/LlyfCoW8FpNpSl6iPSqHO9/f23c/jLEBbkdySyFoWrUt54o7ir8yk+dNpuxq9SDxwJ7WgyjUU+zGY8oy5j8ctMzY7oFpcdcW4KIAAdJBNC9gK3PzgduOXMxhJyxowZ/iEoZDYcavuHguE2ORWLTOemstYyta22SFK5N4zaQgNOl6takG0hzzAfQ4YijjRmAMjnYlrnWb5pHYcTOl9UCOmg4kPDQd7oOj2F8n5rjCPNc1dzGX3moSkNBKW22Se52UpFBNq34o78kk+uFD+YOvSyy6O4lKApHccW4EGvRKlFP2w5j5ZHfZC3e4pZJ3Kz7nApXUbhdGWOp//Z" width="28" height="28" alt="" />
+                        <img class="avatar" src="data:image/jpg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAcABwDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAABAUGBwD/xAAtEAABBAAFAgUCBwAAAAAAAAABAgMEEQAFEiExBhMUIkFRcYGhFRYjM2GR0f/EABcBAAMBAAAAAAAAAAAAAAAAAAIEBgX/xAAdEQACAgIDAQAAAAAAAAAAAAABAwACBDEREyFR/9oADAMBAAIRAxEAPwBf+RksBwie0hpxogh4bfztdHa63G55xS9PwsvgvNNZWptpouEhSXbAPNnRseOLrgAC6wf1H1BEhs9pCdDa3C3+qpLSARVg3v6/X5vEW9qcnBMhMV2aUlaWnJG52/vjk/7WJC7GZHp8Er0Joqk5jpt/POppmZnxEWJLpaXh+4L2UhIrY6gb4u/piyj5NkuWRmY61tatAUe5ZVv77c4nMoflS5PhULeC0G0pS9RHpQA53v7+27n8ZYgLcjuSWQtC1alvPFHcVfmUnzptN2NXqQeOAXa0GA1FPsxmPKMuY/HLTM2O6BaXHXFuCiAAHSQTQvYCtz84HajlzMYScsaMGd4hCGQ2HGr7h4LhNjkVWLTOemstYyta22SFK5N4zaQgNOl6takG0hzzAfQ4oijjRmAMjnYlrnWb5pHYcTOl9UCOmg4kPDQd7oOj2F8n5rjCPNc1dzGX3moSkNBKW22Se52UpFBNq34o78kk+uFD+YOvSyy6O4lKApHccW4EGvRKlFP2w5j5ZHfZC3e4pZJ3Kz7nCpXUbjdGWOp//9k=" width="28" height="28" alt="" />
                         <img class="avatar" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaQAAAGkCAIAAADxLsZiAAAACXBIWXMAAAsTAAALEwEAmpwYAAANoElEQVR4nO3bwa3sOg4G4ReuMlJMk41DmMUstHvAEK1D/+ZX0P5eVJNldRvnnwcABvBP938AAP4CsQMwArEDMAKxAzACsQMwArEDMAKxAzACsQMwArEDMAKxAzACsQMwArEDMAKxAzACsQMwArEDMAKxAzACsQMwArEDMAKxAzACsQMwArEDMAKxAzACsQMwArEDMAKxAzACsQMwArEDMAKxAzACsQMwArEDMAKxAzACsQMwArEDMAKxAzACscNh/2d97/iA8T/EDof2MIkd7iF2OLSHSexwD7HDoT1MYod7iB0O7WESO9xD7HBoD5PY4R5ih0N7mMQO9xA7HNrDJHa4h9jh0B4mscM9xA6H9jCJHe4hdji0h0nscA+xw6E9TGKHe4gdDu1hEjvcQ+xwaA+T2OEeYodDe5jEDvcQOxzawyR2uIfY4dAeJrGD2OEvaA+T2OEebnY4tIdJ7HAPscOhPUxih3uIHQ7tYRI73EPscGgPk9jhHmKHQ3uYxA73EDsc2sMkdriH2OHQHiaxwz3EDof2MIkd7iF2OLSHSexwD7HDoT1MYod7iB0O7WESO9xD7HBoD5PY4R5ih0N7mMQO9xA7HNrDJHa4h9jh0B4mscM9xA6H9jCJHe4hdji0h0nscA+xw6E9TGKHe4gdDu1hEjvcQ+xwaA+T2OEeYodDe5jEDvcQOxzawyR2uIfY4dAeJrHDPcQOh/YwiR3uIXY4tIdJ7CB2+AvawyR2uIebHQ7tYRI73EPscGgPk9jhHmKHQ3uYxA73EDsc2sMkdriH2OHQHiaxwz3EDof2MIkd7iF2OLSHSexwD7HDoT1MYod7iB0O7WESO9xD7HBoD5PY4R5ih0N7mMQO9xA7HNrDJHa4h9jh0B4mscM9xA6H9jCJHe4hdji0h0nscA+xw6E9TGKHe4gdDu1hEjvcQ+xwaA+T2OEeYodDe5jEDvcQOxzawyR2uIfY4dAeJrHDPcQOh/YwiR3uIXY4tIdJ7HAPscOhPUxih3uIHQ7tYRI7iB3+gvYwiR2+cLNrH3qHAQb2KxfhbxIkdv2ftMPAcAOP2LV/Bg4DDGyx+38xNAwwwMB2szMEDDAw1sDja2z7Z+AwwMAWO19jrQEDDGw3O7/ZWQMGGNi+xhoCBhhgYPvNzhAwwMAoA48XFO2fgcMAA1vsvKCwBgwwsN3svKCwBgwwsH2NNQQMMMDA9pudIWCAgVEGHi8o2j8DhwEGtth5QWENGGBgu9l5QWENGGBg+xprCBhggIHtNztDwAADoww8XlC0fwYOAwxssfOCwhowwMB2s/OCwhowwMD2NdYQMMAAA9tvdoaAAQZGGXi8oGj/DBwGGNhi5wWFNWCAge1m5wWFNWCAge1rrCFggAEGtt/sDAEDDIwy8HhB0f4ZOAwwsMXOCwprwAAD283OCwprwAAD29dYQ8AAAwxsv9kZAgYYGGXg8YKi/TNwGGBgi50XFNaAAQa2m50XFNaAAQa2r7GGgAEGGNh+szMEDDAwysDjBUX7Z+AwwMAWOy8orAEDDGw3Oy8orAEDDGxfYw0BAwwwsP1mZwgYYGCUgccLivbPwGGAgS12XlBYAwYY2G52XlBYAwYY2L7GGgIGGGBg+83OEDDAwCgDjxcU7Z+BwwADYucFhTVggIHlZucFhTVggIHla6whYIABBpbf7AwBAwzMMvB4QdH+GTgMMLDFzl9QWAMGGNhudv6CwhowwMD2NdYQMMAAA9tvdoaAAQZGGXi8oGj/DBwGGNhi5wWFNWCAge1m5wWFNWCAge1rrCFggAEGtt/sDAEDDIwy8HhB0f4ZOAwwsMXOCwprwAAD283OCwprwAAD29dYQ8AAAwxsv9kZAgYYGGXg8YKi/TNwGGBgi50XFJ9cg+dbtPt09mum7p+/+WeMXcrQP9+i3aezXzN1Ymccxc4MrAmPWLEz6GJnBpbY/RL3+QgDz7do9+ns10ydm51xFDszMOIRK3YGXezMwBK7X+I+H2Hg+RbtPp39mqlzszOOYmcG1oRHrNgZdLEzA0vsfon7fISB51u0+3T2a6bOzc44ip0ZWBMesWJn0MXODCyx+yXu8xEGnm/R7tPZr5k6NzvjKHZmYE14xIqdQRc7M7DE7pe4z0cYeL5Fu09nv2bq3OyMo9iZgTXhESt2Bl3szMASu1/iPh9h4PkW7T6d/Zqpc7MzjmJnBtaER6zYGXSxMwNL7H6J+3yEgedbtPt09mumzs3OOIqdGVgTHrFiZ9DFzgwssfsl7vMRBp5v0e7T2a+ZOjc74yh2ZmBNeMSKnUEXOzOwxO6XuM9HGHi+RbtPZ79m6tzsjKPYmYE14RErdgZd7MzAErtf4j4fYeD5Fu0+nf2aqXOzM45iZwbWhEes2Bl0sTMDS+x+ift8hIHnW7T7dPZrps7NzjiKnRlYEx6xYmfQxc4MLLH7Je7zEQaeb9Hu09mvmTo3O+ModmZgTXjEip1BFzszsMTul7jPRxh4vkW7T2e/Zurc7Iyj2JmBNeERK3YGXezMwBK7X+I+H2Hg+RbtPp39mqlzszOOYmcG1oRHrNgZdLEzA0vsfon7fISB51u0+3T2a6bOzc44ip0ZWBMesWJn0MXODCyx+yXu8xEGnm/R7tPZr5k6NzvjKHZmYE14xIqdQRc7M7DE7pe4z0cYeL5Fu09nv2bq3OyMo9iZgTXhESt2Bl3szMASu1/iPh9h4PkW7T6d/Zqpc7MzjmJnBtaER6zYGXSxMwNi91Pc5yMMPN+i3aezXzN1bnbGUezMwJrwiBU7gy52ZmCJ3S9xn48w8HyLdp/Ofs3UudkZR7EzA2vCI1bsDLrYmYEldr/EfT7CwPMt2n06+zVT52ZnHMXODKwJj1ixM+hiZwaW2P0S9/kIA8+3aPfp7NdMnZudcRQ7M7AmPGLFzqAzwMASO/wbvqEw8OF70Pf4u5vd97DqDIhdEGJXx6ozIHZBiF0dq86A2AUhdnWsOgNiF4TY1bHqDIhdEGJXx6ozIHZBiF0dq86A2AUhdnWsOgNiF4TY1bHqDIhdEGJXx6ozIHZBiF0dq86A2AUhdnWsOgNiF4TY1bHqDIhdEGJXx6ozIHZBiF0dq86A2AUhdnWsOgNiF4TY1bHqDIhdEGJXx6ozIHZBiF0dq86A2AUhdnWsOgNiF4TY1bHqDIhdEGJXx6ozIHZBiF0dq86A2AUhdnWsOgNiF4TY1bHqDIhdEGJXx6ozIHZBiF0dq86A2AUhdnWsOgNiF4TY1bHqDIhdEGJXx6ozIHZBiF0dq86A2AUhdnWsOgNiF4TY1bHqDIhdEGJXx6ozIHZBiF0dq86A2AUhdnWsOgNiF4TY1bHqDIhdEGJXx6ozIHZBiF0dq86A2AUhdnWsOgNiF4TY1bHqDIhdEGJXx6ozIHZBiF0dq86A2AUhdnWsOgNiF4TY1bHqDIhdEGJXx6ozIHZBiF0dq86A2AUhdnWsOgNiF4TY1bHqDIhdEGJXx6ozIHZBiF0dq86A2AUhdnWsOgNiF4TY1bHqDIhdEGJXx6ozIHZBiF0dq86A2AUhdnWsOgNiF4TY1bHqDIhdEGJXx6ozIHZBiF0dq86A2AUhdnWsOgNiF4TY1bHqDIhdEGJXx6ozIHZBiF0dq86A2AUhdnWsOgNiF4TY1bHqDIhdEGJXx6ozIHZBiF0dq86A2AUhdnWsOgNiF4TY1bHqDIhdEGJXx6ozIHZBiF0dq86A2AUhdnWsOgNiF4TY1bHqDIhdEGJXx6ozIHZBiF0dq86A2AUhdnWsOgNiF4TY1bHqDIhdEGJXx6ozIHZBiF0dq86A2AUhdnWsOgNiF4TY1bHqDIhdEGJXx6ozIHZBiF0dq86A2AUhdnWsOgNiF4TY1bHqDIhdEGJXx6ozIHZBiF0dq86A2AUhdnWsOgNiF4TY1bHqDIhdEGJXx6ozIHZBiF0dq86A2AUhdnWsOgNiF4TY1bHqDIhdEGJXx6ozIHZBiF0dq86A2AUhdnWsOgNiF4TY1bHqDIhdEGJXx6ozIHZBiF0dq86A2AUhdnWsOgNiF4TY1bHqDIhdEGJXx6ozIHZBiF0dq86A2AUhdnWsOgNiF4TY1bHqDIhdEGJXx6ozIHZBiF0dq86A2AUhdnWsOgNiF4TY1bHqDIhdEGJXx6ozIHZBiF0dq86A2AUhdnWsOgNiF4TY1bHqDIhdEGJXx6ozIHZBiF0dq86A2AUhdnWsOgNiF4TY1bHqDIhdEGJXx6ozIHZBiF0dq86A2AUhdnWsOgNiF4TY1bHqDIhdEGJXx6ozIHZBiF0dq86A2AUhdnWsOgNiF4TY1bHqDIhdEGJXx6ozIHZBiF0dq86A2AUhdnWsOgNiF4TY1bHqDIhdEGJXx6ozIHZBiF0dq86A2AUhdnWsOgNiF4TY1bHqDIhdEGJXx6ozIHZBiF0dq86A2AUhdnWsOgNiF4TY1bHqDIhdEGJXx6ozIHZBiF0dq86A2AUhdgBGIHYARiB2AEYgdgBGIHYARiB2AEYgdgBGIHYARiB2AEYgdgBGIHYARiB2AEYgdgBGIHYARiB2AEYgdgBGIHYARiB2AEYgdgBGIHYARiB2AEYgdgBGIHYARiB2AEYgdgBGIHYARiB2AEYgdgBGIHYARiB2AEYgdgBGIHYARiB2AEYgdgCeCfwXJzQnngHwdskAAAAASUVORK5CYII=" width="28" height="28" alt="" />
                         <img class="avatar" src="data:image/jpg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAcABwDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABwgGBf/EACoQAAEDAwIFAgcAAAAAAAAAAAECAwQABREGEhMhMUFxB4EIFDIzUbHB/8QAGAEAAwEBAAAAAAAAAAAAAAAABQYHAwT/xAAmEQABAgUDBAMBAAAAAAAAAAABAgMABAURMQYSIRNBkdFRYYHB/9oADAMBAAIRAxEAPwAwGCSTWwsfp/ebvHS6zGd2rGUnGAay9v4fz0bi/b4qd3jNVgjVdntVmbkLltCOja0ltoZKT05/v2rfWFYmJR9uXYVtvck/uMj39RQZuadlUDpI3ExMOqdOztNTkRrk2UKUgKB8jp5FY1x9HHd5j6v4KfvifuDblvs7TC233wtxW5A57SByqU5MyQH15Qck5pkoFcUqmoff5JJFwM28iF2ozqnG0b02J5/kJCAd+1AJVnlinOLbYLGkYca/RnW3nkpkFJ3AEkZ7d+ddbRmm7TZpzbkOG2XkgEOuDevPk9PbFKC3CspKkpzkdqk2p66isubEJKemc9zf1BSfqZZUG0jjOYk71FZkN3nhSGJbcYJBZMhJBcBA55PWsNItcZ5zeUJzjsKrj1JUiTtjSGWXWU9ErTmie+6KsxmIU2060FICilDhxnJ/NHaTq5mnMiRW0bI4uDk9zz8x0sONzrKVup58x//Z" width="28" height="28" alt="" />
                         <img class="avatar" src="data:image/png;base64,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" width="28" height="28" alt="" />
@@ -2211,91 +2211,509 @@
                             <section class="activity">
                                 <div class="field">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                        <path d="M8 9.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/>
-                                        <path fill-rule="evenodd" d="M8 0a8 8 0 100 16A8 8 0 008 0zM1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0z"/>
-                                    </svg>
-                                    <div class="content">
-                                        Opened
-                                        <span class="issue">#804 feat: add syslog_settings resource type for OPNsense local syslog daemon configuration</span>
-                                    </div>
-                                </div>
-                                <div class="details">
-                                    <div>opened  in <span class="repo">endavis/infrafoundry</span></div>
-                                </div>
-                                <div class="timestamp">9 May 2026, 16:15:25</div>
-                            </section>
-                        </div>
-                        <div class="row fill-width">
-                            <section class="activity">
-                                <div class="field">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                        <path d="M11.28 6.78a.75.75 0 00-1.06-1.06L7.25 8.69 5.78 7.22a.75.75 0 00-1.06 1.06l2 2a.75.75 0 001.06 0l3.5-3.5z"/>
-                                        <path fill-rule="evenodd" d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-1.5 0a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z"/>
-                                    </svg>
-                                    <div class="content">
-                                        Closed
-                                        <span class="issue">#793 refactor: align direct-OPNsense YAML schema with API endpoint hierarchy (nested resource types)</span>
-                                    </div>
-                                </div>
-                                <div class="details">
-                                    <div>opened  in <span class="repo">endavis/infrafoundry</span></div>
-                                </div>
-                                <div class="timestamp">9 May 2026, 16:07:02</div>
-                            </section>
-                        </div>
-                        <div class="row fill-width">
-                            <section class="activity">
-                                <div class="field">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                         <path fill-rule="evenodd" d="M2.75 2.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 01.75.75v2.19l2.72-2.72a.75.75 0 01.53-.22h4.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25H2.75zM1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0113.25 12H9.06l-2.573 2.573A1.457 1.457 0 014 13.543V12H2.75A1.75 1.75 0 011 10.25v-7.5z"/>
                                     </svg>
                                     <div class="content">
                                         Commented on
-                                        <span class="issue">#793 refactor: align direct-OPNsense YAML schema with API endpoint hierarchy (nested resource types)</span>
+                                        <span class="issue">#788 feat: add radvd resource type for OPNsense IPv6 Router Advertisements (cutover blocker)</span>
                                     </div>
                                 </div>
                                 <div class="details">
                                     <div>opened by endavis in <span class="repo">endavis/infrafoundry</span></div>
                                     <div class="comment">
-                                        Addressed by the following merged PRs and one operator-side commit:
-Framework (this repo):
+                                        <b>Implementation Plan for #788: opnsense.radvd Direct-API Resource</b>
+                                        <b>Context</b>
+                                        Why: Cutover hard blocker for hands-free IPv6. The source
+                                        <code>OPNsense.endavis.net</code>
+                                        box emits IPv6 Router Advertisements on 4 interfaces (
+                                        <code>opt1</code>
+                                        /
+                                        <code>opt2</code>
+                                        /
+                                        <code>opt3</code>
+                                        /
+                                        <code>opt6</code>
+                                        — Infra/PT/Tailscale-infra/Apps VLANs) via the legacy
+                                        <code>//</code>
+                                        path. The cutover target
+                                        <code>opnsense-a</code>
+                                        is fresh and uses OPNsense 26.x's modern
+                                        <code>radvd</code>
+                                        controller (no `` block exists in
+                                        <code>config.xml</code>
+                                        ; settings live in the MVC model store). Without this resource type, cutover apply creates VLANs but leaves IPv6 segments without RA emission — every IPv6-enabled host on those VLANs loses its default route the moment cutover finishes.
+Outcome: A new
+                                        <code>opnsense.radvd</code>
+                                        direct-API resource modeled as a dict-shape singleton at YAML level (per ADR-0016 amendment on the issue, already registered as
+                                        <code>"radvd": "dict"</code>
+                                        in
+                                        <code>DOTTED_RESOURCE_SHAPES</code>
+                                        ). The internal
+                                        <code>interfaces:</code>
+                                        mapping translates to per-interface wire records — a hybrid YAML-singleton/wire-list pattern, mirroring the just-shipped
+                                        <code>system.firmware</code>
+                                        (#806).
+Scope decisions confirmed with user (2026-05-10):
 
-#794 — Phase 0: ADR-0016 nested YAML schema convention
-#795 — Phase 1: rename direct-OPNsense ResourceConfig.type strings to dotted paths
-#796 — Phase 2: nested-format YAML support in the loader
-#797 — Phase 3: dotted-path cross-reference resolver for OPNsense validators
-#798 — Phase 4: emit nested-format YAML from direct-OPNsense migrate paths
-#799 — Phase 5: hard cutover (drop the STEM_TO_DOTTED shim)
+Reconcile mode: full reconcile. Interfaces in live wire-state but absent from YAML get DELETED. Safe: deleting a radvd record just stops RA emission, no data loss.
+(Not re-asked) Schema is singleton dict per ADR-0016; the loader is already registered. Original body's "list of records" framing is superseded by the amendment header at the top of the issue.
+                                        <b>Approach</b>
+                                        <b>Phase 0 — Live API probe (no committed code)</b>
+                                        Before component scaffolding, probe
+                                        <code>opnsense-a</code>
+                                        to confirm:
 
-Framework follow-ups discovered during Phase 6 verification:
 
-#801 (#800) — nested loader flattens entry config to match resource-centric (so direct-API components see fields directly under
-                                        <code>ResourceConfig.config</code>
+
+Endpoint guess
+Purpose
+                                        <code>GET /api/radvd/settings/get</code>
+                                        Bulk read; envelope shape
+                                        <code>GET /api/radvd/settings/searchItem</code>
+                                        List shape; per-record UUID format
+                                        <code>GET /api/radvd/settings/getItem/</code>
+                                        Single record fields
+                                        <code>POST /api/radvd/settings/addItem</code>
+                                        Create payload shape
+                                        <code>POST /api/radvd/settings/setItem/</code>
+                                        Update payload
+                                        <code>POST /api/radvd/settings/delItem/</code>
+                                        Delete
+                                        <code>POST /api/radvd/service/reconfigure</code>
+                                        Apply pending changes
+                                        <code>GET /api/radvd/service/status</code>
+                                        Daemon health
+
+
+Critical questions for the probe:
+
+Is there a global
+                                        <code>enabled</code>
+                                        toggle (top-level
+                                        <code>radvd.settings.enabled</code>
+                                        ) or is enable strictly per-interface?
+Wire field names: confirm
+                                        <code>ramode</code>
+                                        ,
+                                        <code>rapriority</code>
+                                        ,
+                                        <code>ramininterval</code>
+                                        ,
+                                        <code>ramaxinterval</code>
+                                        ,
+                                        <code>radomainsearchlist</code>
+                                        ,
+                                        <code>radnsserver</code>
+                                        ,
+                                        <code>raroutes</code>
+                                        — or the actual current names. The issue body's wire-name guesses are best-effort.
+Per-interface record identity:
+                                        <code>interface</code>
+                                        field (logical name like
+                                        <code>opt1</code>
+                                        )? Or some other key?
+
+Save results to
+                                        <code>tmp/agents/claude/probe-788.md</code>
+                                        (cleaned up at end of session). Use
+                                        <code>opnsense_openapi.OPNsenseClient</code>
+                                        directly via a tmp script (mirror the pattern from
+                                        <code>tmp/agents/claude/probe_unbound_724_followup.py</code>
+                                        ); do NOT add probe code to the codebase.
+If
+                                        <code>/api/radvd/*</code>
+                                        returns 404 across the board → close as
+                                        <code>wontfix</code>
+                                        per the issue's contingency, document in ADR-0014 that radvd stays manual.
+                                        <b>Phase 1 — Service + client extension</b>
+                                        Add a
+                                        <code>RadvdClient</code>
+                                        namespace to
+                                        <code>src/infrafoundry/providers/opnsense/api_client.py</code>
+                                        (mirror
+                                        <code>KeaClient</code>
+                                        /
+                                        <code>SystemClient</code>
+                                        patterns):
+                                        <code class="language-multiline language-python" xml:space="preserve"><span class="token keyword">class</span> <span class="token class-name">RadvdClient</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> client<span class="token punctuation">:</span> OPNsenseClient<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token boolean">None</span><span class="token punctuation">:</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token trimmed">(10 more lines were trimmed)</span></code>
+                                        Service at
+                                        <code>src/infrafoundry/providers/opnsense/services/radvd.py</code>
+                                        :
+                                        <code>from_environment(env_name, provider_name, config_dir) -&gt; Self</code>
+                                        factory.
+                                        <code>extract_interface_records() -&gt; dict[str, dict[str, Any]]</code>
+                                        — returns
+                                        <code>{interface_name: field_map}</code>
+                                        keyed by wire
+                                        <code>interface</code>
+                                        field; field_map uses snake_case operator-facing names (translated from wire
+                                        <code>ramode</code>
+                                        /
+                                        <code>rapriority</code>
+                                        /etc.).
+                                        <code>build_desired_interface_records(resource_config) -&gt; dict[str, dict[str, Any]]</code>
+                                        — parses the YAML
+                                        <code>interfaces:</code>
+                                        block into the same
+                                        <code>{interface_name: field_map}</code>
+                                        shape; applies defaults (
+                                        <code>mode: assist</code>
+                                        ,
+                                        <code>priority: medium</code>
+                                        ,
+                                        <code>min_interval: 200</code>
+                                        ,
+                                        <code>max_interval: 600</code>
+                                        , empty lists for
+                                        <code>domain_search</code>
+                                        /
+                                        <code>dns_servers</code>
+                                        /
+                                        <code>routes</code>
+                                        ).
+                                        <code>compute_diff(live, desired)</code>
+                                        — set algebra returning
+                                        <code>(adds, updates, deletes)</code>
+                                        :
+                                        <code>adds = desired.keys() - live.keys()</code>
+                                        <code>deletes = live.keys() - desired.keys()</code>
+                                        <code>updates = {k for k in (live &amp; desired) if live[k] != desired[k]}</code>
+                                        Mirrors
+                                        <code>desired_vs_installed_plugins</code>
+                                        from
+                                        <code>services/system_firmware.py:184-206</code>
+                                        but generalized for dict→dict comparison.
+                                        <code>wire_payload_for_interface(interface_name, field_map) -&gt; dict[str, Any]</code>
+                                        — translates operator-facing names → wire names (
+                                        <code>mode → ramode</code>
+                                        etc.) and adds the
+                                        <code>interface</code>
+                                        field.
+                                        <code>export_to_yaml(env_name) -&gt; str</code>
+                                        —
+                                        <code>migrate()</code>
+                                        extractor.
+                                        <b>Phase 2 — Component manager</b>
+                                        <code>src/infrafoundry/providers/opnsense/components/radvd.py</code>
+                                        :
+                                        <code class="language-multiline language-python" xml:space="preserve"><span class="token keyword">class</span> <span class="token class-name">RadvdManager</span><span class="token punctuation">(</span>BaseComponentManager<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    SIBLING_RESOURCE_TYPE<span class="token punctuation">:</span> ClassVar<span class="token punctuation">[</span><span class="token builtin">str</span> <span class="token operator">|</span> <span class="token boolean">None</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">None</span>
+<span class="token trimmed">(51 more lines were trimmed)</span></code>
+                                        <code>_RadvdDiff</code>
+                                        shape mirrors
+                                        <code>_singleton.SingletonDiff</code>
+                                        extended for adds/updates/deletes (or extend
+                                        <code>SingletonDiff</code>
+                                        itself if generalization is clean — decide at coding time).
+                                        <b>Phase 3 — Validator</b>
+                                        <code>src/infrafoundry/providers/opnsense/validators/radvd_validator.py</code>
+                                        :
+
+Pure-check; no mutation of
+                                        <code>resource.config</code>
+                                        .
+For each
+                                        <code>interfaces.</code>
+                                        entry:
+                                        <code>key</code>
+                                        (e.g.,
+                                        <code>opt1</code>
+                                        ) cross-references managed
+                                        <code>interfaces.assignments[].name</code>
+                                        OR live overview interfaces. Use
+                                        <code>_xref.resolve_xref(value=key, expected_type="interfaces.assignments", index=index)</code>
+                                        plus a fallback to live
+                                        <code>provider._get_existing_interfaces()</code>
+                                        . Mirror
+                                        <code>gateway_validator._validate_interface()</code>
+                                        (lines 122–162 of
+                                        <code>validators/gateway_validator.py</code>
+                                        ).
+                                        <code>mode</code>
+                                        ∈ {
+                                        <code>disabled</code>
+                                        ,
+                                        <code>router</code>
+                                        ,
+                                        <code>unmanaged</code>
+                                        ,
+                                        <code>managed</code>
+                                        ,
+                                        <code>assist</code>
+                                        ,
+                                        <code>stateless</code>
+                                        }.
+                                        <code>priority</code>
+                                        ∈ {
+                                        <code>low</code>
+                                        ,
+                                        <code>medium</code>
+                                        ,
+                                        <code>high</code>
+                                        }.
+                                        <code>min_interval</code>
+                                        ≤
+                                        <code>max_interval</code>
+                                        ; both positive integers.
+                                        <code>routes</code>
+                                        : each entry is a valid IPv6 CIDR.
+                                        <code>dns_servers</code>
+                                        : each entry is a valid IPv6 address.
+                                        <code>domain_search</code>
+                                        : each entry is a valid DNS domain.
+
+
+If global
+                                        <code>enabled</code>
+                                        field exists at the singleton root (live-probe confirms): validate type only.
+                                        <b>Phase 4 — Provider registration + finalization hook</b>
+                                        Edit
+                                        <code>src/infrafoundry/providers/opnsense/__init__.py</code>
+                                        :
+
+Add import:
+                                        <code>from .components.radvd import RadvdManager</code>
+                                        Add to
+                                        <code>get_direct_api_resource_types()</code>
+                                        (insert after
+                                        <code>system.tuning</code>
+                                        before resource-level components):
+                                        <code class="language-python"><span class="token string">"radvd"</span><span class="token punctuation">:</span> RadvdManager<span class="token punctuation">,</span></code>
+                                        Add to
+                                        <code>get_finalization_hooks()</code>
+                                        :
+                                        <code class="language-python"><span class="token string">"radvd_reconfigure"</span><span class="token punctuation">:</span> self<span class="token punctuation">.</span>_reconfigure_radvd<span class="token punctuation">,</span></code>
+                                        Add
+                                        <code>_reconfigure_radvd(env_name)</code>
+                                        method:
+                                        <code class="language-multiline language-python" xml:space="preserve"><span class="token keyword">def</span> <span class="token function">_reconfigure_radvd</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> env_name<span class="token punctuation">:</span> <span class="token builtin">str</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token boolean">None</span><span class="token punctuation">:</span>
+    service <span class="token operator">=</span> RadvdService<span class="token punctuation">.</span>from_environment<span class="token punctuation">(</span>env_name<span class="token punctuation">,</span> <span class="token string">"opnsense"</span><span class="token punctuation">,</span> self<span class="token punctuation">.</span>config_dir<span class="token punctuation">)</span>
+<span class="token trimmed">(1 more line was trimmed)</span></code>
+                                        Wire validator into
+                                        <code>OPNsenseValidator.validate()</code>
+                                        (read existing pattern, mirror gateway/static_route validators).
+                                        <b>Phase 5 — Tests</b>
+                                        <code>tests/unit/providers/opnsense/test_radvd_manager.py</code>
+                                        :
+                                        <code>test_plan_no_change</code>
+                                        — live + YAML match → empty diff
+                                        <code>test_plan_add</code>
+                                        — YAML adds opt2 not in live → 1 add
+                                        <code>test_plan_update</code>
+                                        — YAML changes opt1.priority → 1 update
+                                        <code>test_plan_delete</code>
+                                        — live has opt3, YAML doesn't → 1 delete
+                                        <code>test_plan_full_reconcile</code>
+                                        — combination of add + update + delete in one run
+                                        <code>test_plan_add_only_skips_updates_and_deletes</code>
+                                        —
+                                        <code>--add-only=True</code>
+                                        zeroes updates + deletes
+                                        <code>test_apply_calls_per_record</code>
+                                        — apply with adds=2, updates=1, deletes=1 → 4 service calls in correct order
+                                        <code>test_destroy_deletes_all_live</code>
+                                        — destroy nukes every live radvd record
+                                        <code>test_get_resource_ids_returns_per_interface_uuids</code>
+                                        —
+                                        <code>{"interfaces.opt1": "uuid1", ...}</code>
+                                        <code>test_finalization_hook_declared</code>
+                                        —
+                                        <code>RadvdManager.FINALIZATION_HOOK == "radvd_reconfigure"</code>
+                                        <code>test_validator_rejects_invalid_mode</code>
+                                        —
+                                        <code>mode: bogus</code>
+                                        → error
+                                        <code>test_validator_rejects_min_gt_max</code>
+                                        —
+                                        <code>min_interval=600, max_interval=200</code>
+                                        → error
+                                        <code>test_validator_xref_missing_interface</code>
+                                        —
+                                        <code>interfaces.optZZ</code>
+                                        not in managed assignments or live → error
+                                        <code>test_validator_xref_managed_assignment</code>
+                                        —
+                                        <code>interfaces.opt1</code>
+                                        referenced in
+                                        <code>interfaces.assignments</code>
+                                        → pass
+                                        <code>test_validator_xref_live_only_interface</code>
+                                        —
+                                        <code>interfaces.opt99</code>
+                                        not in YAML but in live overview → pass with INFO
+
+Plus extend
+                                        <code>tests/unit/core/config/test_package_loader_nested.py</code>
+                                        if no existing test covers
+                                        <code>radvd</code>
+                                        round-trip with the
+                                        <code>interfaces:</code>
+                                        inner mapping (search confirms two tests already exist; add a richer one with multiple interfaces if needed).
+                                        <b>Phase 6 — Docs</b>
+                                        <code>docs/decisions/0014-opnsense-direct-api-apply-mechanism.md</code>
+                                        — append per-component subsection following the established 8-part format (title, mechanism, endpoints, identity, wire schema, validator scope, rollback, xref notes). Document the hybrid singleton-YAML/list-wire pattern + the
+                                        <code>radvd_reconfigure</code>
+                                        finalization hook.
+                                        <code>docs/decisions/0013-opnsense-full-iac-migration.md</code>
+                                        — link this issue from the implementation order; note that legacy
+                                        <code>/</code>
+                                        is explicitly out-of-scope.
+                                        <code>docs/development/opnsense-resource-coverage.md</code>
+                                        — add row for
+                                        <code>opnsense.radvd</code>
+                                        with both source-XML location (
+                                        <code>//</code>
+                                        legacy) and target controller (
+                                        <code>/api/radvd/*</code>
+                                        modern).
+                                        <b>Files to create/modify</b>
+                                        Modify:
+                                        <code>src/infrafoundry/providers/opnsense/__init__.py</code>
+                                        —
+                                        <code>get_direct_api_resource_types()</code>
+                                        +
+                                        <code>get_finalization_hooks()</code>
+                                        +
+                                        <code>_reconfigure_radvd()</code>
+                                        + validator wiring (~12 lines)
+                                        <code>src/infrafoundry/providers/opnsense/api_client.py</code>
+                                        — add
+                                        <code>RadvdClient</code>
+                                        class
+                                        <code>docs/decisions/0014-opnsense-direct-api-apply-mechanism.md</code>
+                                        — new subsection
+                                        <code>docs/decisions/0013-opnsense-full-iac-migration.md</code>
+                                        — link to #788
+                                        <code>docs/development/opnsense-resource-coverage.md</code>
+                                        — new row
+(Possibly)
+                                        <code>tests/unit/core/config/test_package_loader_nested.py</code>
+                                        — richer round-trip test if existing isn't sufficient
+
+Create:
+                                        <code>src/infrafoundry/providers/opnsense/components/radvd.py</code>
+                                        <code>src/infrafoundry/providers/opnsense/services/radvd.py</code>
+                                        <code>src/infrafoundry/providers/opnsense/validators/radvd_validator.py</code>
+                                        <code>tests/unit/providers/opnsense/test_radvd_manager.py</code>
+                                        <code>tmp/agents/claude/probe-788.md</code>
+                                        — Phase 0 results (cleanup at end of session)
+
+Note:
+                                        <code>DOTTED_RESOURCE_SHAPES["radvd"] = "dict"</code>
+                                        is already in place (registered when ADR-0016 landed); no loader edit needed.
+                                        <b>Validation</b>
+                                        Per-file:
+                                        <code>CAP_MB=4096 SCOPE=tests/unit/providers/opnsense/test_radvd_manager.py bash tmp/agents/claude/oom_pytest_run.sh</code>
+                                        Sweep:
+                                        <code>CAP_MB=4096 SCOPE=tests/unit/providers/opnsense/ bash tmp/agents/claude/oom_pytest_run.sh</code>
+                                        Loader check:
+                                        <code>CAP_MB=4096 SCOPE=tests/unit/core/config/ bash tmp/agents/claude/oom_pytest_run.sh</code>
+                                        Final gate:
+                                        <code>doit check</code>
+                                        (lint + type + test) AND
+                                        <code>uv run bandit -c pyproject.toml -r src/</code>
+                                        (the bandit scan that CI runs but
+                                        <code>doit check</code>
+                                        does not — added to checklist after #809's CI failure on hardcoded-password-string false positive).
+Live verification:
+                                        <code>uv run foundry -c /home/endavis/src/infrafoundry/endavis-infra infra plan --env prod -P opnsense</code>
+                                        against an env with the 4 fixture interfaces shows expected adds;
+                                        <code>infra apply</code>
+                                        lands cleanly; re-plan shows zero drift.
+                                        <b>Workflow</b>
+                                        Branch:
+                                        <code>feat/788-radvd</code>
+                                        (off current
+                                        <code>main</code>
+                                        after #806 merge — already on
+                                        <code>main</code>
+                                        ).
+Commit cadence: one logical commit per phase OR a single bundled commit (mirror #809's bundled approach since the file count is smaller).
+PR:
+                                        <code>doit pr</code>
+                                        (auto-pushes branch). Title:
+                                        <code>feat: add opnsense.radvd direct-API resource (cutover blocker for IPv6 RAs)</code>
+                                        . Body references
+                                        <code>#788</code>
+                                        .
+Merge:
+                                        <code>doit pr_merge --auto-close</code>
+                                        .
+                                        <b>Reference files (read during impl)</b>
+                                        Hybrid YAML-singleton/wire-list pattern:
+                                        <code>src/infrafoundry/providers/opnsense/components/system_firmware.py</code>
+                                        lines 42–104 (plan), 147–156 (apply);
+                                        <code>src/infrafoundry/providers/opnsense/services/system_firmware.py</code>
+                                        lines 184–206 (
+                                        <code>desired_vs_installed_plugins</code>
+                                        set algebra)
+Singleton helper:
+                                        <code>src/infrafoundry/providers/opnsense/components/_singleton.py</code>
+                                        (
+                                        <code>enforce_singleton</code>
+                                        ,
+                                        <code>diff_singleton</code>
+                                        ,
+                                        <code>SingletonDiff</code>
+                                        — extend or compose for
+                                        <code>_RadvdDiff</code>
+                                        carrying adds/updates/deletes)
+Cross-reference resolver:
+                                        <code>src/infrafoundry/providers/opnsense/validators/_xref.py</code>
+                                        lines 47–154 (
+                                        <code>build_xref_index</code>
+                                        ,
+                                        <code>resolve_xref</code>
                                         )
-#803 (#802) — restore
-                                        <code>subnet_ref</code>
-                                        resolution for kea reservations (regression from PR #781 that the hard cutover surfaced)
-
-Operator side (
-                                        <code>endavis-infra</code>
-                                        ):
-
-Commit
-                                        <code>be326f8</code>
-                                        — convert OPNsense YAML to nested ADR-0016 schema (4 new prod nested files, 1 test nested file, aiqum cross-provider type rewrite, kea-dhcp/ packages removed).
-
-End-to-end verification:
-                                        <code>foundry -c endavis-infra infra plan --env prod -P opnsense</code>
-                                        completes cleanly in ~5s. interfaces.vlans / interfaces.assignments / firewall.aliases / unbound.host_overrides / kea.dhcp6.* all show zero diff. The kea.dhcp4 diffs that remain (8 subnet updates, 1 reservation update, 1+1 deletes) are real drift between the operator YAML and live OPNsense state — including the OPT9
-                                        <code>/23</code>
-                                        vs
-                                        <code>/24</code>
-                                        mask inconsistency previously documented in
-                                        <code>docs/network-architecture.md</code>
-                                        . None of the remaining diff is a #793 regression.
+Interface validation pattern:
+                                        <code>src/infrafoundry/providers/opnsense/validators/gateway_validator.py</code>
+                                        lines 122–162 (
+                                        <code>_validate_interface()</code>
+                                        — managed assignments + live fallback)
+Finalization hook pattern:
+                                        <code>src/infrafoundry/providers/opnsense/__init__.py</code>
+                                        lines 282–315 (registration);
+                                        <code>src/infrafoundry/providers/opnsense/components/kea_dhcp6_subnet.py</code>
+                                        line ~100 (
+                                        <code>FINALIZATION_HOOK = "kea_reconfigure"</code>
+                                        declaration)
+Live-probe template:
+                                        <code>tmp/agents/claude/probe_unbound_724_followup.py</code>
+                                        (uses
+                                        <code>opnsense_openapi.OPNsenseClient</code>
+                                        directly);
+                                        <code>src/infrafoundry/providers/opnsense/services/base.py</code>
+                                        lines 27–73 (
+                                        <code>from_environment</code>
+                                        pattern for credential resolution)
+ADR conventions:
+                                        <code>docs/decisions/0014-opnsense-direct-api-apply-mechanism.md</code>
+                                        (existing per-component subsections, particularly the recent #806 batch);
+                                        <code>docs/decisions/0016-direct-opnsense-nested-yaml-schema.md</code>
+                                        §4 (singleton structural discrimination)
+Source-box reference (4 fixture entries):
+                                        <code>endavis-infra/docs/opnsense/config-OPNsense.endavis.net-20260504234318.xml</code>
+                                        lines 5655–5755 (
+                                        <code>//</code>
+                                        — legacy path; values to seed the cutover YAML)
+                                        <b>Out of scope</b>
+                                        Legacy
+                                        <code>//</code>
+                                        — read-only reference for migration values; cutover target uses modern controller, source box's legacy data not managed.
+DHCPv6 lease range / staticmap (`` lease fields) — Kea owns leases (
+                                        <code>kea.dhcp6.*</code>
+                                        ).
+IPv4 RA equivalent — none exists; default route delivered via DHCPv4.
+Migrate from legacy
+                                        <code>//</code>
+                                        XML to modern radvd records on opnsense-a — out of scope; operator authors initial YAML manually from the source XML reference, then
+                                        <code>migrate()</code>
+                                        extracts current state going forward.
                                     </div>
                                 </div>
-                                <div class="timestamp">9 May 2026, 16:07:00</div>
+                                <div class="timestamp">10 May 2026, 14:51:59</div>
                             </section>
                         </div>
                         <div class="row fill-width">
@@ -2307,13 +2725,13 @@ End-to-end verification:
                                     </svg>
                                     <div class="content">
                                         Closed
-                                        <span class="issue">#802 bug: kea reservation subnet_ref → subnet name resolution missing after direct-API migration</span>
+                                        <span class="issue">#806 feat: add system core direct-API resources (hostname/dns/ssh/webgui/firmware/remotebackup) for OPNsense (cutover hard blocker)</span>
                                     </div>
                                 </div>
                                 <div class="details">
                                     <div>opened  in <span class="repo">endavis/infrafoundry</span></div>
                                 </div>
-                                <div class="timestamp">9 May 2026, 16:05:26</div>
+                                <div class="timestamp">10 May 2026, 13:52:38</div>
                             </section>
                         </div>
                         <div class="row fill-width">
@@ -2324,14 +2742,48 @@ End-to-end verification:
                                     </svg>
                                     <div class="content">
                                         Commented on
-                                        <span class="issue">#802 bug: kea reservation subnet_ref → subnet name resolution missing after direct-API migration</span>
+                                        <span class="issue">#806 feat: add system core direct-API resources (hostname/dns/ssh/webgui/firmware/remotebackup) for OPNsense (cutover hard blocker)</span>
                                     </div>
                                 </div>
                                 <div class="details">
                                     <div>opened by endavis in <span class="repo">endavis/infrafoundry</span></div>
-                                    <div class="comment">Addressed in PR #803</div>
+                                    <div class="comment">Addressed in PR #809</div>
                                 </div>
-                                <div class="timestamp">9 May 2026, 16:05:24</div>
+                                <div class="timestamp">10 May 2026, 13:52:36</div>
+                            </section>
+                        </div>
+                        <div class="row fill-width">
+                            <section class="activity">
+                                <div class="field">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                        <path fill-rule="evenodd" d="M11.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122V6A2.5 2.5 0 0110 8.5H6a1 1 0 00-1 1v1.128a2.251 2.251 0 11-1.5 0V5.372a2.25 2.25 0 111.5 0v1.836A2.492 2.492 0 016 7h4a1 1 0 001-1v-.628A2.25 2.25 0 019.5 3.25zM4.25 12a.75.75 0 100 1.5.75.75 0 000-1.5zM3.5 3.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0z"/>
+                                    </svg>
+                                    <div class="content">
+                                        Deleted
+                      branch
+                                        <span class="code">feat/806-system-core</span>
+                                        in
+                                        <span class="repo">endavis/infrafoundry</span>
+                                    </div>
+                                </div>
+                                <div class="timestamp">10 May 2026, 13:52:34</div>
+                            </section>
+                        </div>
+                        <div class="row fill-width">
+                            <section class="activity">
+                                <div class="field">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                        <path fill-rule="evenodd" d="M11.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122V6A2.5 2.5 0 0110 8.5H6a1 1 0 00-1 1v1.128a2.251 2.251 0 11-1.5 0V5.372a2.25 2.25 0 111.5 0v1.836A2.492 2.492 0 016 7h4a1 1 0 001-1v-.628A2.25 2.25 0 019.5 3.25zM4.25 12a.75.75 0 100 1.5.75.75 0 000-1.5zM3.5 3.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0z"/>
+                                    </svg>
+                                    <div class="content">
+                                        Created new
+                      branch
+                                        <span class="code">feat/806-system-core</span>
+                                        in
+                                        <span class="repo">endavis/infrafoundry</span>
+                                    </div>
+                                </div>
+                                <div class="timestamp">10 May 2026, 13:03:27</div>
                             </section>
                         </div>
                     </section>
@@ -2420,7 +2872,7 @@ End-to-end verification:
                                     </defs>
                                     <svg xmlns="http://www.w3.org/2000/svg" class="gauge info">
                                         <circle class="gauge-base" r="25" cx="28" cy="28"/>
-                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="64.29158110882956 155"/>
+                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="64.37645448323069 155"/>
                                     </svg>
                                     <svg xmlns="http://www.w3.org/2000/svg" mask="url(#mask)">
                                         <g xmlns="http://www.w3.org/2000/svg" transform="translate(5 4)" fill="none" fill-rule="evenodd">
@@ -2494,7 +2946,7 @@ End-to-end verification:
                                     </defs>
                                     <svg xmlns="http://www.w3.org/2000/svg" class="gauge info">
                                         <circle class="gauge-base" r="25" cx="28" cy="28"/>
-                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="141.67000000000002 155"/>
+                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="141.98000000000002 155"/>
                                     </svg>
                                     <svg xmlns="http://www.w3.org/2000/svg" mask="url(#mask)">
                                         <g stroke-width="2" fill="none" fill-rule="evenodd">
@@ -2522,10 +2974,10 @@ End-to-end verification:
                                     <span class="prefix">Super</span>
                                     contributor
                                     <div class="value-wrapper">
-                                        <div class="value">957</div>
+                                        <div class="value">958</div>
                                     </div>
                                 </div>
-                                <div class="text">Opened 957 pull requests</div>
+                                <div class="text">Opened 958 pull requests</div>
                             </div>
                         </div>
                         <div class="achievement a largeable-width-half">
@@ -2727,7 +3179,7 @@ End-to-end verification:
                                 <div class="title">
                                     <span class="prefix"></span>
                                     Inspirer
-                                    <span class="gh">ranked 989k out of 316m repositories</span>
+                                    <span class="gh">ranked 989k out of 317m repositories</span>
                                     <div class="value-wrapper">
                                         <div class="value">14</div>
                                     </div>
@@ -2782,7 +3234,7 @@ End-to-end verification:
                                 <div class="title">
                                     <span class="prefix"></span>
                                     Influencer
-                                    <span class="gh">ranked 989k out of 218m users</span>
+                                    <span class="gh">ranked 990k out of 218m users</span>
                                     <div class="value-wrapper">
                                         <div class="value">20</div>
                                     </div>
@@ -2901,7 +3353,7 @@ End-to-end verification:
                                 <div class="title">
                                     <span class="prefix"></span>
                                     Maintainer
-                                    <span class="gh">ranked 1.43m out of 316m repositories</span>
+                                    <span class="gh">ranked 1.44m out of 317m repositories</span>
                                     <div class="value-wrapper">
                                         <div class="value">22</div>
                                     </div>
@@ -3051,7 +3503,7 @@ End-to-end verification:
             </section>
             <footer>
                 <span>These metrics include private contributions</span>
-                <span>Last updated 10 May 2026, 00:59:35 (timezone UTC) with lowlighter/metrics@3.35.0-beta</span>
+                <span>Last updated 11 May 2026, 00:59:57 (timezone UTC) with lowlighter/metrics@3.35.0-beta</span>
             </footer>
         </div>
         <div xmlns="http://www.w3.org/1999/xhtml" id="metrics-end"></div>
