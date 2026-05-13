@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="2967" class="">
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="3023" class="">
     <defs>
         <style/>
     </defs>
-    <style>@keyframes animation-gauge{0%{stroke-dasharray:0 329}}@keyframes animation-rainbow{0%,to{color:#7f00ff;fill:#7f00ff}14%{color:#a933ff;fill:#a933ff}29%{color:#007fff;fill:#007fff}43%{color:#00ff7f;fill:#00ff7f}57%{color:#ff0;fill:#ff0}71%{color:#ff7f00;fill:#ff7f00}86%{color:red;fill:red}}svg{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:14px;color:#777}h1,h2,h3{margin:8px 0 2px;padding:0;color:#0366d6}h1{font-size:20px;font-weight:700}h2,h3{font-weight:400}h1 svg,h2 svg,h3 svg{fill:currentColor}h2{font-size:16px}h3{font-size:14px}.h-details{margin:0 4px;padding-top:4px;font-size:.8rem}section&gt;.field{margin-left:5px;margin-right:5px}.field{display:flex;align-items:center;margin-bottom:2px;white-space:nowrap}.field.wrap,.row{flex-wrap:wrap}.field svg{margin:0 8px;fill:#959da5;flex-shrink:0}.field.error{color:#cb2431}.field.error svg{fill:#cb2431}.row{display:flex}.row section{flex:1 1 0}.column{display:flex;flex-direction:column;align-items:center}.no-wrap{white-space:nowrap}.fill-width{width:100%}.margin-bottom{margin-bottom:16px}.no-margin-top{margin-top:0}.avatar{border-radius:50%;margin:0 6px}.calendar.field{margin:4px 0 4px 7px}.calendar .day{outline:1px solid rgba(27,31,35,.04);outline-offset:-1px}svg.bar{margin:4px 0}.field.language{margin:0 8px;flex-grow:0}.field.language.details{display:flex;justify-content:space-between}.field.language.details small,.field.license.details small{display:flex;justify-content:space-between;color:#666;text-align:right}.field.language.details small&gt;*,.field.language.details&gt;*{flex:1 1 0}.field.language.details small&gt;:not(:last-child){margin-right:6px}.followup.legend{font-size:12px;flex-wrap:wrap}.followup.legend .field{width:46%;justify-content:flex-start;margin-left:8px}.followup.legend svg{margin:0 3px;width:14px;height:14px}.followup.legend svg:first-child{margin-left:0}.followup.legend svg:last-child{margin-right:0}.followup-title{white-space:initial}.label{background-color:#58a6ff30;color:#0366d6;padding:0 10px;font-weight:500;line-height:22px;margin:2px 5px;white-space:nowrap;border-radius:32px;font-size:12px}.label .label-right,.label.label-flex{display:flex;align-items:center}.label .label-right{font-size:.7rem;margin-left:6px;margin-right:-10px;background-color:#58a6ff10;padding:0 7px;border-top-right-radius:32px;border-bottom-right-radius:32px}.habits .facts{margin:0;list-style-type:none;padding-left:37px}footer{margin-top:8px;font-size:10px;font-style:italic;color:#666;text-align:right;display:flex;flex-direction:column;justify-content:flex-end;padding:0 4px}.categories,.category{display:flex;align-items:center}.categories{justify-content:space-around;margin-top:4px}.category{flex-direction:column;flex:1 1 0}.gauge{stroke-linecap:round;fill:none}.gauge.high{color:#18b663}.gauge.low{color:#e53935}.gauge.info{color:#58a6ff}.gauge-arc,.gauge-base{stroke:currentColor;stroke-width:10}.gauge-base{stroke-opacity:.2}.gauge-arc{fill:none;stroke-dashoffset:0;animation-delay:250ms;animation:animation-gauge 1s ease forwards}.gauge text{fill:currentColor;font-size:40px;font-family:monospace;text-anchor:middle;font-weight:600}.gauge .title{font-size:18px;color:#777}.topics{display:flex;flex-wrap:wrap}.topics img{border-radius:5px;margin:4px}.chart{padding:0 8px}.chart-bars{display:flex;justify-content:space-between;align-items:flex-end;width:100%;margin:8px 0 4px;flex-grow:1;min-height:70px}.chart-bars .entry,.repository{display:flex;flex-direction:column}.chart-bars .entry{flex-grow:1;align-items:center;font-size:10px;color:#666}.chart-bars .entry .value{font-size:6px}.chart-bars .entry .empty{width:100%;text-align:center}.chart-bars .bar{width:7px;background-color:var(--color-calendar-graph-day-bg);border:1px solid var(--color-calendar-graph-day-border);border-radius:5px}.chart-bars .entry .bottom{margin-bottom:-1rem;line-height:1rem}.repository{width:100%;margin:6px 0}.repository .name{display:flex;align-items:center;justify-content:space-between;width:440px}.repository .name span:first-child{color:#58a6ff}.repository .name span:last-child{color:#666;font-size:10px}.repository .description{display:block;width:440px;white-space:normal}.repository .description,.repository .infos{color:#666;margin-left:38px;font-size:13px}.repository .infos&gt;div{display:flex;align-items:center;margin-right:16px}.repository .infos svg{margin:0 4px 0 0}.activity{margin-bottom:12px}.activity .field{width:100%;overflow:hidden;text-overflow:ellipsis;max-width:450px;white-space:nowrap;margin-bottom:0}.activity .field .content{flex-grow:1;text-overflow:ellipsis;overflow:hidden}.activity .issue,.activity .repo{display:inline;color:#58a6ff}.activity .code,code,span.code{background-color:#7777771f;border-radius:6px;color:#777;padding:1px 5px;font-size:80%;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace}.activity .code,span.code{margin:0 4px -3px}.activity .user{font-weight:600}.activity .details,.activity .timestamp{padding-left:38px;display:flex;flex-direction:column;font-size:13px;color:#666}.activity .timestamp{font-size:10px;margin-top:4px}.activity .commit{display:flex;align-items:center}.activity .details&gt;.comment{overflow:hidden;text-overflow:ellipsis;display:block;width:420px;margin-top:6px;border-left:3px solid #777777b2;padding-left:6px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}svg.calendar{margin-left:13px;margin-top:4px}svg.calendar text{font-size:18px;fill:currentColor}.added{color:#3fb950}.people{padding:0 10px}.people .avatar{margin:0 2px}.project .description{overflow:hidden;text-overflow:ellipsis;display:block;width:420px;margin-left:37px;max-height:38px;font-size:12px;white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}.field.license.details{display:flex;justify-content:space-between}.achievement{display:flex;margin:4px 0}.achievement .icon{margin:0 4px;width:44px;height:44px}.achievement .text{font-size:12px;color:#666}.achievement .title{font-size:14px;color:#58a6ff}.achievement .gauge.info{color:#58a6ff}.achievement .value{background-color:#58a6ff26}.achievement.x .title{color:#666}.achievement.x .gauge.info{color:#b0b0b0}.achievement.x .value{background-color:#b0b0b026}.achievement.b .title{color:#9d8fff}.achievement.b .gauge.info{color:#9e91ff}.achievement.b .value{background-color:#9e91ff26}.achievement.a .title{color:#d79533}.achievement.a .gauge.info{color:#e7bd69}.achievement.a .value{background-color:#e7bd6926}.achievement.s .gauge.info,.achievement.s .title{color:#eb355e}.achievement.s .value{background-color:#eb355e26}.achievement.secret .title{color:#ff76cd}.achievement.secret .gauge.info{color:#ff79d1}.achievement.secret .value{background-color:#ff79d126}.achievement .gh,.achievement .value{border:1px solid currentColor;border-radius:16px;font-size:10px;padding:0 5px;white-space:nowrap}.achievement .gauge-arc,.achievement .gauge-base{stroke-width:6}.achievement .value-wrapper{margin-bottom:-50px;margin-top:36px;display:none}.achievement .value{margin-left:46px}.achievements.compact{display:flex;flex-wrap:wrap}.achievements.compact .achievement{flex-direction:column-reverse;align-items:center;width:80px}#metrics-end,.achievements.compact .info{width:100%}.achievements.compact .achievement .title{margin-bottom:2px;text-transform:capitalize;text-align:center}.achievements.compact .achievement .title .prefix{min-height:13px;font-size:10px;display:block;margin-bottom:-.25rem}.achievements.compact .achievement .value-wrapper{display:flex}.achievements.compact .achievement .gh,.achievements.compact .achievement .text{display:none}.snippet .body{padding-left:12px}code{display:inline-block}code[class^=language-]{white-space:pre-wrap;width:97%;margin-top:4px}.token.comment{color:#690}.token.punctuation{color:#8a93a8}.token.keyword,.token.namespace{color:#b44418}.token.boolean,.token.string{color:#2777aa}.token.builtin,.token.operator{color:#106cbc}.token.trimmed{font-style:italic;color:#77777760}.space{margin-left:7px}:root{--color-calendar-graph-day-bg:#ebedf0;--color-calendar-graph-day-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-bg:#9be9a8;--color-calendar-graph-day-L2-bg:#40c463;--color-calendar-graph-day-L3-bg:#30a14e;--color-calendar-graph-day-L4-bg:#216e39;--color-calendar-halloween-graph-day-L1-bg:#ffee4a;--color-calendar-halloween-graph-day-L2-bg:#ffc501;--color-calendar-halloween-graph-day-L3-bg:#fe9600;--color-calendar-halloween-graph-day-L4-bg:#03001c;--color-calendar-winter-graph-day-L1-bg:#0a3069;--color-calendar-winter-graph-day-L2-bg:#0969da;--color-calendar-winter-graph-day-L3-bg:#54aeff;--color-calendar-winter-graph-day-L4-bg:#b6e3ff;--color-calendar-graph-day-L4-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L3-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L2-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-border:rgba(27,31,35,0.06)}</style>
+    <style>@keyframes animation-gauge{0%{stroke-dasharray:0 329}}@keyframes animation-rainbow{0%,to{color:#7f00ff;fill:#7f00ff}14%{color:#a933ff;fill:#a933ff}29%{color:#007fff;fill:#007fff}43%{color:#00ff7f;fill:#00ff7f}57%{color:#ff0;fill:#ff0}71%{color:#ff7f00;fill:#ff7f00}86%{color:red;fill:red}}svg{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:14px;color:#777}h1,h2,h3{margin:8px 0 2px;padding:0;color:#0366d6}h1{font-size:20px;font-weight:700}h2,h3{font-weight:400}h1 svg,h2 svg,h3 svg{fill:currentColor}h2{font-size:16px}h3{font-size:14px}.h-details{margin:0 4px;padding-top:4px;font-size:.8rem}section&gt;.field{margin-left:5px;margin-right:5px}.field{display:flex;align-items:center;margin-bottom:2px;white-space:nowrap}.field.wrap,.row{flex-wrap:wrap}.field svg{margin:0 8px;fill:#959da5;flex-shrink:0}.field.error{color:#cb2431}.field.error svg{fill:#cb2431}.row{display:flex}.row section{flex:1 1 0}.column{display:flex;flex-direction:column;align-items:center}.no-wrap{white-space:nowrap}.fill-width{width:100%}.margin-bottom{margin-bottom:16px}.no-margin-top{margin-top:0}.avatar{border-radius:50%;margin:0 6px}.calendar.field{margin:4px 0 4px 7px}.calendar .day{outline:1px solid rgba(27,31,35,.04);outline-offset:-1px}svg.bar{margin:4px 0}.field.language{margin:0 8px;flex-grow:0}.field.language.details{display:flex;justify-content:space-between}.field.language.details small,.field.license.details small{display:flex;justify-content:space-between;color:#666;text-align:right}.field.language.details small&gt;*,.field.language.details&gt;*{flex:1 1 0}.field.language.details small&gt;:not(:last-child){margin-right:6px}.followup.legend{font-size:12px;flex-wrap:wrap}.followup.legend .field{width:46%;justify-content:flex-start;margin-left:8px}.followup.legend svg{margin:0 3px;width:14px;height:14px}.followup.legend svg:first-child{margin-left:0}.followup.legend svg:last-child{margin-right:0}.followup-title{white-space:initial}.label{background-color:#58a6ff30;color:#0366d6;padding:0 10px;font-weight:500;line-height:22px;margin:2px 5px;white-space:nowrap;border-radius:32px;font-size:12px}.label .label-right,.label.label-flex{display:flex;align-items:center}.label .label-right{font-size:.7rem;margin-left:6px;margin-right:-10px;background-color:#58a6ff10;padding:0 7px;border-top-right-radius:32px;border-bottom-right-radius:32px}.habits .facts{margin:0;list-style-type:none;padding-left:37px}footer{margin-top:8px;font-size:10px;font-style:italic;color:#666;text-align:right;display:flex;flex-direction:column;justify-content:flex-end;padding:0 4px}.categories,.category{display:flex;align-items:center}.categories{justify-content:space-around;margin-top:4px}.category{flex-direction:column;flex:1 1 0}.gauge{stroke-linecap:round;fill:none}.gauge.info{color:#58a6ff}.gauge-arc,.gauge-base{stroke:currentColor;stroke-width:10}.gauge-base{stroke-opacity:.2}.gauge-arc{fill:none;stroke-dashoffset:0;animation-delay:250ms;animation:animation-gauge 1s ease forwards}.gauge text{fill:currentColor;font-size:40px;font-family:monospace;text-anchor:middle;font-weight:600}.gauge .title{font-size:18px;color:#777}.topics{display:flex;flex-wrap:wrap}.topics img{border-radius:5px;margin:4px}.chart{padding:0 8px}.chart-bars{display:flex;justify-content:space-between;align-items:flex-end;width:100%;margin:8px 0 4px;flex-grow:1;min-height:70px}.chart-bars .entry,.repository{display:flex;flex-direction:column}.chart-bars .entry{flex-grow:1;align-items:center;font-size:10px;color:#666}.chart-bars .entry .value{font-size:6px}.chart-bars .entry .empty{width:100%;text-align:center}.chart-bars .bar{width:7px;background-color:var(--color-calendar-graph-day-bg);border:1px solid var(--color-calendar-graph-day-border);border-radius:5px}.chart-bars .entry .bottom{margin-bottom:-1rem;line-height:1rem}.repository{width:100%;margin:6px 0}.repository .name{display:flex;align-items:center;justify-content:space-between;width:440px}.repository .name span:first-child{color:#58a6ff}.repository .name span:last-child{color:#666;font-size:10px}.repository .description{display:block;width:440px;white-space:normal}.repository .description,.repository .infos{color:#666;margin-left:38px;font-size:13px}.repository .infos&gt;div{display:flex;align-items:center;margin-right:16px}.repository .infos svg{margin:0 4px 0 0}.activity{margin-bottom:12px}.activity .field{width:100%;overflow:hidden;text-overflow:ellipsis;max-width:450px;white-space:nowrap;margin-bottom:0}.activity .field .content{flex-grow:1;text-overflow:ellipsis;overflow:hidden}.activity .issue,.activity .repo{display:inline;color:#58a6ff}.activity .code,code,span.code{background-color:#7777771f;border-radius:6px;color:#777;padding:1px 5px;font-size:80%;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace}.activity .code,span.code{margin:0 4px -3px}.activity .user{font-weight:600}.activity .details,.activity .timestamp{padding-left:38px;display:flex;flex-direction:column;font-size:13px;color:#666}.activity .timestamp{font-size:10px;margin-top:4px}.activity .commit{display:flex;align-items:center}.activity .details&gt;.comment{overflow:hidden;text-overflow:ellipsis;display:block;width:420px;margin-top:6px;border-left:3px solid #777777b2;padding-left:6px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}svg.calendar{margin-left:13px;margin-top:4px}svg.calendar text{font-size:18px;fill:currentColor}.added{color:#3fb950}.deleted{color:#da3633}.people{padding:0 10px}.people .avatar{margin:0 2px}.project .description{overflow:hidden;text-overflow:ellipsis;display:block;width:420px;margin-left:37px;max-height:38px;font-size:12px;white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}.field.license.details{display:flex;justify-content:space-between}.achievement{display:flex;margin:4px 0}.achievement .icon{margin:0 4px;width:44px;height:44px}.achievement .text{font-size:12px;color:#666}.achievement .title{font-size:14px;color:#58a6ff}.achievement .gauge.info{color:#58a6ff}.achievement .value{background-color:#58a6ff26}.achievement.x .title{color:#666}.achievement.x .gauge.info{color:#b0b0b0}.achievement.x .value{background-color:#b0b0b026}.achievement.b .title{color:#9d8fff}.achievement.b .gauge.info{color:#9e91ff}.achievement.b .value{background-color:#9e91ff26}.achievement.a .title{color:#d79533}.achievement.a .gauge.info{color:#e7bd69}.achievement.a .value{background-color:#e7bd6926}.achievement.s .gauge.info,.achievement.s .title{color:#eb355e}.achievement.s .value{background-color:#eb355e26}.achievement.secret .title{color:#ff76cd}.achievement.secret .gauge.info{color:#ff79d1}.achievement.secret .value{background-color:#ff79d126}.achievement .gh,.achievement .value{border:1px solid currentColor;border-radius:16px;font-size:10px;padding:0 5px;white-space:nowrap}.achievement .gauge-arc,.achievement .gauge-base{stroke-width:6}.achievement .value-wrapper{margin-bottom:-50px;margin-top:36px;display:none}.achievement .value{margin-left:46px}.achievements.compact{display:flex;flex-wrap:wrap}.achievements.compact .achievement{flex-direction:column-reverse;align-items:center;width:80px}#metrics-end,.achievements.compact .info{width:100%}.achievements.compact .achievement .title{margin-bottom:2px;text-transform:capitalize;text-align:center}.achievements.compact .achievement .title .prefix{min-height:13px;font-size:10px;display:block;margin-bottom:-.25rem}.achievements.compact .achievement .value-wrapper{display:flex}.achievements.compact .achievement .gh,.achievements.compact .achievement .text{display:none}.snippet .body{padding-left:12px}.snippet .token.prefix.unchanged{visibility:hidden}code{display:inline-block}code[class^=language-]{white-space:pre-wrap;width:97%;margin-top:4px}.token.comment{color:#690}.token.punctuation{color:#8a93a8}.token.keyword{color:#b44418}.token.boolean,.token.string{color:#2777aa}.token.builtin,.token.operator{color:#106cbc}.token.trimmed{font-style:italic;color:#77777760}.token.deleted:not(.prefix){color:#eed2d0dc;background-color:#9a5256dc}.space{margin-left:7px}:root{--color-calendar-graph-day-bg:#ebedf0;--color-calendar-graph-day-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-bg:#9be9a8;--color-calendar-graph-day-L2-bg:#40c463;--color-calendar-graph-day-L3-bg:#30a14e;--color-calendar-graph-day-L4-bg:#216e39;--color-calendar-halloween-graph-day-L1-bg:#ffee4a;--color-calendar-halloween-graph-day-L2-bg:#ffc501;--color-calendar-halloween-graph-day-L3-bg:#fe9600;--color-calendar-halloween-graph-day-L4-bg:#03001c;--color-calendar-winter-graph-day-L1-bg:#0a3069;--color-calendar-winter-graph-day-L2-bg:#0969da;--color-calendar-winter-graph-day-L3-bg:#54aeff;--color-calendar-winter-graph-day-L4-bg:#b6e3ff;--color-calendar-graph-day-L4-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L3-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L2-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-border:rgba(27,31,35,0.06)}</style>
     <style/>
     <foreignObject x="0" y="0" width="100%" height="100%">
         <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" class="items-wrapper">
@@ -30,19 +30,19 @@
                         <div class="field calendar">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 11" width="210" height="16">
                                 <g>
-                                    <rect class="day" x="0" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
+                                    <rect class="day" x="0" y="0" width="11" height="11" fill="#40c463" rx="2" ry="2"/>
                                     <rect class="day" x="15" y="0" width="11" height="11" fill="#40c463" rx="2" ry="2"/>
                                     <rect class="day" x="30" y="0" width="11" height="11" fill="#40c463" rx="2" ry="2"/>
-                                    <rect class="day" x="45" y="0" width="11" height="11" fill="#40c463" rx="2" ry="2"/>
-                                    <rect class="day" x="60" y="0" width="11" height="11" fill="#216e39" rx="2" ry="2"/>
-                                    <rect class="day" x="75" y="0" width="11" height="11" fill="#30a14e" rx="2" ry="2"/>
-                                    <rect class="day" x="90" y="0" width="11" height="11" fill="#216e39" rx="2" ry="2"/>
-                                    <rect class="day" x="105" y="0" width="11" height="11" fill="#30a14e" rx="2" ry="2"/>
-                                    <rect class="day" x="120" y="0" width="11" height="11" fill="#216e39" rx="2" ry="2"/>
+                                    <rect class="day" x="45" y="0" width="11" height="11" fill="#216e39" rx="2" ry="2"/>
+                                    <rect class="day" x="60" y="0" width="11" height="11" fill="#30a14e" rx="2" ry="2"/>
+                                    <rect class="day" x="75" y="0" width="11" height="11" fill="#216e39" rx="2" ry="2"/>
+                                    <rect class="day" x="90" y="0" width="11" height="11" fill="#30a14e" rx="2" ry="2"/>
+                                    <rect class="day" x="105" y="0" width="11" height="11" fill="#216e39" rx="2" ry="2"/>
+                                    <rect class="day" x="120" y="0" width="11" height="11" fill="#30a14e" rx="2" ry="2"/>
                                     <rect class="day" x="135" y="0" width="11" height="11" fill="#30a14e" rx="2" ry="2"/>
-                                    <rect class="day" x="150" y="0" width="11" height="11" fill="#30a14e" rx="2" ry="2"/>
-                                    <rect class="day" x="165" y="0" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
-                                    <rect class="day" x="180" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
+                                    <rect class="day" x="150" y="0" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
+                                    <rect class="day" x="165" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
+                                    <rect class="day" x="180" y="0" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
                                     <rect class="day" x="195" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
                                 </g>
                             </svg>
@@ -69,7 +69,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"/>
                             </svg>
-                            6152 Commits
+                            6153 Commits
                         </div>
                         <div class="field">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -81,20 +81,20 @@
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path fill-rule="evenodd" d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z"/>
                             </svg>
-                            943 Pull requests opened
+                            944 Pull requests opened
                         </div>
                         <div class="field">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path d="M8 9.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/>
                                 <path fill-rule="evenodd" d="M8 0a8 8 0 100 16A8 8 0 008 0zM1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0z"/>
                             </svg>
-                            920 Issues opened
+                            921 Issues opened
                         </div>
                         <div class="field">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path fill-rule="evenodd" d="M2.75 2.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 01.75.75v2.19l2.72-2.72a.75.75 0 01.53-.22h4.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25H2.75zM1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0113.25 12H9.06l-2.573 2.573A1.457 1.457 0 014 13.543V12H2.75A1.75 1.75 0 011 10.25v-7.5z"/>
                             </svg>
-                            1601 issue comments
+                            1604 issue comments
                         </div>
                     </section>
                     <section>
@@ -222,14 +222,14 @@
                                 <rect x="0" y="0" width="220" height="8" fill="white" rx="5"/>
                             </mask>
                             <rect mask="url(#issues-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                            <rect mask="url(#issues-bar)" x="0" y="0" width="10.576923076923077" height="8" fill="#238636"/>
-                            <rect mask="url(#issues-bar)" x="10.576923076923077" y="0" width="0" height="8" fill="#56d364"/>
-                            <rect mask="url(#issues-bar)" x="10.576923076923077" y="0" width="0" height="8" fill="#8B949E"/>
-                            <rect mask="url(#issues-bar)" x="10.576923076923077" y="0" width="0" height="8" fill="#c9d1d9"/>
-                            <rect mask="url(#issues-bar)" x="10.576923076923077" y="0" width="209.4230769230769" height="8" fill="#8957e5"/>
-                            <rect mask="url(#issues-bar)" x="219.99999999999997" y="0" width="0" height="8" fill="#d2a8ff"/>
-                            <rect mask="url(#issues-bar)" x="219.99999999999997" y="0" width="0" height="8" fill="#8B949E"/>
-                            <rect mask="url(#issues-bar)" x="219.99999999999997" y="0" width="0" height="8" fill="#c9d1d9"/>
+                            <rect mask="url(#issues-bar)" x="0" y="0" width="10.330843116328708" height="8" fill="#238636"/>
+                            <rect mask="url(#issues-bar)" x="10.330843116328708" y="0" width="0" height="8" fill="#56d364"/>
+                            <rect mask="url(#issues-bar)" x="10.330843116328708" y="0" width="0" height="8" fill="#8B949E"/>
+                            <rect mask="url(#issues-bar)" x="10.330843116328708" y="0" width="0" height="8" fill="#c9d1d9"/>
+                            <rect mask="url(#issues-bar)" x="10.330843116328708" y="0" width="209.6691568836713" height="8" fill="#8957e5"/>
+                            <rect mask="url(#issues-bar)" x="220" y="0" width="0" height="8" fill="#d2a8ff"/>
+                            <rect mask="url(#issues-bar)" x="220" y="0" width="0" height="8" fill="#8B949E"/>
+                            <rect mask="url(#issues-bar)" x="220" y="0" width="0" height="8" fill="#c9d1d9"/>
                         </svg>
                         <div class="followup legend field fill-width">
                             <div class="field">
@@ -237,14 +237,14 @@
                                     <path fill="#238636" d="M8 9.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/>
                                     <path fill="#238636" fill-rule="evenodd" d="M8 0a8 8 0 100 16A8 8 0 008 0zM1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0z"/>
                                 </svg>
-                                <span class="no-wrap">45 <small>open</small></span>
+                                <span class="no-wrap">44 <small>open</small></span>
                             </div>
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                     <path fill="#8957e5" d="M11.28 6.78a.75.75 0 00-1.06-1.06L7.25 8.69 5.78 7.22a.75.75 0 00-1.06 1.06l2 2a.75.75 0 001.06 0l3.5-3.5z"/>
                                     <path fill="#8957e5" fill-rule="evenodd" d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-1.5 0a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z"/>
                                 </svg>
-                                <span class="no-wrap">891 <small>closed</small></span>
+                                <span class="no-wrap">893 <small>closed</small></span>
                             </div>
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -267,13 +267,13 @@
                                 <rect x="0" y="0" width="220" height="8" fill="white" rx="5"/>
                             </mask>
                             <rect mask="url(#pr-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                            <rect mask="url(#issues-bar)" x="0" y="0" width="1.1739594450373534" height="8" fill="#238636"/>
-                            <rect mask="url(#issues-bar)" x="1.1739594450373534" y="0" width="0" height="8" fill="#56d364"/>
-                            <rect mask="url(#issues-bar)" x="1.1739594450373534" y="0" width="0" height="8" fill="#8B949E"/>
-                            <rect mask="url(#issues-bar)" x="1.1739594450373534" y="0" width="0" height="8" fill="#c9d1d9"/>
-                            <rect mask="url(#issues-bar)" x="1.1739594450373534" y="0" width="4.930629669156883" height="8" fill="#da3633"/>
-                            <rect mask="url(#issues-bar)" x="6.104589114194237" y="0" width="0" height="8" fill="#ff7b72"/>
-                            <rect mask="url(#issues-bar)" x="6.104589114194237" y="0" width="213.89541088580577" height="8" fill="#8957e5"/>
+                            <rect mask="url(#issues-bar)" x="0" y="0" width="1.1727078891257996" height="8" fill="#238636"/>
+                            <rect mask="url(#issues-bar)" x="1.1727078891257996" y="0" width="0" height="8" fill="#56d364"/>
+                            <rect mask="url(#issues-bar)" x="1.1727078891257996" y="0" width="0" height="8" fill="#8B949E"/>
+                            <rect mask="url(#issues-bar)" x="1.1727078891257996" y="0" width="0" height="8" fill="#c9d1d9"/>
+                            <rect mask="url(#issues-bar)" x="1.1727078891257996" y="0" width="4.925373134328358" height="8" fill="#da3633"/>
+                            <rect mask="url(#issues-bar)" x="6.098081023454157" y="0" width="0" height="8" fill="#ff7b72"/>
+                            <rect mask="url(#issues-bar)" x="6.098081023454157" y="0" width="213.90191897654583" height="8" fill="#8957e5"/>
                             <rect mask="url(#issues-bar)" x="220" y="0" width="0" height="8" fill="#d2a8ff"/>
                         </svg>
                         <div class="followup legend field fill-width">
@@ -287,7 +287,7 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                     <path fill="#8957e5" fill-rule="evenodd" d="M5 3.254V3.25v.005a.75.75 0 110-.005v.004zm.45 1.9a2.25 2.25 0 10-1.95.218v5.256a2.25 2.25 0 101.5 0V7.123A5.735 5.735 0 009.25 9h1.378a2.251 2.251 0 100-1.5H9.25a4.25 4.25 0 01-3.8-2.346zM12.75 9a.75.75 0 100-1.5.75.75 0 000 1.5zm-8.5 4.5a.75.75 0 100-1.5.75.75 0 000 1.5z"/>
                                 </svg>
-                                <span class="no-wrap">911 <small>merged</small></span>
+                                <span class="no-wrap">912 <small>merged</small></span>
                             </div>
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -447,11 +447,6 @@
                     <h3>Commit activity per hour of day</h3>
                     <div class="chart-bars">
                         <div class="entry">
-                            <span class="value">1</span>
-                            <div class="bar" style="height: 2.631578947368421px; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
-                            12
-                        </div>
-                        <div class="entry">
                             <span class="value">2</span>
                             <div class="bar" style="height: 5.263157894736842px; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
                             13
@@ -462,8 +457,8 @@
                             14
                         </div>
                         <div class="entry">
-                            <span class="value">1</span>
-                            <div class="bar" style="height: 2.631578947368421px; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
+                            <span class="value">2</span>
+                            <div class="bar" style="height: 5.263157894736842px; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
                             15
                         </div>
                         <div class="entry">
@@ -488,8 +483,8 @@
                                 Mon
                             </div>
                             <div class="entry">
-                                <span class="value"></span>
-                                <div class="bar" style="height: 0px; background-color: var(--color-calendar-graph-day-L0-bg)"></div>
+                                <span class="value">1</span>
+                                <div class="bar" style="height: 2.380952380952381px; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
                                 Tue
                             </div>
                             <div class="entry">
@@ -503,8 +498,8 @@
                                 Thu
                             </div>
                             <div class="entry">
-                                <span class="value">4</span>
-                                <div class="bar" style="height: 9.523809523809524px; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
+                                <span class="value">3</span>
+                                <div class="bar" style="height: 7.142857142857142px; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
                                 Fri
                             </div>
                             <div class="entry">
@@ -549,6 +544,12 @@
                         </h3>
                         <div class="field">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                <path fill-rule="evenodd" d="M7.998 14.5c2.832 0 5-1.98 5-4.5 0-1.463-.68-2.19-1.879-3.383l-.036-.037c-1.013-1.008-2.3-2.29-2.834-4.434-.322.256-.63.579-.864.953-.432.696-.621 1.58-.046 2.73.473.947.67 2.284-.278 3.232-.61.61-1.545.84-2.403.633a2.788 2.788 0 01-1.436-.874A3.21 3.21 0 003 10c0 2.53 2.164 4.5 4.998 4.5zM9.533.753C9.496.34 9.16.009 8.77.146 7.035.75 4.34 3.187 5.997 6.5c.344.689.285 1.218.003 1.5-.419.419-1.54.487-2.04-.832-.173-.454-.659-.762-1.035-.454C2.036 7.44 1.5 8.702 1.5 10c0 3.512 2.998 6 6.498 6s6.5-2.5 6.5-6c0-2.137-1.128-3.26-2.312-4.438-1.19-1.184-2.436-2.425-2.653-4.81z"/>
+                            </svg>
+                            Current streak 1 day
+                        </div>
+                        <div class="field">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path d="M8.5.75a.75.75 0 00-1.5 0v5.19L4.391 3.33a.75.75 0 10-1.06 1.061L5.939 7H.75a.75.75 0 000 1.5h5.19l-2.61 2.609a.75.75 0 101.061 1.06L7 9.561v5.189a.75.75 0 001.5 0V9.56l2.609 2.61a.75.75 0 101.06-1.061L9.561 8.5h5.189a.75.75 0 000-1.5H9.56l2.61-2.609a.75.75 0 00-1.061-1.06L8.5 5.939V.75z"/>
                             </svg>
                             Best streak 25 days
@@ -569,7 +570,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path d="M10.896 2H8.75V.75a.75.75 0 00-1.5 0V2H5.104a.25.25 0 00-.177.427l2.896 2.896a.25.25 0 00.354 0l2.896-2.896A.25.25 0 0010.896 2zM8.75 15.25a.75.75 0 01-1.5 0V14H5.104a.25.25 0 01-.177-.427l2.896-2.896a.25.25 0 01.354 0l2.896 2.896a.25.25 0 01-.177.427H8.75v1.25zm-6.5-6.5a.75.75 0 000-1.5h-.5a.75.75 0 000 1.5h.5zM6 8a.75.75 0 01-.75.75h-.5a.75.75 0 010-1.5h.5A.75.75 0 016 8zm2.25.75a.75.75 0 000-1.5h-.5a.75.75 0 000 1.5h.5zM12 8a.75.75 0 01-.75.75h-.5a.75.75 0 010-1.5h.5A.75.75 0 0112 8zm2.25.75a.75.75 0 000-1.5h-.5a.75.75 0 000 1.5h.5z"/>
                             </svg>
-                            Average per day at ~19.10
+                            Average per day at ~19.01
                         </div>
                     </section>
                 </div>
@@ -1562,6 +1563,11 @@
                                 <path fill="#ebedf0" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2 0,1 z"/>
                                 <path fill="#ebedf0" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1 1.7,2 z"/>
                             </g>
+                            <g transform="translate(-3.4, 7.828571428571428)">
+                                <path fill="#9be9a8" d="M1.7,2 0,1 1.7,0 3.4,1 z"/>
+                                <path fill="#9be9a8" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2.1714285714285713 0,1.1714285714285715 z"/>
+                                <path fill="#9be9a8" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1.1714285714285715 1.7,2.1714285714285713 z"/>
+                            </g>
                         </g>
                     </g>
                 </svg>
@@ -1748,6 +1754,7 @@
                                 <g transform="translate(285, 0)">
                                     <rect class="day" x="0" y="4" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
                                     <rect class="day" x="0" y="19" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
+                                    <rect class="day" x="0" y="34" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
                                 </g>
                             </g>
                         </svg>
@@ -1771,7 +1778,7 @@
                                     </svg>
                                     <div class="name">
                                         <span>CoderLuii/HolyClaude</span>
-                                        <span>starred 12 days ago</span>
+                                        <span>starred 13 days ago</span>
                                     </div>
                                 </div>
                                 <div class="field description">AI coding workstation: Claude Code + web UI + 7 AI CLIs + headless browser + 50+ tools</div>
@@ -1798,7 +1805,7 @@
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                             <path fill-rule="evenodd" d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"/>
                                         </svg>
-                                        234
+                                        235
                                     </div>
                                     <div>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -1811,7 +1818,7 @@
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                             <path fill-rule="evenodd" d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z"/>
                                         </svg>
-                                        4
+                                        5
                                     </div>
                                 </div>
                             </section>
@@ -1824,7 +1831,7 @@
                                     </svg>
                                     <div class="name">
                                         <span>ranahaani/preview</span>
-                                        <span>starred 26 days ago</span>
+                                        <span>starred 27 days ago</span>
                                     </div>
                                 </div>
                                 <div class="field description">Preview and export Claude Code responses as PDF, DOCX, or HTML.</div>
@@ -1904,7 +1911,7 @@
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                             <path fill-rule="evenodd" d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"/>
                                         </svg>
-                                        1.54k
+                                        1.55k
                                     </div>
                                     <div>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -1917,7 +1924,7 @@
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                             <path fill-rule="evenodd" d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z"/>
                                         </svg>
-                                        142
+                                        143
                                     </div>
                                 </div>
                             </section>
@@ -1951,13 +1958,13 @@
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                             <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"/>
                                         </svg>
-                                        14.4k
+                                        14.5k
                                     </div>
                                     <div>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                             <path fill-rule="evenodd" d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"/>
                                         </svg>
-                                        1.95k
+                                        1.98k
                                     </div>
                                     <div>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -1970,7 +1977,7 @@
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                             <path fill-rule="evenodd" d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z"/>
                                         </svg>
-                                        475
+                                        481
                                     </div>
                                 </div>
                             </section>
@@ -1992,13 +1999,8 @@
                             <div class="entry">
                                 <span class="value">48</span>
                                 <div class="bar" style="height: 2.5px; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
-                                29
-                                <div class="bottom">Apr.</div>
-                            </div>
-                            <div class="entry">
-                                <span class="value"></span>
-                                <div class="bar" style="height: 2.5px; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
                                 30
+                                <div class="bottom">Apr.</div>
                             </div>
                             <div class="entry">
                                 <span class="value"></span>
@@ -2060,6 +2062,11 @@
                                 <span class="value"></span>
                                 <div class="bar" style="height: 2.5px; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
                                 12
+                            </div>
+                            <div class="entry">
+                                <span class="value"></span>
+                                <div class="bar" style="height: 2.5px; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
+                                13
                             </div>
                         </div>
                     </section>
@@ -2069,13 +2076,8 @@
                             <div class="entry">
                                 <span class="value"></span>
                                 <div class="bar" style="height: 0px; background-color: var(--color-calendar-graph-day-L0-bg)"></div>
-                                29
-                                <div class="bottom">Apr.</div>
-                            </div>
-                            <div class="entry">
-                                <span class="value"></span>
-                                <div class="bar" style="height: 0px; background-color: var(--color-calendar-graph-day-L0-bg)"></div>
                                 30
+                                <div class="bottom">Apr.</div>
                             </div>
                             <div class="entry">
                                 <span class="value"></span>
@@ -2137,6 +2139,11 @@
                                 <span class="value"></span>
                                 <div class="bar" style="height: 0px; background-color: var(--color-calendar-graph-day-L0-bg)"></div>
                                 12
+                            </div>
+                            <div class="entry">
+                                <span class="value"></span>
+                                <div class="bar" style="height: 0px; background-color: var(--color-calendar-graph-day-L0-bg)"></div>
+                                13
                             </div>
                         </div>
                     </section>
@@ -2211,406 +2218,473 @@
                             <section class="activity">
                                 <div class="field">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                        <path d="M11.28 6.78a.75.75 0 00-1.06-1.06L7.25 8.69 5.78 7.22a.75.75 0 00-1.06 1.06l2 2a.75.75 0 001.06 0l3.5-3.5z"/>
+                                        <path fill-rule="evenodd" d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-1.5 0a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z"/>
+                                    </svg>
+                                    <div class="content">
+                                        Closed
+                                        <span class="issue">#786 feat: add firewall_log resource type and singleton config convention (runaway-log fix)</span>
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <div>opened  in <span class="repo">endavis/infrafoundry</span></div>
+                                </div>
+                                <div class="timestamp">12 May 2026, 16:05:39</div>
+                            </section>
+                        </div>
+                        <div class="row fill-width">
+                            <section class="activity">
+                                <div class="field">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                         <path fill-rule="evenodd" d="M2.75 2.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 01.75.75v2.19l2.72-2.72a.75.75 0 01.53-.22h4.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25H2.75zM1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0113.25 12H9.06l-2.573 2.573A1.457 1.457 0 014 13.543V12H2.75A1.75 1.75 0 011 10.25v-7.5z"/>
                                     </svg>
                                     <div class="content">
                                         Commented on
-                                        <span class="issue">#788 feat: add radvd resource type for OPNsense IPv6 Router Advertisements (cutover blocker)</span>
+                                        <span class="issue">#786 feat: add firewall_log resource type and singleton config convention (runaway-log fix)</span>
                                     </div>
                                 </div>
                                 <div class="details">
                                     <div>opened by endavis in <span class="repo">endavis/infrafoundry</span></div>
                                     <div class="comment">
-                                        <b>Implementation Plan for #788: opnsense.radvd Direct-API Resource</b>
-                                        <b>Context</b>
-                                        Why: Cutover hard blocker for hands-free IPv6. The source
-                                        <code>OPNsense.endavis.net</code>
-                                        box emits IPv6 Router Advertisements on 4 interfaces (
-                                        <code>opt1</code>
-                                        /
-                                        <code>opt2</code>
-                                        /
-                                        <code>opt3</code>
-                                        /
-                                        <code>opt6</code>
-                                        — Infra/PT/Tailscale-infra/Apps VLANs) via the legacy
-                                        <code>//</code>
-                                        path. The cutover target
+                                        <b>Closing as obsolete — sidestep via per-rule <code>log: false</code></b>
+                                        Phase 0 live-API probe against
                                         <code>opnsense-a</code>
-                                        is fresh and uses OPNsense 26.x's modern
-                                        <code>radvd</code>
-                                        controller (no `` block exists in
+                                        (2026-05-12) confirmed there is no REST endpoint for
+                                        <code>/</code>
+                                        . Probed 18 candidates plus full endpoint enumeration (70 results across
+                                        <code>firewall/</code>
+                                        ,
+                                        <code>syslog/</code>
+                                        ,
+                                        <code>diagnostics/firewall/</code>
+                                        namespaces) — none expose the four
+                                        <code>nolog*</code>
+                                        fields. The OPNsense GUI page
+                                        <code>Firewall → Settings → Advanced → "Disable rule logging"</code>
+                                        writes
                                         <code>config.xml</code>
-                                        ; settings live in the MVC model store). Without this resource type, cutover apply creates VLANs but leaves IPv6 segments without RA emission — every IPv6-enabled host on those VLANs loses its default route the moment cutover finishes.
-Outcome: A new
-                                        <code>opnsense.radvd</code>
-                                        direct-API resource modeled as a dict-shape singleton at YAML level (per ADR-0016 amendment on the issue, already registered as
-                                        <code>"radvd": "dict"</code>
-                                        in
-                                        <code>DOTTED_RESOURCE_SHAPES</code>
-                                        ). The internal
-                                        <code>interfaces:</code>
-                                        mapping translates to per-interface wire records — a hybrid YAML-singleton/wire-list pattern, mirroring the just-shipped
-                                        <code>system.firmware</code>
-                                        (#806).
-Scope decisions confirmed with user (2026-05-10):
+                                        directly with no MVC controller wrapper. Probe artifact:
+                                        <code>tmp/agents/claude/probe-786.md</code>
+                                        (session-local).
+Sidestep adopted instead of the issue body's
+                                        <code>wontfix</code>
+                                        contingency. Rather than building a global
+                                        <code>nolog*</code>
+                                        toggle, the runaway-log root cause (RFC4890 ICMP traffic flooding the default-pass log) is addressed by setting
+                                        <code>log: false</code>
+                                        on the offending firewall rule(s) — which the existing
+                                        <code>opnsense.firewall.rules</code>
+                                        manager already supports. This eliminates the runaway scenario without needing the global per-syslog toggle that has no API.
+Side finding worth recording: the probe confirmed RFC4890 ICMP entries are actively flooding the filterlog on
+                                        <code>opnsense-a</code>
+                                        right now — the runaway risk is live on the cutover target, not just the source box. Whichever rule is logging this needs
+                                        <code>log: false</code>
+                                        before cutover apply, regardless of how
+                                        <code>/</code>
+                                        is handled.
+Follow-up actions for the operator (separate from this framework issue):
 
-Reconcile mode: full reconcile. Interfaces in live wire-state but absent from YAML get DELETED. Safe: deleting a radvd record just stops RA emission, no data loss.
-(Not re-asked) Schema is singleton dict per ADR-0016; the loader is already registered. Original body's "list of records" framing is superseded by the amendment header at the top of the issue.
+Identify the rule(s) currently logging RFC4890 ICMP traffic (likely a default-pass rule for IPv6 or a permissive ICMP allow). Use the live filterlog in the OPNsense GUI to attribute the floods to a specific rule UUID.
+Set
+                                        <code>log: false</code>
+                                        on those rules in
+                                        <code>endavis-infra/envs/prod/opnsense/firewall.yaml</code>
+                                        (operator YAML; uses the existing
+                                        <code>opnsense.firewall.rules</code>
+                                        manager).
+                                        <code>infra apply --env prod -P opnsense</code>
+                                        to push the change.
+
+No framework code changed. No PR opened. Branch
+                                        <code>feat/786-firewall-log</code>
+                                        deleted (was empty).
+Closing as obsolete.
+                                    </div>
+                                </div>
+                                <div class="timestamp">12 May 2026, 16:05:36</div>
+                            </section>
+                        </div>
+                        <div class="row fill-width">
+                            <section class="activity">
+                                <div class="field">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                        <path fill-rule="evenodd" d="M2.75 2.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 01.75.75v2.19l2.72-2.72a.75.75 0 01.53-.22h4.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25H2.75zM1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0113.25 12H9.06l-2.573 2.573A1.457 1.457 0 014 13.543V12H2.75A1.75 1.75 0 011 10.25v-7.5z"/>
+                                    </svg>
+                                    <div class="content">
+                                        Commented on
+                                        <span class="issue">#786 feat: add firewall_log resource type and singleton config convention (runaway-log fix)</span>
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <div>opened by endavis in <span class="repo">endavis/infrafoundry</span></div>
+                                    <div class="comment">
+                                        <b>Implementation Plan for #786: opnsense.firewall.log Direct-API Resource</b>
+                                        <b>Context</b>
+                                        Why: Cutover hard blocker — runaway-log incident prevention. On 2026-04-14, the source
+                                        <code>OPNsense.endavis.net</code>
+                                        box's
+                                        <code>/var/log/</code>
+                                        filled the zpool and truncated
+                                        <code>config.xml</code>
+                                        because IPv6 RFC4890 traffic flooded the default-pass rule logs. The fix was to set
+                                        <code>nologdefaultpass=1</code>
+                                        (operator side; legacy XML edit). Cutover to a fresh
+                                        <code>opnsense-a</code>
+                                        without this setting reintroduces the failure mode — the runaway is one boot away. Today the operator must remember to flip this manually on every cutover. InfraFoundry should manage it like the rest of the surface so it survives a cutover automatically.
+Outcome: A new
+                                        <code>opnsense.firewall.log</code>
+                                        direct-API resource modeled as a dict-shape singleton with wire-name semantic inversion (operator-facing positive booleans
+                                        <code>log_default_block</code>
+                                        /
+                                        <code>log_default_pass</code>
+                                        /
+                                        <code>log_bogons</code>
+                                        /
+                                        <code>log_private_nets</code>
+                                        ↔ wire-side negative
+                                        <code>nologdefaultblock</code>
+                                        /
+                                        <code>nologdefaultpass</code>
+                                        /
+                                        <code>nologbogons</code>
+                                        /
+                                        <code>nologprivatenets</code>
+                                        as
+                                        <code>"0"</code>
+                                        /
+                                        <code>"1"</code>
+                                        strings). Schema is settled per ADR-0016 amendment header on the issue:
+                                        <code>firewall.log: dict</code>
+                                        is already registered in
+                                        <code>DOTTED_RESOURCE_SHAPES</code>
+                                        ; a pre-written loader test fixture (
+                                        <code>test_firewall_log_singleton_emits_one_settings</code>
+                                        at
+                                        <code>test_package_loader_nested.py:1123-1135</code>
+                                        ) already covers the round-trip.
+Scope decisions: None require user input. Schema (singleton dict) is decided by ADR-0016 amendment. Destroy is no-op (standard for box-global singletons, per #806 pattern). No FINALIZATION_HOOK (per the issue body — `` settings take effect on next filterlog reload, OPNsense triggers automatically). Wire-name inversion: helper function pattern (mirror
+                                        <code>services/static_route.py:_bool_str</code>
+                                        ).
                                         <b>Approach</b>
                                         <b>Phase 0 — Live API probe (no committed code)</b>
-                                        Before component scaffolding, probe
+                                        Probe
                                         <code>opnsense-a</code>
-                                        to confirm:
+                                        to confirm REST endpoint exists for the 4
+                                        <code>fields. The XML lives at top-level</code>
+                                        (not under
+                                        <code>/Syslog/*</code>
+                                        ); whether OPNsense
+                                        <code>26.1.6_2</code>
+                                        exposes a REST controller for these legacy fields is unknown.
 
 
 
 Endpoint guess
-Purpose
-                                        <code>GET /api/radvd/settings/get</code>
-                                        Bulk read; envelope shape
-                                        <code>GET /api/radvd/settings/searchItem</code>
-                                        List shape; per-record UUID format
-                                        <code>GET /api/radvd/settings/getItem/</code>
-                                        Single record fields
-                                        <code>POST /api/radvd/settings/addItem</code>
-                                        Create payload shape
-                                        <code>POST /api/radvd/settings/setItem/</code>
-                                        Update payload
-                                        <code>POST /api/radvd/settings/delItem/</code>
-                                        Delete
-                                        <code>POST /api/radvd/service/reconfigure</code>
-                                        Apply pending changes
-                                        <code>GET /api/radvd/service/status</code>
-                                        Daemon health
+Likelihood
+                                        <code>GET /api/firewall/filter_log/get</code>
+                                        ,
+                                        <code>POST /api/firewall/filter_log/set</code>
+                                        Most likely (matches MVC controller naming for adjacent firewall settings)
+                                        <code>GET /api/firewall/filter/get</code>
+                                        ,
+                                        <code>/set</code>
+                                        Alternate — fields might live in a sub-block of broader filter settings
+                                        <code>GET /api/firewall/log/get</code>
+                                        ,
+                                        <code>/set</code>
+                                        Alternate — shorter URL form
+                                        <code>GET /api/system/general/get</code>
+                                        (under syslog sub-block)
+Unlikely but possible
 
 
-Critical questions for the probe:
-
-Is there a global
-                                        <code>enabled</code>
-                                        toggle (top-level
-                                        <code>radvd.settings.enabled</code>
-                                        ) or is enable strictly per-interface?
-Wire field names: confirm
-                                        <code>ramode</code>
-                                        ,
-                                        <code>rapriority</code>
-                                        ,
-                                        <code>ramininterval</code>
-                                        ,
-                                        <code>ramaxinterval</code>
-                                        ,
-                                        <code>radomainsearchlist</code>
-                                        ,
-                                        <code>radnsserver</code>
-                                        ,
-                                        <code>raroutes</code>
-                                        — or the actual current names. The issue body's wire-name guesses are best-effort.
-Per-interface record identity:
-                                        <code>interface</code>
-                                        field (logical name like
-                                        <code>opt1</code>
-                                        )? Or some other key?
-
-Save results to
-                                        <code>tmp/agents/claude/probe-788.md</code>
-                                        (cleaned up at end of session). Use
+Probe with a one-off
+                                        <code>tmp/agents/claude/probe_786_run.py</code>
+                                        script using
                                         <code>opnsense_openapi.OPNsenseClient</code>
-                                        directly via a tmp script (mirror the pattern from
+                                        directly (mirror the pattern from
                                         <code>tmp/agents/claude/probe_unbound_724_followup.py</code>
-                                        ); do NOT add probe code to the codebase.
-If
-                                        <code>/api/radvd/*</code>
+                                        ). Save findings to
+                                        <code>tmp/agents/claude/probe-786.md</code>
+                                        . Critical questions:
+
+Endpoint URL + HTTP verb
+JSON envelope shape (
+                                        <code>{"syslog": {...}}</code>
+                                        vs
+                                        <code>{"firewall": {...}}</code>
+                                        vs flat dict)
+Wire field names: confirm
+                                        <code>nologdefaultblock</code>
+                                        /
+                                        <code>nologdefaultpass</code>
+                                        /
+                                        <code>nologbogons</code>
+                                        /
+                                        <code>nologprivatenets</code>
+                                        (most likely) vs alternative spelling
+Wire value format:
+                                        <code>"0"</code>
+                                        /
+                                        <code>"1"</code>
+                                        strings (most likely) vs Python booleans
+
+Contingency: If
+                                        <code>/api/firewall/*log*</code>
                                         returns 404 across the board → close as
                                         <code>wontfix</code>
-                                        per the issue's contingency, document in ADR-0014 that radvd stays manual.
-                                        <b>Phase 1 — Service + client extension</b>
-                                        Add a
-                                        <code>RadvdClient</code>
-                                        namespace to
+                                        , document in ADR-0014 that this surface stays manual (same handling as
+                                        <code>hasync</code>
+                                        ). Per the issue body, this is an acceptable outcome with the runaway risk explicitly called out as deferred.
+                                        <b>Phase 1 — <code>FirewallClient</code> extension</b>
+                                        No existing
+                                        <code>FirewallClient</code>
+                                        — create one in
                                         <code>src/infrafoundry/providers/opnsense/api_client.py</code>
-                                        (mirror
+                                        (mirror the
                                         <code>KeaClient</code>
                                         /
                                         <code>SystemClient</code>
-                                        patterns):
-                                        <code class="language-multiline language-python" xml:space="preserve"><span class="token keyword">class</span> <span class="token class-name">RadvdClient</span><span class="token punctuation">:</span>
+                                        /
+                                        <code>RadvdClient</code>
+                                        patterns). Methods (just one pair for now; this client is forward-looking for any future firewall-namespace direct-API surfaces):
+                                        <code class="language-multiline language-python" xml:space="preserve"><span class="token keyword">class</span> <span class="token class-name">FirewallClient</span><span class="token punctuation">:</span>
     <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> client<span class="token punctuation">:</span> OPNsenseClient<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token boolean">None</span><span class="token punctuation">:</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
-<span class="token trimmed">(10 more lines were trimmed)</span></code>
-                                        Service at
-                                        <code>src/infrafoundry/providers/opnsense/services/radvd.py</code>
-                                        :
+<span class="token trimmed">(2 more lines were trimmed)</span></code>
+                                        (Endpoint paths set to whatever the probe confirms.)
+                                        <b>Phase 2 — <code>FirewallLogService</code></b>
+                                        <code>src/infrafoundry/providers/opnsense/services/firewall_log.py</code>
+                                        (mirror
+                                        <code>services/system_hostname.py</code>
+                                        shape):
                                         <code>from_environment(env_name, provider_name, config_dir) -&gt; Self</code>
                                         factory.
-                                        <code>extract_interface_records() -&gt; dict[str, dict[str, Any]]</code>
-                                        — returns
-                                        <code>{interface_name: field_map}</code>
-                                        keyed by wire
-                                        <code>interface</code>
-                                        field; field_map uses snake_case operator-facing names (translated from wire
-                                        <code>ramode</code>
+                                        <code>extract_log_settings_fields() -&gt; dict[str, bool]</code>
+                                        — calls
+                                        <code>client.get_log_settings()</code>
+                                        , applies wire→operator-facing transform: each wire
+                                        <code>"0"</code>
                                         /
-                                        <code>rapriority</code>
-                                        /etc.).
-                                        <code>build_desired_interface_records(resource_config) -&gt; dict[str, dict[str, Any]]</code>
-                                        — parses the YAML
-                                        <code>interfaces:</code>
-                                        block into the same
-                                        <code>{interface_name: field_map}</code>
-                                        shape; applies defaults (
-                                        <code>mode: assist</code>
-                                        ,
-                                        <code>priority: medium</code>
-                                        ,
-                                        <code>min_interval: 200</code>
-                                        ,
-                                        <code>max_interval: 600</code>
-                                        , empty lists for
-                                        <code>domain_search</code>
+                                        <code>"1"</code>
+                                        string → Python bool, then NEGATE (wire
+                                        <code>nologdefaultblock="1"</code>
+                                        → operator
+                                        <code>log_default_block=False</code>
+                                        ). Returns flat 4-field dict keyed by operator-facing names.
+                                        <code>build_desired_log_settings_fields(resource_config) -&gt; dict[str, bool]</code>
+                                        — parses
+                                        <code>resource_config.config</code>
+                                        dict; applies defaults (all
+                                        <code>False</code>
+                                        per the source XML's actual values, not the OPNsense factory defaults).
+                                        <code>wire_payload(operator_fields: dict[str, bool]) -&gt; dict[str, Any]</code>
+                                        — operator→wire transform: each Python bool → wire
+                                        <code>"0"</code>
                                         /
-                                        <code>dns_servers</code>
-                                        /
-                                        <code>routes</code>
-                                        ).
-                                        <code>compute_diff(live, desired)</code>
-                                        — set algebra returning
-                                        <code>(adds, updates, deletes)</code>
-                                        :
-                                        <code>adds = desired.keys() - live.keys()</code>
-                                        <code>deletes = live.keys() - desired.keys()</code>
-                                        <code>updates = {k for k in (live &amp; desired) if live[k] != desired[k]}</code>
-                                        Mirrors
-                                        <code>desired_vs_installed_plugins</code>
-                                        from
-                                        <code>services/system_firmware.py:184-206</code>
-                                        but generalized for dict→dict comparison.
-                                        <code>wire_payload_for_interface(interface_name, field_map) -&gt; dict[str, Any]</code>
-                                        — translates operator-facing names → wire names (
-                                        <code>mode → ramode</code>
-                                        etc.) and adds the
-                                        <code>interface</code>
-                                        field.
+                                        <code>"1"</code>
+                                        string with negation (operator
+                                        <code>log_default_block=True</code>
+                                        → wire
+                                        <code>nologdefaultblock="0"</code>
+                                        ). Wraps in the envelope shape the probe confirmed.
                                         <code>export_to_yaml(env_name) -&gt; str</code>
                                         —
                                         <code>migrate()</code>
-                                        extractor.
-                                        <b>Phase 2 — Component manager</b>
-                                        <code>src/infrafoundry/providers/opnsense/components/radvd.py</code>
-                                        :
-                                        <code class="language-multiline language-python" xml:space="preserve"><span class="token keyword">class</span> <span class="token class-name">RadvdManager</span><span class="token punctuation">(</span>BaseComponentManager<span class="token punctuation">)</span><span class="token punctuation">:</span>
-    SIBLING_RESOURCE_TYPE<span class="token punctuation">:</span> ClassVar<span class="token punctuation">[</span><span class="token builtin">str</span> <span class="token operator">|</span> <span class="token boolean">None</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">None</span>
-<span class="token trimmed">(51 more lines were trimmed)</span></code>
-                                        <code>_RadvdDiff</code>
-                                        shape mirrors
-                                        <code>_singleton.SingletonDiff</code>
-                                        extended for adds/updates/deletes (or extend
-                                        <code>SingletonDiff</code>
-                                        itself if generalization is clean — decide at coding time).
-                                        <b>Phase 3 — Validator</b>
-                                        <code>src/infrafoundry/providers/opnsense/validators/radvd_validator.py</code>
-                                        :
+                                        extractor; calls
+                                        <code>extract_log_settings_fields()</code>
+                                        and emits the nested YAML form.
 
-Pure-check; no mutation of
+Inversion helper (private to this module; not added to a shared spot until a third use case appears):
+                                        <code class="language-multiline language-python" xml:space="preserve">_OPERATOR_TO_WIRE<span class="token punctuation">:</span> <span class="token builtin">dict</span><span class="token punctuation">[</span><span class="token builtin">str</span><span class="token punctuation">,</span> <span class="token builtin">str</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">"log_default_block"</span><span class="token punctuation">:</span> <span class="token string">"nologdefaultblock"</span><span class="token punctuation">,</span>
+<span class="token trimmed">(12 more lines were trimmed)</span></code>
+                                        <b>Phase 3 — <code>FirewallLogManager</code></b>
+                                        <code>src/infrafoundry/providers/opnsense/components/firewall_log.py</code>
+                                        (mirror
+                                        <code>components/system_hostname.py</code>
+                                        exactly):
+                                        <code class="language-multiline language-python" xml:space="preserve"><span class="token keyword">from</span> <span class="token punctuation">.</span><span class="token punctuation">.</span>_singleton <span class="token keyword">import</span> enforce_singleton<span class="token punctuation">,</span> diff_singleton<span class="token punctuation">,</span> SingletonDiff
+<span class="token keyword">from</span> <span class="token punctuation">.</span><span class="token punctuation">.</span>services<span class="token punctuation">.</span>firewall_log <span class="token keyword">import</span> FirewallLogService
+<span class="token trimmed">(28 more lines were trimmed)</span></code>
+                                        <b>Phase 4 — Validator</b>
+                                        <code>src/infrafoundry/providers/opnsense/validators/firewall_log_validator.py</code>
+                                        (pure-check, never mutate
                                         <code>resource.config</code>
+                                        ):
+
+Each of
+                                        <code>log_default_block</code>
+                                        ,
+                                        <code>log_default_pass</code>
+                                        ,
+                                        <code>log_bogons</code>
+                                        ,
+                                        <code>log_private_nets</code>
+                                        : type-check
+                                        <code>bool</code>
+                                        ; reject string
+                                        <code>"true"</code>
+                                        /
+                                        <code>"false"</code>
+                                        /
+                                        <code>"1"</code>
+                                        /
+                                        <code>"0"</code>
+                                        with a clear error pointing the operator to the boolean form.
+Reject unknown keys at the singleton root (defensive against typos like
+                                        <code>log_default_blocks</code>
+                                        plural).
+No cross-references; no API connectivity check.
+
+Wire into
+                                        <code>OPNsenseValidator.validate()</code>
+                                        (mirror radvd/static_route validators). Export from
+                                        <code>validators/__init__.py</code>
                                         .
-For each
-                                        <code>interfaces.</code>
-                                        entry:
-                                        <code>key</code>
-                                        (e.g.,
-                                        <code>opt1</code>
-                                        ) cross-references managed
-                                        <code>interfaces.assignments[].name</code>
-                                        OR live overview interfaces. Use
-                                        <code>_xref.resolve_xref(value=key, expected_type="interfaces.assignments", index=index)</code>
-                                        plus a fallback to live
-                                        <code>provider._get_existing_interfaces()</code>
-                                        . Mirror
-                                        <code>gateway_validator._validate_interface()</code>
-                                        (lines 122–162 of
-                                        <code>validators/gateway_validator.py</code>
-                                        ).
-                                        <code>mode</code>
-                                        ∈ {
-                                        <code>disabled</code>
-                                        ,
-                                        <code>router</code>
-                                        ,
-                                        <code>unmanaged</code>
-                                        ,
-                                        <code>managed</code>
-                                        ,
-                                        <code>assist</code>
-                                        ,
-                                        <code>stateless</code>
-                                        }.
-                                        <code>priority</code>
-                                        ∈ {
-                                        <code>low</code>
-                                        ,
-                                        <code>medium</code>
-                                        ,
-                                        <code>high</code>
-                                        }.
-                                        <code>min_interval</code>
-                                        ≤
-                                        <code>max_interval</code>
-                                        ; both positive integers.
-                                        <code>routes</code>
-                                        : each entry is a valid IPv6 CIDR.
-                                        <code>dns_servers</code>
-                                        : each entry is a valid IPv6 address.
-                                        <code>domain_search</code>
-                                        : each entry is a valid DNS domain.
-
-
-If global
-                                        <code>enabled</code>
-                                        field exists at the singleton root (live-probe confirms): validate type only.
-                                        <b>Phase 4 — Provider registration + finalization hook</b>
+                                        <b>Phase 5 — Provider registration</b>
                                         Edit
                                         <code>src/infrafoundry/providers/opnsense/__init__.py</code>
                                         :
 
-Add import:
-                                        <code>from .components.radvd import RadvdManager</code>
+Import:
+                                        <code>from .components.firewall_log import FirewallLogManager</code>
                                         Add to
                                         <code>get_direct_api_resource_types()</code>
-                                        (insert after
-                                        <code>system.tuning</code>
-                                        before resource-level components):
-                                        <code class="language-python"><span class="token string">"radvd"</span><span class="token punctuation">:</span> RadvdManager<span class="token punctuation">,</span></code>
-                                        Add to
-                                        <code>get_finalization_hooks()</code>
-                                        :
-                                        <code class="language-python"><span class="token string">"radvd_reconfigure"</span><span class="token punctuation">:</span> self<span class="token punctuation">.</span>_reconfigure_radvd<span class="token punctuation">,</span></code>
-                                        Add
-                                        <code>_reconfigure_radvd(env_name)</code>
-                                        method:
-                                        <code class="language-multiline language-python" xml:space="preserve"><span class="token keyword">def</span> <span class="token function">_reconfigure_radvd</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> env_name<span class="token punctuation">:</span> <span class="token builtin">str</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token boolean">None</span><span class="token punctuation">:</span>
-    service <span class="token operator">=</span> RadvdService<span class="token punctuation">.</span>from_environment<span class="token punctuation">(</span>env_name<span class="token punctuation">,</span> <span class="token string">"opnsense"</span><span class="token punctuation">,</span> self<span class="token punctuation">.</span>config_dir<span class="token punctuation">)</span>
-<span class="token trimmed">(1 more line was trimmed)</span></code>
-                                        Wire validator into
-                                        <code>OPNsenseValidator.validate()</code>
-                                        (read existing pattern, mirror gateway/static_route validators).
-                                        <b>Phase 5 — Tests</b>
-                                        <code>tests/unit/providers/opnsense/test_radvd_manager.py</code>
-                                        :
-                                        <code>test_plan_no_change</code>
-                                        — live + YAML match → empty diff
-                                        <code>test_plan_add</code>
-                                        — YAML adds opt2 not in live → 1 add
-                                        <code>test_plan_update</code>
-                                        — YAML changes opt1.priority → 1 update
-                                        <code>test_plan_delete</code>
-                                        — live has opt3, YAML doesn't → 1 delete
-                                        <code>test_plan_full_reconcile</code>
-                                        — combination of add + update + delete in one run
-                                        <code>test_plan_add_only_skips_updates_and_deletes</code>
-                                        —
-                                        <code>--add-only=True</code>
-                                        zeroes updates + deletes
-                                        <code>test_apply_calls_per_record</code>
-                                        — apply with adds=2, updates=1, deletes=1 → 4 service calls in correct order
-                                        <code>test_destroy_deletes_all_live</code>
-                                        — destroy nukes every live radvd record
-                                        <code>test_get_resource_ids_returns_per_interface_uuids</code>
-                                        —
-                                        <code>{"interfaces.opt1": "uuid1", ...}</code>
-                                        <code>test_finalization_hook_declared</code>
-                                        —
-                                        <code>RadvdManager.FINALIZATION_HOOK == "radvd_reconfigure"</code>
-                                        <code>test_validator_rejects_invalid_mode</code>
-                                        —
-                                        <code>mode: bogus</code>
-                                        → error
-                                        <code>test_validator_rejects_min_gt_max</code>
-                                        —
-                                        <code>min_interval=600, max_interval=200</code>
-                                        → error
-                                        <code>test_validator_xref_missing_interface</code>
-                                        —
-                                        <code>interfaces.optZZ</code>
-                                        not in managed assignments or live → error
-                                        <code>test_validator_xref_managed_assignment</code>
-                                        —
-                                        <code>interfaces.opt1</code>
-                                        referenced in
-                                        <code>interfaces.assignments</code>
-                                        → pass
-                                        <code>test_validator_xref_live_only_interface</code>
-                                        —
-                                        <code>interfaces.opt99</code>
-                                        not in YAML but in live overview → pass with INFO
-
-Plus extend
-                                        <code>tests/unit/core/config/test_package_loader_nested.py</code>
-                                        if no existing test covers
+                                        — insert after the
                                         <code>radvd</code>
-                                        round-trip with the
-                                        <code>interfaces:</code>
-                                        inner mapping (search confirms two tests already exist; add a richer one with multiple interfaces if needed).
-                                        <b>Phase 6 — Docs</b>
+                                        entry (which we just landed) and before resource-level firewall components:
+                                        <code class="language-python"><span class="token string">"firewall.log"</span><span class="token punctuation">:</span> FirewallLogManager<span class="token punctuation">,</span></code>
+                                        No
+                                        <code>get_finalization_hooks()</code>
+                                        change (no hook needed).
+Wire validator into
+                                        <code>OPNsenseValidator.validate()</code>
+                                        .
+                                        <b>Phase 6 — Tests</b>
+                                        <code>tests/unit/providers/opnsense/test_firewall_log_manager.py</code>
+                                        — mirror
+                                        <code>test_system_hostname_manager.py</code>
+                                        pattern with
+                                        <code>_make_service_mock()</code>
+                                        factory:
+                                        <code>test_plan_no_change</code>
+                                        — live + YAML match →
+                                        <code>SingletonDiff.is_empty == True</code>
+                                        <code>test_plan_update_single_field</code>
+                                        — YAML toggles one field → 1 update entry
+                                        <code>test_plan_update_all_fields</code>
+                                        — YAML differs in all 4 fields → 1 update entry with all 4 in payload
+                                        <code>test_apply_no_change_skips_set_call</code>
+                                        — empty plan →
+                                        <code>set_log_settings</code>
+                                        NOT called
+                                        <code>test_apply_writes_inverted_payload</code>
+                                        — operator
+                                        <code>log_default_block=True</code>
+                                        → wire payload has
+                                        <code>nologdefaultblock="0"</code>
+                                        ; verify the inversion at the boundary in BOTH directions (extract + wire_payload round-trip)
+                                        <code>test_destroy_noop</code>
+                                        — returns
+                                        <code>{"resources_deleted": 0, "resource_outcomes": []}</code>
+                                        <code>test_get_resource_ids</code>
+                                        — returns
+                                        <code>{"settings": "global"}</code>
+                                        <code>test_plan_raises_on_multiple_resources</code>
+                                        — defensive
+                                        <code>enforce_singleton</code>
+                                        guard fires
+                                        <code>test_validator_rejects_string_boolean</code>
+                                        —
+                                        <code>log_default_block: "true"</code>
+                                        → ValidationError
+                                        <code>test_validator_rejects_unknown_key</code>
+                                        —
+                                        <code>log_default_blocks: false</code>
+                                        (plural typo) → ValidationError
+                                        <code>test_extract_inversion_correctness</code>
+                                        — table-driven test: wire
+                                        <code>{"nologdefaultblock": "1", "nologdefaultpass": "0"}</code>
+                                        → operator
+                                        <code>{"log_default_block": False, "log_default_pass": True}</code>
+                                        <code>test_wire_payload_inversion_correctness</code>
+                                        — inverse table-driven test
+
+The pre-existing loader test (
+                                        <code>test_firewall_log_singleton_emits_one_settings</code>
+                                        at
+                                        <code>test_package_loader_nested.py:1123-1135</code>
+                                        ) already covers loader round-trip; verify it passes once the manager lands (it should already pass since
+                                        <code>firewall.log: dict</code>
+                                        is registered).
+                                        <b>Phase 7 — Documentation</b>
                                         <code>docs/decisions/0014-opnsense-direct-api-apply-mechanism.md</code>
-                                        — append per-component subsection following the established 8-part format (title, mechanism, endpoints, identity, wire schema, validator scope, rollback, xref notes). Document the hybrid singleton-YAML/list-wire pattern + the
-                                        <code>radvd_reconfigure</code>
-                                        finalization hook.
+                                        — append per-component subsection (8-part format, mirroring the radvd subsection just landed in #788). Document: REST endpoint (whatever probe confirms), envelope shape, the 4-field positive-name ↔ wire-negative-name inversion table, the no-FINALIZATION_HOOK rationale (filterlog auto-reload). Add amendment header at top.
                                         <code>docs/decisions/0013-opnsense-full-iac-migration.md</code>
-                                        — link this issue from the implementation order; note that legacy
-                                        <code>/</code>
-                                        is explicitly out-of-scope.
+                                        — link this issue from the implementation order; note this is the runaway-log fix from the 2026-04-14 incident.
                                         <code>docs/development/opnsense-resource-coverage.md</code>
-                                        — add row for
-                                        <code>opnsense.radvd</code>
-                                        with both source-XML location (
-                                        <code>//</code>
-                                        legacy) and target controller (
-                                        <code>/api/radvd/*</code>
-                                        modern).
+                                        — add row mapping
+                                        <code>/</code>
+                                        legacy XML location →
+                                        <code>firewall.log</code>
+                                        modern resource.
                                         <b>Files to create/modify</b>
                                         Modify:
                                         <code>src/infrafoundry/providers/opnsense/__init__.py</code>
                                         —
                                         <code>get_direct_api_resource_types()</code>
-                                        +
-                                        <code>get_finalization_hooks()</code>
-                                        +
-                                        <code>_reconfigure_radvd()</code>
-                                        + validator wiring (~12 lines)
+                                        + validator wiring (~3 lines)
                                         <code>src/infrafoundry/providers/opnsense/api_client.py</code>
                                         — add
-                                        <code>RadvdClient</code>
-                                        class
+                                        <code>FirewallClient</code>
+                                        class (~30 lines)
+                                        <code>src/infrafoundry/providers/opnsense/validator.py</code>
+                                        — instantiate
+                                        <code>FirewallLogValidator</code>
+                                        in
+                                        <code>validate()</code>
+                                        (~3 lines)
+                                        <code>src/infrafoundry/providers/opnsense/validators/__init__.py</code>
+                                        — export
+                                        <code>FirewallLogValidator</code>
+                                        (~2 lines)
                                         <code>docs/decisions/0014-opnsense-direct-api-apply-mechanism.md</code>
-                                        — new subsection
+                                        — new subsection + amendment header
                                         <code>docs/decisions/0013-opnsense-full-iac-migration.md</code>
-                                        — link to #788
+                                        — link to #786 + impl-order entry
                                         <code>docs/development/opnsense-resource-coverage.md</code>
                                         — new row
-(Possibly)
-                                        <code>tests/unit/core/config/test_package_loader_nested.py</code>
-                                        — richer round-trip test if existing isn't sufficient
 
 Create:
-                                        <code>src/infrafoundry/providers/opnsense/components/radvd.py</code>
-                                        <code>src/infrafoundry/providers/opnsense/services/radvd.py</code>
-                                        <code>src/infrafoundry/providers/opnsense/validators/radvd_validator.py</code>
-                                        <code>tests/unit/providers/opnsense/test_radvd_manager.py</code>
-                                        <code>tmp/agents/claude/probe-788.md</code>
+                                        <code>src/infrafoundry/providers/opnsense/components/firewall_log.py</code>
+                                        (~80 lines, mirror system_hostname.py)
+                                        <code>src/infrafoundry/providers/opnsense/services/firewall_log.py</code>
+                                        (~120 lines, with inversion helpers)
+                                        <code>src/infrafoundry/providers/opnsense/validators/firewall_log_validator.py</code>
+                                        (~50 lines)
+                                        <code>tests/unit/providers/opnsense/test_firewall_log_manager.py</code>
+                                        (~250 lines, 12 tests)
+                                        <code>tmp/agents/claude/probe-786.md</code>
                                         — Phase 0 results (cleanup at end of session)
 
-Note:
-                                        <code>DOTTED_RESOURCE_SHAPES["radvd"] = "dict"</code>
-                                        is already in place (registered when ADR-0016 landed); no loader edit needed.
+No edit needed:
+                                        <code>src/infrafoundry/core/config/package_loader.py</code>
+                                        —
+                                        <code>firewall.log: "dict"</code>
+                                        is already registered (line 73)
+                                        <code>tests/unit/core/config/test_package_loader_nested.py</code>
+                                        —
+                                        <code>test_firewall_log_singleton_emits_one_settings</code>
+                                        is pre-written at lines 1123-1135 (verify it passes once everything lands; do NOT modify)
                                         <b>Validation</b>
                                         Per-file:
-                                        <code>CAP_MB=4096 SCOPE=tests/unit/providers/opnsense/test_radvd_manager.py bash tmp/agents/claude/oom_pytest_run.sh</code>
+                                        <code>CAP_MB=4096 SCOPE=tests/unit/providers/opnsense/test_firewall_log_manager.py bash tmp/agents/claude/oom_pytest_run.sh</code>
                                         Sweep:
                                         <code>CAP_MB=4096 SCOPE=tests/unit/providers/opnsense/ bash tmp/agents/claude/oom_pytest_run.sh</code>
-                                        Loader check:
+                                        Loader:
                                         <code>CAP_MB=4096 SCOPE=tests/unit/core/config/ bash tmp/agents/claude/oom_pytest_run.sh</code>
-                                        Final gate:
+                                        (the pre-written loader test must pass)
+Final gate:
                                         <code>doit check</code>
                                         (lint + type + test) AND
                                         <code>uv run bandit -c pyproject.toml -r src/</code>
@@ -2619,37 +2693,45 @@ Note:
                                         does not — added to checklist after #809's CI failure on hardcoded-password-string false positive).
 Live verification:
                                         <code>uv run foundry -c /home/endavis/src/infrafoundry/endavis-infra infra plan --env prod -P opnsense</code>
-                                        against an env with the 4 fixture interfaces shows expected adds;
+                                        against an env with a
+                                        <code>firewall.log</code>
+                                        block shows expected diffs (operator's current source-box settings: all 4 fields
+                                        <code>false</code>
+                                        per the live `` block);
                                         <code>infra apply</code>
-                                        lands cleanly; re-plan shows zero drift.
+                                        succeeds; re-plan shows zero drift.
                                         <b>Workflow</b>
                                         Branch:
-                                        <code>feat/788-radvd</code>
+                                        <code>feat/786-firewall-log</code>
                                         (off current
                                         <code>main</code>
-                                        after #806 merge — already on
+                                        after #788 merge — already on
                                         <code>main</code>
                                         ).
-Commit cadence: one logical commit per phase OR a single bundled commit (mirror #809's bundled approach since the file count is smaller).
+Commit: single bundled commit (mirror #809/#820 cadence; the file count is small and the change is one logical addition).
 PR:
                                         <code>doit pr</code>
                                         (auto-pushes branch). Title:
-                                        <code>feat: add opnsense.radvd direct-API resource (cutover blocker for IPv6 RAs)</code>
+                                        <code>feat: add opnsense.firewall.log direct-API singleton (runaway-log fix)</code>
                                         . Body references
-                                        <code>#788</code>
-                                        .
+                                        <code>#786</code>
+                                        and the 2026-04-14 incident context.
 Merge:
                                         <code>doit pr_merge --auto-close</code>
                                         .
                                         <b>Reference files (read during impl)</b>
-                                        Hybrid YAML-singleton/wire-list pattern:
-                                        <code>src/infrafoundry/providers/opnsense/components/system_firmware.py</code>
-                                        lines 42–104 (plan), 147–156 (apply);
-                                        <code>src/infrafoundry/providers/opnsense/services/system_firmware.py</code>
-                                        lines 184–206 (
-                                        <code>desired_vs_installed_plugins</code>
-                                        set algebra)
-Singleton helper:
+                                        Closest singleton template:
+                                        <code>src/infrafoundry/providers/opnsense/components/system_hostname.py</code>
+                                        (pure flat-scalar singleton, uses
+                                        <code>enforce_singleton</code>
+                                        +
+                                        <code>diff_singleton</code>
+                                        +
+                                        <code>SingletonDiff</code>
+                                        directly)
+Service template with extract/build helpers:
+                                        <code>src/infrafoundry/providers/opnsense/services/system_hostname.py</code>
+                                        Singleton helpers (already in place, unchanged):
                                         <code>src/infrafoundry/providers/opnsense/components/_singleton.py</code>
                                         (
                                         <code>enforce_singleton</code>
@@ -2657,99 +2739,56 @@ Singleton helper:
                                         <code>diff_singleton</code>
                                         ,
                                         <code>SingletonDiff</code>
-                                        — extend or compose for
-                                        <code>_RadvdDiff</code>
-                                        carrying adds/updates/deletes)
-Cross-reference resolver:
-                                        <code>src/infrafoundry/providers/opnsense/validators/_xref.py</code>
-                                        lines 47–154 (
-                                        <code>build_xref_index</code>
-                                        ,
-                                        <code>resolve_xref</code>
                                         )
-Interface validation pattern:
-                                        <code>src/infrafoundry/providers/opnsense/validators/gateway_validator.py</code>
-                                        lines 122–162 (
-                                        <code>_validate_interface()</code>
-                                        — managed assignments + live fallback)
-Finalization hook pattern:
-                                        <code>src/infrafoundry/providers/opnsense/__init__.py</code>
-                                        lines 282–315 (registration);
-                                        <code>src/infrafoundry/providers/opnsense/components/kea_dhcp6_subnet.py</code>
-                                        line ~100 (
-                                        <code>FINALIZATION_HOOK = "kea_reconfigure"</code>
-                                        declaration)
+Wire-format conversion pattern:
+                                        <code>src/infrafoundry/providers/opnsense/services/static_route.py:_bool_str</code>
+                                        (Python bool → wire
+                                        <code>"0"</code>
+                                        /
+                                        <code>"1"</code>
+                                        — note: this is non-inverted; firewall_log needs the inverted version)
+Validator template:
+                                        <code>src/infrafoundry/providers/opnsense/validators/system_hostname_validator.py</code>
+                                        (pure-check, type validation only)
+Validator wiring:
+                                        <code>src/infrafoundry/providers/opnsense/validator.py</code>
+                                        (recently extended for radvd in #820)
+Test template:
+                                        <code>tests/unit/providers/opnsense/test_system_hostname_manager.py</code>
+                                        Pre-written loader test (do not modify):
+                                        <code>tests/unit/core/config/test_package_loader_nested.py:1123-1135</code>
+                                        (
+                                        <code>test_firewall_log_singleton_emits_one_settings</code>
+                                        )
+Source-XML reference (operator's current settings):
+                                        <code>endavis-infra/docs/opnsense/config-OPNsense.endavis.net-20260504234318.xml</code>
+                                        `` block — all 4
+                                        <code>nolog*</code>
+                                        fields are
+                                        <code>"1"</code>
+                                        (i.e., operator-facing all
+                                        <code>false</code>
+                                        )
 Live-probe template:
                                         <code>tmp/agents/claude/probe_unbound_724_followup.py</code>
                                         (uses
                                         <code>opnsense_openapi.OPNsenseClient</code>
-                                        directly);
-                                        <code>src/infrafoundry/providers/opnsense/services/base.py</code>
-                                        lines 27–73 (
-                                        <code>from_environment</code>
-                                        pattern for credential resolution)
-ADR conventions:
-                                        <code>docs/decisions/0014-opnsense-direct-api-apply-mechanism.md</code>
-                                        (existing per-component subsections, particularly the recent #806 batch);
-                                        <code>docs/decisions/0016-direct-opnsense-nested-yaml-schema.md</code>
-                                        §4 (singleton structural discrimination)
-Source-box reference (4 fixture entries):
-                                        <code>endavis-infra/docs/opnsense/config-OPNsense.endavis.net-20260504234318.xml</code>
-                                        lines 5655–5755 (
-                                        <code>//</code>
-                                        — legacy path; values to seed the cutover YAML)
+                                        directly); cleanup probe script when done
                                         <b>Out of scope</b>
-                                        Legacy
-                                        <code>//</code>
-                                        — read-only reference for migration values; cutover target uses modern controller, source box's legacy data not managed.
-DHCPv6 lease range / staticmap (`` lease fields) — Kea owns leases (
-                                        <code>kea.dhcp6.*</code>
-                                        ).
-IPv4 RA equivalent — none exists; default route delivered via DHCPv4.
-Migrate from legacy
-                                        <code>//</code>
-                                        XML to modern radvd records on opnsense-a — out of scope; operator authors initial YAML manually from the source XML reference, then
-                                        <code>migrate()</code>
-                                        extracts current state going forward.
+                                        Remote syslog targets (
+                                        <code>OPNsense/Syslog/destinations</code>
+                                        ) — empty in source config; will be its own resource type if/when populated. Tracked separately by #804 (
+                                        <code>syslog.settings</code>
+                                        for the modern syslog daemon controller).
+The
+                                        <code>OPNsense/Syslog/general</code>
+                                        modern syslog daemon — distinct surface (daemon config, not firewall log filters); covered by #804.
+Filterlog reload trigger — no FINALIZATION_HOOK needed; OPNsense reloads filterlog on the next pf reload (which happens during
+                                        <code>firewall_rules</code>
+                                        apply or any subsequent reconfigure).
                                     </div>
                                 </div>
-                                <div class="timestamp">10 May 2026, 14:51:59</div>
-                            </section>
-                        </div>
-                        <div class="row fill-width">
-                            <section class="activity">
-                                <div class="field">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                        <path d="M11.28 6.78a.75.75 0 00-1.06-1.06L7.25 8.69 5.78 7.22a.75.75 0 00-1.06 1.06l2 2a.75.75 0 001.06 0l3.5-3.5z"/>
-                                        <path fill-rule="evenodd" d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-1.5 0a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z"/>
-                                    </svg>
-                                    <div class="content">
-                                        Closed
-                                        <span class="issue">#806 feat: add system core direct-API resources (hostname/dns/ssh/webgui/firmware/remotebackup) for OPNsense (cutover hard blocker)</span>
-                                    </div>
-                                </div>
-                                <div class="details">
-                                    <div>opened  in <span class="repo">endavis/infrafoundry</span></div>
-                                </div>
-                                <div class="timestamp">10 May 2026, 13:52:38</div>
-                            </section>
-                        </div>
-                        <div class="row fill-width">
-                            <section class="activity">
-                                <div class="field">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                        <path fill-rule="evenodd" d="M2.75 2.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 01.75.75v2.19l2.72-2.72a.75.75 0 01.53-.22h4.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25H2.75zM1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0113.25 12H9.06l-2.573 2.573A1.457 1.457 0 014 13.543V12H2.75A1.75 1.75 0 011 10.25v-7.5z"/>
-                                    </svg>
-                                    <div class="content">
-                                        Commented on
-                                        <span class="issue">#806 feat: add system core direct-API resources (hostname/dns/ssh/webgui/firmware/remotebackup) for OPNsense (cutover hard blocker)</span>
-                                    </div>
-                                </div>
-                                <div class="details">
-                                    <div>opened by endavis in <span class="repo">endavis/infrafoundry</span></div>
-                                    <div class="comment">Addressed in PR #809</div>
-                                </div>
-                                <div class="timestamp">10 May 2026, 13:52:36</div>
+                                <div class="timestamp">12 May 2026, 15:46:45</div>
                             </section>
                         </div>
                         <div class="row fill-width">
@@ -2761,29 +2800,30 @@ Migrate from legacy
                                     <div class="content">
                                         Deleted
                       branch
-                                        <span class="code">feat/806-system-core</span>
+                                        <span class="code">feat/788-radvd</span>
                                         in
                                         <span class="repo">endavis/infrafoundry</span>
                                     </div>
                                 </div>
-                                <div class="timestamp">10 May 2026, 13:52:34</div>
+                                <div class="timestamp">12 May 2026, 15:18:21</div>
                             </section>
                         </div>
                         <div class="row fill-width">
                             <section class="activity">
                                 <div class="field">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                        <path fill-rule="evenodd" d="M11.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122V6A2.5 2.5 0 0110 8.5H6a1 1 0 00-1 1v1.128a2.251 2.251 0 11-1.5 0V5.372a2.25 2.25 0 111.5 0v1.836A2.492 2.492 0 016 7h4a1 1 0 001-1v-.628A2.25 2.25 0 019.5 3.25zM4.25 12a.75.75 0 100 1.5.75.75 0 000-1.5zM3.5 3.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0z"/>
+                                        <path d="M11.28 6.78a.75.75 0 00-1.06-1.06L7.25 8.69 5.78 7.22a.75.75 0 00-1.06 1.06l2 2a.75.75 0 001.06 0l3.5-3.5z"/>
+                                        <path fill-rule="evenodd" d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-1.5 0a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z"/>
                                     </svg>
                                     <div class="content">
-                                        Created new
-                      branch
-                                        <span class="code">feat/806-system-core</span>
-                                        in
-                                        <span class="repo">endavis/infrafoundry</span>
+                                        Closed
+                                        <span class="issue">#788 feat: add radvd resource type for OPNsense IPv6 Router Advertisements (cutover blocker)</span>
                                     </div>
                                 </div>
-                                <div class="timestamp">10 May 2026, 13:03:27</div>
+                                <div class="details">
+                                    <div>opened  in <span class="repo">endavis/infrafoundry</span></div>
+                                </div>
+                                <div class="timestamp">12 May 2026, 15:18:25</div>
                             </section>
                         </div>
                     </section>
@@ -2872,7 +2912,7 @@ Migrate from legacy
                                     </defs>
                                     <svg xmlns="http://www.w3.org/2000/svg" class="gauge info">
                                         <circle class="gauge-base" r="25" cx="28" cy="28"/>
-                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="64.46132785763176 155"/>
+                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="64.54620123203287 155"/>
                                     </svg>
                                     <svg xmlns="http://www.w3.org/2000/svg" mask="url(#mask)">
                                         <g xmlns="http://www.w3.org/2000/svg" transform="translate(5 4)" fill="none" fill-rule="evenodd">
@@ -2946,7 +2986,7 @@ Migrate from legacy
                                     </defs>
                                     <svg xmlns="http://www.w3.org/2000/svg" class="gauge info">
                                         <circle class="gauge-base" r="25" cx="28" cy="28"/>
-                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="141.98000000000002 155"/>
+                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="142.29 155"/>
                                     </svg>
                                     <svg xmlns="http://www.w3.org/2000/svg" mask="url(#mask)">
                                         <g stroke-width="2" fill="none" fill-rule="evenodd">
@@ -2974,10 +3014,10 @@ Migrate from legacy
                                     <span class="prefix">Super</span>
                                     contributor
                                     <div class="value-wrapper">
-                                        <div class="value">958</div>
+                                        <div class="value">959</div>
                                     </div>
                                 </div>
-                                <div class="text">Opened 958 pull requests</div>
+                                <div class="text">Opened 959 pull requests</div>
                             </div>
                         </div>
                         <div class="achievement a largeable-width-half">
@@ -3179,7 +3219,7 @@ Migrate from legacy
                                 <div class="title">
                                     <span class="prefix"></span>
                                     Inspirer
-                                    <span class="gh">ranked 989k out of 317m repositories</span>
+                                    <span class="gh">ranked 990k out of 317m repositories</span>
                                     <div class="value-wrapper">
                                         <div class="value">14</div>
                                     </div>
@@ -3234,7 +3274,7 @@ Migrate from legacy
                                 <div class="title">
                                     <span class="prefix"></span>
                                     Influencer
-                                    <span class="gh">ranked 991k out of 218m users</span>
+                                    <span class="gh">ranked 992k out of 218m users</span>
                                     <div class="value-wrapper">
                                         <div class="value">20</div>
                                     </div>
@@ -3503,7 +3543,7 @@ Migrate from legacy
             </section>
             <footer>
                 <span>These metrics include private contributions</span>
-                <span>Last updated 12 May 2026, 00:54:30 (timezone UTC) with lowlighter/metrics@3.35.0-beta</span>
+                <span>Last updated 13 May 2026, 00:59:20 (timezone UTC) with lowlighter/metrics@3.35.0-beta</span>
             </footer>
         </div>
         <div xmlns="http://www.w3.org/1999/xhtml" id="metrics-end"></div>
