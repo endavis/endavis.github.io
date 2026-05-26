@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Eric Davis' GitHub Stats, Rank: A</title>
-        <desc id="descId">Total Stars Earned: 48, Total Commits  : 6204, Total PRs: 1009, Total Issues: 974, Contributed to (last year): 5</desc>
+        <desc id="descId">Total Stars Earned: 48, Total Commits  : 6204, Total PRs: 1010, Total Issues: 974, Contributed to (last year): 5</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 52.14352476677758;
+        stroke-dashoffset: 51.91832026413925;
       }
     }
   
