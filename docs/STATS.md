@@ -167,6 +167,8 @@ Replace `<your-username>` and `<your-repo>` with your actual GitHub username and
 
 **Note:** The `stats` branch is created automatically on the first workflow run. You don't need to create it manually.
 
+**Note:** If a generator fails (for example, on a rate limit), the workflow still commits the stats that succeeded. The failed generator's SVGs keep their previous version, and the run is marked as failed so you are notified.
+
 ### Optional: Configure Timezone
 
 By default, stats use UTC timezone. To customize:
@@ -402,9 +404,10 @@ For more customization options, see [lowlighter/metrics documentation](https://g
 
 1. Workflow is enabled (Actions tab → "Update GitHub Stats" → Enable workflow)
 2. Repository is active. GitHub disables scheduled workflows after 60 days without
-   repository activity. The daily commits to the `stats` branch count as activity, so
-   if the workflow keeps failing for 60 days, it (and other scheduled workflows) will be
-   disabled. Re-enable with `gh workflow enable update-stats.yml`.
+   repository activity. The daily commits to the `stats` branch count as activity, and
+   the workflow commits whatever succeeded, so this only happens if nothing is committed
+   for 60 days (for example, every generator fails). Re-enable with
+   `gh workflow enable update-stats.yml`.
 3. Check workflow run history for errors
 
 ### Rate limit errors with external mode

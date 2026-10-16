@@ -238,6 +238,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: prepare
     strategy:
+      fail-fast: false
       matrix:
         user: ${{ fromJson(needs.prepare.outputs.users) }}
     steps:
@@ -346,6 +347,7 @@ jobs:
     if: ${{ needs.prepare.outputs.use_metrics == 'true' && needs.prepare.outputs.repo_stats_type != 'external' }}
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
       matrix:
         include: ${{ fromJson(needs.prepare.outputs.repos) }}
     steps:
@@ -407,6 +409,7 @@ jobs:
     if: ${{ needs.prepare.outputs.use_readme == 'true' && needs.prepare.outputs.repo_stats_type != 'external' }}
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
       matrix:
         user: ${{ fromJson(needs.prepare.outputs.users) }}
     env:
@@ -475,6 +478,7 @@ jobs:
     if: ${{ needs.prepare.outputs.use_readme == 'true' && needs.prepare.outputs.repo_stats_type != 'external' }}
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
       matrix:
         include: ${{ fromJson(needs.prepare.outputs.repos) }}
     env:
@@ -545,6 +549,7 @@ jobs:
     if: ${{ needs.prepare.outputs.trophies_enabled == 'true' && needs.prepare.outputs.repo_stats_type != 'external' }}
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
       matrix:
         user: ${{ fromJson(needs.prepare.outputs.users) }}
     env:
@@ -622,7 +627,8 @@ jobs:
 
   commit-stats:
     needs: [prepare, generate-user-stats, generate-repo-stats, generate-readme-user-stats, generate-readme-repo-stats, generate-trophies]
-    if: ${{ needs.prepare.outputs.repo_stats_type == 'branch' && !failure() && !cancelled() }}
+    # Commit whatever succeeded: a failed generator keeps its previous SVGs on the stats branch.
+    if: ${{ !cancelled() && needs.prepare.result == 'success' && needs.prepare.outputs.repo_stats_type == 'branch' }}
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -654,7 +660,7 @@ jobs:
 
       - name: Download User Stats
         uses: actions/download-artifact@v8
-        if: ${{ needs.prepare.outputs.use_metrics == 'true' }}
+        if: ${{ needs['generate-user-stats'].result != 'skipped' }}
         with:
           pattern: stats-user-*
           path: assets/img/stats/
@@ -662,7 +668,7 @@ jobs:
 
       - name: Download Repo Stats
         uses: actions/download-artifact@v8
-        if: ${{ needs.prepare.outputs.use_metrics == 'true' && needs['generate-repo-stats'].result == 'success' }}
+        if: ${{ needs['generate-repo-stats'].result != 'skipped' }}
         with:
           pattern: stats-repo-*
           path: assets/img/stats/
@@ -670,7 +676,7 @@ jobs:
 
       - name: Download Readme User Stats
         uses: actions/download-artifact@v8
-        if: ${{ needs['generate-readme-user-stats'].result == 'success' }}
+        if: ${{ needs['generate-readme-user-stats'].result != 'skipped' }}
         with:
           pattern: stats-readme-user-*
           path: assets/img/stats/
@@ -678,7 +684,7 @@ jobs:
 
       - name: Download Readme Repo Stats
         uses: actions/download-artifact@v8
-        if: ${{ needs['generate-readme-repo-stats'].result == 'success' }}
+        if: ${{ needs['generate-readme-repo-stats'].result != 'skipped' }}
         with:
           pattern: stats-readme-repo-*
           path: assets/img/stats/
@@ -686,7 +692,7 @@ jobs:
 
       - name: Download Trophies
         uses: actions/download-artifact@v8
-        if: ${{ needs['generate-trophies'].result == 'success' }}
+        if: ${{ needs['generate-trophies'].result != 'skipped' }}
         with:
           pattern: stats-trophies-*
           path: assets/img/stats/
