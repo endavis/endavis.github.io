@@ -217,6 +217,10 @@ editing the workflow file.
 If you enable trophies and use branch/local stats, the workflow can generate
 SVG files using `ryo-ma/github-profile-trophy` and commit them to the stats branch.
 
+The trophy server runs from a pinned commit (the `ref:` in the `generate-trophies`
+job). To pick up upstream changes, bump that SHA and run the workflow manually to
+confirm it still starts.
+
 1. Enable trophies in `_config.yml`:
 
    ```yaml
@@ -397,7 +401,10 @@ For more customization options, see [lowlighter/metrics documentation](https://g
 **Check:**
 
 1. Workflow is enabled (Actions tab → "Update GitHub Stats" → Enable workflow)
-2. Repository is active (GitHub disables workflows for inactive repos)
+2. Repository is active. GitHub disables scheduled workflows after 60 days without
+   repository activity. The daily commits to the `stats` branch count as activity, so
+   if the workflow keeps failing for 60 days, it (and other scheduled workflows) will be
+   disabled. Re-enable with `gh workflow enable update-stats.yml`.
 3. Check workflow run history for errors
 
 ### Rate limit errors with external mode
