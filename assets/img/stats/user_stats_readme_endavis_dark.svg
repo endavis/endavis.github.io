@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Eric Davis' GitHub Stats, Rank: A</title>
-        <desc id="descId">Total Stars Earned: 49, Total Commits  : 6351, Total PRs: 1289, Total Issues: 1252, Contributed to (last year): 4</desc>
+        <desc id="descId">Total Stars Earned: 49, Total Commits  : 6351, Total PRs: 1289, Total Issues: 1255, Contributed to (last year): 4</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
