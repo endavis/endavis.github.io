@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="3130" class="">
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="3128" class="">
     <defs>
         <style/>
     </defs>
-    <style>@keyframes animation-gauge{0%{stroke-dasharray:0 329}}@keyframes animation-rainbow{0%,to{color:#7f00ff;fill:#7f00ff}14%{color:#a933ff;fill:#a933ff}29%{color:#007fff;fill:#007fff}43%{color:#00ff7f;fill:#00ff7f}57%{color:#ff0;fill:#ff0}71%{color:#ff7f00;fill:#ff7f00}86%{color:red;fill:red}}svg{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:14px;color:#777}h1,h2,h3{margin:8px 0 2px;padding:0;color:#0366d6}h1{font-size:20px;font-weight:700}h2,h3{font-weight:400}h1 svg,h2 svg,h3 svg{fill:currentColor}h2{font-size:16px}h3{font-size:14px}.h-details{margin:0 4px;padding-top:4px;font-size:.8rem}section&gt;.field{margin-left:5px;margin-right:5px}.field{display:flex;align-items:center;margin-bottom:2px;white-space:nowrap}.field.wrap,.row{flex-wrap:wrap}.field svg{margin:0 8px;fill:#959da5;flex-shrink:0}.row{display:flex}.row section{flex:1 1 0}.column{display:flex;flex-direction:column;align-items:center}.no-wrap{white-space:nowrap}.fill-width{width:100%}.margin-bottom{margin-bottom:16px}.no-margin-top{margin-top:0}.avatar{border-radius:50%;margin:0 6px}.calendar.field{margin:4px 0 4px 7px}.calendar .day{outline:1px solid rgba(27,31,35,.04);outline-offset:-1px}svg.bar{margin:4px 0}.field.language{margin:0 8px;flex-grow:0}.field.language.details{display:flex;justify-content:space-between}.field.language.details small,.field.license.details small{display:flex;justify-content:space-between;color:#666;text-align:right}.field.language.details small&gt;*,.field.language.details&gt;*{flex:1 1 0}.field.language.details small&gt;:not(:last-child){margin-right:6px}.followup.legend{font-size:12px;flex-wrap:wrap}.followup.legend .field{width:46%;justify-content:flex-start;margin-left:8px}.followup.legend svg{margin:0 3px;width:14px;height:14px}.followup.legend svg:first-child{margin-left:0}.followup.legend svg:last-child{margin-right:0}.followup-title{white-space:initial}.label{background-color:#58a6ff30;color:#0366d6;padding:0 10px;font-weight:500;line-height:22px;margin:2px 5px;white-space:nowrap;border-radius:32px;font-size:12px}.label .label-right,.label.label-flex{display:flex;align-items:center}.label .label-right{font-size:.7rem;margin-left:6px;margin-right:-10px;background-color:#58a6ff10;padding:0 7px;border-top-right-radius:32px;border-bottom-right-radius:32px}.habits .facts{margin:0;list-style-type:none;padding-left:37px}footer{margin-top:8px;font-size:10px;font-style:italic;color:#666;text-align:right;display:flex;flex-direction:column;justify-content:flex-end;padding:0 4px}.categories,.category{display:flex;align-items:center}.categories{justify-content:space-around;margin-top:4px}.category{flex-direction:column;flex:1 1 0}.gauge{stroke-linecap:round;fill:none}.gauge.info{color:#58a6ff}.gauge-arc,.gauge-base{stroke:currentColor;stroke-width:10}.gauge-base{stroke-opacity:.2}.gauge-arc{fill:none;stroke-dashoffset:0;animation-delay:250ms;animation:animation-gauge 1s ease forwards}.gauge text{fill:currentColor;font-size:40px;font-family:monospace;text-anchor:middle;font-weight:600}.gauge .title{font-size:18px;color:#777}.topics{display:flex;flex-wrap:wrap}.topics img{border-radius:5px;margin:4px}.chart{padding:0 8px}.chart-bars{display:flex;justify-content:space-between;align-items:flex-end;width:100%;margin:8px 0 4px;flex-grow:1;min-height:70px}.chart-bars .entry,.repository{display:flex;flex-direction:column}.chart-bars .entry{flex-grow:1;align-items:center;font-size:10px;color:#666}.chart-bars .entry .value{font-size:6px}.chart-bars .bar{width:7px;background-color:var(--color-calendar-graph-day-bg);border:1px solid var(--color-calendar-graph-day-border);border-radius:5px}.chart-bars .entry .bottom{margin-bottom:-1rem;line-height:1rem}.repository{width:100%;margin:6px 0}.repository .name{display:flex;align-items:center;justify-content:space-between;width:440px}.repository .name span:first-child{color:#58a6ff}.repository .name span:last-child{color:#666;font-size:10px}.repository .description{display:block;width:440px;white-space:normal}.repository .description,.repository .infos{color:#666;margin-left:38px;font-size:13px}.repository .infos&gt;div{display:flex;align-items:center;margin-right:16px}.repository .infos svg{margin:0 4px 0 0}.activity{margin-bottom:12px}.activity .field{width:100%;overflow:hidden;text-overflow:ellipsis;max-width:450px;white-space:nowrap;margin-bottom:0}.activity .field .content{flex-grow:1;text-overflow:ellipsis;overflow:hidden}.activity .issue,.activity .repo{display:inline;color:#58a6ff}.activity .code,code,span.code{background-color:#7777771f;border-radius:6px;color:#777;padding:1px 5px;font-size:80%;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace}.activity .code,span.code{margin:0 4px -3px}.activity .details,.activity .timestamp{padding-left:38px;display:flex;flex-direction:column;font-size:13px;color:#666}.activity .timestamp{font-size:10px;margin-top:4px}.activity .commit{display:flex;align-items:center}.activity .details&gt;.comment{margin-top:6px;border-left:3px solid #777777b2;padding-left:6px}svg.calendar{margin-left:13px;margin-top:4px}svg.calendar text{font-size:18px;fill:currentColor}.people{padding:0 10px}.people .avatar{margin:0 2px}.activity .details&gt;.comment,.project .description{overflow:hidden;text-overflow:ellipsis;display:block;width:420px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}.project .description{margin-left:37px;max-height:38px;font-size:12px;white-space:normal}.field.license.details{display:flex;justify-content:space-between}.achievement{display:flex;margin:4px 0}.achievement .icon{margin:0 4px;width:44px;height:44px}.achievement .text{font-size:12px;color:#666}.achievement .title{font-size:14px;color:#58a6ff}.achievement .gauge.info{color:#58a6ff}.achievement .value{background-color:#58a6ff26}.achievement.x .title{color:#666}.achievement.x .gauge.info{color:#b0b0b0}.achievement.x .value{background-color:#b0b0b026}.achievement.b .title{color:#9d8fff}.achievement.b .gauge.info{color:#9e91ff}.achievement.b .value{background-color:#9e91ff26}.achievement.a .title{color:#d79533}.achievement.a .gauge.info{color:#e7bd69}.achievement.a .value{background-color:#e7bd6926}.achievement.s .gauge.info,.achievement.s .title{color:#eb355e}.achievement.s .value{background-color:#eb355e26}.achievement.secret .title{color:#ff76cd}.achievement.secret .gauge.info{color:#ff79d1}.achievement.secret .value{background-color:#ff79d126}.achievement .gh,.achievement .value{border:1px solid currentColor;border-radius:16px;font-size:10px;padding:0 5px;white-space:nowrap}.achievement .gauge-arc,.achievement .gauge-base{stroke-width:6}.achievement .value-wrapper{margin-bottom:-50px;margin-top:36px;display:none}.achievement .value{margin-left:46px}.achievements.compact{display:flex;flex-wrap:wrap}.achievements.compact .achievement{flex-direction:column-reverse;align-items:center;width:80px}#metrics-end,.achievements.compact .info{width:100%}.achievements.compact .achievement .title{margin-bottom:2px;text-transform:capitalize;text-align:center}.achievements.compact .achievement .title .prefix{min-height:13px;font-size:10px;display:block;margin-bottom:-.25rem}.achievements.compact .achievement .value-wrapper{display:flex}.achievements.compact .achievement .gh,.achievements.compact .achievement .text{display:none}code{display:inline-block}:root{--color-calendar-graph-day-bg:#ebedf0;--color-calendar-graph-day-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-bg:#9be9a8;--color-calendar-graph-day-L2-bg:#40c463;--color-calendar-graph-day-L3-bg:#30a14e;--color-calendar-graph-day-L4-bg:#216e39;--color-calendar-halloween-graph-day-L1-bg:#ffee4a;--color-calendar-halloween-graph-day-L2-bg:#ffc501;--color-calendar-halloween-graph-day-L3-bg:#fe9600;--color-calendar-halloween-graph-day-L4-bg:#03001c;--color-calendar-winter-graph-day-L1-bg:#0a3069;--color-calendar-winter-graph-day-L2-bg:#0969da;--color-calendar-winter-graph-day-L3-bg:#54aeff;--color-calendar-winter-graph-day-L4-bg:#b6e3ff;--color-calendar-graph-day-L4-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L3-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L2-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-border:rgba(27,31,35,0.06)}</style>
+    <style>@keyframes animation-gauge{0%{stroke-dasharray:0 329}}@keyframes animation-rainbow{0%,to{color:#7f00ff;fill:#7f00ff}14%{color:#a933ff;fill:#a933ff}29%{color:#007fff;fill:#007fff}43%{color:#00ff7f;fill:#00ff7f}57%{color:#ff0;fill:#ff0}71%{color:#ff7f00;fill:#ff7f00}86%{color:red;fill:red}}svg{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:14px;color:#777}h1,h2,h3{margin:8px 0 2px;padding:0;color:#0366d6}h1{font-size:20px;font-weight:700}h2,h3{font-weight:400}h1 svg,h2 svg,h3 svg{fill:currentColor}h2{font-size:16px}h3{font-size:14px}.h-details{margin:0 4px;padding-top:4px;font-size:.8rem}section&gt;.field{margin-left:5px;margin-right:5px}.field{display:flex;align-items:center;margin-bottom:2px;white-space:nowrap}.field.wrap,.row{flex-wrap:wrap}.field svg{margin:0 8px;fill:#959da5;flex-shrink:0}.field.warning{color:#d79533}.field.warning svg{fill:#d79533}.row{display:flex}.row section{flex:1 1 0}.column{display:flex;flex-direction:column;align-items:center}.no-wrap{white-space:nowrap}.fill-width{width:100%}.margin-bottom{margin-bottom:16px}.no-margin-top{margin-top:0}.avatar{border-radius:50%;margin:0 6px}.calendar.field{margin:4px 0 4px 7px}.calendar .day{outline:1px solid rgba(27,31,35,.04);outline-offset:-1px}svg.bar{margin:4px 0}.field.language{margin:0 8px;flex-grow:0}.field.language.details{display:flex;justify-content:space-between}.field.language.details small,.field.license.details small{display:flex;justify-content:space-between;color:#666;text-align:right}.field.language.details small&gt;*,.field.language.details&gt;*{flex:1 1 0}.field.language.details small&gt;:not(:last-child){margin-right:6px}.followup.legend{font-size:12px;flex-wrap:wrap}.followup.legend .field{width:46%;justify-content:flex-start;margin-left:8px}.followup.legend svg{margin:0 3px;width:14px;height:14px}.followup.legend svg:first-child{margin-left:0}.followup.legend svg:last-child{margin-right:0}.followup-title{white-space:initial}.label{background-color:#58a6ff30;color:#0366d6;padding:0 10px;font-weight:500;line-height:22px;margin:2px 5px;white-space:nowrap;border-radius:32px;font-size:12px}.label .label-right,.label.label-flex{display:flex;align-items:center}.label .label-right{font-size:.7rem;margin-left:6px;margin-right:-10px;background-color:#58a6ff10;padding:0 7px;border-top-right-radius:32px;border-bottom-right-radius:32px}.habits .facts{margin:0;list-style-type:none;padding-left:37px}footer{margin-top:8px;font-size:10px;font-style:italic;color:#666;text-align:right;display:flex;flex-direction:column;justify-content:flex-end;padding:0 4px}.categories,.category{display:flex;align-items:center}.categories{justify-content:space-around;margin-top:4px}.category{flex-direction:column;flex:1 1 0}.gauge{stroke-linecap:round;fill:none}.gauge.info{color:#58a6ff}.gauge-arc,.gauge-base{stroke:currentColor;stroke-width:10}.gauge-base{stroke-opacity:.2}.gauge-arc{fill:none;stroke-dashoffset:0;animation-delay:250ms;animation:animation-gauge 1s ease forwards}.gauge text{fill:currentColor;font-size:40px;font-family:monospace;text-anchor:middle;font-weight:600}.gauge .title{font-size:18px;color:#777}.topics{display:flex;flex-wrap:wrap}.topics img{border-radius:5px;margin:4px}.chart{padding:0 8px}.chart-bars{display:flex;justify-content:space-between;align-items:flex-end;width:100%;margin:8px 0 4px;flex-grow:1;min-height:70px}.chart-bars .entry,.repository{display:flex;flex-direction:column}.chart-bars .entry{flex-grow:1;align-items:center;font-size:10px;color:#666}.chart-bars .entry .value{font-size:6px}.chart-bars .bar{width:7px;background-color:var(--color-calendar-graph-day-bg);border:1px solid var(--color-calendar-graph-day-border);border-radius:5px}.chart-bars .entry .bottom{margin-bottom:-1rem;line-height:1rem}.repository{width:100%;margin:6px 0}.repository .name{display:flex;align-items:center;justify-content:space-between;width:440px}.repository .name span:first-child{color:#58a6ff}.repository .name span:last-child{color:#666;font-size:10px}.repository .description{display:block;width:440px;white-space:normal}.repository .description,.repository .infos{color:#666;margin-left:38px;font-size:13px}.repository .infos&gt;div{display:flex;align-items:center;margin-right:16px}.repository .infos svg{margin:0 4px 0 0}.activity{margin-bottom:12px}.activity .field{width:100%;overflow:hidden;text-overflow:ellipsis;max-width:450px;white-space:nowrap;margin-bottom:0}.activity .field .content{flex-grow:1;text-overflow:ellipsis;overflow:hidden}.activity .issue,.activity .repo{display:inline;color:#58a6ff}.activity .code,code,span.code{background-color:#7777771f;border-radius:6px;color:#777;padding:1px 5px;font-size:80%;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace}.activity .code,span.code{margin:0 4px -3px}.activity .details,.activity .timestamp{padding-left:38px;display:flex;flex-direction:column;font-size:13px;color:#666}.activity .timestamp{font-size:10px;margin-top:4px}.activity .commit{display:flex;align-items:center}.activity .details&gt;.comment{margin-top:6px;border-left:3px solid #777777b2;padding-left:6px}svg.calendar{margin-left:13px;margin-top:4px}svg.calendar text{font-size:18px;fill:currentColor}.people{padding:0 10px}.people .avatar{margin:0 2px}.activity .details&gt;.comment,.project .description{overflow:hidden;text-overflow:ellipsis;display:block;width:420px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}.project .description{margin-left:37px;max-height:38px;font-size:12px;white-space:normal}.field.license.details{display:flex;justify-content:space-between}.achievement{display:flex;margin:4px 0}.achievement .icon{margin:0 4px;width:44px;height:44px}.achievement .text{font-size:12px;color:#666}.achievement .title{font-size:14px;color:#58a6ff}.achievement .gauge.info{color:#58a6ff}.achievement .value{background-color:#58a6ff26}.achievement.x .title{color:#666}.achievement.x .gauge.info{color:#b0b0b0}.achievement.x .value{background-color:#b0b0b026}.achievement.b .title{color:#9d8fff}.achievement.b .gauge.info{color:#9e91ff}.achievement.b .value{background-color:#9e91ff26}.achievement.a .title{color:#d79533}.achievement.a .gauge.info{color:#e7bd69}.achievement.a .value{background-color:#e7bd6926}.achievement.s .gauge.info,.achievement.s .title{color:#eb355e}.achievement.s .value{background-color:#eb355e26}.achievement.secret .title{color:#ff76cd}.achievement.secret .gauge.info{color:#ff79d1}.achievement.secret .value{background-color:#ff79d126}.achievement .gh,.achievement .value{border:1px solid currentColor;border-radius:16px;font-size:10px;padding:0 5px;white-space:nowrap}.achievement .gauge-arc,.achievement .gauge-base{stroke-width:6}.achievement .value-wrapper{margin-bottom:-50px;margin-top:36px;display:none}.achievement .value{margin-left:46px}.achievements.compact{display:flex;flex-wrap:wrap}.achievements.compact .achievement{flex-direction:column-reverse;align-items:center;width:80px}#metrics-end,.achievements.compact .info{width:100%}.achievements.compact .achievement .title{margin-bottom:2px;text-transform:capitalize;text-align:center}.achievements.compact .achievement .title .prefix{min-height:13px;font-size:10px;display:block;margin-bottom:-.25rem}.achievements.compact .achievement .value-wrapper{display:flex}.achievements.compact .achievement .gh,.achievements.compact .achievement .text{display:none}code{display:inline-block}code[class^=language-]{white-space:pre-wrap;width:97%;margin-top:4px}.space{margin-left:7px}:root{--color-calendar-graph-day-bg:#ebedf0;--color-calendar-graph-day-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-bg:#9be9a8;--color-calendar-graph-day-L2-bg:#40c463;--color-calendar-graph-day-L3-bg:#30a14e;--color-calendar-graph-day-L4-bg:#216e39;--color-calendar-halloween-graph-day-L1-bg:#ffee4a;--color-calendar-halloween-graph-day-L2-bg:#ffc501;--color-calendar-halloween-graph-day-L3-bg:#fe9600;--color-calendar-halloween-graph-day-L4-bg:#03001c;--color-calendar-winter-graph-day-L1-bg:#0a3069;--color-calendar-winter-graph-day-L2-bg:#0969da;--color-calendar-winter-graph-day-L3-bg:#54aeff;--color-calendar-winter-graph-day-L4-bg:#b6e3ff;--color-calendar-graph-day-L4-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L3-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L2-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-border:rgba(27,31,35,0.06)}</style>
     <style/>
     <foreignObject x="0" y="0" width="100%" height="100%">
         <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" class="items-wrapper">
@@ -33,16 +33,16 @@
                                     <rect class="day" x="0" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
                                     <rect class="day" x="15" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
                                     <rect class="day" x="30" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
-                                    <rect class="day" x="45" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
-                                    <rect class="day" x="60" y="0" width="11" height="11" fill="#216e39" rx="2" ry="2"/>
-                                    <rect class="day" x="75" y="0" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
-                                    <rect class="day" x="90" y="0" width="11" height="11" fill="#216e39" rx="2" ry="2"/>
-                                    <rect class="day" x="105" y="0" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
-                                    <rect class="day" x="120" y="0" width="11" height="11" fill="#40c463" rx="2" ry="2"/>
+                                    <rect class="day" x="45" y="0" width="11" height="11" fill="#216e39" rx="2" ry="2"/>
+                                    <rect class="day" x="60" y="0" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
+                                    <rect class="day" x="75" y="0" width="11" height="11" fill="#216e39" rx="2" ry="2"/>
+                                    <rect class="day" x="90" y="0" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
+                                    <rect class="day" x="105" y="0" width="11" height="11" fill="#40c463" rx="2" ry="2"/>
+                                    <rect class="day" x="120" y="0" width="11" height="11" fill="#216e39" rx="2" ry="2"/>
                                     <rect class="day" x="135" y="0" width="11" height="11" fill="#216e39" rx="2" ry="2"/>
                                     <rect class="day" x="150" y="0" width="11" height="11" fill="#216e39" rx="2" ry="2"/>
                                     <rect class="day" x="165" y="0" width="11" height="11" fill="#216e39" rx="2" ry="2"/>
-                                    <rect class="day" x="180" y="0" width="11" height="11" fill="#216e39" rx="2" ry="2"/>
+                                    <rect class="day" x="180" y="0" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
                                     <rect class="day" x="195" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
                                 </g>
                             </svg>
@@ -81,20 +81,20 @@
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path fill-rule="evenodd" d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z"/>
                             </svg>
-                            1311 Pull requests opened
+                            1312 Pull requests opened
                         </div>
                         <div class="field">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path d="M8 9.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/>
                                 <path fill-rule="evenodd" d="M8 0a8 8 0 100 16A8 8 0 008 0zM1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0z"/>
                             </svg>
-                            1269 Issues opened
+                            1272 Issues opened
                         </div>
                         <div class="field">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path fill-rule="evenodd" d="M2.75 2.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 01.75.75v2.19l2.72-2.72a.75.75 0 01.53-.22h4.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25H2.75zM1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0113.25 12H9.06l-2.573 2.573A1.457 1.457 0 014 13.543V12H2.75A1.75 1.75 0 011 10.25v-7.5z"/>
                             </svg>
-                            2028 issue comments
+                            2038 issue comments
                         </div>
                     </section>
                     <section>
@@ -222,11 +222,11 @@
                                 <rect x="0" y="0" width="220" height="8" fill="white" rx="5"/>
                             </mask>
                             <rect mask="url(#issues-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                            <rect mask="url(#issues-bar)" x="0" y="0" width="9.914529914529915" height="8" fill="#238636"/>
-                            <rect mask="url(#issues-bar)" x="9.914529914529915" y="0" width="0" height="8" fill="#56d364"/>
-                            <rect mask="url(#issues-bar)" x="9.914529914529915" y="0" width="0" height="8" fill="#8B949E"/>
-                            <rect mask="url(#issues-bar)" x="9.914529914529915" y="0" width="0" height="8" fill="#c9d1d9"/>
-                            <rect mask="url(#issues-bar)" x="9.914529914529915" y="0" width="210.0854700854701" height="8" fill="#8957e5"/>
+                            <rect mask="url(#issues-bar)" x="0" y="0" width="10.062015503875969" height="8" fill="#238636"/>
+                            <rect mask="url(#issues-bar)" x="10.062015503875969" y="0" width="0" height="8" fill="#56d364"/>
+                            <rect mask="url(#issues-bar)" x="10.062015503875969" y="0" width="0" height="8" fill="#8B949E"/>
+                            <rect mask="url(#issues-bar)" x="10.062015503875969" y="0" width="0" height="8" fill="#c9d1d9"/>
+                            <rect mask="url(#issues-bar)" x="10.062015503875969" y="0" width="209.93798449612405" height="8" fill="#8957e5"/>
                             <rect mask="url(#issues-bar)" x="220" y="0" width="0" height="8" fill="#d2a8ff"/>
                             <rect mask="url(#issues-bar)" x="220" y="0" width="0" height="8" fill="#8B949E"/>
                             <rect mask="url(#issues-bar)" x="220" y="0" width="0" height="8" fill="#c9d1d9"/>
@@ -237,14 +237,14 @@
                                     <path fill="#238636" d="M8 9.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/>
                                     <path fill="#238636" fill-rule="evenodd" d="M8 0a8 8 0 100 16A8 8 0 008 0zM1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0z"/>
                                 </svg>
-                                <span class="no-wrap">58 <small>open</small></span>
+                                <span class="no-wrap">59 <small>open</small></span>
                             </div>
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                     <path fill="#8957e5" d="M11.28 6.78a.75.75 0 00-1.06-1.06L7.25 8.69 5.78 7.22a.75.75 0 00-1.06 1.06l2 2a.75.75 0 001.06 0l3.5-3.5z"/>
                                     <path fill="#8957e5" fill-rule="evenodd" d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-1.5 0a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z"/>
                                 </svg>
-                                <span class="no-wrap">1229 <small>closed</small></span>
+                                <span class="no-wrap">1231 <small>closed</small></span>
                             </div>
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -267,27 +267,27 @@
                                 <rect x="0" y="0" width="220" height="8" fill="white" rx="5"/>
                             </mask>
                             <rect mask="url(#pr-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                            <rect mask="url(#issues-bar)" x="0" y="0" width="1.1613876319758674" height="8" fill="#238636"/>
-                            <rect mask="url(#issues-bar)" x="1.1613876319758674" y="0" width="0" height="8" fill="#56d364"/>
-                            <rect mask="url(#issues-bar)" x="1.1613876319758674" y="0" width="0.16591251885369532" height="8" fill="#8B949E"/>
-                            <rect mask="url(#issues-bar)" x="1.3273001508295628" y="0" width="0" height="8" fill="#c9d1d9"/>
-                            <rect mask="url(#issues-bar)" x="1.3273001508295628" y="0" width="3.484162895927602" height="8" fill="#da3633"/>
-                            <rect mask="url(#issues-bar)" x="4.811463046757165" y="0" width="0" height="8" fill="#ff7b72"/>
-                            <rect mask="url(#issues-bar)" x="4.811463046757165" y="0" width="215.18853695324282" height="8" fill="#8957e5"/>
-                            <rect mask="url(#issues-bar)" x="219.99999999999997" y="0" width="0" height="8" fill="#d2a8ff"/>
+                            <rect mask="url(#issues-bar)" x="0" y="0" width="0.9947249434815373" height="8" fill="#238636"/>
+                            <rect mask="url(#issues-bar)" x="0.9947249434815373" y="0" width="0" height="8" fill="#56d364"/>
+                            <rect mask="url(#issues-bar)" x="0.9947249434815373" y="0" width="0.1657874905802562" height="8" fill="#8B949E"/>
+                            <rect mask="url(#issues-bar)" x="1.1605124340617934" y="0" width="0" height="8" fill="#c9d1d9"/>
+                            <rect mask="url(#issues-bar)" x="1.1605124340617934" y="0" width="3.4815373021853806" height="8" fill="#da3633"/>
+                            <rect mask="url(#issues-bar)" x="4.6420497362471735" y="0" width="0" height="8" fill="#ff7b72"/>
+                            <rect mask="url(#issues-bar)" x="4.6420497362471735" y="0" width="215.35795026375283" height="8" fill="#8957e5"/>
+                            <rect mask="url(#issues-bar)" x="220" y="0" width="0" height="8" fill="#d2a8ff"/>
                         </svg>
                         <div class="followup legend field fill-width">
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                     <path fill="#238636" fill-rule="evenodd" d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z"/>
                                 </svg>
-                                <span class="no-wrap">7 <small>open</small></span>
+                                <span class="no-wrap">6 <small>open</small></span>
                             </div>
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                     <path fill="#8957e5" fill-rule="evenodd" d="M5 3.254V3.25v.005a.75.75 0 110-.005v.004zm.45 1.9a2.25 2.25 0 10-1.95.218v5.256a2.25 2.25 0 101.5 0V7.123A5.735 5.735 0 009.25 9h1.378a2.251 2.251 0 100-1.5H9.25a4.25 4.25 0 01-3.8-2.346zM12.75 9a.75.75 0 100-1.5.75.75 0 000 1.5zm-8.5 4.5a.75.75 0 100-1.5.75.75 0 000 1.5z"/>
                                 </svg>
-                                <span class="no-wrap">1297 <small>merged</small></span>
+                                <span class="no-wrap">1299 <small>merged</small></span>
                             </div>
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -433,11 +433,11 @@
                         <path fill-rule="evenodd" d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 01-1.484.211c-.04-.282-.163-.547-.37-.847a8.695 8.695 0 00-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.75.75 0 01-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75zM6 15.25a.75.75 0 01.75-.75h2.5a.75.75 0 010 1.5h-2.5a.75.75 0 01-.75-.75zM5.75 12a.75.75 0 000 1.5h4.5a.75.75 0 000-1.5h-4.5z"/>
                     </svg>
                     Recent coding habits
-                    <small class="h-details">(computed from last 17 commits)</small>
+                    <small class="h-details">(computed from last 21 commits)</small>
                 </h2>
                 <div class="row">
                     <ul class="facts">
-                        <li>Mostly pushes code around 10:00</li>
+                        <li>Mostly pushes code around 11:00</li>
                         <li>Mostly active on Thursday</li>
                     </ul>
                 </div>
@@ -448,37 +448,37 @@
                     <div class="chart-bars">
                         <div class="entry">
                             <span class="value">3</span>
-                            <div class="bar" style="height: 37.5px; background-color: var(--color-calendar-graph-day-L3-bg)"></div>
+                            <div class="bar" style="height: 21.428571428571427px; background-color: var(--color-calendar-graph-day-L2-bg)"></div>
                             09
                         </div>
                         <div class="entry">
                             <span class="value">4</span>
-                            <div class="bar" style="height: 50px; background-color: var(--color-calendar-graph-day-L4-bg)"></div>
+                            <div class="bar" style="height: 28.57142857142857px; background-color: var(--color-calendar-graph-day-L3-bg)"></div>
                             10
                         </div>
                         <div class="entry">
-                            <span class="value">3</span>
-                            <div class="bar" style="height: 37.5px; background-color: var(--color-calendar-graph-day-L3-bg)"></div>
+                            <span class="value">7</span>
+                            <div class="bar" style="height: 50px; background-color: var(--color-calendar-graph-day-L4-bg)"></div>
                             11
                         </div>
                         <div class="entry">
                             <span class="value">1</span>
-                            <div class="bar" style="height: 12.5px; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
+                            <div class="bar" style="height: 7.142857142857142px; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
                             12
                         </div>
                         <div class="entry">
                             <span class="value">1</span>
-                            <div class="bar" style="height: 12.5px; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
+                            <div class="bar" style="height: 7.142857142857142px; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
                             13
                         </div>
                         <div class="entry">
-                            <span class="value">3</span>
-                            <div class="bar" style="height: 37.5px; background-color: var(--color-calendar-graph-day-L3-bg)"></div>
+                            <span class="value">2</span>
+                            <div class="bar" style="height: 14.285714285714285px; background-color: var(--color-calendar-graph-day-L2-bg)"></div>
                             14
                         </div>
                         <div class="entry">
-                            <span class="value">1</span>
-                            <div class="bar" style="height: 12.5px; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
+                            <span class="value">2</span>
+                            <div class="bar" style="height: 14.285714285714285px; background-color: var(--color-calendar-graph-day-L2-bg)"></div>
                             15
                         </div>
                         <div class="entry">
@@ -493,7 +493,7 @@
                         </div>
                         <div class="entry">
                             <span class="value">1</span>
-                            <div class="bar" style="height: 12.5px; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
+                            <div class="bar" style="height: 7.142857142857142px; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
                             18
                         </div>
                     </div>
@@ -509,27 +509,27 @@
                             </div>
                             <div class="entry">
                                 <span class="value">3</span>
-                                <div class="bar" style="height: 25px; background-color: var(--color-calendar-graph-day-L2-bg)"></div>
+                                <div class="bar" style="height: 15px; background-color: var(--color-calendar-graph-day-L2-bg)"></div>
                                 Mon
                             </div>
                             <div class="entry">
-                                <span class="value">5</span>
-                                <div class="bar" style="height: 41.66666666666667px; background-color: var(--color-calendar-graph-day-L4-bg)"></div>
+                                <span class="value">4</span>
+                                <div class="bar" style="height: 20px; background-color: var(--color-calendar-graph-day-L2-bg)"></div>
                                 Tue
                             </div>
                             <div class="entry">
                                 <span class="value">3</span>
-                                <div class="bar" style="height: 25px; background-color: var(--color-calendar-graph-day-L2-bg)"></div>
+                                <div class="bar" style="height: 15px; background-color: var(--color-calendar-graph-day-L2-bg)"></div>
                                 Wed
                             </div>
                             <div class="entry">
-                                <span class="value">6</span>
+                                <span class="value">10</span>
                                 <div class="bar" style="height: 50px; background-color: var(--color-calendar-graph-day-L4-bg)"></div>
                                 Thu
                             </div>
                             <div class="entry">
-                                <span class="value"></span>
-                                <div class="bar" style="height: 0px; background-color: var(--color-calendar-graph-day-L0-bg)"></div>
+                                <span class="value">1</span>
+                                <div class="bar" style="height: 5px; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
                                 Fri
                             </div>
                             <div class="entry">
@@ -576,7 +576,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path fill-rule="evenodd" d="M7.998 14.5c2.832 0 5-1.98 5-4.5 0-1.463-.68-2.19-1.879-3.383l-.036-.037c-1.013-1.008-2.3-2.29-2.834-4.434-.322.256-.63.579-.864.953-.432.696-.621 1.58-.046 2.73.473.947.67 2.284-.278 3.232-.61.61-1.545.84-2.403.633a2.788 2.788 0 01-1.436-.874A3.21 3.21 0 003 10c0 2.53 2.164 4.5 4.998 4.5zM9.533.753C9.496.34 9.16.009 8.77.146 7.035.75 4.34 3.187 5.997 6.5c.344.689.285 1.218.003 1.5-.419.419-1.54.487-2.04-.832-.173-.454-.659-.762-1.035-.454C2.036 7.44 1.5 8.702 1.5 10c0 3.512 2.998 6 6.498 6s6.5-2.5 6.5-6c0-2.137-1.128-3.26-2.312-4.438-1.19-1.184-2.436-2.425-2.653-4.81z"/>
                             </svg>
-                            Current streak 9 days
+                            Current streak 10 days
                         </div>
                         <div class="field">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -600,7 +600,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path d="M10.896 2H8.75V.75a.75.75 0 00-1.5 0V2H5.104a.25.25 0 00-.177.427l2.896 2.896a.25.25 0 00.354 0l2.896-2.896A.25.25 0 0010.896 2zM8.75 15.25a.75.75 0 01-1.5 0V14H5.104a.25.25 0 01-.177-.427l2.896-2.896a.25.25 0 01.354 0l2.896 2.896a.25.25 0 01-.177.427H8.75v1.25zm-6.5-6.5a.75.75 0 000-1.5h-.5a.75.75 0 000 1.5h.5zM6 8a.75.75 0 01-.75.75h-.5a.75.75 0 010-1.5h.5A.75.75 0 016 8zm2.25.75a.75.75 0 000-1.5h-.5a.75.75 0 000 1.5h.5zM12 8a.75.75 0 01-.75.75h-.5a.75.75 0 010-1.5h.5A.75.75 0 0112 8zm2.25.75a.75.75 0 000-1.5h-.5a.75.75 0 000 1.5h.5z"/>
                             </svg>
-                            Average per day at ~7.07
+                            Average per day at ~7.06
                         </div>
                     </section>
                 </div>
@@ -1571,6 +1571,11 @@
                                 <path fill="#216e39" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.3404255319148937 0,2.3404255319148937 z"/>
                                 <path fill="#216e39" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.3404255319148937 1.7,3.3404255319148937 z"/>
                             </g>
+                            <g transform="translate(-8.5, 10.74468085106383)">
+                                <path fill="#9be9a8" d="M1.7,2 0,1 1.7,0 3.4,1 z"/>
+                                <path fill="#9be9a8" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2.25531914893617 0,1.2553191489361701 z"/>
+                                <path fill="#9be9a8" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1.2553191489361701 1.7,2.25531914893617 z"/>
+                            </g>
                         </g>
                     </g>
                 </svg>
@@ -1967,6 +1972,7 @@
                                     <rect class="day" x="0" y="34" width="11" height="11" fill="#216e39" rx="2" ry="2"/>
                                     <rect class="day" x="0" y="49" width="11" height="11" fill="#216e39" rx="2" ry="2"/>
                                     <rect class="day" x="0" y="64" width="11" height="11" fill="#216e39" rx="2" ry="2"/>
+                                    <rect class="day" x="0" y="79" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
                                 </g>
                             </g>
                         </svg>
@@ -2011,26 +2017,26 @@
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                             <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"/>
                                         </svg>
-                                        29.1k
+                                        29.2k
                                     </div>
                                     <div>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                             <path fill-rule="evenodd" d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"/>
                                         </svg>
-                                        2.18k
+                                        2.19k
                                     </div>
                                     <div>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                             <path d="M8 9.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/>
                                             <path fill-rule="evenodd" d="M8 0a8 8 0 100 16A8 8 0 008 0zM1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0z"/>
                                         </svg>
-                                        566
+                                        575
                                     </div>
                                     <div>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                             <path fill-rule="evenodd" d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z"/>
                                         </svg>
-                                        735
+                                        746
                                     </div>
                                 </div>
                             </section>
@@ -2070,7 +2076,7 @@
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                             <path fill-rule="evenodd" d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"/>
                                         </svg>
-                                        272
+                                        271
                                     </div>
                                     <div>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -2170,7 +2176,7 @@
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                             <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"/>
                                         </svg>
-                                        16.5k
+                                        16.6k
                                     </div>
                                     <div>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -2211,13 +2217,8 @@
                             <div class="entry">
                                 <span class="value">49</span>
                                 <div class="bar" style="height: 2.5px; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
-                                10
-                                <div class="bottom">Oct.</div>
-                            </div>
-                            <div class="entry">
-                                <span class="value"></span>
-                                <div class="bar" style="height: 2.5px; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
                                 11
+                                <div class="bottom">Oct.</div>
                             </div>
                             <div class="entry">
                                 <span class="value"></span>
@@ -2278,6 +2279,11 @@
                                 <span class="value"></span>
                                 <div class="bar" style="height: 2.5px; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
                                 23
+                            </div>
+                            <div class="entry">
+                                <span class="value"></span>
+                                <div class="bar" style="height: 2.5px; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
+                                24
                             </div>
                         </div>
                     </section>
@@ -2287,13 +2293,8 @@
                             <div class="entry">
                                 <span class="value"></span>
                                 <div class="bar" style="height: 0px; background-color: var(--color-calendar-graph-day-L0-bg)"></div>
-                                10
-                                <div class="bottom">Oct.</div>
-                            </div>
-                            <div class="entry">
-                                <span class="value"></span>
-                                <div class="bar" style="height: 0px; background-color: var(--color-calendar-graph-day-L0-bg)"></div>
                                 11
+                                <div class="bottom">Oct.</div>
                             </div>
                             <div class="entry">
                                 <span class="value"></span>
@@ -2354,6 +2355,11 @@
                                 <span class="value"></span>
                                 <div class="bar" style="height: 0px; background-color: var(--color-calendar-graph-day-L0-bg)"></div>
                                 23
+                            </div>
+                            <div class="entry">
+                                <span class="value"></span>
+                                <div class="bar" style="height: 0px; background-color: var(--color-calendar-graph-day-L0-bg)"></div>
+                                24
                             </div>
                         </div>
                     </section>
@@ -2434,14 +2440,115 @@
                                     </svg>
                                     <div class="content">
                                         Commented on
-                                        <span class="issue">#311 Set update_changelog_on_bump = false, or the template's coming doit release rewrites CHANGELOG.md</span>
+                                        <span class="issue">#327 doit worktree builds a venv without the system's packages, where gi does not import</span>
                                     </div>
                                 </div>
                                 <div class="details">
                                     <div>opened by endavis in <span class="repo">endavis/gnome-connection-manager</span></div>
-                                    <div class="comment">Addressed in PR #322, merged as ce93513. Closed by hand: the squash commit's closing line did not take effect here, 9 minutes after the merge, though it did for #319. The evidence is in the comment above.</div>
+                                    <div class="comment">
+                                        <b>Implementation Plan for #327: doit worktree builds a venv without the system's packages, where gi does not import</b>
+                                        <b>Overview</b>
+                                        Override
+                                        <code>worktree</code>
+                                        in
+                                        <code>tools/doit/gcm.py</code>
+                                        , as
+                                        <code>check</code>
+                                        is overridden. The override runs the template's task as it is, then appends one action. That action builds the new worktree's
+                                        <code>.venv</code>
+                                        again, the way CI builds GCM's:
+                                        <code>uv venv --system-site-packages --python /usr/bin/python3</code>
+                                        , with
+                                        <code>--clear</code>
+                                        , then
+                                        <code>uv sync --all-extras --dev</code>
+                                        . It uses the environment the template's sync gets, with
+                                        <code>VIRTUAL_ENV</code>
+                                        dropped and
+                                        <code>UV_CACHE_DIR</code>
+                                        resolved.
+Why rebuild after the template's sync, not build the venv before it:
+
+uv 0.9.7's
+                                        <code>uv sync</code>
+                                        has no option for the system's site packages. Only
+                                        <code>uv venv</code>
+                                        has one.
+                                        <code>.venv</code>
+                                        cannot be made before
+                                        <code>git worktree add</code>
+                                        creates the folder.
+Getting a step in between would mean patching the template's module at run time, or copying its task here. A copy stops taking the template's changes to the task at a sync.
+The rebuild is cheap. Measured in a worktree from
+                                        <code>doit worktree</code>
+                                        : the template's whole task took 3.7 s, and a quiet rebuild took 0.95 s, after which
+                                        <code>gi</code>
+                                        imports from
+                                        <code>/usr/lib/python3/dist-packages</code>
+                                        .
+
+The rebuild is quiet, so the template's instructions stay on screen, and it ends with one line saying what it did. If it fails, the worktree stays, and the override prints the two commands to run in it and exits 1.
+                                        <b>Files to Create/Modify</b>
+                                        <code>tools/doit/gcm.py</code>
+                                        :
+                                        <code>task_worktree</code>
+                                        , wrapping
+                                        <code>git.task_worktree()</code>
+                                        .
+                                        <code>dodo.py</code>
+                                        : install it by name after discovery, as
+                                        <code>task_audit</code>
+                                        and
+                                        <code>task_check</code>
+                                        are.
+                                        <code>tests/test_worktree.py</code>
+                                        : with fakes for git and
+                                        <code>run_streamed</code>
+                                        , as the template's own worktree tests use.
+                                        <code>AGENTS.md</code>
+                                        : the
+                                        <code>doit worktree</code>
+                                        bullet loses its workaround. The paragraph listing the overrides gains
+                                        <code>worktree</code>
+                                        .
+                                        <b>Test Plan</b>
+                                        The override runs the template's task first. It then builds the venv from
+                                        <code>/usr/bin/python3</code>
+                                        with
+                                        <code>--system-site-packages</code>
+                                        and
+                                        <code>--clear</code>
+                                        , and syncs it, in the worktree, with
+                                        <code>VIRTUAL_ENV</code>
+                                        dropped and
+                                        <code>UV_CACHE_DIR</code>
+                                        resolved.
+ The venv command is the one
+                                        <code>.github/workflows/ci.yml</code>
+                                        runs, read from the file.
+ A failing rebuild exits 1, keeps the worktree, and prints the commands to retry.
+                                        <code>dodo.py</code>
+                                        installs the override.
+ Mutation: without the appended action, the tests fail.
+                                        <b>Documentation</b>
+                                        <code>AGENTS.md</code>
+                                        , as above.
+                                        <code>.github/CONTRIBUTING.md</code>
+                                        's worktree paragraph holds once this lands, so it is not changed.
+ ADR needed: no. ADR-9022 gives each worktree an environment of its own. This only builds that environment as CI builds GCM's.
+                                        <b>Validation</b>
+                                        <code>doit check</code>
+                                        and
+                                        <code>doit docs_build</code>
+                                        pass.
+ A fresh
+                                        <code>doit worktree</code>
+                                        imports
+                                        <code>gi</code>
+                                        , and its suite skips only what the main checkout's does.
+                                    </div>
                                 </div>
-                                <div class="timestamp">22 Oct 2026, 17:02:54</div>
+                                <div class="timestamp">24 Oct 2026, 03:03:09</div>
                             </section>
                         </div>
                         <div class="row fill-width">
@@ -2452,368 +2559,352 @@
                                     </svg>
                                     <div class="content">
                                         Commented on
-                                        <span class="issue">#319 Under raw recording or OSC 52, a resize reaches an idle program only when a byte next passes</span>
+                                        <span class="issue">#316 The open-in-browser scenario of the registry test dies of SIGSEGV on CI now and then</span>
                                     </div>
                                 </div>
                                 <div class="details">
                                     <div>opened by endavis in <span class="repo">endavis/gnome-connection-manager</span></div>
                                     <div class="comment">
-                                        Merged as 8c97560 (PR #321), and verified on
+                                        The scenario had already finished when it crashed. The daily check runs pytest with
+                                        <code>-v</code>
+                                        , so its failure prints the whole
+                                        <code>CompletedProcess</code>
+                                        . CI's
+                                        <code>-q</code>
+                                        cuts that repr to
+                                        <code>'...'</code>
+                                        , so the other three occurrences do not show their stdout. In run 39948483404 the stdout was
+                                        <code>OK</code>
+                                        :
+                                        <code>returncode=-11, stdout='OK\n', stderr="\n(gcm:4045): dbind-WARNING **: 11:48:09.218: AT-SPI: Error retrieving accessibility bus address: ...\nSystem doesn't support transparency\n"</code>
+                                        <code>print("OK")</code>
+                                        is the scenario's last line, so every assertion had passed. Its stdout is a pipe, and nothing there makes it unbuffered. Measured with a probe under
+                                        <code>pytest -n 2</code>
+                                        : the xdist worker is unbuffered, but a child it runs sees no
+                                        <code>PYTHONUNBUFFERED</code>
+                                        , and its
+                                        <code>sys.stdout.write_through</code>
+                                        is False. The daily check's
+                                        <code>test</code>
+                                        task runs
+                                        <code>uv run pytest -n auto -v</code>
+                                        as a plain doit command, which sets nothing either. So the
+                                        <code>OK</code>
+                                        reached the pipe only when Python flushed stdout during finalization, after the
+                                        <code>atexit</code>
+                                        callbacks. The crash came after that point. It happened either during Python's own teardown, the shutdown garbage collection and the module cleanup, or later, in C code run at exit.
+That limits what the proposed
+                                        <code>PYTHONFAULTHANDLER=1</code>
+                                        step can show. Measured with Python 3.12.3, as CI runs, with stdout a pipe:
+
+
+
+Where the crash is
+                                        <code>-X faulthandler</code>
+                                        an
+                                        <code>atexit</code>
+                                        callback
+stack printed,
+                                        <code>OK</code>
+                                        lost
+
+
+a destructor run by the shutdown garbage collection
+                                        <code>OK</code>
+                                        , then the stack, under "Garbage-collecting"
+
+
+a C exit handler (
+                                        <code>__cxa_atexit</code>
+                                        ), after Python has finalized
+                                        <code>OK</code>
+                                        , no stack, exit 139
+
+
+So faulthandler will name the crash if it happens in Python's teardown, and print nothing if it happens later. If the next occurrence with faulthandler on still shows no stack, the crash is in C code run at exit, and a core dump read with gdb is the way to see it.
+                                    </div>
+                                </div>
+                                <div class="timestamp">24 Oct 2026, 01:46:50</div>
+                            </section>
+                        </div>
+                        <div class="row fill-width">
+                            <section class="activity">
+                                <div class="field">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                        <path fill-rule="evenodd" d="M2.75 2.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 01.75.75v2.19l2.72-2.72a.75.75 0 01.53-.22h4.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25H2.75zM1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0113.25 12H9.06l-2.573 2.573A1.457 1.457 0 014 13.543V12H2.75A1.75 1.75 0 011 10.25v-7.5z"/>
+                                    </svg>
+                                    <div class="content">
+                                        Commented on
+                                        <span class="issue">#324 chore: synchronize with the latest pyproject-template</span>
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <div>opened by endavis in <span class="repo">endavis/gnome-connection-manager</span></div>
+                                    <div class="comment">
+                                        <b>Amendment to the Sync Plan for #324</b>
+                                        Found while validating. Items 1 to 3 were approved in the session on 2026-10-23; item 4 sits within the plan's allowance for ruff settings that adopted tests need.
+                                        <code>AGENTS.md</code>
+                                        gains a
+                                        <code>## Breaking Changes Policy</code>
+                                        . The adopted
+                                        <code>deprecate-api</code>
+                                        skill sends every agent to that section before it starts, and GCM's AGENTS.md had none, so
+                                        <code>tests/test_instruction_pointers.py</code>
+                                        failed. The section is GCM's own:
+
+what must not break:
+                                        <code>gcm.conf</code>
+                                        and
+                                        <code>.gcm.key</code>
+                                        , what an existing configuration does, and the command line;
+what a breaking change carries: a
+                                        <code>BREAKING CHANGE:</code>
+                                        footer, a migration note in its PR, and an entry in the hand-written
+                                        <code>CHANGELOG.md</code>
+                                        .
+
+The skill defers to the policy where the two disagree, which covers its claim that
+                                        <code>doit release</code>
+                                        writes the changelog.
+
+Two of AGENTS.md's pointers to
+                                        <code>.github/CONTRIBUTING.md</code>
+                                        now name their section: (Release Process) and (Development Workflow). The same test's guard requires at least one
+                                        <code>`path.md` (Section)</code>
+                                        pointer in the instruction files, and GCM's had none.
+
+Links in 11 adopted docs point at the template on GitHub wherever they name a file GCM excludes, such as
+                                        <code>docs/usage/cli.md</code>
+                                        , as #132 did. Otherwise
+                                        <code>tests/test_markdown_links.py</code>
+                                        fails on 12 links. Each later sync has to carry these.
+                                        <code>mkdocs.yml</code>
+                                        's comment on link validation goes back to the template's wording, which names that test.
+
+Ruff sorts imports as the template does.
+                                        <code>[tool.ruff.lint.isort]</code>
+                                        names
+                                        <code>tools</code>
+                                        first-party and
+                                        <code>agent_roster</code>
+                                        third-party, which is how the template's default
+                                        <code>src</code>
+                                        classifies them. GCM's
+                                        <code>src = ["src", "tests"]</code>
+                                        reversed both, so 8 imports in adopted tests were out of order.
+                                        <code>tests/template/*</code>
+                                        gets the TC ignore the other vendored tests already have.
+The adopted tests stay byte-identical to the template's. Three of GCM's own tests had a blank line moved.
+The plan expected per-file ignores here. These settings keep import sorting checked in those files.
+
+
+
+🤖 Generated with Claude Code
+https://claude.ai/code/session_019MDmr9Jqj5WX9mPt9YuLdv
+                                    </div>
+                                </div>
+                                <div class="timestamp">23 Oct 2026, 10:39:10</div>
+                            </section>
+                        </div>
+                        <div class="row fill-width">
+                            <section class="activity">
+                                <div class="field">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                        <path fill-rule="evenodd" d="M2.75 2.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 01.75.75v2.19l2.72-2.72a.75.75 0 01.53-.22h4.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25H2.75zM1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0113.25 12H9.06l-2.573 2.573A1.457 1.457 0 014 13.543V12H2.75A1.75 1.75 0 011 10.25v-7.5z"/>
+                                    </svg>
+                                    <div class="content">
+                                        Commented on
+                                        <span class="issue">#316 The open-in-browser scenario of the registry test dies of SIGSEGV on CI now and then</span>
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <div>opened by endavis in <span class="repo">endavis/gnome-connection-manager</span></div>
+                                    <div class="comment">
+                                        A third occurrence, on
+                                        <code>main</code>
+                                        at 5a56ce2 on 2026-10-23: run 39949436525, first attempt. It failed in the same way:
+                                        <code>test_the_registry_against_real_gtk[open-in-browser]</code>
+                                        returned -11, and stderr held only the AT-SPI warning and
+                                        <code>System doesn't support transparency</code>
+                                        .
+
+Runner image: ubuntu-24.04 20261012.601 again, as in the first two.
+Worker: gw3, where the first two ran on gw2.
+Rerun: rerunning the failed job passed, with 2701 passed and none skipped.
+
+That commit is #325's pyproject-template sync, which touches neither
+                                        <code>tests/test_connections.py</code>
+                                        nor
+                                        <code>open_in_browser</code>
+                                        .
+🤖 Generated with Claude Code
+https://claude.ai/code/session_019MDmr9Jqj5WX9mPt9YuLdv
+                                    </div>
+                                </div>
+                                <div class="timestamp">23 Oct 2026, 12:06:06</div>
+                            </section>
+                        </div>
+                        <div class="row fill-width">
+                            <section class="activity">
+                                <div class="field">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                        <path fill-rule="evenodd" d="M2.75 2.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 01.75.75v2.19l2.72-2.72a.75.75 0 01.53-.22h4.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25H2.75zM1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0113.25 12H9.06l-2.573 2.573A1.457 1.457 0 014 13.543V12H2.75A1.75 1.75 0 011 10.25v-7.5z"/>
+                                    </svg>
+                                    <div class="content">
+                                        Commented on
+                                        <span class="issue">#273 chore: declare the programs GCM runs in its packages, and describe it as it is now</span>
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <div>opened by endavis in <span class="repo">endavis/gnome-connection-manager</span></div>
+                                    <div class="comment">
+                                        Merged as a619489 (PR #323), and closed by its
+                                        <code>Closes #273</code>
+                                        . Checked on
                                         <code>main</code>
                                         after the merge.
+The packages below were built from the PR's branch with fpm 1.18.0 in an Ubuntu 24.04 root, and read back there.
                                         <code>main</code>
-                                        's tree is identical to the PR head CI tested, on which 2401 tests passed with none skipped.
-In GCM, on Xvfb with a real VTE, as in this issue: GCM's window went from 1400×900 to 1000×700, and the tab's terminal from 48×159 to 36×109.
+                                        's tree is identical to the PR head's, 4d39858, whose second commit changed only
+                                        <code>ci.yml</code>
+                                        .
+
+The .deb's weak dependencies, from
+                                        <code>dpkg-deb -I</code>
+                                        :
+                                        <code class="language-multiline" xml:space="preserve">Recommends: gir1.2-gtk-vnc-2.0
+ Suggests: freerdp3-x11|freerdp2-x11, xdg-utils, sshfs, nautilus, gvfs-backends</code>
+                                        The alternative: dpkg 1.22.6 stores it as
+                                        <code>freerdp3-x11 | freerdp2-x11</code>
+                                        , and apt 2.8.3 lists it that way under Suggested packages.
+No VNC viewer, by the maintainer's decision, as in #302. GCM runs one only where gtk-vnc is missing, and both packages recommend gtk-vnc. So the first criterion holds for every optional program but that one.
+xdg-utils stays suggested, also by decision. Only gtk-vnc is recommended, as before.
 
 
+The .rpm, from
+                                        <code>rpm -qp</code>
+                                        with rpm 4.18.2:
 
-Settings
-The idle program got the SIGWINCH
+It requires
+                                        <code>expect</code>
+                                        ,
+                                        <code>gtk3</code>
+                                        ,
+                                        <code>python3</code>
+                                        ,
+                                        <code>python3-gobject</code>
+                                        ,
+                                        <code>python3-pyaes</code>
+                                        and
+                                        <code>vte291</code>
+                                        , besides rpmlib's own two.
+It recommends
+                                        <code>gtk-vnc2</code>
+                                        .
+It suggests
+                                        <code>freerdp</code>
+                                        ,
+                                        <code>fuse-sshfs</code>
+                                        ,
+                                        <code>gvfs</code>
+                                        ,
+                                        <code>nautilus</code>
+                                        and
+                                        <code>xdg-utils</code>
+                                        .
 
+Each name was checked in Fedora 43's and 44's repositories, by the file GCM needs from it.
 
-
-Both off
-0.03 s after the resize
-
-
-Record the raw session
-0.03 s after, where it was 3.00 s, when a key was typed
-
-
-OSC 52
-0.03 s after, where it was 3.00 s, when a key was typed
-
-
-With a real full-screen program, which this issue had not measured: vim, run as
-                                        <code>vim -u NONE -N -c 'set laststatus=2 ruler'</code>
-                                        and idle in normal mode. With raw recording or OSC 52 on, it redrew its status line 109 wide 0.08 s after the resize, with the ruler on it. Before the fix, 3 s after the resize no status line was anywhere on the screen.
-                                        <code>ssh.expect</code>
-                                        's resize trap under raw recording, the case where this issue was found. With a fake ssh and a stored password, it ran at 0.21 s and 0.41 s, at each of a new tab's two changes of size, then at 1.57 s at the handover. Before, it ran only at the handover.
-Tests on
+The description and the entry, on
                                         <code>main</code>
                                         :
-                                        <code>tests/test_osc52.py</code>
-                                        , which holds the two new relay tests, and the suites around it: 163 passed.
-Not tested, as PR #321 says:
-
-The starting size's order: the handler is now installed before the starting size is set, which closes a race between two adjacent calls. No test can hit it.
-The handler put back at the end: it is reset before the pty is closed, which cannot be observed.
-
-Not measured: an agent CLI idle at its prompt. vim stood in for a full-screen program.
-                                    </div>
-                                </div>
-                                <div class="timestamp">22 Oct 2026, 15:59:08</div>
-                            </section>
-                        </div>
-                        <div class="row fill-width">
-                            <section class="activity">
-                                <div class="field">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                        <path fill-rule="evenodd" d="M2.75 2.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 01.75.75v2.19l2.72-2.72a.75.75 0 01.53-.22h4.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25H2.75zM1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0113.25 12H9.06l-2.573 2.573A1.457 1.457 0 014 13.543V12H2.75A1.75 1.75 0 011 10.25v-7.5z"/>
-                                    </svg>
-                                    <div class="content">
-                                        Commented on
-                                        <span class="issue">#312 Text typed into a tab before its commands after login are sent goes in front of them</span>
-                                    </div>
-                                </div>
-                                <div class="details">
-                                    <div>opened by endavis in <span class="repo">endavis/gnome-connection-manager</span></div>
-                                    <div class="comment">
-                                        Merged as 8aeddb7 (PR #320), and verified on
-                                        <code>main</code>
-                                        after the merge. The stored password half of this issue was #314, merged as d72e9ab.
-The probe, as in this issue's measurements:
-
-GCM's
-                                        <code>addTab</code>
-                                        in a real VTE on Xvfb, with keys sent as GDK key events.
-The real ssh against sshd on 127.0.0.1, behind a
-                                        <code>ProxyCommand</code>
-                                        that waits 1.5 s.
-In each scenario
-                                        <code>ls</code>
-                                        was typed at 0.5 s, without Enter. Times are from
-                                        <code>addTab</code>
-                                        .
-
-
-
-
-Scenario
-ssh's terminal raw
-Commands typed
-End of the screen
-
-
-
-Typed ahead
-1.71 s
-2.08 s
-                                        <code>remote$ echo gcm-command-ran</code>
-                                        ,
-                                        <code>gcm-command-ran</code>
-                                        ,
-                                        <code>remote$ ls</code>
-                                        Typed ahead, under the relay (raw-session-log on)
-1.72 s
-2.09 s
-the same
-
-
-Typed ahead, with a stored password (
-                                        <code>ssh.expect</code>
-                                        )
-1.66 s
-2.03 s
-the same
-
-
-New host key,
-                                        <code>yes</code>
-                                        typed at 4.0 s
-4.14 s
-4.45 s
-the question answered
-                                        <code>yes</code>
-                                        , then the same
-
-
-New host key, through
-                                        <code>ssh.expect</code>
-                                        4.09 s
-4.46 s
-the same
-
-
-A key with a passphrase, typed at 4.0 s
-4.16 s
-4.53 s
-the same
-                                        <code>UpdateHostKeys=ask</code>
-                                        ,
-                                        <code>yes</code>
-                                        typed at 4.0 s
-4.04 s
-4.35 s
-the same
-                                        <code>-T</code>
-                                        , a remote that prints no prompt
-never
-20.06 s
-                                        <code>echo gcm-command-ran</code>
-                                        ,
-                                        <code>lsgcm-command-ran</code>
-                                        <code>-T</code>
-                                        , a remote
-                                        <code>bash -i</code>
-                                        that prints one
-never
-not by 25 s
-                                        <code>remote$</code>
-                                        On
-                                        <code>main</code>
-                                        before the fix, the same probe gave these results:
-
-The three typed-ahead cases gave
-                                        <code>lsecho gcm-command-ran</code>
-                                        .
-The commands answered the host key and passphrase questions, as measured above.
-
-In the first
-                                        <code>-T</code>
-                                        row, ssh has no terminal of its own and the tab echoes what it is sent. The command shows first, then the
-                                        <code>ls</code>
-                                        replayed after it. The command's output follows
-                                        <code>ls</code>
-                                        on the same line.
-Tests on
-                                        <code>main</code>
-                                        :
-                                        <code>tests/test_afterlogin.py</code>
-                                        ,
-                                        <code>tests/test_commands_after_login.py</code>
-                                        and the suites the change touched: 210 passed.
-CI on the PR, whose tree is identical to 8aeddb7: 2399 passed, none skipped.
-
-Not covered, as PR #320 states:
-
-Other connection types: Telnet, command hosts and a host with no address keep the fixed 3 s and 0.7 s, and hold nothing typed. They were under Not measured above, and ssh's terminal modes are no signal for them.
-Writes without a key event: only keys are held. A paste, a snippet, a
-                                        <code>[keys]</code>
-                                        sequence, a drop and the cluster window write to the terminal directly. Measured with a fake ssh, a paste during the login reached the session ahead of the commands.
-                                        <code>-T</code>
-                                        with a prompt: a
-                                        <code>-T</code>
-                                        session whose remote prints a prompt waits for as long as the prompt shows, as in the last row.
-
-Not measured:
-
-A banner without a final new line: a banner that leaves the cursor mid-line reads as a question, and keys typed then go at once.
-A password at ssh's own prompt: an sshd not run as root checks none. ssh reads it with the same terminal modes as the passphrase, and keys pass while it does.
-
-Docs:
-                                        <code>docs/TERMINAL-USAGE.md</code>
-                                        has a new section, A host's commands after login, which says when the commands go and what is held.
-                                        <code>docs/SPEC.md</code>
-                                        now says
-                                        <code>##D=</code>
-                                        takes milliseconds.
-                                    </div>
-                                </div>
-                                <div class="timestamp">22 Oct 2026, 15:19:22</div>
-                            </section>
-                        </div>
-                        <div class="row fill-width">
-                            <section class="activity">
-                                <div class="field">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                        <path fill-rule="evenodd" d="M2.75 2.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 01.75.75v2.19l2.72-2.72a.75.75 0 01.53-.22h4.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25H2.75zM1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0113.25 12H9.06l-2.573 2.573A1.457 1.457 0 014 13.543V12H2.75A1.75 1.75 0 011 10.25v-7.5z"/>
-                                    </svg>
-                                    <div class="content">
-                                        Commented on
-                                        <span class="issue">#311 Set update_changelog_on_bump = false, or the template's coming doit release rewrites CHANGELOG.md</span>
-                                    </div>
-                                </div>
-                                <div class="details">
-                                    <div>opened by endavis in <span class="repo">endavis/gnome-connection-manager</span></div>
-                                    <div class="comment">
-                                        Merged as ce93513 (PR #322). Each criterion was checked on
-                                        <code>main</code>
-                                        after the merge:
-
-The key:
-                                        <code>[tool.commitizen]</code>
-                                        sets
-                                        <code>update_changelog_on_bump = false</code>
-                                        , at line 299 of
+                                        <code>PKG_DESCRIPTION</code>
+                                        and
                                         <code>pyproject.toml</code>
-                                        .
-The test fails with the key removed, and with it
-                                        <code>true</code>
-                                        . Each mutant was tried in a scratch copy:
-Removed: the new
-                                        <code>test_commitizen_is_told_the_changelog_is_written_by_hand</code>
-                                        fails, and only it.
-                                        <code>true</code>
-                                        : it fails, and so does
-                                        <code>test_a_release_bump_reaches_every_declared_version</code>
-                                        . The second failure is incidental. commitizen then reads the git history to write the changelog, and that test's scratch repository has no commits, so
-                                        <code>cz</code>
-                                        exits 23.
+                                        both say "Tabbed SSH, telnet and local shell manager with RDP, VNC, web and command hosts", 79 characters.
+The entry's
+                                        <code>Comment</code>
+                                        is "SSH, telnet, local shells and command lines in tabs, with remote desktops and web consoles".
+                                        <code>desktop-file-validate</code>
+                                        0.27 exits 0 and prints nothing.
 
 
-The bump:
-                                        <code>uv run --frozen cz bump --files-only --yes 9.9.9</code>
-                                        was run in a scratch clone at ce93513.
-It exited 0 and changed
-                                        <code>Makefile</code>
-                                        ,
-                                        <code>pyproject.toml</code>
-                                        ,
-                                        <code>__init__.py</code>
-                                        and
-                                        <code>app.py</code>
-                                        .
-It left
-                                        <code>CHANGELOG.md</code>
-                                        and
-                                        <code>uv.lock</code>
-                                        alone.
+CI: the new
+                                        <code>package</code>
+                                        job builds both packages.
+                                        <code>tools/packages.py</code>
+                                        then holds what fpm wrote into them to the Makefile's recipes. The job also asks apt for every package the .deb names, and validates the entry.
+                                        <code>ci-complete</code>
+                                        needs the job.
 
-
-The docs: the release section of
-                                        <code>.github/CONTRIBUTING.md</code>
-                                        and AGENTS.md's Packaging &amp; Release Flow say what the key is for.
-                                        <code>tests/test_package.py</code>
-                                        on
+On
                                         <code>main</code>
-                                        : 9 passed. CI on the identical tree: 2402 passed.
-A correction to this issue. It says the template's coming
-                                        <code>doit release</code>
-                                        would treat a missing key as a generated changelog. That was the plan for pyproject-template#971. As merged, in pyproject-template#992,
-                                        <code>_changelog_is_handwritten_enabled</code>
-                                        returns True unless the key is
-                                        <code>true</code>
-                                        . So a missing key means hand-written there too, as it does to commitizen, and the key changes nothing today. It is kept as the explicit record, and the test catches both
-                                        <code>true</code>
-                                        and the key's removal.
-Re-measured: with the key
-                                        <code>true</code>
-                                        ,
-                                        <code>cz bump --files-only</code>
-                                        changed 197 lines of
-                                        <code>CHANGELOG.md</code>
-                                        on
+                                        : in its push run, 39929680923, fpm 1.18.0 built
+                                        <code>gnome-connection-manager_2.1.0_all.deb</code>
+                                        and
+                                        <code>gnome-connection-manager-2.1.0.noarch.rpm</code>
+                                        .
+                                        <code>tools/packages.py</code>
+                                        then printed
+                                        <code>Both packages declare what the Makefile says.</code>
+                                        Every job in the run passed. The test job ran 2413 tests, none skipped.
+
+
+The README:
+                                        <code>tests/test_packages.py</code>
+                                        holds both its tables, by Ubuntu's names and Fedora's, to the recipes. On
                                         <code>main</code>
-                                        at 8c97560. This issue measured 166 at afc7cc4; the changelog has grown since.
-Left for later: CONTRIBUTING's Not
-                                        <code>doit release</code>
-                                        paragraph still points to pyproject-template#971. It is right about GCM's vendored
-                                        <code>tools/doit/release.py</code>
-                                        , which has not taken #992's changes. The next template sync is the time to revisit it.
+                                        , it and
+                                        <code>tests/test_install.py</code>
+                                        give 58 passed.
+
+
+What this issue left unmeasured:
+
+fpm writes an alternative as given:
+                                        <code>'a|b'</code>
+                                        as
+                                        <code>a|b</code>
+                                        , and
+                                        <code>'a | b'</code>
+                                        as
+                                        <code>a | b</code>
+                                        . dpkg and apt read the two alike.
+fpm has no option for an rpm's weak dependencies.
+                                        <code>--rpm-tag 'Recommends: …'</code>
+                                        and
+                                        <code>'Suggests: …'</code>
+                                        write them, and rpm reads them back.
+The maintainer is now Eric Davis, by the maintainer's decision.
+
+Beyond this issue: the .deb's
+                                        <code>postinst</code>
+                                        is gone. Measured in Ubuntu 24.04:
+
+Without xdg-utils, it exited 127 and left the package half-configured.
+Without
+                                        <code>/usr/share/desktop-directories</code>
+                                        , it exited 3, with the same result.
+Where
+                                        <code>/usr/local/share/applications</code>
+                                        existed, it left an unowned copy of the entry there, which a purge kept.
+
+desktop-file-utils' triggers update the desktop database instead. That was measured on Ubuntu; on Fedora it is read from the spec.
+Not verified:
+
+The .rpm has not been installed on Fedora.
+The .deb has not been installed with its real dependencies: every install used
+                                        <code>--force-depends</code>
+                                        .
+                                        <code>main</code>
+                                        's packages were not rebuilt by hand after the merge.
+                                        <code>main</code>
+                                        's CI job rebuilt and checked them.
+
+Left for later: the About dialog's comment, "A simple ssh connection manager for gnome", is a translated string in all eight catalogs, so it was not changed here.
                                     </div>
                                 </div>
-                                <div class="timestamp">22 Oct 2026, 16:57:39</div>
-                            </section>
-                        </div>
-                        <div class="row fill-width">
-                            <section class="activity">
-                                <div class="field">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                        <path fill-rule="evenodd" d="M2.75 2.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 01.75.75v2.19l2.72-2.72a.75.75 0 01.53-.22h4.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25H2.75zM1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0113.25 12H9.06l-2.573 2.573A1.457 1.457 0 014 13.543V12H2.75A1.75 1.75 0 011 10.25v-7.5z"/>
-                                    </svg>
-                                    <div class="content">
-                                        Commented on
-                                        <span class="issue">#314 A stored password is typed into the tab, so a key pressed first becomes part of it</span>
-                                    </div>
-                                </div>
-                                <div class="details">
-                                    <div>opened by endavis in <span class="repo">endavis/gnome-connection-manager</span></div>
-                                    <div class="comment">
-                                        Fixed by #318, merged as d72e9ab. Verified on
-                                        <code>main</code>
-                                        after the merge:
-
-Tests: 285 passed across the five files the change touched:
-                                        <code>tests/test_ssh_expect.py</code>
-                                        ,
-                                        <code>test_connections.py</code>
-                                        ,
-                                        <code>test_command_hosts.py</code>
-                                        ,
-                                        <code>test_rdp.py</code>
-                                        and
-                                        <code>test_windows_rdp.py</code>
-                                        .
-In GCM: measured through
-                                        <code>Wmain.addTab</code>
-                                        , with a real VTE on Xvfb and
-                                        <code>main</code>
-                                        's own
-                                        <code>ssh.expect</code>
-                                        .
-Real ssh, key accepted. With a stored password and a server that accepts a key, ssh was running at 0.05 s and the remote prompt showed at 1.74 s. Before the fix those were 2.05 s and 3.70 s.
-Fake ssh. It sits behind the real script, connects for 1.5 s, then asks for the password. The password was accepted on the first try in each run: left alone, with Enter pressed at 0.5 s, with
-                                        <code>ls</code>
-                                        typed at 0.5 s, and under raw recording. Before the fix, the early Enter cost one failed try and the early
-                                        <code>ls</code>
-                                        two.
-Inheritance. In every run, the fake reported that it had not inherited
-                                        <code>GCM_PASSWORD</code>
-                                        .
-
-
-Telnet and RDP: the same change covers hosts of both types that have a stored password. RDP is checked through GCM by the scenario in
-                                        <code>tests/test_rdp.py</code>
-                                        . Telnet is checked only by the script's own tests.
-
-Still open:
-                                        <code>ls</code>
-                                        typed early now reaches the session, but it still goes in front of the host's commands after login. That is #312.
-Under raw recording or OSC 52, a resize reaches an idle program late. That was found while measuring this, and is #319.
-                                    </div>
-                                </div>
-                                <div class="timestamp">22 Oct 2026, 12:33:20</div>
+                                <div class="timestamp">23 Oct 2026, 09:13:39</div>
                             </section>
                         </div>
                     </section>
@@ -2902,7 +2993,7 @@ Under raw recording or OSC 52, a resize reaches an idle program late. That was f
                                     </defs>
                                     <svg xmlns="http://www.w3.org/2000/svg" class="gauge info">
                                         <circle class="gauge-base" r="25" cx="28" cy="28"/>
-                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="62.76386036960988 155"/>
+                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="62.84873374401094 155"/>
                                     </svg>
                                     <svg xmlns="http://www.w3.org/2000/svg" mask="url(#mask)">
                                         <g xmlns="http://www.w3.org/2000/svg" transform="translate(5 4)" fill="none" fill-rule="evenodd">
@@ -2976,7 +3067,7 @@ Under raw recording or OSC 52, a resize reaches an idle program late. That was f
                                     </defs>
                                     <svg xmlns="http://www.w3.org/2000/svg" class="gauge info">
                                         <circle class="gauge-base" r="25" cx="28" cy="28"/>
-                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="33.68666666666667 155"/>
+                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="33.79 155"/>
                                     </svg>
                                     <svg xmlns="http://www.w3.org/2000/svg" mask="url(#mask)">
                                         <g stroke-width="2" fill="none" fill-rule="evenodd">
@@ -3004,10 +3095,10 @@ Under raw recording or OSC 52, a resize reaches an idle program late. That was f
                                     <span class="prefix">Master</span>
                                     contributor
                                     <div class="value-wrapper">
-                                        <div class="value">1326</div>
+                                        <div class="value">1327</div>
                                     </div>
                                 </div>
-                                <div class="text">Opened 1326 pull requests</div>
+                                <div class="text">Opened 1327 pull requests</div>
                             </div>
                         </div>
                         <div class="achievement a largeable-width-half">
@@ -3209,7 +3300,7 @@ Under raw recording or OSC 52, a resize reaches an idle program late. That was f
                                 <div class="title">
                                     <span class="prefix"></span>
                                     Inspirer
-                                    <span class="gh">ranked 979k out of 361m repositories</span>
+                                    <span class="gh">ranked 980k out of 361m repositories</span>
                                     <div class="value-wrapper">
                                         <div class="value">15</div>
                                     </div>
@@ -3264,7 +3355,7 @@ Under raw recording or OSC 52, a resize reaches an idle program late. That was f
                                 <div class="title">
                                     <span class="prefix"></span>
                                     Influencer
-                                    <span class="gh">ranked 983k out of 252m users</span>
+                                    <span class="gh">ranked 984k out of 252m users</span>
                                     <div class="value-wrapper">
                                         <div class="value">22</div>
                                     </div>
@@ -3383,7 +3474,7 @@ Under raw recording or OSC 52, a resize reaches an idle program late. That was f
                                 <div class="title">
                                     <span class="prefix"></span>
                                     Maintainer
-                                    <span class="gh">ranked 1.53m out of 361m repositories</span>
+                                    <span class="gh">ranked 1.54m out of 361m repositories</span>
                                     <div class="value-wrapper">
                                         <div class="value">22</div>
                                     </div>
@@ -3533,7 +3624,7 @@ Under raw recording or OSC 52, a resize reaches an idle program late. That was f
             </section>
             <footer>
                 <span>These metrics include private contributions</span>
-                <span>Last updated 23 Oct 2026, 03:10:33 (timezone UTC) with lowlighter/metrics@3.35.0-beta</span>
+                <span>Last updated 24 Oct 2026, 03:05:35 (timezone UTC) with lowlighter/metrics@3.35.0-beta</span>
             </footer>
         </div>
         <div xmlns="http://www.w3.org/1999/xhtml" id="metrics-end"></div>
