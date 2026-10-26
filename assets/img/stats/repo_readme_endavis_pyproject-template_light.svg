@@ -113,7 +113,7 @@
 
 
     <text class="description" x="25" y="-5">
-      <tspan dy="1.2em" x="25">a repository to use as a template for pyprojects</tspan>
+      <tspan dy="1.2em" x="25">a repository to use as a template for python projects</tspan>
     </text>
 
     <g transform="translate(30, 65)">
